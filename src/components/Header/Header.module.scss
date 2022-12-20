@@ -1,0 +1,93 @@
+@import "../../vars.scss";
+.header{
+  padding-top: 20px;
+  &Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    & a, button{
+      color: $primaryColor;
+      font-weight: 600;
+      font-size: 1.2em;
+      &:hover, li:hover{
+        color: $primaryHover;
+        transition: color .2s linear;
+      }
+    }
+    .profileCard{
+      cursor: auto;
+      user-select: none;
+      margin-top: 10px;
+      top: -10px;
+      right: -205px;
+      position: absolute;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 200px;
+      &_Top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+     &_UserInfo{
+       :hover{
+         color: darken($userNameColor, 20%);
+       }
+       a{
+         color: $userNameColor;
+         display: flex;
+         align-items: center;
+         gap: 20px;
+       }
+     }
+      svg{
+        color: $userNameColor;
+      }
+      &_Name a{
+        color: $userNameColor;
+        display: inline-flex;
+        margin-bottom: 2px;
+      }
+      &_Role{
+        color: $adminColor;
+      }
+      &_Logo{
+        width: 35px;
+        border-radius: 50px;
+      }
+
+      &_Bottom{
+        color: $whiteThemeText;
+      }
+    }
+  }
+  &_ItemProfile{
+    position: relative;
+    margin-right: auto;
+  }
+  &_ItemLogIn{
+    position: relative;
+    margin-left: auto;
+  }
+  .btn_LogOut{
+    :hover{
+      color: darken($userNameColor, 20%);
+    }
+    svg{
+      height: 1.3em;
+      width: 1.3em;
+    }
+  }
+  li > svg:hover{
+    color: $primaryHover;
+    transition: color .2s linear;
+    cursor: pointer;
+  }
+  svg{
+    height: 1.7em;
+    width: 1.7em;
+  }
+}

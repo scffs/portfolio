@@ -1,35 +1,30 @@
-* {
+@import "vars";
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: "Ubuntu", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  color: #ffffff;
+  font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: $primaryColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
-
-ul {
+ul{
   list-style-type: none;
 }
-
-a {
+a{
   text-decoration: none;
 }
-
-button {
+button{
   border: none;
   background: transparent;
   cursor: pointer;
 }
-
-.container {
+.container{
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,89 @@
+.header {
+  padding-top: 20px;
+}
+.headerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.headerMenu a, .headerMenu button {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.headerMenu a:hover, .headerMenu a li:hover, .headerMenu button:hover, .headerMenu button li:hover {
+  color: #b3b3b3;
+  transition: color 0.2s linear;
+}
+.headerMenu .profileCard {
+  cursor: auto;
+  user-select: none;
+  margin-top: 10px;
+  top: -10px;
+  right: -205px;
+  position: absolute;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+.headerMenu .profileCard_Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.headerMenu .profileCard_UserInfo :hover {
+  color: #3f3f3f;
+}
+.headerMenu .profileCard_UserInfo a {
+  color: #727272;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.headerMenu .profileCard svg {
+  color: #727272;
+}
+.headerMenu .profileCard_Name a {
+  color: #727272;
+  display: inline-flex;
+  margin-bottom: 2px;
+}
+.headerMenu .profileCard_Role {
+  color: #fe3f3f;
+}
+.headerMenu .profileCard_Logo {
+  width: 35px;
+  border-radius: 50px;
+}
+.headerMenu .profileCard_Bottom {
+  color: #aaa;
+}
+.header_ItemProfile {
+  position: relative;
+  margin-right: auto;
+}
+.header_ItemLogIn {
+  position: relative;
+  margin-left: auto;
+}
+.header .btn_LogOut :hover {
+  color: #3f3f3f;
+}
+.header .btn_LogOut svg {
+  height: 1.3em;
+  width: 1.3em;
+}
+.header li > svg:hover {
+  color: #b3b3b3;
+  transition: color 0.2s linear;
+  cursor: pointer;
+}
+.header svg {
+  height: 1.7em;
+  width: 1.7em;
+}
+
+/*# sourceMappingURL=Header.module.css.map */
