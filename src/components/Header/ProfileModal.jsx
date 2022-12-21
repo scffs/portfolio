@@ -3,6 +3,7 @@ import {AiOutlineLogout} from "react-icons/ai"
 import logo from "../../assets/img/ava.png"
 import {CgProfile} from "react-icons/cg"
 import styles from './Header.module.scss'
+import {Link} from "react-router-dom";
 const ProfileModal = ({name, role}) => {
     const[isShow, setIsShow] = React.useState(false);
     return (
@@ -11,10 +12,10 @@ const ProfileModal = ({name, role}) => {
             {isShow ? <div className={styles.profileCard}>
                     <div className={styles.profileCard_Top}>
                         <div className={styles.profileCard_UserInfo}>
-                            <a href="../pages/profile" className={styles.profileCard_Name}>
+                            <Link to="/profile" className={styles.profileCard_Name} onClick={() => setIsShow(!isShow)}>
                                 <img className={styles.profileCard_Logo} src={logo} alt="logo"/>
                                 <span>{name}</span>
-                            </a>
+                            </Link>
                         </div>
                         <button className={styles.btn_LogOut} type="button">
                             <AiOutlineLogout />
