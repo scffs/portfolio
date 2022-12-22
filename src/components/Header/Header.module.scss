@@ -1,7 +1,7 @@
 @import "../../vars.scss";
 .header{
   padding-top: 20px;
-  &Menu{
+  .Menu{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,11 +64,11 @@
       }
     }
   }
-  &_ItemProfile{
+  .ItemProfile{
     position: relative;
     margin-right: auto;
   }
-  &_ItemLogIn{
+  .ItemLogIn{
     position: relative;
     margin-left: auto;
   }

@@ -8,8 +8,8 @@ const Header = () => (
     <header className={styles.header}>
        <div className="container">
            <nav>
-               <ul className={styles.headerMenu}>
-                   <li className={styles.header_ItemProfile}>
+               <ul className={styles.Menu}>
+                   <li className={styles.ItemProfile}>
                         <ProfileModal name="Scoffs" role="Администратор" />
                    </li>
                    <li>
@@ -21,8 +21,8 @@ const Header = () => (
                    <li>
                        <Link to="/help">Помощь</Link>
                    </li>
-                   <li className={styles.header_ItemLogIn}>
-                       <button className={styles.header_ItemLogIn}>
+                   <li className={styles.ItemLogIn}>
+                       <button className={styles.ItemLogIn}>
                            <AiOutlineLogin />
                        </button>
                    </li>
