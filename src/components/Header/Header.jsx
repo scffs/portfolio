@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Header.module.scss'
 import {AiOutlineLogin} from "react-icons/ai"
 import ProfileModal from "./ProfileModal"
+import menu from "./MenuItem"
 import {Link} from "react-router-dom";
 
 const Header = () => (
@@ -12,15 +13,13 @@ const Header = () => (
                    <li className={styles.ItemProfile}>
                         <ProfileModal name="Scoffs" role="Администратор" />
                    </li>
-                   <li>
-                       <Link to="/">Главная</Link>
-                   </li>
-                   <li>
-                       <Link to="/news">Новости</Link>
-                   </li>
-                   <li>
-                       <Link to="/help">Помощь</Link>
-                   </li>
+                   {
+                       menu.map(item => (
+                           <li>
+                               <Link to={item.src}>{item.title}</Link>
+                           </li>
+                       ))
+                   }
                    <li className={styles.ItemLogIn}>
                        <button className={styles.ItemLogIn}>
                            <AiOutlineLogin />

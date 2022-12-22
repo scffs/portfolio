@@ -1,30 +1,15 @@
-import React from 'react';
-
 const menuList = [
     {
-        title: '',
-        src: ''
+        title: 'Главная',
+        src: '/'
     },
     {
-        title: '',
-        src: ''
+        title: 'Новости',
+        src: 'news'
     },
     {
-        title: '',
-        src: ''
-    },
-    {
-        title: '',
-        src: ''
+        title: 'Помощь',
+        src: '/help'
     }
 ]
-
-const MenuItem = (menuList) => {
-    return (
-        <li>
-            {/*{menuList.map(menuItem =>)}*/}
-        </li>
-    );
-};
-
-export default MenuItem;
+export default menuList
