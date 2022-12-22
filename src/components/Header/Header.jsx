@@ -15,15 +15,15 @@ const Header = () => (
                    </li>
                    {
                        menu.map(item => (
-                           <li>
+                           <li key={item.id}>
                                <Link to={item.src}>{item.title}</Link>
                            </li>
                        ))
                    }
                    <li className={styles.ItemLogIn}>
-                       <button className={styles.ItemLogIn}>
+                       <Link to="/register">
                            <AiOutlineLogin />
-                       </button>
+                       </Link>
                    </li>
                </ul>
            </nav>
