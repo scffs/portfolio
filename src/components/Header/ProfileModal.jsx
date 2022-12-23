@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineLogout} from "react-icons/ai"
-import logo from "../../assets/img/ava.png"
+import logo from "../../assets/ava.png"
 import {CgProfile} from "react-icons/cg"
 import styles from './Header.module.scss'
 import {Link} from "react-router-dom";

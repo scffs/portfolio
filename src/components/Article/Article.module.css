@@ -1,0 +1,35 @@
+.article {
+  background: white;
+  gap: 30px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.article .h3 {
+  color: #3d3d3d;
+  padding: 10px 10px 0;
+  text-align: left;
+}
+.article .img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.article .description {
+  color: #727272;
+  padding: 0 10px;
+  font-size: 1.3rem;
+}
+.article .logo {
+  width: 5%;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.article .postAuthor {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Article.module.css.map */

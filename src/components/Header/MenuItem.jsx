@@ -1,16 +1,16 @@
 const menuList = [
     {
-        id: 0,
+        id: 1,
         title: 'Главная',
         src: '/'
     },
     {
-        id: 1,
+        id: 2,
         title: 'Новости',
         src: 'news'
     },
     {
-        id: 2,
+        id: 3,
         title: 'Помощь',
         src: '/help'
     }

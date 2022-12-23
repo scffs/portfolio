@@ -1,0 +1,34 @@
+@import "../../vars";
+.article{
+  background: white;
+  gap: 30px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  .h3{
+    color: $userColor;
+    padding: 10px 10px 0;
+    text-align: left;
+  }
+  .img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .description{
+    color: $userNameColor;
+    padding: 0 10px;
+    font-size: 1.3rem;
+  }
+  .logo{
+    width: 5%;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  .postAuthor{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

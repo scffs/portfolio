@@ -1,3 +1,10 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-
-/*# sourceMappingURL=Home.module.css.map */
+/*# sourceMappingURL=Articles.module.css.map */
