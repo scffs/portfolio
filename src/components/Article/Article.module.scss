@@ -22,13 +22,19 @@
     font-size: 1.3rem;
   }
   .logo{
-    width: 5%;
+    width: 30%;
     margin-left: 10px;
     border-radius: 50%;
   }
   .postAuthor{
-    display: flex;
+    color: $userNameColor;
     gap: 10px;
     align-items: center;
+    display: inline-flex;
+    width: 120px;
+    :hover{
+      color: darken($userNameColor, 40%);
+      transition: color .2s linear;
+    }
   }
 }

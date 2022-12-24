@@ -13,7 +13,7 @@ const Article = () => {
                     <Link to={'/article/' + item.id}>
                         <article className={styles.article} key={item.id}>
                             <img className={styles.img} src={img} alt='img'/>
-                            <div className="post-info">
+                            <div>
                                 <Link className={styles.postAuthor} to={'/profile'}>
                                     <img className={styles.logo} src={logo} alt="logo"/>
                                     <span>{item.author}</span>

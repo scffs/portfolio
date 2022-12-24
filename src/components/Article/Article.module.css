@@ -22,14 +22,20 @@
   font-size: 1.3rem;
 }
 .article .logo {
-  width: 5%;
+  width: 30%;
   margin-left: 10px;
   border-radius: 50%;
 }
 .article .postAuthor {
-  display: flex;
+  color: #727272;
   gap: 10px;
   align-items: center;
+  display: inline-flex;
+  width: 120px;
+}
+.article .postAuthor :hover {
+  color: #0c0c0c;
+  transition: color 0.2s linear;
 }
 
 /*# sourceMappingURL=Article.module.css.map */
