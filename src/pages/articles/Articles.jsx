@@ -44,7 +44,7 @@ const Articles = () => {
         <div className={styles.container}>
             {
                 posts.map(post =>(
-                    <Article post={post} />
+                    <Article key={Date.now()} post={post} />
                 ))
             }
         </div>

@@ -17,7 +17,6 @@ function App() {
            <Route path="/profile" element={ <Profile />} />
            <Route path="/register" element={ <Register />} />
            <Route path="*" element={<h1>ERROR</h1>} />
-
        </Routes>
    </>
   );
