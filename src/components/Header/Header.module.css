@@ -2,22 +2,22 @@
   margin-bottom: 50px;
   padding-top: 20px;
 }
-.header .Menu {
+.header .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
-.header .Menu a, .header .Menu button {
+.header .menu a, .header .menu button {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.2em;
 }
-.header .Menu a:hover, .header .Menu a li:hover, .header .Menu button:hover, .header .Menu button li:hover {
+.header .menu a:hover, .header .menu a li:hover, .header .menu button:hover, .header .menu button li:hover {
   color: #b3b3b3;
   transition: color 0.2s linear;
 }
-.header .Menu .profileCard {
+.header .menu .profileCard {
   cursor: auto;
   user-select: none;
   margin-top: 10px;
@@ -29,44 +29,44 @@
   border-radius: 10px;
   width: 200px;
 }
-.header .Menu .profileCard_Top {
+.header .menu .profileCard_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.header .Menu .profileCard_UserInfo :hover {
+.header .menu .profileCard_userInfo :hover {
   color: #3f3f3f;
 }
-.header .Menu .profileCard_UserInfo a {
+.header .menu .profileCard_userInfo a {
   color: #727272;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.header .Menu .profileCard svg {
+.header .menu .profileCard svg {
   color: #727272;
 }
-.header .Menu .profileCard_Name a {
+.header .menu .profileCard_name a {
   color: #727272;
   display: inline-flex;
   margin-bottom: 2px;
 }
-.header .Menu .profileCard_Role {
+.header .menu .profileCard_role {
   color: #fe3f3f;
 }
-.header .Menu .profileCard_Logo {
+.header .menu .profileCard_logo {
   width: 35px;
   border-radius: 50px;
 }
-.header .Menu .profileCard_Bottom {
+.header .menu .profileCard_bottom {
   color: #aaa;
 }
-.header .ItemProfile {
+.header .itemProfile {
   position: relative;
   margin-right: auto;
 }
-.header .ItemLogIn {
+.header .itemLogIn {
   position: relative;
   margin-left: auto;
 }

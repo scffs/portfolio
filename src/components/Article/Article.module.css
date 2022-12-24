@@ -1,13 +1,19 @@
 .article {
+  display: grid;
+  grid-template-rows: min-content repeat(2, 60px);
+  align-content: center;
   background: white;
-  gap: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-radius: 10px;
+}
+.article:hover {
+  transform: translateY(-10px);
+  transition: transform 0.15s linear;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .article .h3 {
   color: #3d3d3d;
   padding: 10px 10px 0;
-  text-align: left;
 }
 .article .img {
   width: 100%;

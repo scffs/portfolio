@@ -1,16 +1,16 @@
 import React from 'react'
-import styles from './Header.module.scss'
+import s from './Header.module.scss'
 import {AiOutlineLogin} from "react-icons/ai"
 import ProfileModal from "./ProfileModal"
 import menu from "./MenuItem"
 import {Link} from "react-router-dom";
 
 const Header = () => (
-    <header className={styles.header}>
+    <header className={s.header}>
        <div className="container">
            <nav>
-               <ul className={styles.Menu}>
-                   <li className={styles.ItemProfile}>
+               <ul className={s.menu}>
+                   <li className={s.itemProfile}>
                         <ProfileModal name="Scoffs" role="Администратор" />
                    </li>
                    {
@@ -20,7 +20,7 @@ const Header = () => (
                            </li>
                        ))
                    }
-                   <li className={styles.ItemLogIn}>
+                   <li className={s.itemLogIn}>
                        <Link to="/register">
                            <AiOutlineLogin />
                        </Link>

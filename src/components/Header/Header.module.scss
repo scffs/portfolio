@@ -2,7 +2,7 @@
 .header{
   margin-bottom: 50px;
   padding-top: 20px;
-  .Menu{
+  .menu{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,13 +27,13 @@
       padding: 10px;
       border-radius: 10px;
       width: 200px;
-      &_Top{
+      &_top{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 10px;
       }
-     &_UserInfo{
+     &_userInfo{
        :hover{
          color: darken($userNameColor, 20%);
        }
@@ -47,29 +47,29 @@
       svg{
         color: $userNameColor;
       }
-      &_Name a{
+      &_name a{
         color: $userNameColor;
         display: inline-flex;
         margin-bottom: 2px;
       }
-      &_Role{
+      &_role{
         color: $adminColor;
       }
-      &_Logo{
+      &_logo{
         width: 35px;
         border-radius: 50px;
       }
 
-      &_Bottom{
+      &_bottom{
         color: $whiteThemeText;
       }
     }
   }
-  .ItemProfile{
+  .itemProfile{
     position: relative;
     margin-right: auto;
   }
-  .ItemLogIn{
+  .itemLogIn{
     position: relative;
     margin-left: auto;
   }
@@ -90,8 +90,5 @@
   svg{
     height: 1.7em;
     width: 1.7em;
-  }
-  .btnRegister{
-    //font-size: unset;
   }
 }

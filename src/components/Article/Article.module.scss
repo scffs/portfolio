@@ -1,13 +1,19 @@
 @import "../../vars";
 .article{
+  &:hover{
+    transform: translateY(-10px);
+    transition: transform .15s linear;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  display: grid;
+  grid-template-rows: min-content repeat(2, min(60px));
+  align-content: center;
   background: white;
-  gap: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-radius: 10px;
   .h3{
     color: $userColor;
     padding: 10px 10px 0;
-    text-align: left;
   }
   .img{
     width: 100%;
