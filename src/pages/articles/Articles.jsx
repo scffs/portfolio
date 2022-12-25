@@ -1,50 +1,27 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Article from '../../components/Article/Article';
 import styles from './Articles.module.scss'
+
 const Articles = () => {
-    const [posts, setPosts] = useState([
-        {
-            id: 0,
-            title: 'Как я стал одним из лучших',
-            description: 'В этой статье я расскажу как стать одним из лучших студентов года',
-            text: 'text',
-            author: 'Scoffs',
-            img: "../../assets/articles/1.jpg",
-            logo: "../../assets/ava.png"
-        },
-        {
-            id: 1,
-            title: 'Как программировать по 12 часов в день и не сойти с ума',
-            description: 'Спойлер: никак',
-            text: 'text',
-            author: 'Scoffs',
-            img: "../../assets/articles/1.jpg",
-            logo: "../../assets/ava.png"
-        },
-        {
-            id: 2,
-            title: 'Как я стал одним из лучших 3',
-            description: 'В этой статье я расскажу как стать одним из лучших студентов года',
-            text: 'text',
-            author: 'Scoffs',
-            img: "../../assets/articles/1.jpg",
-            logo: "../../assets/ava.png"
-        },
-        {
-            id: 3,
-            title: 'Как я стал одним из лучших 4',
-            description: 'В этой статье я расскажу как стать одним из лучших студентов года',
-            text: 'text',
-            author: 'Scoffs',
-            img: "../../assets/articles/1.jpg",
-            logo: '../../assets/img/author1.jpg'
-        }
-    ])
+    // https://63a7f65f7989ad3286f7dd81.mockapi.io/articles
+
+    const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+        fetch('https://63a7f65f7989ad3286f7dd81.mockapi.io/articles')
+            .then((res) => {
+                return res.json()
+            })
+            .then((arr) => {
+                setArticles(arr)
+            })
+    })
+
     return (
         <div className={styles.container}>
             {
-                posts.map(post =>(
-                    <Article key={Date.now()} post={post} />
+                articles.map(post =>(
+                    <Article key={post.id} {...post} />
                 ))
             }
         </div>
