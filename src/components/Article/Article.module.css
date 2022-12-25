@@ -13,7 +13,7 @@
 }
 .article .h3 {
   color: #3d3d3d;
-  padding: 10px 10px 0;
+  padding: 10px 0;
 }
 .article .img {
   width: 100%;
@@ -24,8 +24,10 @@
 }
 .article .description {
   color: #727272;
-  padding: 0 10px;
   font-size: 1.3rem;
+}
+.article .info {
+  padding: 10px;
 }
 .article .postAuthor {
   color: #727272;
@@ -37,6 +39,21 @@
 .article .postAuthor :hover {
   color: #0c0c0c;
   transition: color 0.2s linear;
+}
+.article .tag {
+  position: relative;
+  padding-left: 15px;
+  color: #00bebe;
+}
+.article .tag::after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ec0000;
+  left: 0;
+  top: 9px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=Article.module.css.map */

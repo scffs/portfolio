@@ -32,4 +32,8 @@ button {
   padding: 0 15px;
 }
 
+#root {
+  min-width: 250px;
+}
+
 /*# sourceMappingURL=index.css.map */

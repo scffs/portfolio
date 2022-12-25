@@ -3,8 +3,6 @@ import Article from '../../components/Article/Article';
 import styles from './Articles.module.scss'
 
 const Articles = () => {
-    // https://63a7f65f7989ad3286f7dd81.mockapi.io/articles
-
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {

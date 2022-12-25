@@ -8,8 +8,8 @@ const Article = ({id, preview, title, description}) => {
             <Link to={'/article/' + id}>
                 <article className={s.article}>
                     <img className={s.img} src={preview} alt='img'/>
-                    <div>
-                        <span>Учёба</span>
+                    <div className={s.info}>
+                        <span className={s.tag}>Учёба</span>
                         <h3 className={s.h3}>{title}</h3>
                         <p className={s.description}>{description}</p>
                     </div>

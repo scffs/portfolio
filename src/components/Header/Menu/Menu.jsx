@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import menu from "../MenuItem";
+import menu from '../MenuItem';
 import {Link} from "react-router-dom";
 import s from './Menu.module.scss'
-import {AiOutlineMenu} from "react-icons/ai";
+import {AiOutlineMenu} from 'react-icons/ai';
 const Menu = () => {
     const [isBurger, setIsBurger] = useState(false);
+
     return (
         <>
             <button onClick={() => setIsBurger(!isBurger)}>
@@ -15,7 +16,7 @@ const Menu = () => {
                     {
                         menu.map(item => (
                             <li key={item.id}>
-                                <Link to={item.src} onClick={() => setIsBurger(!isBurger)}>{item.title}</Link>
+                                <Link to={item.src} onClick={() => isBurger ?  setIsBurger(!isBurger) : ''}>{item.title}</Link>
                             </li>
                         ))
                     }

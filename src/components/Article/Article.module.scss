@@ -13,7 +13,7 @@
   border-radius: 10px;
   .h3{
     color: $userColor;
-    padding: 10px 10px 0;
+    padding: 10px 0;
   }
   .img{
     width: 100%;
@@ -24,8 +24,10 @@
   }
   .description{
     color: $userNameColor;
-    padding: 0 10px;
     font-size: 1.3rem;
+  }
+  .info{
+    padding: 10px;
   }
   .postAuthor{
     color: $userNameColor;
@@ -36,6 +38,21 @@
     :hover{
       color: darken($userNameColor, 40%);
       transition: color .2s linear;
+    }
+  }
+  .tag{
+    position: relative;
+    padding-left: 15px;
+    color: $devColor;
+    &::after{
+      position: absolute;
+      content: '';
+      height: 8px;
+      width: 8px;
+      background: $adminColor;
+      left: 0;
+      top: 9px;
+      border-radius: 50%;
     }
   }
 }
