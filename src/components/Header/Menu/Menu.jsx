@@ -11,7 +11,7 @@ const Menu = () => {
                 <AiOutlineMenu />
             </button>
             {
-                <ul className={ isBurger ? s.active : s.menu}>
+                <ul className={ isBurger ? s.active : s.menu }>
                     {
                         menu.map(item => (
                             <li key={item.id}>

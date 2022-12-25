@@ -31,12 +31,16 @@ a {
   z-index: 3;
   top: 0;
   font-size: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
+  text-align: center;
   padding-top: 100px;
   overflow: hidden;
+}
+.active li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.active a {
+  display: block;
+  padding: 30px;
 }
 
 @media (max-width: 450px) {

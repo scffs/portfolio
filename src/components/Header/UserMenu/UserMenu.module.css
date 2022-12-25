@@ -1,10 +1,15 @@
 .ul {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 .itemProfile {
   position: relative;
+}
+.itemProfile > svg {
+  height: 2em;
+  width: 2em;
 }
 
 li > svg:hover {

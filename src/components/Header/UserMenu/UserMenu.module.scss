@@ -2,9 +2,16 @@
 .ul{
   display: flex;
   gap: 30px;
+  align-items: center;
 }
+
 .itemProfile{
   position: relative;
+  > svg{
+    height: 2em;
+    width: 2em;
+  }
+
 }
 li > svg:hover{
   color: $primaryHover;

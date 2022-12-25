@@ -7,7 +7,7 @@ import ProfileModal from "../Modal/ProfileModal";
 const UserMenu = () => {
     return (
         <ul className={s.ul}>
-            <li className={s.itemLogIn}>
+            <li>
                 <Link to="/register">
                     <AiOutlineLogin />
                 </Link>
