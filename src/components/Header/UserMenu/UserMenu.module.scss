@@ -1,0 +1,18 @@
+@import "../../../vars";
+.ul{
+  display: flex;
+  gap: 30px;
+}
+.itemProfile{
+  position: relative;
+}
+li > svg:hover{
+  color: $primaryHover;
+  transition: color .2s linear;
+  cursor: pointer;
+}
+svg, a > svg{
+  height: 1.7em;
+  width: 1.7em;
+  color: $primaryColor;
+}

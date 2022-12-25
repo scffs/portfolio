@@ -7,7 +7,7 @@ const menuList = [
     {
         id: 2,
         title: 'Новости',
-        src: 'news'
+        src: '/news'
     },
     {
         id: 3,

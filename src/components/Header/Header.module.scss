@@ -2,35 +2,12 @@
 .header{
   margin-bottom: 50px;
   padding-top: 20px;
-  .menu{
+  .nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    & a, button{
-      color: $primaryColor;
-      font-weight: 600;
-      font-size: 1.2em;
-      &:hover, li:hover{
-        color: $primaryHover;
-        transition: color .2s linear;
-      }
-    }
+    justify-content: space-between;
   }
-  .itemProfile{
-    position: relative;
-  }
-  .itemLogIn{
-    position: relative;
-    margin-left: auto;
-  }
-  li > svg:hover{
+  a:hover, li:hover svg{
     color: $primaryHover;
     transition: color .2s linear;
-    cursor: pointer;
-  }
-  svg{
-    height: 2em;
-    width: 1.5em;
   }
 }

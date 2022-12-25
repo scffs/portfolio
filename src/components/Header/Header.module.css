@@ -2,36 +2,13 @@
   margin-bottom: 50px;
   padding-top: 20px;
 }
-.header .menu {
+.header .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  justify-content: space-between;
 }
-.header .menu a, .header .menu button {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.2em;
-}
-.header .menu a:hover, .header .menu a li:hover, .header .menu button:hover, .header .menu button li:hover {
+.header a:hover, .header li:hover svg {
   color: #b3b3b3;
   transition: color 0.2s linear;
-}
-.header .itemProfile {
-  position: relative;
-}
-.header .itemLogIn {
-  position: relative;
-  margin-left: auto;
-}
-.header li > svg:hover {
-  color: #b3b3b3;
-  transition: color 0.2s linear;
-  cursor: pointer;
-}
-.header svg {
-  height: 2em;
-  width: 1.5em;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

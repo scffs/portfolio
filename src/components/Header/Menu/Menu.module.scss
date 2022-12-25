@@ -1,0 +1,45 @@
+@import "../../../vars";
+button{
+  position: relative;
+  z-index: 4;
+  display: none;
+}
+button > svg{
+  width: 2.5em;
+  height: 2.5em;
+}
+a{
+  color: $primaryColor;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.active{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $bg-menuMobile;
+  z-index: 3;
+  top: 0;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  overflow: hidden;
+}
+@media (max-width: 450px) {
+  .menu{
+    display: none;
+  }
+  button{
+    display: block;
+  }
+}
