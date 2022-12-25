@@ -27,11 +27,6 @@
   padding: 0 10px;
   font-size: 1.3rem;
 }
-.article .logo {
-  width: 30%;
-  margin-left: 10px;
-  border-radius: 50%;
-}
 .article .postAuthor {
   color: #727272;
   gap: 10px;
