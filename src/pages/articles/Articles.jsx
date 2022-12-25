@@ -9,13 +9,11 @@ const Articles = () => {
 
     useEffect(() => {
         fetch('https://63a7f65f7989ad3286f7dd81.mockapi.io/articles')
-            .then((res) => {
-                return res.json()
-            })
+            .then((res) => res.json())
             .then((arr) => {
                 setArticles(arr)
             })
-    })
+    }, [])
 
     return (
         <div className={styles.container}>
