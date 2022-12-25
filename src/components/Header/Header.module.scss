@@ -16,71 +16,13 @@
         transition: color .2s linear;
       }
     }
-    .profileCard{
-      cursor: auto;
-      user-select: none;
-      margin-top: 10px;
-      top: -10px;
-      right: -205px;
-      position: absolute;
-      background: white;
-      padding: 10px;
-      border-radius: 10px;
-      width: 200px;
-      &_top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-     &_userInfo{
-       :hover{
-         color: darken($userNameColor, 20%);
-       }
-       a{
-         color: $userNameColor;
-         display: flex;
-         align-items: center;
-         gap: 20px;
-       }
-     }
-      svg{
-        color: $userNameColor;
-      }
-      &_name a{
-        color: $userNameColor;
-        display: inline-flex;
-        margin-bottom: 2px;
-      }
-      &_role{
-        color: $adminColor;
-      }
-      &_logo{
-        width: 35px;
-        border-radius: 50px;
-      }
-
-      &_bottom{
-        color: $whiteThemeText;
-      }
-    }
   }
   .itemProfile{
     position: relative;
-    margin-right: auto;
   }
   .itemLogIn{
     position: relative;
     margin-left: auto;
-  }
-  .btn_LogOut{
-    :hover{
-      color: darken($userNameColor, 20%);
-    }
-    svg{
-      height: 1.3em;
-      width: 1.3em;
-    }
   }
   li > svg:hover{
     color: $primaryHover;
@@ -88,7 +30,7 @@
     cursor: pointer;
   }
   svg{
-    height: 1.7em;
-    width: 1.7em;
+    height: 2em;
+    width: 1.5em;
   }
 }

@@ -1,0 +1,57 @@
+.profileCard {
+  cursor: auto;
+  user-select: none;
+  margin-top: 10px;
+  top: -10px;
+  right: 30px;
+  position: absolute;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+.profileCard span {
+  color: #727272;
+}
+.profileCard .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profileCard .userInfo :hover {
+  color: #3f3f3f;
+}
+.profileCard .userInfo a {
+  color: #727272;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profileCard svg {
+  color: #727272;
+}
+.profileCard .name a {
+  color: #727272;
+  display: inline-flex;
+  margin-bottom: 2px;
+}
+.profileCard .role {
+  color: #fe3f3f;
+}
+.profileCard .logo {
+  width: 35px;
+  border-radius: 50px;
+}
+.profileCard .bottom {
+  color: #aaa;
+}
+.profileCard .btn_LogOut :hover {
+  color: #3f3f3f;
+}
+.profileCard .btn_LogOut svg {
+  height: 1.3em;
+  width: 1.3em;
+}
+
+/*# sourceMappingURL=ProfileModal.module.css.map */

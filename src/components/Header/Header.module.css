@@ -17,65 +17,12 @@
   color: #b3b3b3;
   transition: color 0.2s linear;
 }
-.header .menu .profileCard {
-  cursor: auto;
-  user-select: none;
-  margin-top: 10px;
-  top: -10px;
-  right: -205px;
-  position: absolute;
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-}
-.header .menu .profileCard_top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.header .menu .profileCard_userInfo :hover {
-  color: #3f3f3f;
-}
-.header .menu .profileCard_userInfo a {
-  color: #727272;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.header .menu .profileCard svg {
-  color: #727272;
-}
-.header .menu .profileCard_name a {
-  color: #727272;
-  display: inline-flex;
-  margin-bottom: 2px;
-}
-.header .menu .profileCard_role {
-  color: #fe3f3f;
-}
-.header .menu .profileCard_logo {
-  width: 35px;
-  border-radius: 50px;
-}
-.header .menu .profileCard_bottom {
-  color: #aaa;
-}
 .header .itemProfile {
   position: relative;
-  margin-right: auto;
 }
 .header .itemLogIn {
   position: relative;
   margin-left: auto;
-}
-.header .btn_LogOut :hover {
-  color: #3f3f3f;
-}
-.header .btn_LogOut svg {
-  height: 1.3em;
-  width: 1.3em;
 }
 .header li > svg:hover {
   color: #b3b3b3;
@@ -83,8 +30,8 @@
   cursor: pointer;
 }
 .header svg {
-  height: 1.7em;
-  width: 1.7em;
+  height: 2em;
+  width: 1.5em;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

@@ -1,0 +1,61 @@
+@import "../../../vars";
+.profileCard{
+  cursor: auto;
+  user-select: none;
+  margin-top: 10px;
+  top: -10px;
+  right: 30px;
+  position: absolute;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  span{
+    color: $userNameColor;
+  }
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .userInfo{
+    :hover{
+      color: darken($userNameColor, 20%);
+    }
+    a{
+      color: $userNameColor;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  svg{
+    color: $userNameColor;
+  }
+  .name a{
+    color: $userNameColor;
+    display: inline-flex;
+    margin-bottom: 2px;
+  }
+  .role{
+    color: $adminColor;
+  }
+  .logo{
+    width: 35px;
+    border-radius: 50px;
+  }
+
+  .bottom{
+    color: $whiteThemeText;
+  }
+  .btn_LogOut{
+    :hover{
+      color: darken($userNameColor, 20%);
+    }
+    svg{
+      height: 1.3em;
+      width: 1.3em;
+    }
+  }
+}

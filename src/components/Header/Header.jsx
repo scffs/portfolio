@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Header.module.scss'
 import {AiOutlineLogin} from "react-icons/ai"
-import ProfileModal from "./ProfileModal"
+import ProfileModal from "./Modal/ProfileModal"
 import menu from "./MenuItem"
 import {Link} from "react-router-dom";
 
@@ -10,9 +10,6 @@ const Header = () => (
         <div className="container">
             <nav>
                 <ul className={s.menu}>
-                    <li className={s.itemProfile}>
-                        <ProfileModal name="Scoffs" role="Администратор" />
-                    </li>
                     {
                         menu.map(item => (
                             <li key={item.id}>
@@ -24,6 +21,9 @@ const Header = () => (
                         <Link to="/register">
                             <AiOutlineLogin />
                         </Link>
+                    </li>
+                    <li className={s.itemProfile}>
+                        <ProfileModal name="Scoffs" role="Администратор" />
                     </li>
                 </ul>
             </nav>
