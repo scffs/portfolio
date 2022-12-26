@@ -3,7 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Help from "./pages/help/Help";
 import Profile from "./pages/profile/Profile";
-import Articles from "./pages/articles/Articles";
+import Articles from "./components/Articles/Articles";
 import Register from "./pages/auth/register/Register";
 function App() {
   return (
