@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+
 import s from './Article.module.scss'
 
 const Article = ({id, preview, title, description}) => {

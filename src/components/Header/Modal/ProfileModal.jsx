@@ -1,9 +1,12 @@
 import React from 'react'
 import {AiOutlineLogout} from "react-icons/ai"
-import logo from "../../../assets/ava.png"
 import {CgProfile} from "react-icons/cg"
-import styles from './ProfileModal.module.scss'
+
 import {Link} from "react-router-dom";
+
+import logo from "../../../assets/ava.png"
+import styles from './ProfileModal.module.scss'
+
 const ProfileModal = ({name, role}) => {
     const[isShow, setIsShow] = React.useState(false);
     return (

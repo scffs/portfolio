@@ -1,8 +1,10 @@
 import React from 'react';
-import s from '../UserMenu/UserMenu.module.scss';
+
 import {Link} from 'react-router-dom';
 import {AiOutlineLogin} from 'react-icons/ai';
+
 import ProfileModal from '../Modal/ProfileModal';
+import s from '../UserMenu/UserMenu.module.scss';
 
 const UserMenu = () => {
     return (
