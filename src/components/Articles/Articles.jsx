@@ -13,7 +13,6 @@ const Articles = () => {
                 setArticles(arr)
             })
     }, [])
-
     return (
         <div className={styles.container}>
             {
