@@ -17,6 +17,7 @@
   }
   .img{
     width: 100%;
+    max-height: 320px;
     border-radius: 10px 10px 0 0;
     background-position: center center;
     background-size: cover;
@@ -29,30 +30,32 @@
   .info{
     padding: 10px;
   }
-  .postAuthor{
-    color: $userNameColor;
-    gap: 10px;
+  .top{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: inline-flex;
-    width: 120px;
-    :hover{
-      color: darken($userNameColor, 40%);
-      transition: color .2s linear;
-    }
   }
-  .tag{
+  .tagNote, .tagProgramming, .tagStudy{
     position: relative;
     padding-left: 15px;
-    color: $devColor;
-    &::after{
-      position: absolute;
-      content: '';
-      height: 8px;
-      width: 8px;
-      background: $adminColor;
-      left: 0;
-      top: 9px;
-      border-radius: 50%;
-    }
+    color: $userColor;
+  }
+  .tagNote::after, .tagProgramming::after, .tagStudy::after{
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    left: 0;
+    top: 7px;
+    border-radius: 50%;
+  }
+  .tagStudy::after{
+    background: $RED;
+  }
+  .tagProgramming::after{
+    background: $BLUE;
+  }
+  .tagNote::after{
+    background: $primaryHover;
   }
 }

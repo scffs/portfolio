@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import Article from '../../pages/Article/Article';
+import Article from '../../components/Article/Article';
 import styles from './Articles.module.scss'
 
 const Articles = () => {

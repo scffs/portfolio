@@ -1,0 +1,14 @@
+@import "../../vars";
+.author{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.authorLogo{
+  width: 40px;
+  border-radius: 50%;
+}
+.authorName{
+  color: $userColor;
+}
+
