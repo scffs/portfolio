@@ -1,4 +1,4 @@
-@import '../../vars';
+@import '../../styles/vars';
 .article{
   &:hover{
     transform: translateY(-10px);
@@ -17,10 +17,7 @@
   }
   .img{
     width: 100%;
-    max-height: 320px;
     border-radius: 10px 10px 0 0;
-    background-position: center center;
-    background-size: cover;
     margin-bottom: 10px;
   }
   .description{

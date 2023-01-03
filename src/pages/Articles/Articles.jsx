@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 
 import Article from '../../components/Article/Article';
-import styles from './Articles.module.scss'
+import s from './Articles.module.scss'
+import '../../styles/container.scss'
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
@@ -14,12 +15,23 @@ const Articles = () => {
             })
     }, [])
     return (
-        <div className={styles.container}>
-            {
-                articles.map(post =>(
-                    <Article key={post.id} {...post} />
-                ))
-            }
+        <div className='container'>
+            <div className={s.sort}>
+                <h3>Сортировка</h3>
+                <select name="categories" id="categories" style={{marginBottom: '25px', padding: '5px'}}>
+                    <option value="0">Не выбрано</option>
+                    <option value="1">Заметки</option>
+                    <option value="2">Учёба</option>
+                    <option value="3">Программирование</option>
+                </select>
+            </div>
+            <div className={s.articleList}>
+                {
+                    articles.map(post =>(
+                        <Article key={post.id} {...post} />
+                    ))
+                }
+            </div>
         </div>
     );
 };
