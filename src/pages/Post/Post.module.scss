@@ -19,10 +19,24 @@
 .info{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: $userColor;
   margin-bottom: 50px;
 }
 .text{
   color: $userColor;
   font-size: 1.3rem;
+}
+@media (max-width: 1000px) {
+  .post{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 568px) {
+  .info{
+    display: unset;
+  }
+  .authorWrapper{
+    margin: 10px 0;
+  }
 }

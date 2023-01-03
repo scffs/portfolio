@@ -18,11 +18,13 @@ const Post = () => {
     return (
         <div className={s.wrapper}>
             <div className={s.post}>
-                <img className={s.img} src={article.preview} alt=""/>
+                <img className={s.img} src={article.preview} alt="preview"/>
                 <div>
                    <div className={s.info}>
-                       <h2>{article.title}</h2>
-                       <Author author={article.author} authorLogo={article.authorLogo} height={35} />
+                       <h2 className={s.title}>{article.title}</h2>
+                       <div className={s.authorWrapper}>
+                           <Author author={article.author} authorLogo={article.authorLogo} height={35} />
+                       </div>
                    </div>
                     <div className={s.text}>
                         <p>{article.text}</p>

@@ -4,8 +4,17 @@ import Article from '../../components/Article/Article';
 import s from './Articles.module.scss'
 import '../../styles/container.scss'
 
+import MySelect from "../../components/UI/MySelect";
+
 const Articles = () => {
     const [articles, setArticles] = useState([]);
+    const [selectedSort, setSelectedSort] = useState('');
+
+    const sortPosts = (sort) => {
+        console.log(sort)
+        setSelectedSort(sort)
+        setArticles([...articles].sort((a,b) => a[sort].localeCompare(b[sort])))
+    }
 
     useEffect(() => {
         fetch('https://63a7f65f7989ad3286f7dd81.mockapi.io/articles')
@@ -18,12 +27,19 @@ const Articles = () => {
         <div className='container'>
             <div className={s.sort}>
                 <h3>Сортировка</h3>
-                <select name="categories" id="categories" style={{marginBottom: '25px', padding: '5px'}}>
-                    <option value="0">Не выбрано</option>
-                    <option value="1">Заметки</option>
-                    <option value="2">Учёба</option>
-                    <option value="3">Программирование</option>
-                </select>
+                <MySelect
+                    tag={selectedSort}
+                    onChange={sortPosts}
+                    defaultOption='Не задано'
+                    options={
+                        [
+                            {tag:'study', name: 'Учёба'},
+                            {tag:'programming', name: 'Программирование'},
+                            {tag:'note', name: 'Заметки'},
+
+                        ]
+                    }
+                />
             </div>
             <div className={s.articleList}>
                 {
