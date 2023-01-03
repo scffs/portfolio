@@ -2,7 +2,7 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 
 import s from './Article.module.scss'
-import Author from "../Author/Author";
+import Author from '../Author/Author';
 
 const Article = ({id, preview, title, description, tag, authorLogo, author}) => {
     const router = useNavigate()

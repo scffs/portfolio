@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 
+import {useParams} from 'react-router-dom';
+
 import s from './Post.module.scss'
-import {useParams} from "react-router-dom";
-import Author from "../../components/Author/Author";
+import Author from '../../components/Author/Author';
 const Post = () => {
     const params = useParams()
     const [article, setArticle] = useState([]);
