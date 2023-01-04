@@ -20,11 +20,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $userColor;
+  color: $secondaryColor;
   margin-bottom: 50px;
 }
 .text{
-  color: $userColor;
+  color: $secondaryColor;
   font-size: 1.3rem;
 }
 @media (max-width: 1000px) {

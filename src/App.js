@@ -18,7 +18,7 @@ function App() {
            <Route path='/help' element={ <Help />} />
            <Route path='/profile' element={ <Profile />} />
            <Route path='/register' element={ <Register />} />
-           <Route exact path='/news/:id' element={ <Post />} />
+           <Route path='/news/:id' element={ <Post />} />
            <Route path='*' element={<h1>ERROR</h1>} />
        </Routes>
    </>

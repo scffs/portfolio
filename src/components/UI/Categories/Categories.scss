@@ -1,0 +1,28 @@
+@import '../../../styles/vars';
+
+.categories{
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  .item{
+    user-select: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: $secondaryColor;
+    background: $primaryColor;
+    &:hover{
+      color: $secondaryColorHover;
+      transform: scale(1.1);
+      transition: transform .15s linear;
+    }
+  }
+  .active{
+    background: $bg-white;
+    color: $primaryColor;
+    &:hover{
+      color: $primaryColor;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import s from './Article.module.scss'
 
 import Author from '../Author/Author';
 
-const Article = ({id, preview, title, description, tag, authorLogo, author}) => {
+const Article = ({id, preview, title, description, tag, tagId, authorLogo, author}) => {
     const router = useNavigate()
     return (
         <>
@@ -14,7 +14,9 @@ const Article = ({id, preview, title, description, tag, authorLogo, author}) => 
                 <div className={s.info}>
                     <div className={s.top}>
                             <span className={
-                                `${tag === 'Учёба' ? s.tagStudy : tag === 'Заметки' ? s.tagNote : s.tagProgramming}`
+                                `${tagId === 1 ? 
+                                    s.tagStudy : tagId === 3 ? 
+                                    s.tagNote : s.tagProgramming}`
                             }>
                                 {tag}
                             </span>

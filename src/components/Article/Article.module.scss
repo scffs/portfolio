@@ -11,8 +11,9 @@
   background: white;
   padding-bottom: 15px;
   border-radius: 10px;
+  cursor: pointer;
   .h3{
-    color: $userColor;
+    color: $secondaryColor;
     padding: 10px 0;
   }
   .img{
@@ -35,7 +36,7 @@
   .tagNote, .tagProgramming, .tagStudy{
     position: relative;
     padding-left: 15px;
-    color: $userColor;
+    color: $secondaryColor;
   }
   .tagNote::after, .tagProgramming::after, .tagStudy::after{
     position: absolute;
