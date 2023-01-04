@@ -1,46 +1,25 @@
 import React, {useEffect, useState} from 'react';
 
 import Article from '../../components/Article/Article';
+import Categories from "../../components/UI/Categories/Categories";
+
 import s from './Articles.module.scss'
 import '../../styles/container.scss'
 
-import MySelect from "../../components/UI/MySelect";
-
 const Articles = () => {
     const [articles, setArticles] = useState([]);
-    const [selectedSort, setSelectedSort] = useState('');
-
-    const sortPosts = (sort) => {
-        console.log(sort)
-        setSelectedSort(sort)
-        setArticles([...articles].sort((a,b) => a[sort].localeCompare(b[sort])))
-    }
+    const [categoryId, setCategoryId] = useState(0);
 
     useEffect(() => {
-        fetch('https://63a7f65f7989ad3286f7dd81.mockapi.io/articles')
+        fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tagId=${categoryId ? categoryId : ''}`)
             .then((res) => res.json())
             .then((arr) => {
                 setArticles(arr)
             })
-    }, [])
+    }, [categoryId])
     return (
         <div className='container'>
-            <div className={s.sort}>
-                <h3>Сортировка</h3>
-                <MySelect
-                    tag={selectedSort}
-                    onChange={sortPosts}
-                    defaultOption='Не задано'
-                    options={
-                        [
-                            {tag:'study', name: 'Учёба'},
-                            {tag:'programming', name: 'Программирование'},
-                            {tag:'note', name: 'Заметки'},
-
-                        ]
-                    }
-                />
-            </div>
+            <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)} />
             <div className={s.articleList}>
                 {
                     articles.map(post =>(
