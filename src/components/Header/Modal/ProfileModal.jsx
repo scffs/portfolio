@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import {AiOutlineLogout} from 'react-icons/ai'
 import {CgProfile} from 'react-icons/cg'
@@ -9,7 +9,8 @@ import logo from '../../../assets/img/ava.png'
 import styles from './ProfileModal.module.scss'
 
 const ProfileModal = ({name, role}) => {
-    const[isShow, setIsShow] = React.useState(false);
+    const[isShow, setIsShow] = useState(false);
+
     return (
         <>
             <CgProfile onClick={() => setIsShow(!isShow)} />
