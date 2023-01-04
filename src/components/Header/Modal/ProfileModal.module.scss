@@ -21,9 +21,6 @@
     margin-bottom: 10px;
   }
   .userInfo{
-    :hover{
-      color: darken($userNameColor, 20%);
-    }
     a{
       color: $userNameColor;
       display: flex;
@@ -34,10 +31,15 @@
   svg{
     color: $userNameColor;
   }
-  .name a{
-    color: $userNameColor;
-    display: inline-flex;
-    margin-bottom: 2px;
+  .name{
+    &:hover span{
+      color: darken($userNameColor, 20%);
+    }
+    a{
+      color: $userNameColor;
+      display: inline-flex;
+      margin-bottom: 2px;
+    }
   }
   .role{
     color: $RED;
@@ -46,7 +48,6 @@
     width: 35px;
     border-radius: 50px;
   }
-
   .bottom{
     color: $whiteThemeText;
   }
