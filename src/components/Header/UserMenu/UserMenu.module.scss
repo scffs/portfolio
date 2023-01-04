@@ -3,6 +3,16 @@
   display: flex;
   gap: 30px;
   align-items: center;
+  li > svg:hover{
+    color: $primaryHover;
+    transition: color .2s linear;
+    cursor: pointer;
+  }
+  svg, a > svg{
+    height: 1.7em;
+    width: 1.7em;
+    color: $primaryColor;
+  }
 }
 
 .itemProfile{
@@ -12,14 +22,4 @@
     width: 2em;
   }
 
-}
-li > svg:hover{
-  color: $primaryHover;
-  transition: color .2s linear;
-  cursor: pointer;
-}
-svg, a > svg{
-  height: 1.7em;
-  width: 1.7em;
-  color: $primaryColor;
 }
