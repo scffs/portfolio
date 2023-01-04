@@ -12,7 +12,7 @@ const ArticlesSkeleton = (props) => (
         {...props}
     >
         <rect x="0" y="0" rx="45" ry="45" width="765" height="400" />
-        <circle cx="11" cy="444" r="11" />
+        <circle cx="11" cy="444" r="5" />
         <rect x="34" y="437" rx="12" ry="12" width="199" height="17" />
         <rect x="0" y="499" rx="7" ry="7" width="552" height="29" />
         <rect x="0" y="547" rx="10" ry="10" width="132" height="22" />
@@ -21,5 +21,3 @@ const ArticlesSkeleton = (props) => (
 )
 
 export default ArticlesSkeleton
-
-

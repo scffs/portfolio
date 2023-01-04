@@ -26,9 +26,8 @@ const Articles = () => {
             <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)} />
             <div className={s.articleList}>
                 {
-                    isLoading ? [new Array(4).map( (_, idx) => <ArticlesSkeleton key={idx} />)]
-                        : articles.map(post =>(<Article key={post.id} {...post} />
-                        ))
+                    isLoading ? [new Array(6)].map( (_, idx) => <ArticlesSkeleton key={idx} />)
+                        : articles.map(post =>(<Article key={post.id} {...post} /> ))
                 }
             </div>
         </div>
