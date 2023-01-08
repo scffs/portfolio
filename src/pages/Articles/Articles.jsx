@@ -2,10 +2,9 @@ import React, {useEffect, useState} from 'react';
 
 import Article from '../../components/Article/Article'
 import Categories from '../../components/UI/Categories/Categories'
+import ArticlesSkeleton from "./ArticlesSkeleton"
 
 import s from './Articles.module.scss'
-import '../../styles/container.scss'
-import ArticlesSkeleton from "./ArticlesSkeleton"
 
 const Articles = () => {
     const [articles, setArticles] = useState([])
@@ -22,7 +21,7 @@ const Articles = () => {
             })
     }, [categoryId])
     return (
-        <div className='container'>
+        <>
             <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)} />
             <div className={s.articleList}>
                 {
@@ -30,7 +29,7 @@ const Articles = () => {
                         : articles.map(post =>(<Article key={post.id} {...post} /> ))
                 }
             </div>
-        </div>
+        </>
     );
 };
 
