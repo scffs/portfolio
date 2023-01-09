@@ -1,0 +1,16 @@
+@import '../../../styles/vars';
+
+.input {
+  width: 70%;
+  max-width: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  &:focus{
+    transform: scale(1.1);
+    margin-right: 10px;
+    max-width: 250px;
+    transition: all .1s linear;
+    border: 2px solid  scale-color($secondaryColor, $lightness: +25%);
+  }
+}

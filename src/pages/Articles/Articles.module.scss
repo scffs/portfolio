@@ -1,3 +1,9 @@
+.articleTop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .articleList{
   display: grid;
   gap: 50px;
@@ -6,5 +12,10 @@
 @media (max-width: 700px) {
   .articleList {
     grid-template-columns: 1fr;
+  }
+  .articleTop{
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
   }
 }

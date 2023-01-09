@@ -2,7 +2,6 @@
 
 .categories{
   display: flex;
-  margin-bottom: 20px;
   gap: 20px;
   .item{
     user-select: none;
@@ -26,7 +25,7 @@
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .categories{
     flex-wrap: wrap;
     gap: 10px;
