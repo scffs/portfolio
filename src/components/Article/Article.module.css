@@ -47,7 +47,7 @@
 }
 .article .tag::after {
   position: absolute;
-  content: "";
+  content: '';
   height: 8px;
   width: 8px;
   background: #ec0000;
