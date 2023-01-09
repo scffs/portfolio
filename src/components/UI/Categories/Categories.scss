@@ -26,3 +26,16 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .categories{
+    flex-wrap: wrap;
+    gap: 10px;
+    .item{
+      font-size: 0.8rem;
+      padding: 10px 13px;
+      &:nth-child(2){
+        order: 2;
+      }
+    }
+  }
+}
