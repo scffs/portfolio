@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import Article from '../../components/Article/Article'
 import Categories from '../../components/UI/Categories/Categories'
-import ArticlesSkeleton from "./ArticlesSkeleton"
+import ArticlesSkeleton from './ArticlesSkeleton'
 
 import s from './Articles.module.scss'
 
