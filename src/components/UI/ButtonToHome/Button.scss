@@ -1,0 +1,18 @@
+.home-btn{
+  display: inline-block;
+  margin: 0 auto;
+  color: #727272;
+  border: 1px solid #191b21;
+  width: 15%;
+  font-size: .9rem;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #191b21;
+  &:hover{
+    transition: all .2s linear;
+    background-color: rgba(25, 27, 33, 0);
+    border: 1px solid #191b21;
+    color: #191b21;
+  }
+}
