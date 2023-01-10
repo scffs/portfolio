@@ -5,7 +5,6 @@ const ArticlesSkeleton = (props) => (
     <ContentLoader
         speed={2}
         width={props.width}
-        height={props.height}
         viewBox="0 0 770 575"
         backgroundColor="#ffffff"
         foregroundColor="#ecebeb"

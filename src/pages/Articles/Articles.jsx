@@ -17,6 +17,8 @@ const Articles = () => {
         return post.title.toLowerCase().includes(search.toLowerCase())
     }).map(post =>(<Article key={post.id} {...post} />))
 
+    const width = window.innerWidth > 600 ? 600 : 330;
+
 
     useEffect(() => {
         setIsLoading(true)
@@ -35,10 +37,9 @@ const Articles = () => {
             </div>
             <div className={s.articleList}>
                 { isLoading ? <ArticlesSkeleton
-                                width={window.innerWidth - 20}
-                                height={window.innerHeight - 300}
+                                width={width}
                               />
-                    : articlesList }
+                    :  articlesList }
             </div>
         </>
     );
