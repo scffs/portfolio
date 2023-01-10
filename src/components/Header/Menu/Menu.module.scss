@@ -1,17 +1,12 @@
 @import '../../../styles/vars';
-button{
+.burger{
   position: relative;
   z-index: 4;
   display: none;
 }
-button > svg{
+.burger > svg{
   width: 2.5em;
   height: 2.5em;
-}
-a{
-  color: $primaryColor;
-  font-weight: 600;
-  font-size: 1.2em;
 }
 .menu{
   display: flex;
@@ -43,7 +38,7 @@ a{
   .menu{
     display: none;
   }
-  button{
+  .burger{
     display: block;
     color: $primaryColor;
   }
