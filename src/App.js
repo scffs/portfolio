@@ -6,6 +6,7 @@ import Profile from './pages/Profile/Profile';
 import Articles from './pages/Articles/Articles';
 import Register from './pages/Auth/register/Register';
 import Post from './pages/Post/Post';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path='/profile' element={ <Profile />} />
           <Route path='/register' element={ <Register />} />
           <Route path='/news/:id' element={ <Post />} />
-          <Route path='*' element={<h1>ERROR</h1>} />
+          <Route path='*' element={<NotFound />} />
       </Routes>
   );
 }
