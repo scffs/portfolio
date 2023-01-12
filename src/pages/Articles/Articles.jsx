@@ -35,7 +35,7 @@ const Articles = () => {
                 <Search search={search} setSearch={setSearch} />
             </div>
             <div className={s.articleList}>
-                { isLoading ? <ArticlesSkeleton width={width}/> :  articlesList }
+                { isLoading ? <ArticlesSkeleton width={width} /> :  articlesList }
             </div>
         </>
     );

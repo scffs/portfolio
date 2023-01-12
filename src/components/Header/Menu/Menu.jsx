@@ -5,7 +5,7 @@ import menu from '../MenuItem'
 import s from './Menu.module.scss'
 
 import {AiOutlineMenu} from 'react-icons/ai'
-import {RxCross2} from "react-icons/rx"
+import {RxCross2} from 'react-icons/rx'
 
 const Menu = () => {
     const [isBurger, setIsBurger] = useState(false);
