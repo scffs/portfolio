@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import s from './Author.module.scss';
-import Logo from '../../utils/logo.png';
+import s from './Author.module.scss'
+import Logo from '../../utils/logo.png'
 
 const Author = ({authorLogo, author, height}) => {
     return (

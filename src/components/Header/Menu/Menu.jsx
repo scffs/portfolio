@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 
-import menu from '../MenuItem';
+import menu from '../MenuItem'
 import s from './Menu.module.scss'
 
-import {AiOutlineMenu} from 'react-icons/ai';
-import {RxCross2} from "react-icons/rx";
+import {AiOutlineMenu} from 'react-icons/ai'
+import {RxCross2} from "react-icons/rx"
 
 const Menu = () => {
     const [isBurger, setIsBurger] = useState(false);

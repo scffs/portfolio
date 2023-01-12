@@ -1,7 +1,8 @@
 import React from 'react'
 
 import s from './NotFound.module.scss'
-import ButtonToHome from "../../components/UI/ButtonToHome/ButtonToHome";
+
+import ButtonToHome from '../../components/UI/ButtonToHome/ButtonToHome'
 
 const NotFound = () => {
     return (
