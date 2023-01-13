@@ -10,12 +10,12 @@ const UserMenu = () => {
     return (
         <ul className={s.ul}>
             <li>
-                <Link to="/register">
+                <Link to='/register'>
                     <AiOutlineLogin />
                 </Link>
             </li>
             <li className={s.itemProfile}>
-                <ProfileModal name="Scoffs" role="Администратор" />
+                <ProfileModal name='Scoffs' role='Администратор' />
             </li>
         </ul>
     );

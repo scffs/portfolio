@@ -15,15 +15,20 @@ const ProfileModal = ({name, role}) => {
     return (
         <>
             <CgProfile onClick={() => setIsShow(!isShow)} />
-            {isShow ? <div className={styles.profileCard}>
+            {isShow ?
+                <div className={styles.profileCard}>
                     <div className={styles.top}>
                         <div className={styles.userInfo}>
-                            <Link to="/profile" className={styles.name} onClick={() => setIsShow(!isShow)}>
-                                <img className={styles.logo} src={logo} alt="logo"/>
+                            <Link
+                                to='/profile'
+                                className={styles.name}
+                                onClick={() => setIsShow(!isShow)}
+                            >
+                                <img className={styles.logo} src={logo} alt='logo'/>
                                 <span>{name}</span>
                             </Link>
                         </div>
-                        <button className={styles.btn_LogOut} type="button">
+                        <button className={styles.btn_LogOut} type='button'>
                             <AiOutlineLogout />
                         </button>
                     </div>
@@ -31,7 +36,8 @@ const ProfileModal = ({name, role}) => {
                         <p>Статус: <span className={styles.role}>{role}</span></p>
                     </div>
                 </div>
-                : ''}
+                : ''
+            }
         </>
     );
 };

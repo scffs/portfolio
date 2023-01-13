@@ -13,8 +13,7 @@ const Article = ({id, preview, title, description, tag, tagId, authorLogo, autho
                 <img className={s.img} src={preview} alt='img'/>
                 <div className={s.info}>
                     <div className={s.top}>
-                            <span className={
-                                `${tagId === 1 ? 
+                            <span className={`${tagId === 1 ? 
                                     s.tagStudy : tagId === 3 ? 
                                     s.tagNote : s.tagProgramming}`
                             }>

@@ -6,7 +6,7 @@ import s from './Post.module.scss'
 
 import Author from '../../components/Author/Author'
 
-const Post = (i) => {
+const Post = () => {
     const params = useParams()
     const [article, setArticle] = useState([]);
     useEffect(() => {
@@ -24,7 +24,7 @@ const Post = (i) => {
                    <div className={s.info}>
                        <h2>{article.title}</h2>
                        <div className={s.authorWrapper}>
-                           <Author author={article.author} authorLogo={article.authorLogo} height={35} />
+                           <Author author={article.author} authorLogo={article.authorLogo} />
                        </div>
                    </div>
                     <div className={s.text}>

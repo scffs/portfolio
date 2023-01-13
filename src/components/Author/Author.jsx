@@ -5,9 +5,13 @@ import Logo from '../../utils/logo.png'
 
 const Author = ({authorLogo, author, height}) => {
     return (
-        <div className={s.author} style={{height}}>
-            <span className={s.authorName}>{author}</span>
-            <img className={s.authorLogo} src={authorLogo ? authorLogo : Logo } alt='img' />
+        <div className={s.author}>
+            <span className={s.authorName}>{author ? author : 'Аноним'}</span>
+            <img
+                className={s.authorLogo}
+                src={authorLogo ? authorLogo : Logo}
+                alt='img'
+            />
         </div>
     );
 };

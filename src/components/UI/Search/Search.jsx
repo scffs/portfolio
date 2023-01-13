@@ -6,7 +6,7 @@ const Search = ({ search, setSearch}) => {
     return (
         <input
             className={s.input}
-            type="text"
+            type='text'
             value={search}
             onChange={(event) => setSearch(event.target.value)}
         />

@@ -20,7 +20,12 @@ const Menu = () => {
                     {
                         menu.map(item => (
                             <li key={item.id}>
-                                <Link to={item.src} onClick={() => isBurger ?  setIsBurger(!isBurger) : ''}>{item.title}</Link>
+                                <Link
+                                    to={item.src}
+                                    onClick={() => isBurger ?  setIsBurger(!isBurger) : ''}
+                                >
+                                    {item.title}
+                                </Link>
                             </li>
                         ))
                     }
