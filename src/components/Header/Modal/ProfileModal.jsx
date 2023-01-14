@@ -10,7 +10,7 @@ import logo from '../../../assets/img/ava.png'
 import styles from './ProfileModal.module.scss'
 
 const ProfileModal = ({name, role}) => {
-    const[isShow, setIsShow] = useState(false);
+    const[isShow, setIsShow] = useState(false)
 
     return (
         <>

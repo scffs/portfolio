@@ -27,6 +27,7 @@
   color: $secondaryColor;
   font-size: 1.3rem;
 }
+.authorWrapper{}
 @media (max-width: 1000px) {
   .post{
     grid-template-columns: 1fr;

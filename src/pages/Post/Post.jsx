@@ -8,7 +8,7 @@ import Author from '../../components/Author/Author'
 
 const Post = () => {
     const params = useParams()
-    const [article, setArticle] = useState([]);
+    const [article, setArticle] = useState([])
     useEffect(() => {
         fetch('https://63a7f65f7989ad3286f7dd81.mockapi.io/articles/' + params.id)
             .then((res) => res.json())

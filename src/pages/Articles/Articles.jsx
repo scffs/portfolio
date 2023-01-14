@@ -17,7 +17,9 @@ const Articles = () => {
         return post.title.toLowerCase().includes(search.toLowerCase())
     }).map(post =>(<Article key={post.id} {...post} />))
 
-    const width = window.innerWidth > 600 ? 600 : 330;
+    const width = window.innerWidth > 600 ? 600 : 330
+    const isArticlesExist = articlesList.length
+
 
     useEffect(() => {
         setIsLoading(true)
@@ -28,6 +30,7 @@ const Articles = () => {
                 setIsLoading(false)
             })
     }, [categoryId])
+
     return (
         <>
             <div className={s.articleTop}>
@@ -35,7 +38,14 @@ const Articles = () => {
                 <Search search={search} setSearch={setSearch} />
             </div>
             <div className={s.articleList}>
-                { isLoading ? <ArticlesSkeleton width={width} /> :  articlesList }
+                { isLoading ? <ArticlesSkeleton width={width} />
+                    : isArticlesExist ? articlesList
+                        : <p className={s.notFound}>
+                            Подходящих статей не найдено
+                        </p>
+
+
+                }
             </div>
         </>
     );

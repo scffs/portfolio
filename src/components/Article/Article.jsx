@@ -10,7 +10,7 @@ const Article = ({id, preview, title, description, tag, tagId, authorLogo, autho
     return (
         <>
             <article className={s.article} onClick={ () => router(`${id}`)}>
-                <img className={s.img} src={preview} alt='img'/>
+                <img className={s.img} src={preview} alt="img"/>
                 <div className={s.info}>
                     <div className={s.top}>
                             <span className={`${tagId === 1 ? 

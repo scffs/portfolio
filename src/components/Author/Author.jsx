@@ -10,7 +10,7 @@ const Author = ({authorLogo, authorName}) => {
             <img
                 className={s.authorLogo}
                 src={(authorLogo || null) ?? LogoPreview}
-                alt='img'
+                alt="author logo"
             />
         </div>
     );
