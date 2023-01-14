@@ -1,5 +1,4 @@
 @import 'vars';
-
 *, *::after, *::before{
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ a{
   color: $primaryColor;
   font-weight: 600;
   font-size: 1.2em;
-
 }
 button{
   border: none;
