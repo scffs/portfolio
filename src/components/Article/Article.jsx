@@ -19,7 +19,7 @@ const Article = ({id, preview, title, description, tag, tagId, authorLogo, autho
                             }>
                                 {tag}
                             </span>
-                        <Author author={author} authorLogo={authorLogo} />
+                        <Author authorName={author} authorLogo={authorLogo} />
                     </div>
                     <h3 className={s.h3}>{title}</h3>
                     <p className={s.description}>{description}</p>
