@@ -1,0 +1,31 @@
+.footer{
+  margin-top: 30px;
+  padding: 10px;
+  .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  img{
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    filter: grayscale(1);
+    &:hover{
+      transition: filter .3s linear;
+      filter: unset;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .footer{
+    .socials{
+      gap: 15px;
+    }
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

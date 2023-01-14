@@ -1,18 +1,22 @@
 import React from 'react'
 
-import devTo from '../../assets/img/footer/dev-rainbow.svg'
+import s from './Footer.module.scss'
 
+import logos from './socialLogos'
 const Footer = () => {
     return (
-        <footer>
-            <div className="socials">
-                <img src={devTo} alt="dev.to"/>
-                <img src="" alt=""/>
-                <img src="" alt=""/>
-                <img src="" alt=""/>
-                <img src="" alt=""/>
-                <img src="" alt=""/>
-            </div>
+        <footer className={s.footer}>
+            <ul className={s.socials}>
+                {
+                    logos.map((logo, id) =>(
+                        <li key={id}>
+                            <a href={logo.url} target="_blank" rel="noreferrer">
+                                <img src={logo.path} alt={logo.path} />
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
         </footer>
     );
 };
