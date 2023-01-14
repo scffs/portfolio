@@ -29,4 +29,4 @@ const Article = ({id, preview, title, description, tag, tagId, authorLogo, autho
     );
 };
 
-export default Article;
+export default Article

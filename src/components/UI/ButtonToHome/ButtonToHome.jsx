@@ -16,4 +16,4 @@ const ButtonToHome = ({text}) => {
     );
 };
 
-export default ButtonToHome;
+export default ButtonToHome

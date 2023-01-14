@@ -42,4 +42,4 @@ const ProfileModal = ({name, role}) => {
     );
 };
 
-export default ProfileModal;
+export default ProfileModal

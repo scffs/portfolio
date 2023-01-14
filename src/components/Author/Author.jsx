@@ -16,4 +16,4 @@ const Author = ({authorLogo, authorName}) => {
     );
 };
 
-export default Author;
+export default Author

@@ -22,4 +22,4 @@ const Categories = ({value, onClickCategory}) => {
     );
 };
 
-export default Categories;
+export default Categories
