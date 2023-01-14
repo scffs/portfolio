@@ -6,10 +6,10 @@ import LogoPreview from '../../utils/logo.png'
 const Author = ({authorLogo, authorName}) => {
     return (
         <div className={s.author}>
-            <span className={s.authorName}>{authorName || null ?? 'Аноним'}</span>
+            <span className={s.authorName}>{(authorName || null) ?? 'Аноним'}</span>
             <img
                 className={s.authorLogo}
-                src={authorLogo || null ?? LogoPreview}
+                src={(authorLogo || null) ?? LogoPreview}
                 alt='img'
             />
         </div>
