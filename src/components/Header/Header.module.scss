@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
   }
-  a:hover, li:hover svg{
+  li:hover svg{
     color: $primaryHover;
     transition: color .2s linear;
   }

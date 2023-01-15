@@ -20,6 +20,10 @@ a{
   color: $primaryColor;
   font-weight: 600;
   font-size: 1.2em;
+  &:hover{
+    transition: color .2s linear;
+    color: $primaryHover;
+  }
 }
 button{
   border: none;

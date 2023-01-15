@@ -38,7 +38,6 @@
 }
 .article .postAuthor :hover {
   color: #0c0c0c;
-  transition: color 0.2s linear;
 }
 .article .tag {
   position: relative;
