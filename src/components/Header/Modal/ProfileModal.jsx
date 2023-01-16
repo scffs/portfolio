@@ -5,7 +5,7 @@ import {CgProfile} from 'react-icons/cg'
 
 import {Link} from 'react-router-dom'
 
-import logo from '../../../assets/img/ava.png'
+import logo from '../../../assets/img/ava.jpg'
 
 import styles from './ProfileModal.module.scss'
 
@@ -28,7 +28,7 @@ const ProfileModal = ({name, role}) => {
                                 <span>{name}</span>
                             </Link>
                         </div>
-                        <button className={styles.btn_LogOut} type='button'>
+                        <button className={styles.btn_logOut} type='button'>
                             <AiOutlineLogout />
                         </button>
                     </div>

@@ -47,11 +47,12 @@
   .logo{
     width: 35px;
     border-radius: 50px;
+    object-fit: cover;
   }
   .bottom{
     color: $whiteThemeText;
   }
-  .btn_LogOut{
+  .btn_logOut{
     :hover{
       color: darken($userNameColor, 20%);
     }
