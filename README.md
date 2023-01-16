@@ -20,6 +20,7 @@ git@github.com:scffs/portfolio.git
 gh repo clone scffs/portfolio
 ```
 Для установки зависимостей сразу пропишите `npm i`
+> При возникновении ошибок удалите `.node_modules` и пропишите `npm i -s`
 
 Основные библиотеки:
 + React
