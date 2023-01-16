@@ -1,7 +1,9 @@
 @import '../../styles/vars';
 .header{
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   padding-top: 20px;
+  position: relative;
+  z-index: 50;
   .nav{
     display: flex;
     justify-content: space-between;

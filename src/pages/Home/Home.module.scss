@@ -1,5 +1,119 @@
+@import '../../styles/keyframes';
 .info{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  .ava{
+    border-radius: 50%;
+    width: 280px;
+    filter: drop-shadow(0 0 20px rgba(114, 114, 114, 0.4));
+    animation: twiddle  5s linear infinite alternate;
+    -webkit-animation: twiddle 5s linear infinite alternate;
+  }
+  .profileImage{
+    position: relative;
+  }
+  .circleInner{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -110px;
+    top: -100px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    -webkit-animation: wheel 10s linear infinite;
+    animation: wheel 10s linear infinite;
+  }
+  .logo{
+    transform-origin: center;
+    position: relative;
+    z-index: -1;
+    width: 33px;
+    height: 33px;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation: planets 10s linear infinite;
+    animation: planets 10s linear infinite;
+    border-radius: 30%;
+    &:first-child{
+      top: 20%;
+      left: 4%;
+    }
+    &:nth-child(2){
+      top: 15%;
+      left: 80%;
+    }
+    &:nth-child(3){
+      top: 65%;
+      right: -80%;
+    }
+    &:nth-child(4){
+      top: 93%;
+      right: -8%;
+    }
+    &:nth-child(5){
+      top: -3%;
+      right: -15%;
+    }
+    &:nth-child(6){
+      top: 70%;
+      right: 31%;
+    }
+    &:nth-child(7){
+      top: 95%;
+      right: -20%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .info{
+    flex-direction: column;
+    justify-content: center;
+    gap: 150px;
+  }
+  .profileImage{
+    margin-top: 40px;
+    order: -1;
+  }
+}
+@media (max-width: 560px) {
+  .info{
+    .circleInner{
+      width: 350px;
+      height: 350px;
+      right: -70px;
+      top: -70px;
+    }
+    .ava{
+      width: 200px;
+    }
+    .logo{
+      &:first-child{
+        top: 20%;
+        left: 2%;
+      }
+      &:nth-child(2){
+        top: 20%;
+        left: 80%;
+      }
+      &:nth-child(3){
+        top: 65%;
+        right: -73%;
+      }
+      &:nth-child(4){
+        top: 93%;
+        right: -3%;
+      }
+      &:nth-child(6){
+        top: 70%;
+        right: 46%;
+      }
+      &:nth-child(7){
+        top: 88%;
+        right: -13%;
+      }
+    }
+  }
 }

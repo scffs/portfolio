@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $bg-white;
+  overflow-x: hidden;
 }
 ul{
   list-style-type: none;
