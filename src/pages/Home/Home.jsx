@@ -16,8 +16,8 @@ const Home = () => {
                 <div>
                     <div className={s.circleInner}>
                         {
-                            icons.map((logo, id) =>(
-                                <img key={id} className={s.logo} src={logo.src} alt={logo.alt}/>
+                            icons.map(({src, alt}, id) =>(
+                                <img key={id} className={s.logo} src={src} alt={alt}/>
                             ))
                         }
                     </div>
