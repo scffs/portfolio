@@ -1,6 +1,5 @@
 import devTo from './logos/dev-rainbow.svg'
 import habr from './logos/habr.png'
-import gh from './logos/gh.png'
 import hashnode from './logos/hash.png'
 import stack from './logos/stack.png'
 import vk from './logos/vk.png'
@@ -15,11 +14,6 @@ const logos = [
         path: `${habr}`,
         alt: 'Habr',
         url: 'https://habr.com/scffs'
-    },
-    {
-        path: `${gh}`,
-        alt: 'GitHub',
-        url: 'https://github.com/scffs'
     },
     {
         path: `${hashnode}`,
