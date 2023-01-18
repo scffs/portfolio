@@ -16,7 +16,7 @@ const Skills = () => {
                 <span className='blue'>TypeScript</span><span>:</span><span className='link'> 'beginner'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
-                <span className='blue'>HTML/CSS</span><span>:</span><span className='link'> 'Intermediate'</span><span>,</span>
+                <span className='blue'>HTML/CSS</span><span>:</span><span className='link'> 'intermediate'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='blue'>MySQL</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
@@ -25,7 +25,7 @@ const Skills = () => {
                 <span className='blue'>QA engineer</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
-                <span className='blue'>Git</span><span>:</span><span className='link'> 'Intermediate'</span><span>,</span>
+                <span className='blue'>Git</span><span>:</span><span className='link'> 'intermediate'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='blue'>Python</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
