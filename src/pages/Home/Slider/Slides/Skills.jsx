@@ -33,7 +33,7 @@ const Skills = () => {
             <pre>&nbsp;&nbsp;
                 <span className='blue'>C#</span><span>:</span><span className='link'> 'junior'</span><span></span>
             </pre>
-            <pre><span>{"}"}</span>&nbsp;&nbsp;<span className='comment'>{'//'} arranged to the priority of learning</span></pre>
+            <pre><span>{"}"}</span>&nbsp;&nbsp;<span className='comment'>{'//'} according by the priority of learning</span></pre>
         </>
     );
 };
