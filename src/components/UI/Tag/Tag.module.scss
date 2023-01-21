@@ -1,0 +1,24 @@
+@import '../../../styles/vars';
+.tagNote, .tagProgramming, .tagStudy{
+  position: relative;
+  padding-left: 15px;
+  color: $secondaryColor;
+}
+.tagNote::after, .tagProgramming::after, .tagStudy::after{
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  left: 0;
+  top: 7px;
+  border-radius: 50%;
+}
+.tagStudy::after{
+  background: $RED;
+}
+.tagProgramming::after{
+  background: $BLUE;
+}
+.tagNote::after{
+  background: $primaryHover;
+}

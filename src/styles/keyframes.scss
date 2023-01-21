@@ -14,7 +14,6 @@
     transform: rotateZ(5deg);
   }
 }
-
 @-webkit-keyframes wheel{
   from{
     transform: rotateZ(0);
@@ -23,7 +22,6 @@
     transform: rotateZ(360deg);
   }
 }
-
 @keyframes wheel{
   from{
     transform: rotateZ(0);
@@ -32,8 +30,6 @@
     transform:rotateZ(360deg);
   }
 }
-
-
 @-webkit-keyframes planets{
   from{
     transform: rotateZ(0deg);

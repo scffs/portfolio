@@ -15,44 +15,20 @@
   }
   .img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
-    margin-bottom: 10px;
-    height: auto;
-    max-height: 400px;
   }
   .description{
     color: $userNameColor;
     font-size: 1.3rem;
   }
   .info{
-    padding: 5px 10px;
+    padding: 10px;
   }
   .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .tagNote, .tagProgramming, .tagStudy{
-    position: relative;
-    padding-left: 15px;
-    color: $secondaryColor;
-  }
-  .tagNote::after, .tagProgramming::after, .tagStudy::after{
-    position: absolute;
-    content: '';
-    height: 8px;
-    width: 8px;
-    left: 0;
-    top: 7px;
-    border-radius: 50%;
-  }
-  .tagStudy::after{
-    background: $RED;
-  }
-  .tagProgramming::after{
-    background: $BLUE;
-  }
-  .tagNote::after{
-    background: $primaryHover;
   }
 }

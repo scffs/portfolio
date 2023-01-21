@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom'
 import s from './Article.module.scss'
 
 import Author from '../Author/Author'
+import Tag from '../UI/Tag/Tag'
 
 const Article = ({id, preview, title, description, tag, tagId, authorLogo, author}) => {
     const router = useNavigate()
@@ -13,12 +14,7 @@ const Article = ({id, preview, title, description, tag, tagId, authorLogo, autho
                 <img className={s.img} src={preview} alt="img"/>
                 <div className={s.info}>
                     <div className={s.top}>
-                            <span className={`${tagId === 1 ? 
-                                    s.tagStudy : tagId === 3 ? 
-                                    s.tagNote : s.tagProgramming}`
-                            }>
-                                {tag}
-                            </span>
+                        <Tag tag={tagId} text={tag} />
                         <Author authorName={author} authorLogo={authorLogo} />
                     </div>
                     <h3 className={s.h3}>{title}</h3>

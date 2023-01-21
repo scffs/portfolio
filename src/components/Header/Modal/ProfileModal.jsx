@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 
-import {AiOutlineLogout} from 'react-icons/ai'
 import {CgProfile} from 'react-icons/cg'
 
 import {Link} from 'react-router-dom'
@@ -8,6 +7,7 @@ import {Link} from 'react-router-dom'
 import logo from '../../../assets/img/ava.jpg'
 
 import styles from './ProfileModal.module.scss'
+import Avatar from "../../Avatar/Avatar";
 
 const ProfileModal = ({name, role}) => {
     const[isShow, setIsShow] = useState(false)
@@ -24,13 +24,10 @@ const ProfileModal = ({name, role}) => {
                                 className={styles.name}
                                 onClick={() => setIsShow(!isShow)}
                             >
-                                <img className={styles.logo} src={logo} alt='logo'/>
+                                <Avatar width='35' height='35' borderRadius='50'  src={logo}/>
                                 <span>{name}</span>
                             </Link>
                         </div>
-                        <button className={styles.btn_logOut} type='button'>
-                            <AiOutlineLogout />
-                        </button>
                     </div>
                     <div className={styles.bottom}>
                         <p>Статус: <span className={styles.role}>{role}</span></p>

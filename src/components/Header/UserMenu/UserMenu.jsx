@@ -15,7 +15,7 @@ const UserMenu = () => {
                 </Link>
             </li>
             <li className={s.itemProfile}>
-                <ProfileModal name='Scoffs' role='Администратор' />
+                <ProfileModal name='Scoffs' role='Разработчик' />
             </li>
         </ul>
     );

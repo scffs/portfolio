@@ -9,7 +9,6 @@ const ButtonToHome = ({text}) => {
         <button
             className='home-btn'
             onClick={() => navigate('/')}
-
         >
             {text}
         </button>

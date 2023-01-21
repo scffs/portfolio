@@ -4,9 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+#root{
+  min-width: 350px;
+}
 body {
-  font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   color: $primaryColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,7 +36,4 @@ button{
 input{
   outline: none;
   border: none;
-}
-#root{
-  min-width: 350px;
 }

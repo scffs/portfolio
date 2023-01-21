@@ -11,7 +11,7 @@ const Layout = ({children}) => {
                 flexDirection: 'column',
                 height: '100vh',
                 margin: '0 auto',
-                maxWidth: '1600px',
+                maxWidth: '1200px',
                 padding: '0 10px'
             }
         }>

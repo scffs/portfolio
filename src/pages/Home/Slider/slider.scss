@@ -1,7 +1,7 @@
 .swiper {
   width: 600px;
   height: 370px;
-  margin-left: 80px;
+  margin-left: 1rem;
   span{
     cursor: default;
   }
@@ -47,7 +47,7 @@ a.link:hover{
 }
 @media (max-width: 1000px) {
   .swiper {
-    margin-left: 40px;
+    margin-left: 6rem;
     width: 430px;
     height: 280px;
     &-slide{
@@ -62,7 +62,7 @@ a.link:hover{
     }
   }
 }
-@media (max-width: 510px) {
+@media (max-width: 560px) {
   .swiper {
     margin-left: 0;
     width: 320px;
