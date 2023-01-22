@@ -37,3 +37,9 @@ input{
   outline: none;
   border: none;
 }
+.lock{
+  overflow: hidden;
+}
+.active{
+  overflow: unset;
+}

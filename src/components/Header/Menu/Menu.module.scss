@@ -1,42 +1,44 @@
 @import '../../../styles/vars';
+@import '../../../styles/keyframes';
 .burger{
   position: relative;
   z-index: 4;
   display: none;
+  > svg{
+    width: 2.5em;
+    height: 2.5em;
+  }
 }
-.burger > svg{
-  width: 2.5em;
-  height: 2.5em;
-}
-.menu{
+.hidden{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
 }
-.active{
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $bg-menuMobile;
-  z-index: 3;
-  top: 0;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 100px;
-  overflow: hidden;
-  li:not(:last-child){
-    margin-bottom: 40px;
-  }
-  a{
-    display: block;
-    padding: 30px;
-  }
+.menu{
+  animation: burgerShow .3s linear;
 }
 @media (max-width: 450px) {
-  .menu{
-    display: none;
+  .menu, .hidden{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    position: fixed;
+    left: 45px;
+    background: $bg-menuMobile;
+    z-index: 3;
+    top: 0;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 30px;
+    a{
+      display: block;
+      padding: 15px;
+    }
+  }
+  .hidden{
+    transform: translateY(-200%);
+    transition: transform .3s linear;
   }
   .burger{
     display: block;
