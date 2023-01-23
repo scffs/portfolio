@@ -12,7 +12,7 @@ const menuList = [
     {
         id: 3,
         title: 'Помощь',
-        src: '/Help'
+        src: '/help'
     }
 ]
 export default menuList
