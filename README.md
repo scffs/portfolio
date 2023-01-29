@@ -9,11 +9,11 @@
 
 #### SSH
 ```
-git clone https://github.com/scffs/portfolio.git
+git@github.com:scffs/portfolio.git
 ```
 #### HTTPS
 ```
-git@github.com:scffs/portfolio.git
+https://github.com/scffs/portfolio.git
 ```
 #### GitHub CLI
 ```
