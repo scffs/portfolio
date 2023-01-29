@@ -2,12 +2,12 @@
 @import '../../../styles/keyframes';
 .hidden{
   transform: translateY(-200%);
-  transition: transform .3s linear;
+  transition: transform .2s linear;
   position: absolute;
   right: 50px;
 }
 .profileCard{
-  animation: burgerShow .3s linear;
+  animation: burgerShow .2s linear;
   cursor: auto;
   user-select: none;
   margin-top: 10px;
