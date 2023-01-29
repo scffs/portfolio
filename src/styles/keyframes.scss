@@ -63,3 +63,23 @@
     transform: translateY(0);
   }
 }
+@keyframes pageShow {
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes pageShow{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

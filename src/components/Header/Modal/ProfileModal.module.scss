@@ -1,5 +1,13 @@
 @import '../../../styles/vars';
+@import '../../../styles/keyframes';
+.hidden{
+  transform: translateY(-200%);
+  transition: transform .3s linear;
+  position: absolute;
+  right: 50px;
+}
 .profileCard{
+  animation: burgerShow .3s linear;
   cursor: auto;
   user-select: none;
   margin-top: 10px;

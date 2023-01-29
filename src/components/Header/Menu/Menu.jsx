@@ -10,6 +10,7 @@ import {RxCross2} from 'react-icons/rx'
 const Menu = () => {
     const [isBurger, setIsBurger] = useState(false)
     const body = document.body
+
     useEffect(() => {
         if(body.classList.contains('lock') || isBurger) body.classList.toggle('lock')
     }, [isBurger]);
@@ -25,6 +26,7 @@ const Menu = () => {
                         menu.map(item => (
                             <li key={item.id}>
                                 <Link
+                                    className='headerLink'
                                     to={item.src}
                                     onClick={() => isBurger ? setIsBurger(!isBurger) : ''}
                                 >

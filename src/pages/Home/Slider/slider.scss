@@ -1,3 +1,4 @@
+@import '../../../styles/vars';
 .swiper {
   width: 600px;
   height: 370px;
@@ -34,11 +35,11 @@
   color: #56b6c2;
 }
 .link{
-  color: #98c379;
+  color: $GREEN;
   font-weight: 400;
 }
 a.link:hover{
-  color: scale-color(#98c379, $lightness: +50%);
+  color: scale-color($GREEN, $lightness: +50%);
 }
 .comment{
   color: #5c6370;
