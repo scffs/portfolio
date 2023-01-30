@@ -29,7 +29,7 @@ const ProfileModal = ({name, role}) => {
                         <Link
                             to='/profile'
                             className={s.name}
-                            onClick={() => setIsShow(!isShow)}
+                            onClick={() => setIsShow(false)}
                         >
                             <Avatar
                                 width='35'

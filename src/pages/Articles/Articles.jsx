@@ -20,7 +20,6 @@ const Articles = () => {
     const width = window.innerWidth > 600 ? 600 : 330
     const isArticlesExist = articlesList.length
 
-
     useEffect(() => {
         setIsLoading(true)
         fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tagId=${categoryId ? categoryId : ''}`)
@@ -43,8 +42,6 @@ const Articles = () => {
                         : <p className={s.notFound}>
                             Подходящих статей не найдено
                         </p>
-
-
                 }
             </div>
         </>
