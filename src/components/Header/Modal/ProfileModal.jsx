@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 
 import {CgProfile} from 'react-icons/cg'
 
@@ -11,20 +11,19 @@ import s from './ProfileModal.module.scss'
 
 const ProfileModal = ({name, role}) => {
     const[isShow, setIsShow] = useState(false)
-    //
-    // useEffect(() => {
-    //     if(isShow){
-    //         document.addEventListener('click', function() {
-    //             setIsShow(!isShow)
-    //             console.log(isShow)
-    //         });
-    //     }
-    // }, [isShow]);
 
     return (
         <>
-            <CgProfile onClick={() => setIsShow(!isShow)} />
-            <div className={`${isShow && s.profileCard} ${!isShow && s.hidden}`}>
+            <CgProfile
+               onMouseEnter={() => setIsShow(true)}
+               onMouseLeave={() => setIsShow(false)}
+               onClick={() => setIsShow(!isShow)}
+            />
+            <div
+                className={isShow ? s.profileCard : s.hidden}
+                onMouseEnter={() => setIsShow(true)}
+                onMouseLeave={() => setIsShow(false)}
+            >
                 <div className={s.top}>
                     <div className={s.userInfo}>
                         <Link
@@ -32,17 +31,18 @@ const ProfileModal = ({name, role}) => {
                             className={s.name}
                             onClick={() => setIsShow(!isShow)}
                         >
-                            <Avatar width='35'
-                                    height='35'
-                                    borderRadius='50'
-                                    src={logo}
+                            <Avatar
+                                width='35'
+                                height='35'
+                                borderRadius='50'
+                                src={logo}
                             />
                             <span>{name}</span>
                         </Link>
                     </div>
                 </div>
                 <div className={s.bottom}>
-                    <p>Статус: <span className={s.role}>{role}</span></p>
+                    <p>Статус:<span className={s.role}> {role}</span></p>
                 </div>
             </div>
         </>
