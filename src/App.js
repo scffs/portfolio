@@ -1,7 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
 
 import Home from './pages/Home/Home'
-import Help from './pages/Help/Help'
 import Profile from './pages/Profile/Profile'
 import Articles from './pages/Articles/Articles'
 import Register from './pages/Auth/./Register/Register'
@@ -13,11 +12,10 @@ function App() {
       <Routes>
           <Route path='/' element={ <Home />} />
           <Route path='/portfolio' element={ <Home />} />
-          <Route exact path='/news' element={ <Articles />} />
-          <Route path='/help' element={ <Help />} />
+          <Route exact path='/projects' element={ <Articles />} />
           <Route path='/profile' element={ <Profile />} />
           <Route path='/register' element={ <Register />} />
-          <Route path='/news/:id' element={ <Post />} />
+          <Route path='/projects/:id' element={ <Post />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
   );

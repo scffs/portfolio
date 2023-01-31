@@ -1,0 +1,28 @@
+@import '../../styles/vars';
+.card{
+  background-color: #2a2a32;
+  border-radius: 60px 20px;
+  box-shadow: 0 0 10px 3px rgb(9, 14, 9);
+  padding: 20px 40px;
+}
+.text{
+  font-size: 1.4rem;
+  padding: 15px 0;
+}
+h3{
+  color: $PINK;
+  font-weight: 600;
+}
+.card a{
+  color: $YELLOW;
+  &:hover{
+    color: darken($YELLOW, 40%);
+  }
+}
+.card a:nth-child(2){
+  color: $BLUE;
+  font-size: 1.3rem;
+  &:hover{
+    color: darken($BLUE, 20%);
+  }
+}

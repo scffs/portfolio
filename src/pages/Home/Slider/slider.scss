@@ -26,12 +26,12 @@
   }
 }
 .const{
-  color: #c678dd;
+  color: $PINK;
 }
 .title{
-  color: #e5c07b;
+  color: $YELLOW;
 }
-.blue{
+.text{
   color: #56b6c2;
 }
 .link{
@@ -42,7 +42,7 @@ a.link:hover{
   color: scale-color($GREEN, $lightness: +50%);
 }
 .comment{
-  color: #5c6370;
+  color: $GRAY;
   font-weight: 600;
   font-size: 1.1rem;
 }

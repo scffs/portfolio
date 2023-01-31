@@ -10,6 +10,7 @@ import './slider.scss'
 import SocialLinks from './Slides/SocialLinks'
 import Skills from './Slides/Skills'
 import Person from './Slides/Person'
+import Preview from './Slides/Preview'
 
 const Slider = () =>{
    return(
@@ -20,6 +21,9 @@ const Slider = () =>{
                modules={[EffectCards]}
                className="mySwiper"
            >
+               <SwiperSlide>
+                   <Preview />
+               </SwiperSlide>
                <SwiperSlide>
                     <SocialLinks />
                </SwiperSlide>
