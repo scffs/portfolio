@@ -27,4 +27,11 @@ export const cardItems = [
         linkText: 'Habr',
         link: 'https://habr.com/ru/',
     },
+    {
+        id: 4,
+        text: 'Member of',
+        profileLink: 'https://github.com/scffs?from=2023-01-31&to=2023-01-31&org=reactjs&year_list=1',
+        linkText: 'ReactJS',
+        link: 'https://beta.reactjs.org/',
+    },
 ]
