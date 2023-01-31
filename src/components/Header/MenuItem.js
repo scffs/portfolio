@@ -6,13 +6,13 @@ const menuList = [
     },
     {
         id: 2,
-        title: 'Новости',
-        src: '/news'
+        title: 'Профиль',
+        src: '/profile'
     },
     {
         id: 3,
-        title: 'Помощь',
-        src: '/help'
+        title: 'Проекты',
+        src: '/projects'
     }
 ]
 export default menuList
