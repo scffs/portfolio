@@ -2,9 +2,10 @@ import React from 'react'
 const Avatar = ({width, height, borderRadius, src}) => {
     return (
         <img style={{
-            width: `${width}px`,
-            height:`${height}px`,
-            borderRadius: `${borderRadius}px`
+            width: `${width}`,
+            height:`${height}`,
+            borderRadius: `${borderRadius}`,
+
         }}
             src={src}
             alt="ava"

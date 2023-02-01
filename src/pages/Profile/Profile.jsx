@@ -1,22 +1,12 @@
 import React from 'react'
 
-import logo from '../../assets/img/ava.webp'
-
-import Avatar from '../../components/Avatar/Avatar'
-
 import s from './Profile.module.scss'
 
 import {cardItems} from './cardItems'
 
 const Profile = () => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                gap: '10%'
-        }}>
-            <Avatar width='300' height='300' borderRadius='50' src={logo} />
+        <div className={s.content}>
             <div className={s.card}>
                 <div>
                     <pre style={{fontSize: '1.5rem'}}>

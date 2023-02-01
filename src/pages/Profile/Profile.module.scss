@@ -1,9 +1,15 @@
 @import '../../styles/vars';
+.content{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center
+}
 .card{
   background-color: #2a2a32;
   border-radius: 60px 20px;
   box-shadow: 0 0 10px 3px rgb(9, 14, 9);
-  padding: 20px 40px;
+  padding: 40px 40px 30px;
   display: flex;
   align-items: center;
 }

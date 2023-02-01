@@ -32,9 +32,9 @@ const ProfileModal = ({name, role}) => {
                             onClick={() => setIsShow(false)}
                         >
                             <Avatar
-                                width='35'
-                                height='35'
-                                borderRadius='50'
+                                width='35px'
+                                height='35px'
+                                borderRadius='50px'
                                 src={logo}
                             />
                             <span>{name}</span>
