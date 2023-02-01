@@ -11,7 +11,7 @@ const UserMenu = () => {
         <ul className={s.ul}>
             <li>
                 <Link to='/register'>
-                    <AiOutlineLogin />
+                    <AiOutlineLogin aria-label='Register' />
                 </Link>
             </li>
             <li className={s.itemProfile}>

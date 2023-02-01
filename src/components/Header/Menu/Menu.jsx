@@ -17,7 +17,7 @@ const Menu = () => {
 
     return (
         <>
-            <button onClick={() => setIsBurger(!isBurger)} className={s.burger}>
+            <button aria-label='Menu' onClick={() => setIsBurger(!isBurger)} className={s.burger}>
                 {isBurger ? <RxCross2 /> : <AiOutlineMenu />}
             </button>
             {
