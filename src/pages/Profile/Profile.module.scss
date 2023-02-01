@@ -1,37 +1,6 @@
-@import '../../styles/vars';
 .content{
   display: flex;
   justify-content: center;
   gap: 10%;
   align-items: center
-}
-.card{
-  background-color: #2a2a32;
-  border-radius: 60px 20px;
-  box-shadow: 0 0 10px 3px rgb(9, 14, 9);
-  padding: 40px 40px 30px;
-  display: flex;
-  align-items: center;
-}
-.text{
-  font-size: 1.3rem;
-  padding-top: 2px;
-}
-h3{
-  color: $PINK;
-  font-weight: 400;
-}
-.card a{
-  color: $BLUE;
-  font-weight: 500;
-  &:hover{
-    color: darken($BLUE, 40%);
-  }
-}
-.card a:nth-child(2){
-  color: $BLUE;
-  font-size: 1.3rem;
-  &:hover{
-    color: darken($BLUE, 20%);
-  }
 }

@@ -1,5 +1,6 @@
 @import '../../styles/keyframes';
 .info{
+  user-select: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +19,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    right: -110px;
+    right: -95px;
     top: -100px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -71,7 +72,7 @@
   .info{
     flex-direction: column;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
   }
   .profileImage{
     margin-top: 40px;
@@ -83,8 +84,8 @@
     .circleInner{
       width: 350px;
       height: 350px;
-      right: -70px;
-      top: -70px;
+      right: -25px;
+      top: -25px;
     }
     .ava{
       width: 200px;
