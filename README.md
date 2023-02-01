@@ -5,7 +5,7 @@
 + Скриншоты проекта - *soon*
 + Гайд по установке и тп - *in progress*
 
-`Ссылка на демо - https://scffs.github.io/portfolio/`
+##### Ссылка на демо - https://scffs.github.io/portfolio/
 
 # Установка
 
