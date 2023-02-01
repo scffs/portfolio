@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
@@ -11,7 +11,7 @@ const Layout = ({children}) => {
                 flexDirection: 'column',
                 height: '100vh',
                 margin: '0 auto',
-                maxWidth: '1200px',
+                maxWidth: '1300px',
                 padding: '0 10px'
             }
         }>

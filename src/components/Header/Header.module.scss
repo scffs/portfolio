@@ -1,7 +1,7 @@
 @import '../../styles/vars';
 .header{
-  margin-bottom: 80px;
-  padding-top: 20px;
+  margin-bottom: 90px;
+  padding-top: 5px;
   position: relative;
   z-index: 50;
   .nav{
@@ -11,5 +11,13 @@
   li:hover svg{
     color: $primaryHover;
     transition: color .2s linear;
+  }
+}
+@media (max-width: 1000px) {
+  .header{
+    margin-bottom: 20px;
+    padding-top: 5px;
+    position: relative;
+    z-index: 50;
   }
 }

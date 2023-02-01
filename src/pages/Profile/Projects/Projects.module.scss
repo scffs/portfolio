@@ -17,7 +17,7 @@ h3{
   color: $BLUE;
   font-weight: 500;
   &:hover{
-    color: darken($BLUE, 40%);
+    color: darken($BLUE, 30%);
   }
 }
 .card a:nth-child(2){

@@ -1,17 +1,12 @@
 const menuList = [
     {
         id: 1,
-        title: 'Главная',
+        title: 'Home',
         src: '/'
     },
     {
         id: 2,
-        title: 'Профиль',
-        src: '/profile'
-    },
-    {
-        id: 3,
-        title: 'Проекты',
+        title: 'Projects',
         src: '/projects'
     }
 ]

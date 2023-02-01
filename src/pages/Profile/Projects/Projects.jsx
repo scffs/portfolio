@@ -1,8 +1,8 @@
 import React from 'react'
 
+import Project from './Project'
 import {cardItems} from '../cardItems'
 import s from './Projects.module.scss'
-import Project from "./Project";
 
 const Projects = () => {
     return (
@@ -12,7 +12,7 @@ const Projects = () => {
             </pre>
             {
                 cardItems.map(({text, link, linkText, id}) => (
-                    <Project text={text} linkText={linkText} link={link} id={id}/>
+                    <Project key={id} text={text} linkText={linkText} link={link} id={id}/>
                 ))
             }
             <span style={{fontSize: '1.5rem'}}>{'}'}</span>
@@ -20,4 +20,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Projects

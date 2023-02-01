@@ -1,0 +1,40 @@
+@import '../../../styles/vars';
+.content{
+  text-align: center;
+  color: $BLUE;
+  max-width: 800px;
+  flex: 1 0 auto;
+  position: relative;
+  &::before{
+    content: '';
+    width: 2px;
+    height: 630px;
+    top: 137px;
+    z-index: -1;
+    position: absolute;
+    background-color: $whiteThemeText;
+    right: 50%;
+  }
+  li:nth-child(2n){
+    justify-self: flex-end;
+    &::after{
+      right: unset;
+      left: -78px;
+    }
+  }
+  h2{
+    margin-bottom: 5px;
+  }
+  a{
+    color: $BLUE;
+    font-weight: unset;
+    font-size: unset;
+    &:hover{
+      color: scale-color($BLUE, $lightness: +55%);;
+    }
+  }
+}
+.skillsList {
+  margin-top: 40px;
+  display: grid;
+}

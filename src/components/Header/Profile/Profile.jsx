@@ -1,35 +1,21 @@
-import React, {useState} from 'react'
-
-import {CgProfile} from 'react-icons/cg'
+import React from 'react'
 
 import {Link} from 'react-router-dom'
 
 import logo from '../../../assets/img/ava.webp'
 import Avatar from '../../Avatar/Avatar'
 
-import s from './ProfileModal.module.scss'
+import s from './Profile.module.scss'
 
-const ProfileModal = ({name, role}) => {
-    const[isShow, setIsShow] = useState(false)
-
+const Profile = ({name, role}) => {
     return (
         <>
-            <CgProfile
-               onMouseEnter={() => setIsShow(true)}
-               onMouseLeave={() => setIsShow(false)}
-               onClick={() => setIsShow(!isShow)}
-            />
-            <div
-                className={isShow ? s.profileCard : s.hidden}
-                onMouseEnter={() => setIsShow(true)}
-                onMouseLeave={() => setIsShow(false)}
-            >
+            <div className={s.profileCard}>
                 <div className={s.top}>
                     <div className={s.userInfo}>
                         <Link
                             to='/profile'
                             className={s.name}
-                            onClick={() => setIsShow(false)}
                         >
                             <Avatar
                                 width='35px'
@@ -42,11 +28,11 @@ const ProfileModal = ({name, role}) => {
                     </div>
                 </div>
                 <div className={s.bottom}>
-                    <p>Статус:<span className={s.role}> {role}</span></p>
+                    <p>Status:<span className={s.role}> {role}</span></p>
                 </div>
             </div>
         </>
     );
 };
 
-export default ProfileModal
+export default Profile

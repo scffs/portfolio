@@ -16,4 +16,4 @@ const Project = ({link, id, text, linkText}) => {
     );
 };
 
-export default Project;
+export default Project
