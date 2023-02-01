@@ -3,7 +3,7 @@ import React from 'react'
 import Slider from './Slider/Slider'
 import icons from './icons'
 
-import logo from '../../assets/img/ava.jpg'
+import logo from '../../assets/img/ava.webp'
 
 import s from './Home.module.scss'
 

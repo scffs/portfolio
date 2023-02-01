@@ -4,7 +4,7 @@ import {CgProfile} from 'react-icons/cg'
 
 import {Link} from 'react-router-dom'
 
-import logo from '../../../assets/img/ava.jpg'
+import logo from '../../../assets/img/ava.webp'
 import Avatar from '../../Avatar/Avatar'
 
 import s from './ProfileModal.module.scss'

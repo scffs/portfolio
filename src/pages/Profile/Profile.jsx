@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../../assets/img/ava.jpg'
+import logo from '../../assets/img/ava.webp'
 
 import Avatar from '../../components/Avatar/Avatar'
 

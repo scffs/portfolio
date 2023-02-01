@@ -1,8 +1,8 @@
 import devTo from './logos/dev-rainbow.svg'
-import habr from './logos/habr.png'
-import hashnode from './logos/hash.png'
-import stack from './logos/stack.png'
-import vk from './logos/vk.png'
+import habr from './logos/habr.webp'
+import hashnode from './logos/hash.webp'
+import stack from './logos/stack.webp'
+import vk from './logos/vk.webp'
 
 const logos = [
     {
