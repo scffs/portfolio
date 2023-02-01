@@ -4,19 +4,22 @@
   border-radius: 60px 20px;
   box-shadow: 0 0 10px 3px rgb(9, 14, 9);
   padding: 20px 40px;
+  display: flex;
+  align-items: center;
 }
 .text{
-  font-size: 1.4rem;
-  padding: 15px 0;
+  font-size: 1.3rem;
+  padding-top: 2px;
 }
 h3{
   color: $PINK;
-  font-weight: 600;
+  font-weight: 400;
 }
 .card a{
-  color: $YELLOW;
+  color: $BLUE;
+  font-weight: 500;
   &:hover{
-    color: darken($YELLOW, 40%);
+    color: darken($BLUE, 40%);
   }
 }
 .card a:nth-child(2){
