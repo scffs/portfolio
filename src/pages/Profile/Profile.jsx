@@ -33,6 +33,7 @@ const Profile = () => {
                             </h3>
                         ))
                     }
+                    <span style={{fontSize: '1.5rem'}}>{'}'}</span>
                 </div>
             </div>
         </div>
