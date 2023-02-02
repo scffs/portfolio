@@ -1,9 +1,7 @@
 # Портфолио
 ### Личный сайт
 
-+ Дизайн - *soon*
-+ Скриншоты проекта - *soon*
-+ Гайд по установке и тп - *in progress*
+![изображение](https://user-images.githubusercontent.com/67464545/216356309-7385f8c4-238d-49b8-aec0-86a31e4c4ece.png)
 
 ##### Ссылка на демо - https://scffs.github.io/portfolio/
 
