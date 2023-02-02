@@ -4,6 +4,8 @@
   border-radius: 60px 20px;
   box-shadow: 0 0 10px 3px rgb(9, 14, 9);
   padding: 40px 40px 30px;
+  margin: 0 auto;
+  max-width: 400px;
 }
 .text{
   font-size: 1.3rem;
@@ -25,5 +27,13 @@ h3{
   font-size: 1.3rem;
   &:hover{
     color: darken($BLUE, 20%);
+  }
+}
+@media (max-width: 440px) {
+  .card{
+    padding:30px 25px 20px;
+    .text{
+      font-size: 1.2rem;
+    }
   }
 }

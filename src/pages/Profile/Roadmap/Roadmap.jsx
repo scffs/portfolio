@@ -2,8 +2,8 @@ import React /*, {createRef}*/ from 'react'
 
 import s from './Roadmap.module.scss'
 
-import Skill from './Skill'
-import skills from './skillsList.js'
+import Skill from './Skill/Skill'
+import skills from './Skill/skillsList.js'
 
 const Roadmap = () => {
     // TODO: adaptive height of after elem
@@ -12,7 +12,7 @@ const Roadmap = () => {
     return (
         <div className={s.content} /*ref={refComponent}*/>
             <h2>Education & Experience</h2>
-            <h3>For more information go to my <a href="https://github.com/scffs">GitHub</a></h3>
+            <h3>For more information, look at my <a href="https://github.com/scffs" target="_blank" rel="noreferrer">GitHub</a></h3>
             <ul className={s.skillsList}>
                 {skills.map((skill, id) =>(
                     <Skill

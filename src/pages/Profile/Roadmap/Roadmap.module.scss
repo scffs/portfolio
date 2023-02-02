@@ -4,6 +4,7 @@
   color: $BLUE;
   max-width: 800px;
   flex: 1 0 auto;
+  margin: 0 auto;
   position: relative;
   &::before{
     content: '';
@@ -37,4 +38,16 @@
 .skillsList {
   margin-top: 40px;
   display: grid;
+}
+@media (max-width: 1250px) {
+  .content{
+    margin-top: 40px;
+  }
+}
+@media (max-width: 850px) {
+  .content{
+    &::before{
+      content: unset;
+    }
+  }
 }

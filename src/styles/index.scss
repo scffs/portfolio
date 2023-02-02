@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 #root{
-  min-width: 350px;
+  min-width: 340px;
 }
 body {
   font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $bg-white;
-  overflow-x: hidden;
+  overflow-x: clip;
   animation: pageShow .5s linear;
 }
 ul{

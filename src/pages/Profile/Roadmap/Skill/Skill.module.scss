@@ -1,4 +1,4 @@
-@import '../../../styles/vars';
+@import '../../../../styles/vars';
 .block{
   color: $YELLOW;
   box-shadow: 0 0 10px 3px rgb(0, 0, 0);
@@ -49,6 +49,16 @@
       box-shadow: inset 0 5px 10px 5px rgb(14, 14, 2);
       padding: 10px;
       border-radius: 10px 20px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .block{
+    &:not(:first-child){
+      margin-top: 20px;
+    }
+    &::after{
+      content: unset;
     }
   }
 }
