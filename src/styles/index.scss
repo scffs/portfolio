@@ -1,5 +1,4 @@
 @import 'vars';
-@import 'keyframes';
 *, *::after, *::before{
   margin: 0;
   padding: 0;
@@ -14,8 +13,7 @@ body {
   color: $primaryColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $bg-white;
-  animation: pageShow .5s linear;
+  background: $bgWhite;
   overflow-x: clip;
 }
 ul{

@@ -1,16 +1,23 @@
 @import '../../styles/vars';
+@import '../../styles/keyframes';
 .article{
+  animation: pageShow .4s linear;
+  -webkit-animation: pageShow .4s linear;
+  &:nth-child(2n){
+    animation: pageShowReverse .4s linear;
+    -webkit-animation: pageShowReverse .4s linear;
+  }
   &:hover{
     transform: translateY(-10px);
     transition: transform .15s linear;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
   }
   display: grid;
-  background: white;
+  background: $bgCard;
   border-radius: 20px;
   cursor: pointer;
   .h3{
-    color: $secondaryColor;
+    color: $primaryColor;
     padding: 10px 0;
   }
   .img{
@@ -20,11 +27,11 @@
     border-radius: 20px 20px 0 0;
   }
   .description{
-    color: $userNameColor;
+    color: $primaryColor;
     font-size: 1.3rem;
   }
   .info{
-    padding: 10px;
+    padding: 20px;
   }
   .top{
     display: flex;

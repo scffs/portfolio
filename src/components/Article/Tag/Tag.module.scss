@@ -2,7 +2,7 @@
 .tagNote, .tagProgramming, .tagStudy{
   position: relative;
   padding-left: 15px;
-  color: $secondaryColor;
+  color: $primaryColor;
 }
 .tagNote::after, .tagProgramming::after, .tagStudy::after{
   position: absolute;

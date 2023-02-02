@@ -1,3 +1,4 @@
+@import '../../styles/vars';
 .footer{
   text-align: center;
   margin-top: 30px;
@@ -11,7 +12,7 @@
   p{
     margin-top: 20px;
     font-size: 1rem;
-    color: #5c6370;
+    color: scale-color($bgCard, $lightness: +60%);
   }
   img{
     border-radius: 10px;

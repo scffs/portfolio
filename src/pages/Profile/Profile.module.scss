@@ -1,4 +1,7 @@
+@import '../../styles/keyframes';
 .content{
+  animation: profileShow .3s linear;
+  -webkit-animation: profileShow .3s linear;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;

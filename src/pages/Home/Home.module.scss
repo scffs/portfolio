@@ -1,6 +1,8 @@
 @import '../../styles/keyframes';
 .info{
   user-select: none;
+  animation: pageShow .4s linear;
+  -webkit-animation: pageShow .4s linear;
   display: flex;
   justify-content: space-between;
   align-items: center;

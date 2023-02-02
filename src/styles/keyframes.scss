@@ -59,3 +59,43 @@
     transform: translateX(0);
   }
 }
+@keyframes pageShowReverse {
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes pageShowReverse{
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes profileShow {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes profileShow{
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

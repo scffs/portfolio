@@ -9,20 +9,20 @@
     cursor: pointer;
     border-radius: 20px;
     padding: 10px 20px;
-    color: $secondaryColor;
-    background: $primaryColor;
+    color: $primaryColor;
+    background: $bgCard;
     &:hover{
-      color: $secondaryColorHover;
+      box-shadow: 0 0 3px 5px rgb(9, 14, 9);
       transform: scale(1.1);
-      transition: transform .15s linear;
+      transition: all .15s linear;
+      border-radius: 10px;
+      background: $bgCategories;
     }
   }
   .active{
-    background: scale-color($bg-white, $lightness: +5%);
     color: $primaryColor;
-    &:hover{
-      color: $primaryColor;
-    }
+    border-radius: 10px;
+    background: $bgCategories;
   }
 }
 @media (max-width: 800px) {

@@ -4,7 +4,7 @@ import {useNavigate} from 'react-router-dom'
 import s from './Article.module.scss'
 
 import Author from '../Author/Author'
-import Tag from '../UI/Tag/Tag'
+import Tag from './Tag/Tag'
 
 const Article = ({id, preview, title, description, tag, tagId, authorLogo, author}) => {
     const router = useNavigate()
