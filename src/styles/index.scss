@@ -7,7 +7,7 @@
 }
 #root{
   min-width: 340px;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 body {
   font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: $bg-white;
   animation: pageShow .5s linear;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 ul{
   list-style-type: none;
