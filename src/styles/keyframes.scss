@@ -1,27 +1,3 @@
-@-webkit-keyframes twiddle{
-  from{
-    transform: rotateZ(-5deg);
-  }
-  to{
-    transform: rotateZ(5deg);
-  }
-}
-@keyframes twiddle{
-  from{
-    transform: rotateZ(-5deg);
-  }
-  to{
-    transform: rotateZ(5deg);
-  }
-}
-@-webkit-keyframes wheel{
-  from{
-    transform: rotateZ(0);
-  }
-  to{
-    transform: rotateZ(360deg);
-  }
-}
 @keyframes wheel{
   from{
     transform: rotateZ(0);

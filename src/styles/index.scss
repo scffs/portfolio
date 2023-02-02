@@ -14,8 +14,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $bg-white;
-  overflow-x: clip;
   animation: pageShow .5s linear;
+  overflow-x: hidden;
 }
 ul{
   list-style-type: none;
@@ -25,6 +25,10 @@ a{
   color: $primaryColor;
   font-weight: 600;
   font-size: 1.2em;
+  &:focus{
+    outline: none;
+    color: scale-color($primaryColor, $lightness: +50%);
+  }
   &:hover{
     transition: color .2s linear;
     color: $primaryHover;
