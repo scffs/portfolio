@@ -1,9 +1,9 @@
 @keyframes wheel{
   from{
-    transform: rotateZ(0);
+    transform: rotate(0);
   }
   to{
-    transform:rotateZ(360deg);
+    transform: rotate(1turn);
   }
 }
 @-webkit-keyframes planets{

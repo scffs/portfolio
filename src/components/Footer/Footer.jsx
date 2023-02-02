@@ -17,6 +17,7 @@ const Footer = () => {
                     ))
                 }
             </ul>
+            <p>Copyright © 2023. Semyon Okulov. All rights reserved</p>
         </footer>
     );
 };
