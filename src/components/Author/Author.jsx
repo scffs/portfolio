@@ -3,13 +3,13 @@ import React from 'react'
 import s from './Author.module.scss'
 import LogoPreview from '../../utils/logo.png'
 
-const Author = ({authorLogo, authorName}) => {
+const Author = ({authorLogo, author}) => {
     return (
         <div className={s.author}>
-            <span className={s.authorName}>{(authorName || null) ?? 'Аноним'}</span>
+            <span className={s.authorName}>{author || 'Аноним'}</span>
             <img
                 className={s.authorLogo}
-                src={(authorLogo || null) ?? LogoPreview}
+                src={authorLogo || LogoPreview}
                 alt="author logo"
             />
         </div>
