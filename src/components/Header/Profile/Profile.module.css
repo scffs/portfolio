@@ -47,12 +47,5 @@
 .profileCard .bottom {
   color: #aaa;
 }
-.profileCard .btn_LogOut :hover {
-  color: #3f3f3f;
-}
-.profileCard .btn_LogOut svg {
-  height: 1.3em;
-  width: 1.3em;
-}
 
 /*# sourceMappingURL=Profile.module.css.map */
