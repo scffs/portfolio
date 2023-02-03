@@ -10,7 +10,7 @@
   &:hover{
     transform: translateY(-10px);
     transition: transform .15s linear;
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px 10px #0d0d10;
   }
   display: grid;
   background: $bgCard;

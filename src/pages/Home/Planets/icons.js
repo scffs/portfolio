@@ -1,11 +1,11 @@
 import gh from '../../../assets/img/icons/gh-light.png'
-import python from '../../../assets/img/icons/python.png'
-import node from '../../../assets/img/icons/nodejs.png'
-import bs from '../../../assets/img/icons/bs.png'
+import python from '../../../assets/img/icons/python.webp'
+import node from '../../../assets/img/icons/nodejs.webp'
+import bs from '../../../assets/img/icons/bs.webp'
 import c from '../../../assets/img/icons/c#.png'
-import ts from '../../../assets/img/icons/ts.png'
-import react from '../../../assets/img/icons/react.png'
-
+import ts from '../../../assets/img/icons/ts.webp'
+import react from '../../../assets/img/icons/react.webp'
+import js from '../../../assets/img/icons/javaScript.webp'
 
 const icons = [
     {
@@ -35,6 +35,9 @@ const icons = [
     {
         src: `${ts}`,
         alt: 'TypeScript'
+    },{
+        src: `${js}`,
+        alt: 'JavaScript'
     },
 ]
 

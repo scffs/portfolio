@@ -48,7 +48,7 @@ a.link:hover{
 }
 @media (max-width: 1000px) {
   .swiper {
-    margin-left: 6rem;
+    margin: 0 auto;
     width: 430px;
     height: 280px;
     &-slide{
@@ -65,7 +65,6 @@ a.link:hover{
 }
 @media (max-width: 560px) {
   .swiper {
-    margin: 0 auto;
     width: 320px;
     height: 250px;
     &-slide{

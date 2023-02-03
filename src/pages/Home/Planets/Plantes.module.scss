@@ -14,40 +14,44 @@
   transform-origin: center;
   position: relative;
   z-index: -1;
-  width: 33px;
-  height: 33px;
+  width: 50px;
+  height: 50px;
   -webkit-animation-duration: 20s;
   animation-duration: 20s;
   -webkit-animation: planets 10s linear infinite;
   animation: planets 10s linear infinite;
   border-radius: 30%;
   &:first-child{
-    top: 20%;
-    left: 4%;
+    top: 13%;
+    left: 7%;
   }
   &:nth-child(2){
-    top: 15%;
+    top: 23%;
     left: 80%;
   }
   &:nth-child(3){
     top: 65%;
-    right: -80%;
+    right: -70%;
   }
   &:nth-child(4){
-    top: 93%;
-    right: -8%;
+    top: 90%;
+    right: 7%;
   }
   &:nth-child(5){
-    top: -3%;
-    right: -15%;
+    top: -5%;
+    right: 4%;
   }
   &:nth-child(6){
-    top: 70%;
-    right: 31%;
+    top: 62%;
+    right: 52%;
   }
   &:nth-child(7){
-    top: 95%;
-    right: -20%;
+    top: 90%;
+    right: -5%;
+  }
+  &:nth-child(8){
+    top: 0;
+    right: 4%;
   }
 }
 @media (max-width: 560px) {
@@ -62,28 +66,36 @@
   }
   .logo{
     &:first-child{
-      top: 20%;
-      left: 2%;
+      top: 10%;
+      left: 3%;
     }
     &:nth-child(2){
-      top: 20%;
-      left: 80%;
+      top: 30%;
+      left: 78%;
     }
     &:nth-child(3){
-      top: 65%;
-      right: -73%;
+      top: 75%;
+      right: -53%;
     }
     &:nth-child(4){
       top: 93%;
       right: -3%;
     }
+    &:nth-child(5){
+      top: -7%;
+      right: 28%;
+    }
     &:nth-child(6){
-      top: 70%;
-      right: 46%;
+      top: 49%;
+      right: 80%;
     }
     &:nth-child(7){
-      top: 88%;
-      right: -13%;
+      top: 67%;
+      right: -11%;
+    }
+    &:nth-child(8){
+      top: -55px;
+      right: -55%;
     }
   }
 }
