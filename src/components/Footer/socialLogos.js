@@ -13,7 +13,7 @@ const logos = [
     {
         path: `${habr}`,
         alt: 'Habr',
-        url: 'https://habr.com/scffs'
+        url: 'https://habr.com/users/scffs'
     },
     {
         path: `${hashnode}`,
