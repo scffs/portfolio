@@ -11,8 +11,8 @@ const Skill = ({time, skill, knowledge}) => {
             </div>
             <ul className={s.knowledge}>
                 {
-                    knowledge.map(item =>(
-                        <li key={item}>{item}</li>
+                    knowledge.map((item, id) =>(
+                        <li key={id}>{item}</li>
                     ))
                 }
             </ul>
