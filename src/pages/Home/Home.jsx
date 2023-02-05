@@ -6,7 +6,8 @@ import Avatar from '../../components/Avatar/Avatar'
 import logo from '../../assets/img/ava.webp'
 
 import s from './Home.module.scss'
-import Planets from "./Planets/Planets";
+
+import Planets from './Planets/Planets'
 
 const Home = () => {
     return (

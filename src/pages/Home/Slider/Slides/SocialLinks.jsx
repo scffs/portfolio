@@ -15,14 +15,14 @@ const SocialLinks = () => {
             <pre>&nbsp;&nbsp;
                 <span className='text'>telegram</span><span>:</span><a className='link' href="https://t.me/sc0ffs" target="_blank" rel="noreferrer"> 't.me/sc0ffs'</a><span>,</span>
             </pre>
-            <pre> &nbsp;
-                <span className='text'>github</span><span>:</span><a className='link' href="https://github.com/scffs" target="_blank" rel="noreferrer"> 'github.com/scffs'</a><span>,</span>
+            <pre>&nbsp;&nbsp;
+                <span className='text'>hashnode</span><span>:</span><a className='link' href="https://hashnode.com/@scffs" target="_blank" rel="noreferrer"> 'hashnode.com/@scffs'</a><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>discord</span><span>:</span><a className='link' href="https://discord.com/" target="_blank" rel="noreferrer"> 'Scoffs#9554'</a><span>,</span>
             </pre>
-            <pre>&nbsp;&nbsp;
-                <span className='text'>hashnode</span><span>:</span><a className='link' href="https://hashnode.com/@scffs" target="_blank" rel="noreferrer"> 'hashnode.com/@scffs'</a><span>,</span>
+            <pre> &nbsp;
+                <span className='text'>github</span><span>:</span><a className='link' href="https://github.com/scffs" target="_blank" rel="noreferrer"> 'github.com/scffs'</a><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>habr</span><span>:</span><a className='link' href="https://habr.com/ru/users/scoffs/" target="_blank" rel="noreferrer"> 'habr.com/ru/users/scoffs'</a><span>,</span>
@@ -41,4 +41,4 @@ const SocialLinks = () => {
     );
 };
 
-export default SocialLinks;
+export default SocialLinks

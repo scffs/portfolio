@@ -29,15 +29,9 @@
 }
 .authorWrapper{}
 @media (max-width: 1000px) {
-  .post{
-    grid-template-columns: 1fr;
-  }
+  .post {grid-template-columns: 1fr}
 }
 @media (max-width: 568px) {
-  .info{
-    display: unset;
-  }
-  .authorWrapper{
-    margin: 10px 0;
-  }
+  .info {display: unset}
+  .authorWrapper {margin: 10px 0}
 }

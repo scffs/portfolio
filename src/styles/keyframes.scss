@@ -1,101 +1,94 @@
+@import 'vars';
 @keyframes wheel{
-  from{
-    transform: rotate(0);
-  }
-  to{
-    transform: rotate(1turn);
-  }
+  from {transform: rotate(0)}
+  to {transform: rotate(1turn)}
 }
 @-webkit-keyframes planets{
-  from{
-    transform: rotateZ(0deg);
-  }
-  to{
-    transform: rotateZ(-360deg);
-  }
+  from {transform: rotateZ(0deg)}
+  to {transform: rotateZ(-360deg)}
 }
 
 @keyframes planets{
-  from{
-    transform: rotateZ(0deg);
-  }
-  to{
-    transform: rotateZ(-360deg);
-  }
+  from {transform: rotateZ(0deg)}
+  to {transform: rotateZ(-360deg)}
 }
 @keyframes burgerShow {
-  0%{
-    transform: translateY(-100%);
-  }
-  100%{
-    transform: translateY(0);
-  }
+  from {transform: translateY(-100%)}
+  to {transform: translateY(0)}
 }
 @-webkit-keyframes burgerShow{
-  0%{
-    transform: translateY(-100%);
-  }
-  100%{
-    transform: translateY(0);
-  }
+  from {transform: translateY(-100%)}
+  to {transform: translateY(0)}
 }
 @keyframes pageShow {
-  0%{
+  from {
     transform: translateX(-100%);
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
     transform: translateX(0);
   }
 }
 @-webkit-keyframes pageShow{
-  0%{
+  from{
     transform: translateX(-100%);
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
     transform: translateX(0);
   }
 }
 @keyframes pageShowReverse {
-  0%{
+  from{
     transform: translateX(100%);
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
     transform: translateX(0);
   }
 }
 @-webkit-keyframes pageShowReverse{
-  0%{
+  from{
     transform: translateX(100%);
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
     transform: translateX(0);
   }
 }
 @keyframes profileShow {
-  0%{
+  from{
     transform: translateY(-100%);
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
     transform: translateY(0);
   }
 }
 @-webkit-keyframes profileShow{
-  0%{
+  from{
     transform: translateY(-100%);
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes pageGradient {
+  0% {background: $bgWhite}
+  25% {background: darken($bgWhite, 2%)}
+  50% {background: darken($bgWhite, 4%)}
+  100% {background: darken($bgWhite, 6%)}
+}
+@-webkit-keyframes pageGradient{
+  0% {background: $bgWhite}
+  25% {background: darken($bgWhite, 2%)}
+  50% {background: darken($bgWhite, 4%)}
+  100% {background: darken($bgWhite, 6%)}
 }

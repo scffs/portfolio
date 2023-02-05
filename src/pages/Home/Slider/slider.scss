@@ -52,15 +52,11 @@ a.link:hover{
     width: 430px;
     height: 280px;
     &-slide{
-      &:first-child,  a{
-        font-size: .9rem;
-      }
+      &:first-child,  a{font-size: .9rem}
       padding: 20px;
       font-size: 1rem;
     }
-    .comment{
-      font-size: .9rem;
-    }
+    .comment {font-size: .9rem}
   }
 }
 @media (max-width: 560px) {
@@ -68,14 +64,10 @@ a.link:hover{
     width: 320px;
     height: 250px;
     &-slide{
-      &:first-child, a{
-        font-size: 0.7rem;
-      }
+      &:first-child, a{font-size: 0.7rem;}
       padding: 20px;
       font-size: .9rem;
     }
-    .comment{
-      font-size: 0.7rem;
-    }
+    .comment {font-size: 0.7rem;}
   }
 }

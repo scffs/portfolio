@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'keyframes';
 *, *::after, *::before{
   margin: 0;
   padding: 0;
@@ -15,10 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: $bgWhite;
   overflow-x: hidden;
+  animation: pageGradient 2.5s linear 1s infinite alternate running;
+  -webkit-animation: pageGradient 2.5s linear 1s infinite alternate running;
 }
-ul{
-  list-style-type: none;
-}
+ul {list-style-type: none}
 a{
   text-decoration: none;
   color: $primaryColor;
@@ -44,12 +45,8 @@ a{
       background-color: $GREEN;
       transition: all .2s linear;
     }
-    &::after{
-      left: 0;
-    }
-    &::before{
-      right: 0;
-    }
+    &::after{left: 0}
+    &::before{right: 0}
   }
   &.headerLink:hover{
     &::after{
@@ -73,9 +70,5 @@ input{
   outline: none;
   border: none;
 }
-.lock{
-  overflow: hidden;
-}
-.active{
-  overflow: unset;
-}
+.lock {overflow: hidden}
+.active {overflow: unset}
