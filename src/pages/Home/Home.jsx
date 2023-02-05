@@ -9,16 +9,15 @@ import s from './Home.module.scss'
 
 import Planets from './Planets/Planets'
 
-const Home = () => {
-    return (
-        <div className={s.info}>
-            <div className={s.profileImage}>
-                <Avatar width='300px' height='100%' borderRadius='100%' src={logo} />
-                <Planets />
-            </div>
-           <Slider />
+const Home = () => (
+    <div className={s.info}>
+        <div className={s.profileImage}>
+            <Avatar width='300px' height='100%' borderRadius='100%' src={logo} />
+            <Planets />
         </div>
-    );
-};
+        <Slider />
+    </div>
+);
+
 
 export default Home

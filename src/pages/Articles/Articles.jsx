@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react'
 
 import Article from '../../components/Article/Article'
 import Categories from '../../components/UI/Categories/Categories'
