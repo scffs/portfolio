@@ -7,7 +7,6 @@
 }
 #root{
   min-width: 340px;
-  overflow-x: clip;
 }
 body {
   font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -16,8 +15,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: $bgWhite;
   overflow-x: hidden;
-  animation: pageGradient 2.5s linear 1s infinite alternate running;
-  -webkit-animation: pageGradient 2.5s linear 1s infinite alternate running;
+  animation: pageGradient 3s linear 1s infinite alternate running;
+  -webkit-animation: pageGradient 3s linear 1s infinite alternate running;
 }
 ul {list-style-type: none}
 a{
