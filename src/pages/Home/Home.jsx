@@ -2,12 +2,11 @@ import React from 'react'
 
 import Slider from './Slider/Slider'
 import Avatar from '../../components/Avatar/Avatar'
+import Planets from './Planets/Planets'
 
 import logo from '../../assets/img/ava.webp'
 
 import s from './Home.module.scss'
-
-import Planets from './Planets/Planets'
 
 const Home = () => (
     <div className={s.info}>

@@ -81,10 +81,12 @@
   }
 }
 @keyframes pageGradient {
-  from {background: $bgWhite}
-  to {background: darken($bgWhite, 10%)}
+  0% {background: $bgWhite}
+  50% {background: scale-color($bgWhite, $lightness: +20%)}
+  100% {background: darken($bgWhite, 10%)}
 }
 @-webkit-keyframes pageGradient{
-  from {background: $bgWhite}
-  to {background: darken($bgWhite, 10%)}
+  0% {background: $bgWhite}
+  50% {background: scale-color($bgWhite, $lightness: +20%)}
+  100% {background: darken($bgWhite, 10%)}
 }

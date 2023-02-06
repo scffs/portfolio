@@ -1,4 +1,5 @@
 @import '../../../styles/vars';
+@import '../../../styles/keyframes';
 .swiper {
   width: 600px;
   height: 370px;
@@ -11,7 +12,9 @@
     border-radius: 18px;
     font-size: 1.3rem;
     color: #fff;
-    background: $bgCard;
+    background: $bgWhite;
+    animation: pageGradient 5s linear 1s infinite alternate running;
+    -webkit-animation: pageGradient 5s linear 1s infinite alternate running;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
     a{
       font-size: 1.3rem;
