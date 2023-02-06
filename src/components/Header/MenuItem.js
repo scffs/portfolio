@@ -2,12 +2,12 @@ const menuList = [
     {
         id: 1,
         title: 'Home',
-        src: '/'
+        src: '/',
     },
     {
         id: 2,
-        title: 'Projects',
-        src: '/projects'
+        title: 'News',
+        src: '/news',
     }
 ]
 export default menuList

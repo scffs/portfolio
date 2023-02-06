@@ -14,12 +14,12 @@ const Roadmap = () => {
             <h2>Education & Experience</h2>
             <h3>For more information, look at my <a href="https://github.com/scffs" target="_blank" rel="noreferrer">GitHub</a></h3>
             <ul className={s.skillsList}>
-                {skills.map((skill, id) =>(
+                {skills.map(({time, skill, knowledge}, id) =>(
                     <Skill
                         key={id}
-                        time={skill.time}
-                        skill={skill.skill}
-                        knowledge={skill.knowledge}
+                        time={time}
+                        skill={skill}
+                        knowledge={knowledge}
                     />
                 ))}
             </ul>

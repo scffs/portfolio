@@ -12,10 +12,10 @@ function App() {
       <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/portfolio' element={<Home />} />
-          <Route exact path='/projects' element={<Articles />} />
+          <Route exact path='/news' element={<Articles />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/projects/:id' element={<Post />} />
+          <Route path='/news/:id' element={<Post />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
   );

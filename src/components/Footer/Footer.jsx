@@ -7,10 +7,10 @@ const Footer = () => (
     <footer className={s.footer}>
         <ul className={s.socials}>
             {
-                logos.map((logo, id) =>(
+                logos.map(({url, path}, id) =>(
                     <li key={id}>
-                        <a href={logo.url} target="_blank" rel="noreferrer">
-                            <img src={logo.path} alt={logo.path} />
+                        <a href={url} target="_blank" rel="noreferrer">
+                            <img src={path} alt={path} />
                         </a>
                     </li>
                 ))

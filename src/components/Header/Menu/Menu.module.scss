@@ -5,8 +5,56 @@
   z-index: 4;
   display: none;
   > svg{
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.headerLink{
+  font-size: 2rem;
+  svg path{
+    stroke: $whiteThemeText;
+  }
+  .news{
+    width: 2.6rem;
+    height: 2.6rem;
+    fill: $whiteThemeText;
+    &:hover{
+      fill: scale-color($whiteThemeText, $lightness: +60%);
+    }
+  }
+  &{
+    position: relative;
+    &::after,
+    &::before{
+      bottom: -3px;
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: $GREEN;
+      transition: all .25s linear;
+    }
+    &::after{left: 0}
+    &::before{right: 0}
+  }
+  &:hover{
+    &::after{
+      left: 50%;
+      opacity: 1;
+      width: 50%;
+    }
+    &::before{
+      right: 50%;
+      opacity: 1;
+      width: 50%;
+    }
+  }
+}
+li:nth-of-type(2){
+  .headerLink{
+    &::before, &::after{
+      bottom: 0px !important;
+    }
   }
 }
 .hidden{
@@ -16,7 +64,7 @@
   gap: 40px;
   position: relative;
 }
-.menu{
+.menu, .hidden{
   animation: burgerShow .3s linear;
 }
 @media (max-width: 450px) {

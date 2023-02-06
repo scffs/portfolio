@@ -32,33 +32,6 @@ a{
     transition: color .2s linear;
     color: $primaryHover;
   }
-  &.headerLink{
-    position: relative;
-    &::after,
-    &::before{
-      bottom: -3px;
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background-color: $GREEN;
-      transition: all .2s linear;
-    }
-    &::after{left: 0}
-    &::before{right: 0}
-  }
-  &.headerLink:hover{
-    &::after{
-      left: 50%;
-      opacity: 1;
-      width: 50%;
-    }
-    &::before{
-      right: 50%;
-      opacity: 1;
-      width: 50%;
-    }
-  }
 }
 button{
   border: none;
