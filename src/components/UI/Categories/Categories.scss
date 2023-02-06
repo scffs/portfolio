@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 20px;
   .item{
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
     user-select: none;
     font-weight: 700;
     cursor: pointer;
@@ -12,7 +13,6 @@
     color: $primaryColor;
     background: $bgCard;
     &:hover{
-      box-shadow: 0 0 3px 5px rgb(9, 14, 9);
       transform: scale(1.1);
       transition: all .15s linear;
       border-radius: 10px;

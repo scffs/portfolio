@@ -4,10 +4,11 @@
   cursor: auto;
   user-select: none;
   margin-top: 10px;
-  background-color: $bgCard;
   border-radius: 10px;
-  box-shadow: 0 0 10px 3px rgb(9, 14, 9);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
   padding: 10px 30px;
+  animation: pageGradient 6s linear 1s infinite alternate running;
+  -webkit-animation: pageGradient 6s linear 1s infinite alternate running;
   span{
     color: $whiteThemeText;
   }
