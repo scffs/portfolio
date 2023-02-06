@@ -1,11 +1,11 @@
-# Портфолио
-### Личный сайт
+# Portfolio
+### Personal website
 
 ![изображение](https://user-images.githubusercontent.com/67464545/216356309-7385f8c4-238d-49b8-aec0-86a31e4c4ece.png)
 
-##### Ссылка на демо - https://scffs.github.io/portfolio/
+##### Demo - https://scffs.github.io/portfolio/
 
-# Установка
+# Instalation
 
 #### SSH
 ```
@@ -19,20 +19,19 @@ https://github.com/scffs/portfolio.git
 ```
 gh repo clone scffs/portfolio
 ```
-Для установки зависимостей сразу пропишите `npm i`
-> При возникновении ошибок удалите `.node_modules` и пропишите `npm i -s`
+For installing all dependencies type `npm i`
+> If you get some error delete `.node_modules` and use `npm i -s`
 
-Основные библиотеки / инструменты:
+Main libraries / tools:
 + React
 + React Router Dom v6
 + SCSS
 + Skeleton
 
-# Структура проекта
-
-Все файлы, связанные с кодом проекта, находятся в `portfolio/src`
-+ `assets` - статичные картинки
-+ `components` - все компоненты проекта
-+ `pages` - отдельные страницы сайта
-+ `styles` - базовые стили 
-+ `utils` - картинки-заглушки
+# Structure of the project
+All files associated with the project code are located in `portfolio/src`
++ `assets` - static images
++ `components` - all components of the project
++ `pages` - individual pages of the site
++ `styles` - main styles 
++ `utils` - blank images
