@@ -28,3 +28,10 @@
     order: -1;
   }
 }
+@media (max-width: 560px) {
+  .profileImage{
+    > img{
+      width: 200px !important;
+    }
+  }
+}

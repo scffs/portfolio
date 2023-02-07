@@ -18,6 +18,7 @@
     width: 2.6rem;
     height: 2.6rem;
     fill: $whiteThemeText;
+    margin-top: 3px;
     &:hover{
       fill: scale-color($whiteThemeText, $lightness: +60%);
     }
@@ -26,7 +27,7 @@
     position: relative;
     &::after,
     &::before{
-      bottom: -3px;
+      bottom: -6px;
       content: '';
       position: absolute;
       width: 0;
@@ -70,13 +71,13 @@ li:nth-of-type(2){
 @media (max-width: 450px) {
   .menu, .hidden{
     display: block;
-    padding: 10px;
+    padding: 13px 30px 5px;
     margin-top: 10px;
     position: fixed;
-    left: 45px;
+    left: 50px;
     background: $bgMenuMobile;
     z-index: 3;
-    top: 0;
+    top: 20px;
     font-size: 2em;
     text-align: center;
     border-radius: 30px;
