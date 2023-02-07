@@ -12,10 +12,11 @@ $GREEN: #98c379;
 $YELLOW: #e5c07b;
 $PINK: #c678dd;
 $GRAY: #5c6370;
-$bgCard: #2a2a32;
 
 $userNameColor: #727272;
 
+$bgCard: #2a2a32;
 $bgWhite: #1d1d23;
 $bgCategories: linear-gradient(90deg, #32127a,#e0218a);
 $bgMenuMobile: linear-gradient(90deg, #1d1926, #252525);
+$bgGrad: linear-gradient(50deg, $bgCard, darken($bgCard, 10%));
