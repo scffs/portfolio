@@ -13,10 +13,8 @@ body {
   color: $primaryColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $bgWhite;
+  background: $bgWhitePage;
   overflow-x: hidden;
-  animation: pageGradient 5s linear 1s infinite alternate running;
-  -webkit-animation: pageGradient 5s linear 1s infinite alternate running;
 }
 ul {list-style-type: none}
 a{
