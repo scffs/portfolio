@@ -22,9 +22,6 @@
     &:not(:first-child){
       margin-top: 1px;
     }
-    &:not(:last-of-type) span:last-of-type{
-      font-size: 1rem;
-    }
   }
 }
 .const{

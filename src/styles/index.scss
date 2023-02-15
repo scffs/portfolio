@@ -7,6 +7,27 @@
 }
 #root{
   min-width: 340px;
+  &::after, &::before{
+    content: '';
+    position: absolute;
+    background: darken($bgWhite, 5%);
+    top: 0;
+    z-index: -10;
+    border-radius: 5px;
+    transform: rotate(30deg);
+    box-shadow: 0 5px 10px 1px #0d0d10;
+  }
+  &::after{
+    width: 600px;
+    height: 500px;
+    right: -80px;
+  }
+  &::before{
+    width: 300px;
+    height: 300px;
+    left: -80px;
+    transform: rotate(5deg);
+  }
 }
 body {
   font-family: 'Ubuntu', BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
