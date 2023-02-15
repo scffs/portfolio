@@ -20,7 +20,9 @@
   animation-duration: 20s;
   -webkit-animation: planets 10s linear infinite;
   animation: planets 10s linear infinite;
-  border-radius: 30%;
+  border-radius: 20px;
+  padding: 7px;
+  background: scale-color(#2a2a32, $lightness:+10%);
   &:first-child{
     top: 13%;
     left: 7%;

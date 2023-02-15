@@ -18,6 +18,6 @@ $userNameColor: #727272;
 $bgCard: #2a2a32;
 $bgWhite: #1d1d23;
 $bgWhitePage: linear-gradient(to right, $bgCard, darken($bgCard, 10%));
-$bgCategories: linear-gradient(90deg, #32127a,#e0218a);
+$bgCategories: linear-gradient(90deg, $GREEN, darken($GREEN, 20%));
 $bgMenuMobile: linear-gradient(90deg, #1d1926, #252525);
 $bgGrad: linear-gradient(50deg, $bgCard, darken($bgCard, 10%));

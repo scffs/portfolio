@@ -13,29 +13,29 @@ import Person from './Slides/Person'
 import Preview from './Slides/Preview'
 
 const Slider = () =>{
-   return(
-       <>
-           <Swiper
-               effect={"cards"}
-               grabCursor={true}
-               modules={[EffectCards]}
-               className="mySwiper"
-           >
-               <SwiperSlide>
-                   <Preview />
-               </SwiperSlide>
-               <SwiperSlide>
+    return(
+        <>
+            <Swiper
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <Preview />
+                </SwiperSlide>
+                <SwiperSlide>
                     <SocialLinks />
-               </SwiperSlide>
-               <SwiperSlide>
+                </SwiperSlide>
+                <SwiperSlide>
                     <Skills />
-               </SwiperSlide>
-               <SwiperSlide>
-                   <Person />
-               </SwiperSlide>
-           </Swiper>
-       </>
-   )
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Person />
+                </SwiperSlide>
+            </Swiper>
+        </>
+    )
 
 }
 
