@@ -1,4 +1,5 @@
 import React from 'react'
+
 const Avatar = ({width, height, borderRadius, src}) => (
     <img style={{
         width: `${width}`,
@@ -10,6 +11,5 @@ const Avatar = ({width, height, borderRadius, src}) => (
          alt="ava"
     />
 );
-
 
 export default Avatar

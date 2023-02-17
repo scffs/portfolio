@@ -14,5 +14,4 @@ const Author = ({authorLogo, author}) => (
     </div>
 );
 
-
 export default Author

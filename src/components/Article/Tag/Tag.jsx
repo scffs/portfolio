@@ -1,4 +1,5 @@
 import React from 'react'
+
 import s from './Tag.module.scss'
 
 const Tag = ({tag, text}) => (
@@ -9,6 +10,5 @@ const Tag = ({tag, text}) => (
             {text}
         </span>
 );
-
 
 export default Tag;

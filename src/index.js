@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import './styles/index.scss'
 
-import {BrowserRouter} from "react-router-dom"
+import {BrowserRouter} from 'react-router-dom'
 
 import App from './App'
 import Layout from './components/Layout'
@@ -14,4 +14,3 @@ root.render(
         <Layout children={<App />} />
     </BrowserRouter>
 );
-
