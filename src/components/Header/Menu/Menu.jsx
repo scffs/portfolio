@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 
-import menu from '../MenuItem'
-import s from './Menu.module.scss'
-
 import {AiOutlineMenu} from 'react-icons/ai'
 import {RxCross2} from 'react-icons/rx'
 import {GrHomeRounded} from 'react-icons/gr'
-import {MdOutlineArticle} from 'react-icons/md'
+import {BiNews} from 'react-icons/bi'
+
+import menu from '../MenuItem'
+import s from './Menu.module.scss'
 
 const Menu = () => {
     const [isBurger, setIsBurger] = useState(false)
@@ -20,7 +20,7 @@ const Menu = () => {
     return (
         <>
             <button aria-label='Menu' onClick={() => setIsBurger(!isBurger)} className={s.burger}>
-                {isBurger ? <RxCross2/> : <AiOutlineMenu/>}
+                {isBurger ? <RxCross2 size='2.5em' /> : <AiOutlineMenu size='2.5em' />}
             </button>
             {
                 <ul className={isBurger ? s.menu : s.hidden}>
@@ -31,9 +31,10 @@ const Menu = () => {
                                     aria-label={title}
                                     className={s.headerLink}
                                     to={src}
-                                    onClick={() => isBurger ? setIsBurger(!isBurger) : ''}
+                                    onClick={() => isBurger && setIsBurger(!isBurger)}
                                 >
-                                    {id === 1 ? <GrHomeRounded aria-label='home' title='home'/> : <MdOutlineArticle className={s.news} aria-label='news' title='news'/>}
+                                    {id === 1 ? <GrHomeRounded aria-label='home' title='home' size='2em'/>
+                                              : <BiNews className={s.news} aria-label='news' title='news' size='2.5em'/>}
                                 </Link>
                             </li>
                         ))

@@ -4,19 +4,12 @@
   position: relative;
   z-index: 4;
   display: none;
-  > svg{
-    width: 2.5rem;
-    height: 2.5rem;
-  }
 }
 .headerLink{
-  font-size: 2rem;
   svg path{
     stroke: $whiteThemeText;
   }
   .news{
-    width: 2.6rem;
-    height: 2.6rem;
     fill: $whiteThemeText;
     margin-top: 3px;
     &:hover{
@@ -54,7 +47,7 @@
 li:nth-of-type(2){
   .headerLink{
     &::before, &::after{
-      bottom: 0px !important;
+      bottom: 0 !important;
     }
   }
 }
@@ -78,12 +71,11 @@ li:nth-of-type(2){
     background: $bgMenuMobile;
     z-index: 3;
     top: 20px;
-    font-size: 2em;
     text-align: center;
     border-radius: 30px;
     a{
       display: block;
-      padding: 15px;
+      padding: 10px;
     }
   }
   .hidden{
