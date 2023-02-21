@@ -5,20 +5,26 @@ import s from './Article.module.scss'
 import Author from '../Author/Author'
 import Tag from './Tag/Tag'
 
-const Article = ({preview, title, description, tag, tagId, authorLogo, author}) => {
+import {Link} from 'react-router-dom'
+
+import logo from '../../assets/img/ava.webp'
+
+const Article = ({link, preview, title, description, tag, tagId, author}) => {
     return (
         <>
-            <article className={s.article}>
-                <img className={s.img} src={preview} alt="img"/>
-                <div className={s.info}>
-                    <div className={s.top}>
-                        <Tag tag={tagId} text={tag} />
-                        <Author author={author} authorLogo={authorLogo} />
+            <Link to={link} className={s.link} target='_blank'>
+                <article className={s.article}>
+                    <img className={s.img} src={preview} alt="img"/>
+                    <div className={s.info}>
+                        <div className={s.top}>
+                            <Tag tag={tagId} text={tag}/>
+                            <Author author={author} authorLogo={logo}/>
+                        </div>
+                        <h3 className={s.h3}>{title}</h3>
+                        <p className={s.description}>{description}</p>
                     </div>
-                    <h3 className={s.h3}>{title}</h3>
-                    <p className={s.description}>{description}</p>
-                </div>
-            </article>
+                </article>
+            </Link>
         </>
     );
 };

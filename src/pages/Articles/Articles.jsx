@@ -14,7 +14,7 @@ const Articles = () => {
     const [search, setSearch] = useState('')
 
     const articlesList = articles.filter(post => {
-        return post.title.toLowerCase().includes(search.toLowerCase())
+        return post.title?.toLowerCase().includes(search.toLowerCase())
     }).map(post =>(<Article key={post.id} {...post} />))
 
     const width = window.innerWidth > 600 ? 600 : 330
@@ -40,7 +40,7 @@ const Articles = () => {
                 { isLoading ? <ArticlesSkeleton width={width} />
                     : isArticlesExist ? articlesList
                         : <p className={s.notFound}>
-                            Подходящих статей не найдено
+                            No suitable articles were found
                         </p>
                 }
             </div>

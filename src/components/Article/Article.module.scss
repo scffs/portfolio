@@ -1,5 +1,9 @@
 @import '../../styles/vars';
 @import '../../styles/keyframes';
+.link{
+  font-weight: unset;
+  font-size: unset;
+}
 .article{
   animation: pageShow .4s linear;
   -webkit-animation: pageShow .4s linear;
