@@ -1,16 +1,14 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
 
 import s from './Article.module.scss'
 
 import Author from '../Author/Author'
 import Tag from './Tag/Tag'
 
-const Article = ({id, preview, title, description, tag, tagId, authorLogo, author}) => {
-    const router = useNavigate()
+const Article = ({preview, title, description, tag, tagId, authorLogo, author}) => {
     return (
         <>
-            <article className={s.article} onClick={() => router(`${id}`)}>
+            <article className={s.article}>
                 <img className={s.img} src={preview} alt="img"/>
                 <div className={s.info}>
                     <div className={s.top}>
