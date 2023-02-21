@@ -11,7 +11,7 @@ const Categories = ({value, onClickCategory}) => {
                         <li
                             className={value === id ? 'item active' : 'item'}
                             key={id}
-                            onClick={() => (onClickCategory(id))}
+                            onClick={() => (onClickCategory(category !== 'All' ? category : ''))}
                         >
                             {category}
                         </li>

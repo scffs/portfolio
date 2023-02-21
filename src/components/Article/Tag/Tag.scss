@@ -1,0 +1,29 @@
+@import '../../../styles/vars';
+.tag{
+  position: relative;
+  padding-left: 15px;
+  &::after{
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    left: 0;
+    top: 7px;
+    border-radius: 50%;
+  }
+  &-1::after{
+    background: $RED;
+  }
+  &-2::after{
+    background: $YELLOW;
+  }
+  &-3::after{
+    background: $BLUE;
+  }
+  &-4::after{
+    background: $GREEN;
+  }
+  &-5::after{
+    background: $PINK;
+  }
+}

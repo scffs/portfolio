@@ -1,2 +1,2 @@
-const categoriesList = ['All', 'Frontend', 'OpenSource', 'C#']
+const categoriesList = ['All', 'Frontend', 'OpenSource', 'DevOps', 'Other']
 export default categoriesList

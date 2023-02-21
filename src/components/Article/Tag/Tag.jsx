@@ -1,14 +1,12 @@
 import React from 'react'
 
-import s from './Tag.module.scss'
+import './Tag.scss'
 
-const Tag = ({tag, text}) => (
-    <span className={`${tag === 1 ?
-        s.tagStudy : tag === 3 ?
-            s.tagNote : s.tagProgramming}`
-    }>
-            {text}
-        </span>
-);
+const Tag = ({tags}) => (
+    tags.map((tag, id) =>
+        <span key={id}
+              className={`tag tag-${id + 1}`}>{tag}</span>
+    )
+)
 
-export default Tag;
+export default Tag

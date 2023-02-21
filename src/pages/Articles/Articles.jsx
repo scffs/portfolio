@@ -22,7 +22,7 @@ const Articles = () => {
 
     useEffect(() => {
         setIsLoading(true)
-        fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tagId=${categoryId ? categoryId : ''}`)
+        fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tags=${categoryId ? categoryId : ''}`)
             .then((res) => res.json())
             .then((arr) => {
                 setArticles(arr)
