@@ -12,7 +12,7 @@ import logo from '../../assets/img/ava.webp'
 const Article = ({link, preview, title, description, tag, tagId, author}) => {
     return (
         <>
-            <Link to={link} className={s.link} target='_blank'>
+            <Link to={link} className={s.link} target='_blank' rel="noreferrer">
                 <article className={s.article}>
                     <img className={s.img} src={preview} alt="img"/>
                     <div className={s.info}>
