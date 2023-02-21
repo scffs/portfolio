@@ -9,9 +9,9 @@ const Categories = ({value, onClickCategory}) => {
                 {
                     categoriesList.map((category, id) =>
                         <li
-                            className={value === id ? 'item active' : 'item'}
+                            className={value === category ? 'item active' : 'item'}
                             key={id}
-                            onClick={() => (onClickCategory(category !== 'All' ? category : ''))}
+                            onClick={() => (onClickCategory(category))}
                         >
                             {category}
                         </li>
