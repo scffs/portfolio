@@ -2,7 +2,12 @@ import React from 'react'
 
 import s from './Search.module.scss'
 
-const Search = ({ search, setSearch}) => {
+/**
+ * @param {string} search
+ * @param {function} setSearch
+*/
+
+const Search = ({search, setSearch}) => {
     return (
         <input
             className={s.input}

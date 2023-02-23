@@ -3,11 +3,20 @@ import React from 'react'
 import s from './Article.module.scss'
 
 import Author from '../Author/Author'
-import Tag from './Tag/Tag'
+import Category from './Category/Category'
 
 import {Link} from 'react-router-dom'
 
 import logo from '../../assets/img/ava.webp'
+
+/**
+ * @param {array} tags
+ * @param {string} link
+ * @param {string} preview
+ * @param {string} description
+ * @param {string} author
+ * @param {string} title
+*/
 
 const Article = ({link, preview, title, description, tags, author}) => {
     return (
@@ -17,7 +26,7 @@ const Article = ({link, preview, title, description, tags, author}) => {
                 <div className={s.info}>
                     <div className={s.top}>
                         <div className={s.tags}>
-                            <Tag tags={tags}/>
+                            <Category tags={tags}/>
                         </div>
                         <Author author={author} authorLogo={logo}/>
                     </div>
