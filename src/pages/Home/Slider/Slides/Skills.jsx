@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Skills = () => {
     return (
         <>
@@ -16,16 +14,19 @@ const Skills = () => {
                 <span className='text'>TypeScript</span><span>:</span><span className='link'> 'beginner'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
-                <span className='text'>HTML/CSS</span><span>:</span><span className='link'> 'intermediate'</span><span>,</span>
-            </pre>
-            <pre>&nbsp;&nbsp;
-                <span className='text'>MySQL</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
+                <span className='text'>Pentens</span><span>:</span><span className='link'> 'beginner'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>QA engineer</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
+                <span className='text'>MySQL</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
+            </pre>
+            <pre>&nbsp;&nbsp;
                 <span className='text'>Git</span><span>:</span><span className='link'> 'intermediate'</span><span>,</span>
+            </pre>
+            <pre>&nbsp;&nbsp;
+                <span className='text'>HTML/CSS</span><span>:</span><span className='link'> 'intermediate'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>Python</span><span>:</span><span className='link'> 'junior'</span><span>,</span>

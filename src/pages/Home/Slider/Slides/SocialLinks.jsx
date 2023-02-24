@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SocialLinks = () => {
     return (
         <>
@@ -25,6 +23,9 @@ const SocialLinks = () => {
                 <span className='text'>github</span><span>:</span><a className='link' href="https://github.com/scffs" target="_blank" rel="noreferrer"> 'github.com/scffs'</a><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
+                <span className='text'>mail</span><span>:</span><a className='link' href="mailto:scoffs@internet.ru" target="_blank" rel="noreferrer"> 'scoffs@internet.ru'</a><span></span>
+            </pre>
+            <pre>&nbsp;&nbsp;
                 <span className='text'>habr</span><span>:</span><a className='link' href="https://habr.com/ru/users/scoffs/" target="_blank" rel="noreferrer"> 'habr.com/ru/users/scoffs'</a><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
@@ -32,9 +33,6 @@ const SocialLinks = () => {
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>vk</span><span>:</span><a className='link' href="https://vk.com/scffs" target="_blank" rel="noreferrer"> 'vk.com/scffs'</a><span>,</span>
-            </pre>
-            <pre>&nbsp;&nbsp;
-                       <span className='text'>mail</span><span>:</span><a className='link' href="mailto:scoffs@internet.ru" target="_blank" rel="noreferrer"> 'scoffs@internet.ru'</a><span></span>
             </pre>
             <span>{"}"}</span>
         </>
