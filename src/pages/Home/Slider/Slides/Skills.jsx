@@ -14,7 +14,7 @@ const Skills = () => {
                 <span className='text'>TypeScript</span><span>:</span><span className='link'> 'beginner'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
-                <span className='text'>Pentens</span><span>:</span><span className='link'> 'beginner'</span><span>,</span>
+                <span className='text'>Pentest</span><span>:</span><span className='link'> 'beginner'</span><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>QA engineer</span><span>:</span><span className='link'> 'junior'</span><span>,</span>
