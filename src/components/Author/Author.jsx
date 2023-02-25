@@ -4,6 +4,11 @@ import {AiOutlineUser} from 'react-icons/ai'
 
 import s from './Author.module.scss'
 
+/**
+ * @param {string} authorLogo
+ * @param {string} author
+*/
+
 const Author = ({authorLogo, author}) => (
     <div className={s.author}>
         <span className={s.authorName}>{author || 'Аноним'}</span>

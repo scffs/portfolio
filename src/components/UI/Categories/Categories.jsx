@@ -2,6 +2,11 @@ import './Categories.scss'
 
 import categoriesList from './categoriesList'
 
+/**
+ * @param {number} value
+ * @param {function} onClickCategory
+*/
+
 const Categories = ({value, onClickCategory}) => {
     return (
         <div>

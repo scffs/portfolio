@@ -3,6 +3,7 @@ import React from 'react'
 import s from './Footer.module.scss'
 
 import logos from './socialLogos'
+
 const Footer = () => (
     <footer className={s.footer}>
         <ul className={s.socials}>

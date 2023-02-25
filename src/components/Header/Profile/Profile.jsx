@@ -7,6 +7,11 @@ import Avatar from '../../Avatar/Avatar'
 
 import s from './Profile.module.scss'
 
+/**
+ * @param {string} name
+ * @param {string} role
+*/
+
 const Profile = ({name, role}) => {
     return (
         <>

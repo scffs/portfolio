@@ -3,6 +3,7 @@ import React /*, {createRef}*/ from 'react'
 import s from './Roadmap.module.scss'
 
 import Skill from './Skill/Skill'
+
 import skills from './Skill/skillsList.js'
 
 const Roadmap = () => {
