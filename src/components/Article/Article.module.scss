@@ -3,14 +3,14 @@
 .link{
   font-weight: unset;
   font-size: unset;
-}
-.article{
   animation: pageShow .4s linear;
   -webkit-animation: pageShow .4s linear;
   &:nth-child(2n){
     animation: pageShowReverse .4s linear;
     -webkit-animation: pageShowReverse .4s linear;
   }
+}
+.article{
   &:hover{
     transform: translateY(-10px);
     transition: transform .15s linear;
@@ -30,11 +30,22 @@
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     object-position: 0 0;
-    max-height: 350px;
+    max-height: 300px;
+    min-height: 300px
   }
   .description{
     color: $primaryColor;
     font-size: 1.3rem;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 2;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
   }
   .info{
     padding: 20px;
