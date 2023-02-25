@@ -20,8 +20,9 @@ https://github.com/scffs/portfolio.git
 ```
 gh repo clone scffs/portfolio
 ```
-For installing all dependencies type `npm i`
-> If you get some error delete `.node_modules` and use `npm i -s`
+For installing all dependencies type `yarn`
+> If you get some error delete `.node_modules` and try again **or** create an issue about that
+
 
 Main libraries / tools:
 + React
@@ -35,4 +36,3 @@ All files associated with the project code are located in `portfolio/src`
 + `components` - all components of the project
 + `pages` - individual pages of the site
 + `styles` - main styles
-+ `utils` - blank images
