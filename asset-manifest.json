@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94d513dc.css",
-    "main.js": "/portfolio/static/js/main.b205af9e.js",
-    "static/media/ava.webp": "/portfolio/static/media/ava.71554a021473c573e18c.webp",
+    "main.css": "/portfolio/static/css/main.10535a4f.css",
+    "main.js": "/portfolio/static/js/main.7dde83b8.js",
     "static/media/habr.webp": "/portfolio/static/media/habr.6dab6319c546e8a14ffa.webp",
-    "static/media/hash.webp": "/portfolio/static/media/hash.85b3967614147fa926b2.webp",
+    "static/media/ava.webp": "/portfolio/static/media/ava.15cfc3581e841d713759.webp",
     "static/media/stack.webp": "/portfolio/static/media/stack.6389479c06f091351885.webp",
     "static/media/bs.webp": "/portfolio/static/media/bs.e74ecce30f8348887960.webp",
-    "static/media/dev-rainbow.svg": "/portfolio/static/media/dev-rainbow.332d78c19cd72875ca0101ae555eabe6.svg",
+    "static/media/tg.webp": "/portfolio/static/media/tg.9c40ccea33103b61edb4.webp",
     "static/media/react.webp": "/portfolio/static/media/react.934cb6fb3b9c81f2474e.webp",
     "static/media/python.webp": "/portfolio/static/media/python.b4e6c684a8920f4587e5.webp",
     "static/media/nodejs.webp": "/portfolio/static/media/nodejs.b4d8043db3363679bc53.webp",
@@ -15,11 +14,11 @@
     "static/media/vk.webp": "/portfolio/static/media/vk.e97dfd21dce1f0bba4e5.webp",
     "static/media/ts.webp": "/portfolio/static/media/ts.eb777a43c51c62f6a2cc.webp",
     "index.html": "/portfolio/index.html",
-    "main.94d513dc.css.map": "/portfolio/static/css/main.94d513dc.css.map",
-    "main.b205af9e.js.map": "/portfolio/static/js/main.b205af9e.js.map"
+    "main.10535a4f.css.map": "/portfolio/static/css/main.10535a4f.css.map",
+    "main.7dde83b8.js.map": "/portfolio/static/js/main.7dde83b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.94d513dc.css",
-    "static/js/main.b205af9e.js"
+    "static/css/main.10535a4f.css",
+    "static/js/main.7dde83b8.js"
   ]
 }
