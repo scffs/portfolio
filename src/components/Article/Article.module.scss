@@ -34,17 +34,6 @@
   .description{
     color: $primaryColor;
     font-size: 1.3rem;
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    -ms-line-clamp: 1;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    display: -webkit-box;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
   }
   .info{
     padding: 20px;
@@ -59,5 +48,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+  }
+  .description, .h3{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
   }
 }
