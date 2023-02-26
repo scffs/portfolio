@@ -1,0 +1,35 @@
+@import '../../styles/vars';
+.hexagon{
+  position: relative;
+  width: 10em;
+  height: 17.32em;
+  border-radius: 1em/.5em;
+  background: $bgGreen;
+  transform: rotate(-15deg);
+  left: -75px;
+  top: 5px;
+}
+.hexagon:before,
+.hexagon:after{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+
+.hexagon:before{
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.hexagon:after{
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+@media (max-width: 560px) {
+  .hexagon{
+    left: -30px;
+    top: -34px;
+  }
+}
