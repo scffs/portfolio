@@ -65,7 +65,12 @@ a.link:hover{
     &-slide{
       &:first-child, a{font-size: 0.7rem;}
       padding: 20px;
-      font-size: .9rem;
+      font-size: .8rem;
+    }
+    pre{
+      &:not(:first-child){
+        margin-top: 4px;
+      }
     }
     .comment {font-size: 0.7rem;}
   }
