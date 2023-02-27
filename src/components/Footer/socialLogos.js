@@ -7,7 +7,7 @@ const logos = [
     {
         path: `${habr}`,
         alt: 'Habr',
-        url: 'https://habr.com/users/scffs'
+        url: 'https://habr.com/ru/users/scoffs/'
     },
     {
         path: `${stack}`,
