@@ -1,8 +1,7 @@
 @import '../../styles/vars';
 .footer{
   text-align: center;
-  margin-top: 80px;
-  padding: 20px;
+  padding: 10px;
   .socials{
     display: flex;
     align-items: center;
@@ -10,7 +9,7 @@
     gap: 30px;
   }
   p{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1rem;
     color: scale-color($bgCard, $lightness: +60%);
   }
