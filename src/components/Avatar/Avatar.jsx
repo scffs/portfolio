@@ -22,14 +22,14 @@ const Avatar = ({width, height, borderRadius, src, isHexagon, hexagonHeight, ima
                     borderRadius: hexagonHeight / 10
                 }}>
                     <img style={{
-                                    position: 'absolute',
-                                    width: `${width}px`,
-                                    height:`${height}px`,
-                                    zIndex: '1',
-                                    clipPath: 'polygon(48.74% -1.54%, 94.7% 24.2%, 95.16% 76.05%, 50.4% 102.17%, 6.34% 75.5%, 6.08% 23.57%)',
-                                    borderRadius: '100%',
-                                    left: `${imageLeft}px`,
-                                }}
+                        position: 'absolute',
+                        width: `${width}px`,
+                        height:`${height}px`,
+                        zIndex: '1',
+                        clipPath: 'polygon(48.74% -1.54%, 94.7% 24.2%, 95.16% 76.05%, 50.4% 102.17%, 6.34% 75.5%, 6.08% 23.57%)',
+                        borderRadius: '100%',
+                        left: `${imageLeft}px`,
+                    }}
                          src={src}
                          alt='ava'
                          className='image'
@@ -42,7 +42,7 @@ const Avatar = ({width, height, borderRadius, src, isHexagon, hexagonHeight, ima
                     borderRadius: `${borderRadius}`,
                 }}
                      src={src}
-                     alt="ava"
+                     alt='ava'
                 />
         }
     </>
