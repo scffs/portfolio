@@ -23,10 +23,13 @@ const Profile = ({name, role}) => {
                             className={s.name}
                         >
                             <Avatar
-                                width='35px'
-                                height='35px'
+                                width='45'
+                                height='45'
                                 borderRadius='50px'
                                 src={logo}
+                                isHexagon='yes'
+                                hexagonHeight='45'
+                                imageLeft='-8'
                             />
                             <span>{name}</span>
                         </Link>

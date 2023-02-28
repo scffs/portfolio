@@ -1,35 +1,39 @@
 @import '../../styles/vars';
-.hexagon{
+.hexagon {
   position: relative;
-  width: 10em;
-  height: 17.32em;
-  border-radius: 1em/.5em;
-  background: $bgGreen;
-  transform: rotate(-15deg);
-  left: -75px;
-  top: 5px;
-}
-.hexagon:before,
-.hexagon:after{
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background: inherit;
-  content: '';
-}
+  z-index: 50;
+  background-image: $bgGreen;
+  transition: transform .3s linear;
+  &:hover {
+    transform: rotate(30deg);
+  }
+  &:hover img.image{
+    transform: rotate(0);
+  }
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    border-radius: inherit;
+  }
+  &:before {
+    transform: rotate(60deg);
+  }
 
-.hexagon:before{
-  -webkit-transform: rotate(60deg);
-  transform: rotate(60deg);
-}
-.hexagon:after{
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg);
-}
-@media (max-width: 560px) {
-  .hexagon{
-    left: -30px;
-    top: -34px;
+  &:after {
+    transform: rotate(-60deg);
+  }
+  img.image{
+    transform: rotate(30deg);
+    transition: transform .3s linear;
+    left: -50px;
   }
 }

@@ -3,29 +3,33 @@ import React from 'react'
 import './Avatar.scss'
 
 /**
- * @param {string | number} width
- * @param {string | number} height
+ * @param {number} width
+ * @param {number} height
  * @param {string} borderRadius
  * @param {string} src
  * @param {boolean} isHexagon
+ * @param {number} hexagonHeight
+ * @param {number} imageLeft
 */
 
-const Avatar = ({width, height, borderRadius, src, isHexagon}) => (
+const Avatar = ({width, height, borderRadius, src, isHexagon, hexagonHeight, imageLeft}) => (
     <>
         {
             isHexagon ?
-                <div className='hexagon'>
+                <div className='hexagon' style={{
+                    width: `${hexagonHeight * 0.645}px`,
+                    height: `${hexagonHeight}px`,
+                    borderRadius: hexagonHeight / 10
+                }}>
                     <img style={{
-                        position: 'absolute',
-                        width: `${width}px`,
-                        height:`${height}px`,
-                        zIndex: '1',
-                        clipPath: 'polygon(63.9% 0.53%, 99.69% 37.79%, 86.94% 85.7%, 37.07% 98.8%, 0.8% 62.37%, 15.30% 12.46%)',
-                        borderRadius: '100%',
-                        left: '-62px',
-                        transform: 'rotate(15deg)',
-                        top: '0',
-                    }}
+                                    position: 'absolute',
+                                    width: `${width}px`,
+                                    height:`${height}px`,
+                                    zIndex: '1',
+                                    clipPath: 'polygon(48.74% -1.54%, 94.7% 24.2%, 95.16% 76.05%, 50.4% 102.17%, 6.34% 75.5%, 6.08% 23.57%)',
+                                    borderRadius: '100%',
+                                    left: `${imageLeft}px`,
+                                }}
                          src={src}
                          alt='ava'
                          className='image'
@@ -33,8 +37,8 @@ const Avatar = ({width, height, borderRadius, src, isHexagon}) => (
                 </div>
                 :
                 <img style={{
-                    width: `${width}`,
-                    height:`${height}`,
+                    width: `${width}px`,
+                    height:`${height}px`,
                     borderRadius: `${borderRadius}`,
                 }}
                      src={src}
