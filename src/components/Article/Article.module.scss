@@ -1,6 +1,8 @@
 @import '../../styles/vars';
 @import '../../styles/keyframes';
 .link{
+  margin-top: 10px;
+  scroll-snap-align: start;
   font-weight: unset;
   font-size: unset;
   animation: pageShow .4s linear;
