@@ -16,11 +16,14 @@ const Avatar = ({width, height, borderRadius, src, isHexagon, hexagonHeight, ima
     <>
         {
             isHexagon ?
-                <div className='hexagon' style={{
-                    width: `${hexagonHeight * 0.645}px`,
-                    height: `${hexagonHeight}px`,
-                    borderRadius: hexagonHeight / 10
-                }}>
+                <div
+                    className='hexagon'
+                    style={{
+                        width: `${hexagonHeight * 0.645}px`,
+                        height: `${hexagonHeight}px`,
+                        borderRadius: hexagonHeight / 10
+                    }}
+                >
                     <img style={{
                         position: 'absolute',
                         width: `${width}px`,
@@ -37,9 +40,9 @@ const Avatar = ({width, height, borderRadius, src, isHexagon, hexagonHeight, ima
                 </div>
                 :
                 <img style={{
-                    width: `${width}px`,
-                    height:`${height}px`,
-                    borderRadius: `${borderRadius}`,
+                        width: `${width}px`,
+                        height:`${height}px`,
+                        borderRadius: `${borderRadius}`,
                 }}
                      src={src}
                      alt='ava'
