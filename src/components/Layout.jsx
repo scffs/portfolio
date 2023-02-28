@@ -7,7 +7,6 @@ import Footer from './Footer/Footer'
  * @param {JSX.Element} children
 */
 
-
 const Layout = ({children}) => (
     <div style={
         {
