@@ -1,8 +1,7 @@
 # Portfolio
 ### Personal website
 
-![ава](https://user-images.githubusercontent.com/67464545/221417316-2ab33851-ea44-4707-b087-256a8a4afc6a.png)
-
+![изображение](https://user-images.githubusercontent.com/67464545/221889929-46ce50bd-8d51-4b85-afd4-4347ff05bec9.png)
 
 ##### Demo - https://scffs.github.io/portfolio/
 
