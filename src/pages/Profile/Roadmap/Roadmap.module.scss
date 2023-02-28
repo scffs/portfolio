@@ -36,18 +36,30 @@
   }
 }
 .skillsList {
-  margin-top: 40px;
+  margin-top: 20px;
   display: grid;
 }
 @media (max-width: 1250px) {
-  .content{
-    margin-top: 40px;
+  .skillsList {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: auto;
+    align-items: flex-start;
+    gap: 20px;
   }
-}
-@media (max-width: 850px) {
   .content{
+    min-width: 220px;
+    max-width: 350px;
+    text-align: unset;
     &::before{
       content: unset;
     }
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    text-align: center;
   }
 }

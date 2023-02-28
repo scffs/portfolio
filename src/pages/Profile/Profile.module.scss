@@ -4,12 +4,11 @@
   -webkit-animation: profileShow .3s linear;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
-@media (max-width: 1250px) {
+@media (max-width: 768px) {
   .content{
-    display: unset;
+    flex-wrap: wrap;
   }
 }
