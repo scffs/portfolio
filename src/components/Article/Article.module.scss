@@ -1,7 +1,7 @@
 @import '../../styles/vars';
 @import '../../styles/keyframes';
 .link{
-  margin-top: 10px;
+  margin: 20px 10px;
   font-weight: unset;
   font-size: unset;
   animation: pageShow .4s linear;
@@ -62,5 +62,20 @@
     word-wrap: break-word;
     -webkit-box-orient: vertical;
     box-orient: vertical;
+  }
+  .authorLink{
+    font-weight: 500;
+    font-size: 1em;
+    &:hover{
+      color: $GREEN;
+    }
+  }
+}
+@media (max-width: 780px){
+  .link{
+    .description, .h3{
+      overflow: unset;
+      display: block;
+    }
   }
 }

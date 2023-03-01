@@ -4,13 +4,12 @@
   color: $BLUE;
   max-width: 800px;
   flex: 1 0 auto;
-  margin: 0 auto;
   position: relative;
   &::before{
     content: '';
     width: 2px;
     height: 1425px;
-    top: 137px;
+    top: 125px;
     z-index: -1;
     position: absolute;
     background-color: $whiteThemeText;
@@ -50,16 +49,13 @@
     gap: 20px;
   }
   .content{
-    min-width: 220px;
-    max-width: 350px;
-    text-align: unset;
+    text-align: left;
+    flex: unset;
+    margin: unset;
+    min-width: 200px;
+    max-width: 620px;
     &::before{
       content: unset;
     }
-  }
-}
-@media (max-width: 768px) {
-  .content {
-    text-align: center;
   }
 }

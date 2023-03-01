@@ -7,7 +7,13 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
+  .content{
+    justify-content: center;
+    gap: 80px;
+  }
+}
+@media (max-width: 800px) {
   .content{
     flex-wrap: wrap;
   }
