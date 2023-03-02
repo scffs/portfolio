@@ -1,7 +1,7 @@
 @import '../../styles/vars';
 .hexagon {
   position: relative;
-  z-index: 50;
+  z-index: 5;
   background-image: $bgGreen;
   transition: transform .3s linear;
   &:hover {
