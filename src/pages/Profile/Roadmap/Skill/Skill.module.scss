@@ -16,6 +16,7 @@
     right: -77px;
     top: 35px;
     border-radius: 3px;
+    transform: rotateZ(-45deg);
   }
   .info{
     display: flex;
@@ -55,7 +56,7 @@
 }
 @media (max-width: 1250px) {
   .block{
-    min-width: 285px;
+    min-width: 300px;
     height: 100%;
     .info{
       flex-wrap: nowrap;
