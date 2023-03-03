@@ -1,12 +1,9 @@
 @import '../../styles/keyframes';
 .info{
+  @include flex(0, center, space-between, 0);
   user-select: none;
   animation: pageShow .4s linear;
   -webkit-animation: pageShow .4s linear;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   position: relative;
   .ava{
     border-radius: 50%;

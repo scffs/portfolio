@@ -5,8 +5,7 @@
   position: relative;
   z-index: 50;
   .nav{
-    display: flex;
-    justify-content: space-between;
+    @include flex(0, 0, space-between, 0);
   }
   li:hover svg{
     transition: color .2s linear;

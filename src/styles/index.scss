@@ -12,8 +12,6 @@
 body {
   font-family: 'Ubuntu', 'Segoe UI', sans-serif;
   color: $primaryColor;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: $bgWhitePage;
   overflow-x: hidden;
 }

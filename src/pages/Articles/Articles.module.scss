@@ -1,8 +1,6 @@
 @import '../../styles/vars';
 .articleTop{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(0, center, space-between, 0);
   margin-bottom: 30px;
 }
 .articleList{

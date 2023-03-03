@@ -40,13 +40,10 @@
 }
 @media (max-width: 1250px) {
   .skillsList {
+    @include flex(20px, flex-start, flex-start, 0);
     padding: 20px;
-    display: flex;
-    justify-content: flex-start;
     overflow-y: hidden;
     overflow-x: auto;
-    align-items: flex-start;
-    gap: 20px;
   }
   .content{
     flex: unset;
