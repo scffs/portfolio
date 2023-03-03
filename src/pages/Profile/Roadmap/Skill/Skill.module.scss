@@ -19,10 +19,7 @@
     transform: rotateZ(-45deg);
   }
   .info{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex(10px, 0, center, wrap);
   }
   &:nth-child(2n){
     .time{
@@ -43,10 +40,8 @@
     color: $GREEN;
   }
   .knowledge{
+    @include flex(10px, 0, 0, wrap);
     margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
     > li{
       box-shadow: inset 0 5px 10px 5px rgb(14, 14, 2);
       padding: 10px;

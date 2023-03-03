@@ -12,17 +12,13 @@
     color: $whiteThemeText;
   }
   .top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(40px, center, space-between, 0);
     margin-bottom: 10px;
   }
   .userInfo{
     a{
+      @include flex(20px, center, 0, 0);
       color: $userNameColor;
-      display: flex;
-      align-items: center;
-      gap: 20px;
     }
   }
   svg{

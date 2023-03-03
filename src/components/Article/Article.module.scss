@@ -41,15 +41,11 @@
     padding: 20px;
   }
   .top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(0, center, space-between, 0);
   }
   .tags{
     margin-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    @include flex(10px, 0, 0, wrap);
   }
   .description, .h3{
     overflow: hidden;

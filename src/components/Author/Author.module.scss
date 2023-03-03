@@ -1,8 +1,6 @@
 @import '../../styles/vars';
 .author{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  @include flex(10px, center, 0, 0);
 }
 .authorLogo{
   width: 40px;

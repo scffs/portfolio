@@ -3,10 +3,7 @@
   text-align: center;
   padding: 10px;
   .socials{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    @include flex(30px, center, center, 0);
   }
   p{
     margin-top: 10px;

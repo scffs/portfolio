@@ -21,3 +21,19 @@ $bgWhitePage: linear-gradient(to right, $bgCard, darken($bgCard, 10%));
 $bgGreen: linear-gradient(90deg, $GREEN, darken($GREEN, 20%));
 $bgMenuMobile: linear-gradient(90deg, #1d1926, #252525);
 $bgGrad: linear-gradient(50deg, $bgCard, darken($bgCard, 10%));
+
+@mixin flex($gap: 0, $alignItems: 0, $justifyContent: 0, $flexWrap: 0){
+    display: flex;
+    @if($gap != 0){
+        gap: $gap;
+    }
+    @if($alignItems != 0){
+        align-items: $alignItems;
+    }
+    @if($flexWrap != 0){
+        flex-wrap: $flexWrap;
+    }
+    @if($justifyContent != 0){
+        justify-content: $justifyContent;
+    }
+}

@@ -52,10 +52,7 @@ li:nth-of-type(2){
   }
 }
 .hidden{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
+  @include flex(40px, center, flex-start, 0);
   position: relative;
 }
 .menu, .hidden{
