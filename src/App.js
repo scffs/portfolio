@@ -1,12 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
 import {lazy, Suspense} from 'react'
 
-// import Home from './pages/Home/Home'
-// import Profile from './pages/Profile/Profile'
-// import Articles from './pages/Articles/Articles'
-// import Register from './pages/Auth/Register/Register'
-// import NotFound from './pages/NotFound/NotFound'
-
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'))
 const Register = lazy(() => import('./pages/Auth/Register/Register'))
 const Articles = lazy(() => import('./pages/Articles/Articles'))
