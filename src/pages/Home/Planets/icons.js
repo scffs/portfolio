@@ -1,9 +1,9 @@
 import gh from '../../../assets/img/icons/gh-light.png'
 import python from '../../../assets/img/icons/python.webp'
 import node from '../../../assets/img/icons/nodejs.webp'
-import bs from '../../../assets/img/icons/bs.webp'
+import bs from '../../../assets/img/icons/bs.svg'
 import c from '../../../assets/img/icons/c#.png'
-import ts from '../../../assets/img/icons/ts.webp'
+import ts from '../../../assets/img/icons/ts.svg'
 import react from '../../../assets/img/icons/react.webp'
 import js from '../../../assets/img/icons/javaScript.webp'
 
