@@ -1,8 +1,6 @@
 @import '../../../styles/vars';
 .categories{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  @include flex(20px, 0, 0, wrap);
   .item{
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
     user-select: none;
