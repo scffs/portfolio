@@ -44,8 +44,8 @@
     @include flex(0, center, space-between, 0);
   }
   .tags{
-    margin-right: 10px;
     @include flex(10px, 0, 0, wrap);
+    margin-right: 10px;
   }
   .description, .h3{
     overflow: hidden;

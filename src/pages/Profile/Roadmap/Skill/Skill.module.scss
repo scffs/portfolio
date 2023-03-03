@@ -19,7 +19,7 @@
     transform: rotateZ(-45deg);
   }
   .info{
-    @include flex(10px, 0, center, wrap);
+    @include flex(10px, baseline, 0, wrap);
   }
   &:nth-child(2n){
     .time{
