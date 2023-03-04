@@ -1,6 +1,7 @@
 import {Route, Routes} from 'react-router-dom'
 import {lazy, Suspense} from 'react'
 
+import Loading from './components/Loading/Loading'
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'))
 const Register = lazy(() => import('./pages/Auth/Register/Register'))
 const Articles = lazy(() => import('./pages/Articles/Articles'))
@@ -9,7 +10,7 @@ const Home = lazy(() => import('./pages/Home/Home'))
 
 function App() {
     return (
-        <Suspense fallback={<div>Загрузка...</div>}>
+        <Suspense fallback={<Loading />}>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/portfolio' element={<Home />} />

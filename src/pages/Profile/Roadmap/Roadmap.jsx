@@ -7,7 +7,7 @@ import Skill from './Skill/Skill'
 import skills from './Skill/skillsList.js'
 
 const Roadmap = () => {
-    // TODO: adaptive height of after elem
+    // TODO: adaptive height of the after element
     // const refComponent = createRef()
     // const height = refComponent.current.getBoundingClientRect().height
     return (
