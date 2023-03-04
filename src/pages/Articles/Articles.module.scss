@@ -5,12 +5,9 @@
 }
 .articleList{
   padding: 20px;
-  height: 520px;
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(2, 1fr);
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 .notFound{
   grid-column: 1 / 3;
