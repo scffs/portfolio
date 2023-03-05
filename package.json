@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "2.0",
-  "homepage": "https://scffs.github.io/portfolio",
+  "homepage": "https://scffsz.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
