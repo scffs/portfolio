@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, {lazy, useEffect, useState} from 'react'
 
-import Article from '../../components/Article/Article'
-import Categories from '../../components/UI/Categories/Categories'
 import ArticlesSkeleton from './ArticlesSkeleton'
-import Search from '../../components/UI/Search/Search'
 
 import s from './Articles.module.scss'
+
+const Article = lazy(() => import('../../components/Article/Article'))
+const Categories = lazy(() => import('../../components/UI/Categories/Categories'))
+const Search = lazy(() => import('../../components/UI/Search/Search'))
 
 const Articles = () => {
     const [articles, setArticles] = useState([])

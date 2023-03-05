@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {lazy} from 'react'
 
 import s from './Profile.module.scss'
 
-import Projects from './Projects/Projects'
-import Roadmap from './Roadmap/Roadmap'
+const Roadmap = lazy(() => import('./Roadmap/Roadmap'))
+const Projects = lazy(() => import('./Projects/Projects'))
+
 
 const Profile = () => {
     return (
