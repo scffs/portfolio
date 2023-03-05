@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[955],{1955:function(e,n,r){r.r(n),r.d(n,{default:function(){return c}});var t=["All","Frontend","OpenSource","DevOps","Other"],i=r(184),c=function(e){var n=e.value,r=e.onClickCategory;return(0,i.jsx)("div",{children:(0,i.jsx)("ul",{className:"categories",children:t.map((function(e,t){return(0,i.jsx)("li",{className:n===e?"item active":"item",onClick:function(){return r(e)},children:e},t)}))})})}}}]);
+//# sourceMappingURL=955.7336b95c.chunk.js.map
