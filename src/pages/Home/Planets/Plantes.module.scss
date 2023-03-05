@@ -7,8 +7,8 @@
   top: -100px;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  -webkit-animation: wheel 10s linear infinite;
-  animation: wheel 10s linear infinite;
+  -webkit-animation: wheel 15s linear infinite;
+  animation: wheel 15s linear infinite;
 }
 .logo{
   transform-origin: center;
@@ -18,8 +18,8 @@
   height: 50px;
   -webkit-animation-duration: 20s;
   animation-duration: 20s;
-  -webkit-animation: planets 10s linear infinite;
-  animation: planets 10s linear infinite;
+  -webkit-animation: planets 15s linear infinite;
+  animation: planets 15s linear infinite;
   border-radius: 20px;
   padding: 7px;
   background: scale-color(#2a2a32, $lightness:+10%);
