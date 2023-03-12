@@ -13,7 +13,7 @@ git@github.com:scffs/portfolio.git
 ```
 #### HTTPS
 ```
-https://github.com/scffs/portfolio.git
+https://github.com/scffsz/portfolio.git
 ```
 #### GitHub CLI
 ```
