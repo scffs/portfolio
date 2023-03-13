@@ -1,7 +1,6 @@
 # Portfolio v2
 Made by React / SCSS / Vite
 
-##### This project is a copy of [old](https://github.com/scffsz/portfolio) version of my portfolio
 ##### I decided to rewrite it because I don't like the speed of Webpack and npm
 
 # Installation
