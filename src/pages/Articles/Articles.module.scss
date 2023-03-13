@@ -1,7 +1,6 @@
 @import '../../styles/vars';
 .articleTop{
   @include flex(0, center, space-between, 0);
-  margin-bottom: 30px;
 }
 .articleList{
   padding: 20px;

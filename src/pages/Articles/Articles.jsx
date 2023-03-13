@@ -1,25 +1,26 @@
-import React, {lazy, useEffect, useState} from 'react'
+import React, {lazy, Suspense, useEffect, useState} from 'react';
+
+import Loading from '../../components/Loading/Loading.jsx';
+
+import s from './Articles.module.scss';
 
 import ArticlesSkeleton from './ArticlesSkeleton'
-
-import s from './Articles.module.scss'
-
-const Article = lazy(() => import('../../components/Article/Article'))
-const Categories = lazy(() => import('../../components/UI/Categories/Categories'))
-const Search = lazy(() => import('../../components/UI/Search/Search'))
+const Article = lazy(() => import('../../components/Article/Article'));
+const Categories = lazy(() => import('../../components/UI/Categories/Categories'));
+const Search = lazy(() => import('../../components/UI/Search/Search'));
 
 const Articles = () => {
-    const [articles, setArticles] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-    const [categoryId, setCategoryId] = useState(0)
-    const [search, setSearch] = useState('')
+    const [articles, setArticles] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [categoryId, setCategoryId] = useState(0);
+    const [search, setSearch] = useState('');
 
     const articlesList = articles.filter(post => {
-        return post.title?.toLowerCase().includes(search.toLowerCase())
-    }).map(post =>(<Article key={post.id} {...post} />))
+        return post.title?.toLowerCase().includes(search.toLowerCase());
+    }).map(post =>(<Article key={post.id} {...post} />));
 
-    const width = window.innerWidth > 600 ? 600 : 330
-    const isArticlesExist = articlesList.length
+    const width = window.innerWidth > 600 ? 600 : 330;
+    const isArticlesExist = articlesList.length;
 
     useEffect(() => {
         setIsLoading(true)
@@ -29,16 +30,18 @@ const Articles = () => {
                 setArticles(arr)
                 setIsLoading(false)
             })
-    }, [categoryId])
+    }, [categoryId]);
 
     return (
         <>
             <div className={s.articleTop}>
-                <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)} />
-                <Search search={search} setSearch={setSearch} />
+                <Suspense fallback={<Loading />}>
+                    <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)} />
+                    <Search search={search} setSearch={setSearch} />
+                </Suspense>
             </div>
             <div className={s.articleList}>
-                { isLoading ? <ArticlesSkeleton width={width} />
+                {isLoading ? <ArticlesSkeleton width={width} />
                     : isArticlesExist ? articlesList
                         : <p className={s.notFound}>
                             No suitable articles were found
@@ -49,4 +52,4 @@ const Articles = () => {
     );
 };
 
-export default Articles
+export default Articles;

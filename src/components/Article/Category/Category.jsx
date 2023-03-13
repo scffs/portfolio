@@ -1,15 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import './Category.scss'
+import './Category.scss';
 
 /**
- * @param {array} tags
+ * @param {id} id
+ * @param {string} tag
 */
 
-const Category = ({tags}) => (
-    tags.map((tag, id) =>
-        <span key={id} className={`tag tag-${id + 1}`}>{tag}</span>
-    )
-)
+const Category = ({id, tag}) => (
+    <span className={`tag tag-${id + 1}`}>{tag}</span>
+);
 
-export default Category
+export default Category;

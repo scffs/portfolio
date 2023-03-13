@@ -1,10 +1,8 @@
-# Portfolio
-## Current repo - [click](https://github.com/scffsz/portfoliovite)
-### Personal website
+# Portfolio v2
+Made by React / SCSS / Vite
 
-![изображение](https://user-images.githubusercontent.com/67464545/221889929-46ce50bd-8d51-4b85-afd4-4347ff05bec9.png)
-
-##### Demo - https://scffs.github.io/portfolio/
+##### This project is a copy of [old](https://github.com/scffsz/portfolio) version of my portfolio
+##### I decided to rewrite it because I don't like the speed of Webpack and npm
 
 # Installation
 

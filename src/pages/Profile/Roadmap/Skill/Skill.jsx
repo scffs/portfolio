@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import s from './Skill.module.scss'
+import s from './Skill.module.scss';
 
 const Skill = ({time, skill, knowledge}) => {
     return (
@@ -20,4 +20,4 @@ const Skill = ({time, skill, knowledge}) => {
     );
 };
 
-export default Skill
+export default Skill;

@@ -1,4 +1,4 @@
-const Person = () => {
+const Preview = () => {
     return (
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
             <h2 className='const'>Wassup!</h2>
@@ -7,4 +7,4 @@ const Person = () => {
     );
 };
 
-export default Person
+export default Preview;

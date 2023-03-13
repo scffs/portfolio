@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import {AiOutlineUser} from 'react-icons/ai'
-
-import s from './Author.module.scss'
+import s from './Author.module.scss';
+import {UserCircleIcon} from "@heroicons/react/24/outline/index.js";
 
 /**
  * @param {string} authorLogo
@@ -17,8 +16,9 @@ const Author = ({authorLogo, author}) => (
                  src={authorLogo}
                  alt='author-logo'
             />
-            : <AiOutlineUser size='2em' />}
+            : <UserCircleIcon size='2em' />
+        }
     </div>
 );
 
-export default Author
+export default Author;

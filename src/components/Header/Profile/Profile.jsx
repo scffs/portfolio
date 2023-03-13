@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-import logo from '../../../assets/img/ava.webp'
-import Avatar from '../../Avatar/Avatar'
+import logo from '../../../assets/img/ava.webp';
 
-import s from './Profile.module.scss'
+import Avatar from '../../Avatar/Avatar';
+
+import s from './Profile.module.scss';
 
 /**
  * @param {string} name
@@ -19,7 +20,7 @@ const Profile = ({name, role}) => {
                 <div className={s.top}>
                     <div className={s.userInfo}>
                         <Link
-                            to='/profile'
+                            to='/portfoliovite/profile'
                             className={s.name}
                         >
                             <Avatar
@@ -43,4 +44,4 @@ const Profile = ({name, role}) => {
     );
 };
 
-export default Profile
+export default Profile;

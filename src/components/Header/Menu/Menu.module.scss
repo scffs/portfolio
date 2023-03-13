@@ -5,12 +5,15 @@
   z-index: 4;
   display: none;
 }
+.active  .headerLink > svg path{
+  stroke: $GREEN !important;
+}
+
 .headerLink{
   svg path{
     stroke: $whiteThemeText;
   }
   .news{
-    fill: $whiteThemeText;
     margin-top: 3px;
     &:hover{
       fill: scale-color($whiteThemeText, $lightness: +60%);
@@ -20,34 +23,28 @@
     position: relative;
     &::after,
     &::before{
-      bottom: -6px;
+      bottom: 0;
       content: '';
       position: absolute;
       width: 0;
       height: 2px;
       background-color: $GREEN;
       transition: all .25s linear;
+      border-radius: 10px;
     }
     &::after{left: 0}
     &::before{right: 0}
   }
   &:hover{
     &::after{
-      left: 50%;
+      left: 48%;
       opacity: 1;
       width: 50%;
     }
     &::before{
-      right: 50%;
+      right: 48%;
       opacity: 1;
       width: 50%;
-    }
-  }
-}
-li:nth-of-type(2){
-  .headerLink{
-    &::before, &::after{
-      bottom: 0 !important;
     }
   }
 }

@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react';
 
-import s from './Article.module.scss'
+import s from './Article.module.scss';
 
-import Author from '../Author/Author'
-import Category from './Category/Category'
+import Loading from '../Loading/Loading.jsx';
+const Author = lazy(() => import('../Author/Author'));
+const Category = lazy(() => import('./Category/Category'));
 
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-import logo from '../../assets/img/ava.webp'
+import logo from '../../assets/img/ava.webp';
 
 /**
  * @param {array} tags
@@ -25,10 +26,14 @@ const Article = ({link, preview, title, description, tags, author}) => {
                 <img className={s.img} src={preview} alt="img"/>
                 <div className={s.info}>
                     <div className={s.top}>
-                        <div className={s.tags}>
-                            <Category tags={tags}/>
-                        </div>
-                        <Author author={author} authorLogo={logo}/>
+                       <Suspense fallback={<Loading />}>
+                           <div className={s.tags}>
+                               {tags.map((tag, id) => {
+                                   return <Category key={id} id={id} tag={tag}/>
+                               })}
+                           </div>
+                           <Author author={author} authorLogo={logo}/>
+                       </Suspense>
                     </div>
                     <h3 className={s.h3}>{title}</h3>
                     <p className={s.description}>{description}</p>
@@ -38,4 +43,4 @@ const Article = ({link, preview, title, description, tags, author}) => {
     );
 };
 
-export default Article
+export default Article;

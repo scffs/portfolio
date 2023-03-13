@@ -7,7 +7,7 @@ const skills = [
     {
         time: 'Sep 2021 - Present',
         skill: 'Frontend',
-        knowledge: ['Semantic HTML', 'Responsive Web Design', 'Sass', 'BEM', 'CSS Modules', 'Bootstrap'],
+        knowledge: ['Semantic HTML', 'BEM', 'Sass', 'Less', 'Bootstrap', 'CSS Modules', 'Adaptive Web Design', 'Bootstrap', 'Tailwind', 'daisyUI', 'MaterialUI'],
     },
     {
         time: 'Sep 2021 - Present',
@@ -17,7 +17,7 @@ const skills = [
     {
         time: 'Sep 2022 - Present',
         skill: 'SQL',
-        knowledge: ['SQL basics', 'Database design basics', 'Requests'],
+        knowledge: ['SQL basics', 'Requests', 'Database design basics'],
     },
     {
         time: 'Feb 2022 - Present',
@@ -32,14 +32,14 @@ const skills = [
     {
         time: 'Dec 2023 - Present',
         skill: 'JS',
-        knowledge: ['npm', 'Arrays', 'Objects', 'Equality Comparisons', 'Massives',
-                    'Datatypes', 'Loops and Iterations', 'Functions', 'Promises'],
+        knowledge: ['npm / yarn', 'Arrays', 'Objects', 'Equality Comparisons', 'Massives',
+                    'Datatypes', 'Loops and Iterations', 'Functions', 'Promises', 'fetch'],
     },
     {
         time: 'Dec 2023 - Present',
         skill: 'React',
-        knowledge: ['JSX', 'useEffect', 'useState', 'Router DOM'],
+        knowledge: ['JSX', 'useEffect', 'useState', 'Router DOM', 'lazy'],
     },
 
 ]
-export default skills
+export default skills;

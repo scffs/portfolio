@@ -22,50 +22,48 @@
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 0 1px 5px 5px #0d0d10;
-  .h3{
-    color: $YELLOW;
-    margin: 5px 0 15px;
-  }
-  .img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-  }
-  .description{
-    color: $whiteThemeText;
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-  .info{
-    padding: 20px;
-  }
-  .top{
-    @include flex(0, center, space-between, 0);
-  }
-  .tags{
-    @include flex(10px, 0, 0, wrap);
-    margin-right: 10px;
-  }
-  .description, .h3{
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    -ms-line-clamp: 1;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    display: -webkit-box;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-  }
-  .authorLink{
-    font-weight: 500;
-    font-size: 1em;
-    &:hover{
-      color: $GREEN;
-    }
+}
+.h3{
+  color: $YELLOW;
+  margin: 5px 0 15px;
+}
+.img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.description{
+  color: $whiteThemeText;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.info{
+  padding: 20px;
+}
+.top{
+  @include flex(0, center, space-between, 0);
+}
+.tags{
+  @include flex(10px, 0, 0, wrap);
+  margin-right: 10px;
+}
+.description, .h3{
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+}
+.authorLink{
+  font-weight: 500;
+  font-size: 1em;
+  &:hover{
+    color: $GREEN;
   }
 }
 @media (max-width: 780px){

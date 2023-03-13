@@ -1,17 +1,18 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 
-import {AiOutlineMenu} from 'react-icons/ai'
-import {RxCross2} from 'react-icons/rx'
-import {GrHomeRounded} from 'react-icons/gr'
-import {BiNews} from 'react-icons/bi'
+import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline/index.js';
 
-import menu from '../MenuItem'
-import s from './Menu.module.scss'
+import menu from '../MenuItem.jsx';
+import s from './Menu.module.scss';
 
-const Menu = () => {
-    const [isBurger, setIsBurger] = useState(false)
-    const body = document.body
+const Menu = ({value, onClickCategory}) => {
+    const [isBurger, setIsBurger] = useState(false);
+    const body = document.body;
+
+    const handleClick = () => {
+        isBurger && setIsBurger(!isBurger)
+    }
 
     useEffect(() => {
         if(body.classList.contains('lock') || isBurger) body.classList.toggle('lock')
@@ -20,29 +21,30 @@ const Menu = () => {
     return (
         <>
             <button aria-label='Menu' onClick={() => setIsBurger(!isBurger)} className={s.burger}>
-                {isBurger ? <RxCross2 size='2.5em' /> : <AiOutlineMenu size='2.5em' />}
+                {isBurger ?
+                    <XMarkIcon width="2.5rem" height="2.5rem" /> : <Bars3Icon width="2.5rem" height="2.5rem" />
+                }
             </button>
-            {
-                <ul className={isBurger ? s.menu : s.hidden}>
-                    {
-                        menu.map(({title, id, src}) => (
-                            <li key={id}>
-                                <Link
-                                    aria-label={title}
-                                    className={s.headerLink}
-                                    to={src}
-                                    onClick={() => isBurger && setIsBurger(!isBurger)}
-                                >
-                                    {id === 1 ? <GrHomeRounded aria-label='home' title='home' size='2em'/>
-                                              : <BiNews className={s.news} aria-label='news' title='news' size='2.5em'/>}
-                                </Link>
-                            </li>
-                        ))
-                    }
-                </ul>
-            }
+            <ul className={isBurger ? s.menu : s.hidden}>
+                {menu.map(({title, id, src, component}) => (
+                        <li key={id}
+                            className={`${value === id && s.active}`}
+                            onClick = {() => handleClick()}>
+                            <Link
+
+                                aria-label={title}
+                                className={s.headerLink}
+                                to={src}
+                                onClick={() => onClickCategory(id)}
+                            >
+                                {component}
+                            </Link>
+                        </li>
+                    ))
+                }
+            </ul>
         </>
     );
 };
 
-export default Menu
+export default Menu;

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import s from './Plantes.module.scss'
+import s from './Plantes.module.scss';
 
-import icons from './icons'
+import icons from './icons';
 
 const Planets = () => {
     return (
@@ -16,4 +16,4 @@ const Planets = () => {
     );
 };
 
-export default Planets
+export default Planets;

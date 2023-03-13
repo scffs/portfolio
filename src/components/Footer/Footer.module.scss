@@ -1,7 +1,7 @@
 @import '../../styles/vars';
 .footer{
-  text-align: center;
-  padding: 10px;
+  @include flex(0, center, space-between, 0);
+  padding: 20px;
   .socials{
     @include flex(30px, center, center, 0);
   }
@@ -11,7 +11,6 @@
     color: scale-color($bgCard, $lightness: +60%);
   }
   img{
-    border-radius: 10px;
     width: 35px;
     height: 35px;
     filter: grayscale(1);
@@ -21,11 +20,15 @@
     }
   }
 }
+@media (max-width: 800px) {
+  .footer{
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+}
 @media (max-width: 400px) {
   .footer{
-    .socials{
-      gap: 15px;
-    }
     img{
       width: 30px;
       height: 30px;

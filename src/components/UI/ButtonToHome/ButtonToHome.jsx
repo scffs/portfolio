@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import {useNavigate} from 'react-router-dom'
-import './Button.scss'
+import {useNavigate} from 'react-router-dom';
+import './Button.scss';
 
 /**
  * @param {string} text
@@ -12,11 +12,11 @@ const ButtonToHome = ({text}) => {
     return (
         <button
             className='home-btn'
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/portfoliovite')}
         >
             {text}
         </button>
     );
 };
 
-export default ButtonToHome
+export default ButtonToHome;

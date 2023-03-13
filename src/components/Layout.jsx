@@ -1,13 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
+import Header from './Header/Header.jsx';
+import Footer from './Footer/Footer.jsx';
+import {Outlet} from 'react-router-dom';
 
-/**
- * @param {JSX.Element} children
-*/
-
-const Layout = ({children}) => (
+const Layout = () => (
     <div style={
         {
             display: 'flex',
@@ -19,9 +16,11 @@ const Layout = ({children}) => (
         }
     }>
         <Header />
-        <main style={{flex: '1 0 auto'}}>{children}</main>
-        <Footer style={{flex: '0 0 auto'}} />
+        <main style={{flex: '1 0 auto'}}>
+            <Outlet />
+        </main>
+        <Footer />
     </div>
 );
 
-export default Layout
+export default Layout;

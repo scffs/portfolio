@@ -1,16 +1,17 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCards } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards } from 'swiper';
 
-import 'swiper/css'
-import 'swiper/css/effect-cards'
-import './slider.scss'
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import './slider.scss';
 
-import SocialLinks from './Slides/SocialLinks'
-import Skills from './Slides/Skills'
-import Person from './Slides/Person'
-import Preview from './Slides/Preview'
+const SocialLinks = lazy(() => import('./Slides/SocialLinks'));
+const Skills = lazy(() => import('./Slides/Skills'));
+const Person = lazy(() => import('./Slides/Person'));
+import Preview from './Slides/Preview';
+import Loading from '../../../components/Loading/Loading.jsx';
 
 const Slider = () =>{
     return(
@@ -21,22 +22,28 @@ const Slider = () =>{
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <Preview />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <SocialLinks />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Skills />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Person />
-                </SwiperSlide>
+                <Suspense fallback={<Loading />}>
+                    <SwiperSlide>
+                        <Preview />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SocialLinks />
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                        <Skills />
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                        <Person />
+
+                    </SwiperSlide>
+                </Suspense>
             </Swiper>
         </>
     )
 
 }
 
-export default Slider
+export default Slider;

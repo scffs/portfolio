@@ -1,6 +1,6 @@
-import './Categories.scss'
+import './Categories.scss';
 
-import categoriesList from './categoriesList'
+import categoriesList from './categoriesList';
 
 /**
  * @param {number} value
@@ -14,7 +14,7 @@ const Categories = ({value, onClickCategory}) => {
                 {
                     categoriesList.map((category, id) =>
                         <li
-                            className={value === category ? 'item active' : 'item'}
+                            className={`item ${value === category && 'active'}`}
                             key={id}
                             onClick={() => (onClickCategory(category))}
                         >
@@ -27,4 +27,4 @@ const Categories = ({value, onClickCategory}) => {
     );
 };
 
-export default Categories
+export default Categories;

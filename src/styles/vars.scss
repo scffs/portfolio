@@ -15,6 +15,7 @@ $GRAY: #5c6370;
 
 $userNameColor: #727272;
 
+$shadow: 0 0 10px 3px rgb(0, 0, 0);
 $bgCard: #2a2a32;
 $bgWhite: #1d1d23;
 $bgWhitePage: linear-gradient(-90deg, $bgCard, darken($bgCard, 10%));
@@ -37,3 +38,21 @@ $bgGrad: linear-gradient(50deg, $bgCard, darken($bgCard, 10%));
         justify-content: $justifyContent;
     }
 }
+
+// TODO: Added new mixin `position`
+@mixin position($pos: relative, $right: 0, $top: 0, $left: 0, $bottom: 0){
+    position: $pos;
+    @if($right != 0){
+        right: $right;
+    }
+    @if($left != 0){
+        left: $left;
+    }
+    @if($top != 0){
+        top: $top;
+    }
+    @if($bottom != 0){
+        bottom: $bottom;
+    }
+}
+// TODO: Added new mixin `text`

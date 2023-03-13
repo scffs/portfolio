@@ -1,13 +1,13 @@
-import React, {lazy} from 'react'
+import React, {lazy, Suspense} from 'react';
 
-import Avatar from '../../components/Avatar/Avatar'
-import Planets from './Planets/Planets'
+import Loading from '../../components/Loading/Loading.jsx';
+import Avatar from '../../components/Avatar/Avatar';
+import Planets from './Planets/Planets';
 
-import logo from '../../assets/img/ava.webp'
+import logo from '../../assets/img/ava.webp';
+import s from './Home.module.scss';
 
-import s from './Home.module.scss'
-
-const Slider = lazy(() => import('./Slider/Slider'))
+const Slider = lazy(() => import('./Slider/Slider'));
 
 const Home = () => (
     <div className={s.info}>
@@ -21,8 +21,10 @@ const Home = () => (
             />
             <Planets />
         </div>
-        <Slider />
+        <Suspense fallback={<Loading />}>
+            <Slider />
+        </Suspense>
     </div>
 );
 
-export default Home
+export default Home;

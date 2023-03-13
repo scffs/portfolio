@@ -1,4 +1,8 @@
 @import '../../../styles/vars';
+.title{
+  color: $PINK;
+  font-weight: 400;
+}
 .content{
   text-align: center;
   color: $BLUE;
@@ -23,7 +27,7 @@
     }
   }
   h2{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   a{
     color: $BLUE;

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import s from './Search.module.scss'
+import s from './Search.module.scss';
 
 /**
  * @param {string} search
@@ -18,4 +18,4 @@ const Search = ({search, setSearch}) => {
     );
 };
 
-export default Search
+export default Search;

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import s from './Footer.module.scss'
+import s from './Footer.module.scss';
 
-import logos from './socialLogos'
+import logos from './socialLogos';
 
 const Footer = () => (
     <footer className={s.footer}>
+        <p>Copyright © 2023. Semyon Okulov. All rights reserved</p>
         <ul className={s.socials}>
             {
                 logos.map(({url, path, alt}, id) =>(
@@ -17,8 +18,7 @@ const Footer = () => (
                 ))
             }
         </ul>
-        <p>Copyright © 2023. Semyon Okulov. All rights reserved</p>
     </footer>
 );
 
-export default Footer
+export default Footer;

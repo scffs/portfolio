@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react';
 
-import s from './NotFound.module.scss'
+import s from './NotFound.module.scss';
 
-import ButtonToHome from '../../components/UI/ButtonToHome/ButtonToHome'
+import Loading from '../../components/Loading/Loading.jsx';
+const ButtonToHome = lazy(() => import('../../components/UI/ButtonToHome/ButtonToHome'));
 
 const NotFound = () => {
     return (
@@ -11,9 +12,11 @@ const NotFound = () => {
                 <h1 className={s.title}>404</h1>
                 <p className={s.text}>Страница не найдена!</p>
             </div>
-            <ButtonToHome text='На главную'/>
+            <Suspense fallback={<Loading />}>
+                <ButtonToHome text='На главную'/>
+            </Suspense>
         </div>
     );
 };
 
-export default NotFound
+export default NotFound;
