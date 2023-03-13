@@ -17,15 +17,15 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             {
-                path: '/portfoliovite/',
+                path: '/portfolio/',
                 element: <Home />,
             },
             {
-                path: '/portfoliovite/news',
+                path: '/portfolio/news',
                 element: <Articles />,
             },
             {
-                path: '/portfoliovite/profile',
+                path: '/portfolio/profile',
                 element: <Profile />,
             },
         ],

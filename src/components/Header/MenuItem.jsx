@@ -4,13 +4,13 @@ const menuList = [
     {
         id: 1,
         title: 'Home',
-        src: '/portfoliovite',
+        src: '/portfolio',
         component: <HomeIcon width="2.5rem" height="2.5rem" />,
     },
     {
         id: 2,
         title: 'News',
-        src: '/portfoliovite/news',
+        src: '/portfolio/news',
         component: <NewspaperIcon width="2.5rem" height="2.5rem" />,
     }
 ]

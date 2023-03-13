@@ -20,7 +20,7 @@ const Profile = ({name, role}) => {
                 <div className={s.top}>
                     <div className={s.userInfo}>
                         <Link
-                            to='/portfoliovite/profile'
+                            to='/portfolio/profile'
                             className={s.name}
                         >
                             <Avatar
