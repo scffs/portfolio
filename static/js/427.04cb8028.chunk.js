@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[427],{2427:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});n(2791);var r="Search_input__ma22T",u=n(184),a=function(e){var t=e.search,n=e.setSearch;return(0,u.jsx)("input",{className:r,type:"text",value:t,onChange:function(e){return n(e.target.value)}})}}}]);
-//# sourceMappingURL=427.04cb8028.chunk.js.map

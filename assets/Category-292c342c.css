@@ -1,0 +1,1 @@
+.tag{position:relative;padding-left:15px}.tag:after{position:absolute;content:"";height:8px;width:8px;left:0;top:7px;border-radius:50%}.tag-1:after{background:#ff4444}.tag-2:after{background:#e5c07b}.tag-3:after{background:#56b6c2}.tag-4:after{background:#01d79c}.tag-5:after{background:#c678dd}
