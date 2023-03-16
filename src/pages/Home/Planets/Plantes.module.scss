@@ -9,6 +9,7 @@
   animation: wheel 15s linear infinite;
 }
 .logo{
+  pointer-events: none;
   transform-origin: center;
   position: relative;
   z-index: -1;
