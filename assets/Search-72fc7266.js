@@ -1,0 +1,1 @@
+import{j as n}from"./index-a8789f5a.js";const p="_input_1qpca_1",s={input:p},o=({search:t,setSearch:a})=>n("input",{className:s.input,type:"text",value:t,onChange:e=>a(e.target.value)});export{o as default};
