@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Loading = () => {
     return (
         <h3 style={{color: '#aaa', textAlign: 'center'}}>
