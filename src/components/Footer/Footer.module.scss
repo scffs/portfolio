@@ -1,16 +1,16 @@
 @import '../../styles/vars';
 .footer{
-  @include flex(0, center, space-between, 0);
+  @include flex(0, center, space-between, 0, 0);
   padding: 20px;
   .socials{
-    @include flex(30px, center, center, 0);
+    @include flex(30px, center, center, 0, 0);
   }
   p{
     margin-top: 10px;
     font-size: 1rem;
     color: scale-color($bgCard, $lightness: +60%);
   }
-  img{
+  .logo{
     width: 25px;
     height: 25px;
     filter: grayscale(1);

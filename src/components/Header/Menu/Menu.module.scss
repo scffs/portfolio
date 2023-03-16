@@ -13,12 +13,6 @@
   svg path{
     stroke: $whiteThemeText;
   }
-  .news{
-    margin-top: 3px;
-    &:hover{
-      fill: scale-color($whiteThemeText, $lightness: +60%);
-    }
-  }
   &{
     position: relative;
     &::after,
@@ -48,8 +42,14 @@
     }
   }
 }
+.news{
+  margin-top: 3px;
+  &:hover{
+    fill: scale-color($whiteThemeText, $lightness: +60%);
+  }
+}
 .hidden{
-  @include flex(40px, center, flex-start, 0);
+  @include flex(40px, center, flex-start, 0, 0);
   position: relative;
 }
 .menu, .hidden{

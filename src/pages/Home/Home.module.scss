@@ -1,13 +1,13 @@
 @import '../../styles/keyframes';
 .info{
-  @include flex(0, center, space-between, 0);
+  @include flex(0, center, space-between, 0, 0);
   user-select: none;
   animation: pageShow .4s linear;
   -webkit-animation: pageShow .4s linear;
   position: relative;
-  .profileImage{
-    position: relative;
-  }
+}
+.profileImage{
+  position: relative;
 }
 @media (max-width: 1000px) {
   .info{

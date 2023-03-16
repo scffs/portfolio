@@ -4,10 +4,11 @@ import Loading from '../../components/Loading/Loading.jsx';
 import Avatar from '../../components/Avatar/Avatar';
 import Planets from './Planets/Planets';
 
-import logo from '../../assets/img/ava.webp';
-import s from './Home.module.scss';
-
 const Slider = lazy(() => import('./Slider/Slider'));
+
+import logo from '../../assets/img/ava.webp';
+
+import s from './Home.module.scss';
 
 const Home = () => (
     <div className={s.info}>

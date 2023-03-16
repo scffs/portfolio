@@ -12,12 +12,12 @@
     color: $whiteThemeText;
   }
   .top{
-    @include flex(40px, center, space-between, 0);
+    @include flex(40px, center, space-between, 0, 0);
     margin-bottom: 10px;
   }
   .userInfo{
     a{
-      @include flex(20px, center, 0, 0);
+      @include flex(20px, center, 0, 0, 0);
       color: $userNameColor;
     }
   }
@@ -27,11 +27,6 @@
   .name{
     &:hover span{
       color: darken($whiteThemeText, 20%);
-    }
-    a{
-      color: $userNameColor;
-      display: inline-flex;
-      margin-bottom: 2px;
     }
   }
   .role{

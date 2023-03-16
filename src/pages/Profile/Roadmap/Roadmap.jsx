@@ -13,12 +13,11 @@ const Roadmap = () => {
     // const height = refComponent.current.getBoundingClientRect().height
     return (
         <div className={s.content} /*ref={refComponent}*/>
-            <h2>Education & Experience</h2>
-            <h3 className={s.title}>For more information, look at my <a href="https://github.com/scffs" target="_blank" rel="noreferrer">GitHub</a></h3>
+            <h2 className={s.title}>Education & Experience</h2>
+            <h3 className={s.subTitle}>For more information, look at my <a href="https://github.com/scffs" target="_blank" rel="noreferrer">GitHub</a></h3>
             <ul className={s.skillsList}>
                 <Suspense fallback={<Loading />}>
-                    {skills.map(({time, skill, knowledge}, id) =>(
-
+                    {skills.map(({time, skill, knowledge}, id) => (
                         <Skill
                             key={id}
                             time={time}

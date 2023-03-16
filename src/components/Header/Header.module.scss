@@ -4,15 +4,15 @@
   padding-top: 5px;
   position: relative;
   z-index: 50;
-  .nav{
-    @include flex(0, 0, space-between, 0);
-  }
   li:hover svg{
     transition: color .2s linear;
     path{
       stroke: scale-color($whiteThemeText, $lightness: +60%);
     }
   }
+}
+.nav{
+  @include flex(0, 0, space-between, 0, 0);
 }
 @media (max-width: 1000px) {
   .header{

@@ -23,7 +23,7 @@
   cursor: pointer;
   box-shadow: 0 1px 5px 5px #0d0d10;
 }
-.h3{
+.title{
   color: $YELLOW;
   margin: 5px 0 15px;
 }
@@ -42,13 +42,13 @@
   padding: 20px;
 }
 .top{
-  @include flex(0, center, space-between, 0);
+  @include flex(0, center, space-between, 0, 0);
 }
 .tags{
-  @include flex(10px, 0, 0, wrap);
+  @include flex(10px, 0, 0, wrap, 0);
   margin-right: 10px;
 }
-.description, .h3{
+.description, .title{
   overflow: hidden;
   -ms-text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
@@ -68,7 +68,7 @@
 }
 @media (max-width: 780px){
   .link{
-    .description, .h3{
+    .description, .title{
       overflow: unset;
       display: block;
     }

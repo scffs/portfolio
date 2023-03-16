@@ -1,7 +1,10 @@
 @import '../../../styles/vars';
-.title{
+.subTitle{
   color: $PINK;
   font-weight: 400;
+}
+.title{
+  margin-bottom: 10px;
 }
 .content{
   text-align: center;
@@ -26,9 +29,6 @@
       left: -78px;
     }
   }
-  h2{
-    margin-bottom: 10px;
-  }
   a{
     color: $BLUE;
     font-weight: unset;
@@ -44,7 +44,7 @@
 }
 @media (max-width: 1250px) {
   .skillsList {
-    @include flex(20px, 0, 0, 0);
+    @include flex(20px, 0, 0, 0, 0);
     padding: 20px;
     overflow-y: hidden;
     overflow-x: auto;

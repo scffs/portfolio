@@ -7,11 +7,11 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import './slider.scss';
 
+import Loading from '../../../components/Loading/Loading.jsx';
+import Preview from './Slides/Preview';
 const SocialLinks = lazy(() => import('./Slides/SocialLinks'));
 const Skills = lazy(() => import('./Slides/Skills'));
 const Person = lazy(() => import('./Slides/Person'));
-import Preview from './Slides/Preview';
-import Loading from '../../../components/Loading/Loading.jsx';
 
 const Slider = () =>{
     return(

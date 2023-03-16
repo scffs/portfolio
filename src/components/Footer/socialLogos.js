@@ -3,7 +3,7 @@ import stack from './logos/stack.webp';
 import vk from './logos/vk.webp';
 import tg from './logos/tg.webp';
 
-const logos = [
+export const logos = [
     {
         path: `${habr}`,
         alt: 'Habr',
@@ -25,5 +25,3 @@ const logos = [
         url: 'https://t.me/sc0ffs'
     },
 ]
-
-export default logos;

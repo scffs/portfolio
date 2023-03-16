@@ -27,10 +27,10 @@
   &:after {
     transform: rotate(-60deg);
   }
-  img.image{
-    pointer-events: none;
-    transform: rotate(30deg);
-    transition: transform .3s linear;
-    left: -50px;
-  }
+}
+.image{
+  pointer-events: none;
+  transform: rotate(30deg);
+  transition: transform .3s linear;
+  left: -50px;
 }

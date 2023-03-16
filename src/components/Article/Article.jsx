@@ -35,7 +35,7 @@ const Article = ({link, preview, title, description, tags, author}) => {
                            <Author author={author} authorLogo={logo}/>
                        </Suspense>
                     </div>
-                    <h3 className={s.h3}>{title}</h3>
+                    <h3 className={s.title}>{title}</h3>
                     <p className={s.description}>{description}</p>
                 </div>
             </article>
