@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useEffect, useState} from 'react';
+import React, {lazy, Suspense, useEffect, useMemo, useState} from 'react';
 
 import Loading from '../../components/Loading/Loading.jsx';
 
@@ -15,9 +15,9 @@ const Articles = () => {
     const [categoryId, setCategoryId] = useState(0);
     const [search, setSearch] = useState('');
 
-    const articlesList = articles.filter(post => {
+    const articlesList = useMemo(() => articles.filter(post => {
         return post.title?.toLowerCase().includes(search.toLowerCase());
-    }).map(post =>(<Article key={post.id} {...post} />));
+    }).map(post =>(<Article key={post.id} {...post} />)), [search])
 
     const width = window.innerWidth > 600 ? 600 : 330;
     const isArticlesExist = articlesList.length;
