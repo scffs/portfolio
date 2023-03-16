@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from 'react';
+import React, {lazy, memo, Suspense} from 'react';
 
 import s from './Profile.module.scss';
 
@@ -20,4 +20,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default memo(Profile);

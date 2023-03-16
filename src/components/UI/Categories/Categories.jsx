@@ -1,6 +1,7 @@
 import './Categories.scss';
 
 import categoriesList from './categoriesList';
+import {memo} from "react";
 
 /**
  * @param {number} value
@@ -27,4 +28,4 @@ const Categories = ({value, onClickCategory}) => {
     );
 };
 
-export default Categories;
+export default memo(Categories);

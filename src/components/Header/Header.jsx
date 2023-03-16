@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {memo, useState} from 'react';
 
 import s from './Header.module.scss';
 
@@ -18,4 +18,4 @@ const Header = () =>{
     )
 }
 
-export default Header;
+export default memo(Header);

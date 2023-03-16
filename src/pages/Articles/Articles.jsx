@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useEffect, useMemo, useState} from 'react';
+import React, {lazy, memo, Suspense, useEffect, useMemo, useState} from 'react';
 
 import Loading from '../../components/Loading/Loading.jsx';
 
@@ -17,7 +17,7 @@ const Articles = () => {
 
     const articlesList = useMemo(() => articles.filter(post => {
         return post.title?.toLowerCase().includes(search.toLowerCase());
-    }).map(post =>(<Article key={post.id} {...post} />)), [search])
+    }).map(post =>(<Suspense key={post.id}><Article {...post} /></Suspense>)), [articles])
 
     const width = window.innerWidth > 600 ? 600 : 330;
     const isArticlesExist = articlesList.length;
@@ -52,4 +52,4 @@ const Articles = () => {
     );
 };
 
-export default Articles;
+export default memo(Articles);

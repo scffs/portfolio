@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from 'react';
+import React, {lazy, memo, Suspense} from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
@@ -46,4 +46,4 @@ const Slider = () =>{
 
 }
 
-export default Slider;
+export default memo(Slider);
