@@ -9,6 +9,7 @@ import s from './ProfileInfo.module.scss';
 import {BriefcaseIcon, CodeBracketIcon} from '@heroicons/react/24/outline/index.js';
 
 const ProfileInfo = () => {
+    // TODO: Review the code
     return (
         <div className={s.profileWrapper}>
             <div className={s.profileInfoTop}>
