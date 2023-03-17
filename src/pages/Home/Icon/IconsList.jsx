@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
     faBootstrap,
     faGithub,
@@ -7,12 +7,12 @@ import {
     faPython,
     faReact,
     faSquareJs, faUbuntu,
-} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-import s from './Icons.module.scss'
+import s from './Icons.module.scss';
 
-const icons = [
+const iconsList = [
     {
         component: <FontAwesomeIcon className={s.logo} icon={faSquareJs} alt='JS'/>,
     },
@@ -39,4 +39,4 @@ const icons = [
     },
 ]
 
-export default icons;
+export default iconsList;
