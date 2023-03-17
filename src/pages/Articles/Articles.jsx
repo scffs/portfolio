@@ -17,7 +17,7 @@ const Articles = () => {
 
     const articlesList = useMemo(() => articles.filter(post => {
         return post.title?.toLowerCase().includes(search.toLowerCase());
-    }).map(post =>(<Suspense key={post.id}><Article {...post} /></Suspense>)), [articles])
+    }).map(post =>(<Suspense key={post.id}><Article {...post} /></Suspense>)), [articles, search])
 
     const width = window.innerWidth > 600 ? 600 : 330;
     const isArticlesExist = articlesList.length;
