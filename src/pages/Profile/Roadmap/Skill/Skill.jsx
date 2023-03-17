@@ -10,11 +10,9 @@ const Skill = ({time, skill, knowledge}) => {
                 <p className={s.skill}>{skill}</p>
             </div>
             <ul className={s.knowledge}>
-                {
-                    knowledge.map((item, id) =>(
+                {knowledge.map((item, id) =>(
                         <li key={id}>{item}</li>
-                    ))
-                }
+                ))}
             </ul>
         </li>
     );
