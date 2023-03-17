@@ -1,10 +1,9 @@
 import React, {lazy, memo, Suspense, useEffect, useMemo, useState} from 'react';
 
-import Loading from '../../components/Loading/Loading.jsx';
-
 import s from './Articles.module.scss';
 
-import ArticlesSkeleton from './ArticlesSkeleton'
+import Loading from '../../components/Loading/Loading';
+const ArticlesSkeleton = lazy(() => import('./ArticlesSkeleton'));
 const Article = lazy(() => import('../../components/Article/Article'));
 const Categories = lazy(() => import('../../components/UI/Categories/Categories'));
 const Search = lazy(() => import('../../components/UI/Search/Search'));

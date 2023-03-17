@@ -1,9 +1,9 @@
-import React, {memo, useState} from 'react';
+import React, {lazy, memo, useState} from 'react';
 
 import s from './Header.module.scss';
 
-import Menu from './Menu/Menu';
-import Profile from './Profile/Profile';
+const Menu = lazy(() => import('./Menu/Menu'));
+const Profile = lazy(() => import('./Profile/Profile'));
 
 const Header = () =>{
     const [categoryId, setCategoryId] = useState(0);

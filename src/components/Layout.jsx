@@ -1,7 +1,8 @@
-import React, {Suspense} from 'react';
+import React, {lazy, Suspense} from 'react';
 
-import Header from './Header/Header.jsx';
-import Footer from './Footer/Footer.jsx';
+const Header = lazy(() => import('./Header/Header'));
+const Footer = lazy(() => import('./Footer/Footer'));
+
 import {Outlet} from 'react-router-dom';
 
 const Layout = () => (

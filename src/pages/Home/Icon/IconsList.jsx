@@ -12,7 +12,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import s from './Icons.module.scss';
 
-const iconsList = [
+export const iconsList = [
     {
         component: <FontAwesomeIcon className={s.logo} icon={faSquareJs} alt='JS'/>,
     },
@@ -38,5 +38,3 @@ const iconsList = [
         component: <FontAwesomeIcon className={s.logo} icon={faUbuntu} alt='JS'/>,
     },
 ]
-
-export default iconsList;

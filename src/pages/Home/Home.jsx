@@ -1,14 +1,13 @@
-import React, {lazy, Suspense} from 'react';
+import React, {lazy, memo, Suspense} from 'react';
 
-import Loading from '../../components/Loading/Loading.jsx';
-import Avatar from '../../components/Avatar/Avatar';
-import Icon from './Icon/Icon.jsx';
-
+import Loading from '../../components/Loading/Loading';
+const Avatar = lazy(() => import('../../components/Avatar/Avatar'));
 const Slider = lazy(() => import('./Slider/Slider'));
+const Icon = lazy(() => import('./Icon/Icon'));
 
 import logo from '../../assets/img/ava.webp';
 
-import iconsList from './Icon/IconsList.jsx';
+import {iconsList} from './Icon/IconsList.jsx';
 
 import s from './Home.module.scss';
 
@@ -34,4 +33,4 @@ const Home = () => (
     </div>
 );
 
-export default Home;
+export default memo(Home);

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {lazy} from 'react';
 
-import Avatar from '../../../components/Avatar/Avatar.jsx';
+const Avatar = lazy(() => import('../../../components/Avatar/Avatar.jsx'));
 
 import logo from '../../../assets/img/ava.webp';
 
