@@ -1,46 +1,35 @@
-@import '../../../styles/keyframes';
-.circleInner{
-  @include position(absolute, -155px, -100px);
-  width: 500px;
-  height: 500px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  -webkit-animation: wheel 15s linear infinite;
-  animation: wheel 15s linear infinite;
-}
+@import "../../../styles/index";
 .logo{
-  pointer-events: none;
-  transform-origin: center;
   position: relative;
-  z-index: -1;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   -webkit-animation-duration: 20s;
   animation-duration: 20s;
   -webkit-animation: planets 15s linear infinite;
   animation: planets 15s linear infinite;
   border-radius: 20px;
-  padding: 7px;
-  background: scale-color(#2a2a32, $lightness:+10%);
+  padding: 5px;
+  background-color: darken($GREEN, 10%);
+  > path {
+    fill: darken($bgCard, 10%);
+  }
   &:first-child{
-    top: 13%;
-    left: 7%;
+    top: 23%;
   }
   &:nth-child(2){
     top: 23%;
     left: 80%;
   }
   &:nth-child(3){
-    top: 65%;
-    right: -70%;
+    top: 56%;
+    right: -74%;
   }
   &:nth-child(4){
     top: 90%;
     right: 7%;
   }
   &:nth-child(5){
-    top: -5%;
-    right: 4%;
+    right: 17%;
   }
   &:nth-child(6){
     top: 56%;
@@ -51,20 +40,11 @@
     right: -5%;
   }
   &:nth-child(8){
-    top: 0;
-    right: 4%;
+    right: 5%;
   }
 }
+
 @media (max-width: 560px) {
-  .circleInner{
-    width: 350px;
-    height: 350px;
-    right: -90px;
-    top: -40px;
-  }
-  .ava{
-    width: 200px;
-  }
   .logo{
     &:first-child{
       top: 10%;

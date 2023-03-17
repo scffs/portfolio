@@ -2,11 +2,13 @@ import React, {lazy, Suspense} from 'react';
 
 import Loading from '../../components/Loading/Loading.jsx';
 import Avatar from '../../components/Avatar/Avatar';
-import Planets from './Planets/Planets';
+import Icon from './Icon/Icon.jsx';
 
 const Slider = lazy(() => import('./Slider/Slider'));
 
 import logo from '../../assets/img/ava.webp';
+
+import icons from './Icon/Icons.jsx';
 
 import s from './Home.module.scss';
 
@@ -20,7 +22,11 @@ const Home = () => (
                 hexagonHeight='280'
                 src={logo}
             />
-            <Planets />
+            <div className={s.circleInner}>
+                {icons.map(({component}, id) =>(
+                    <Icon key={id} component={component} />
+                ))}
+            </div>
         </div>
         <Suspense fallback={<Loading />}>
             <Slider />
