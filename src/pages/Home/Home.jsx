@@ -8,7 +8,7 @@ const Slider = lazy(() => import('./Slider/Slider'));
 
 import logo from '../../assets/img/ava.webp';
 
-import icons from './Icon/Icons.jsx';
+import iconsList from './Icon/IconsList.jsx';
 
 import s from './Home.module.scss';
 
@@ -23,7 +23,7 @@ const Home = () => (
                 src={logo}
             />
             <div className={s.circleInner}>
-                {icons.map(({component}, id) =>(
+                {iconsList.map(({component}, id) =>(
                     <Icon key={id} component={component} />
                 ))}
             </div>

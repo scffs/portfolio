@@ -1,14 +1,14 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 import './styles/index.scss';
 
 import Layout from './components/Layout.jsx';
-import NotFound from './pages/NotFound/NotFound.jsx';
-import Home from './pages/Home/Home.jsx';
-import Articles from './pages/Articles/Articles.jsx';
-import Profile from './pages/Profile/Profile.jsx';
+const Profile = lazy(() => import('./pages/Profile/Profile.jsx'));
+const Articles = lazy(() => import('./pages/Articles/Articles.jsx'));
+const Home = lazy(() => import('./pages/Home/Home.jsx'));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound.jsx'));
 
 const router = createBrowserRouter([
     {

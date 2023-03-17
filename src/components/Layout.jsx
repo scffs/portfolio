@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 
 import Header from './Header/Header.jsx';
 import Footer from './Footer/Footer.jsx';
@@ -17,7 +17,9 @@ const Layout = () => (
     }>
         <Header />
         <main style={{flex: '1 0 auto'}}>
-            <Outlet />
+            <Suspense>
+                <Outlet />
+            </Suspense>
         </main>
         <Footer />
     </div>
