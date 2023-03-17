@@ -7,7 +7,6 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import './slider.scss';
 
-import Loading from '../../../components/Loading/Loading.jsx';
 const Preview = lazy(() => import('./Slides/Preview'));
 const SocialLinks = lazy(() => import('./Slides/SocialLinks'));
 const Skills = lazy(() => import('./Slides/Skills'));
@@ -22,7 +21,7 @@ const Slider = () =>{
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <Suspense fallback={<Loading />}>
+                <Suspense>
                     <SwiperSlide>
                         <Preview />
                     </SwiperSlide>
