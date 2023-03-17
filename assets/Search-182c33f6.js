@@ -1,1 +1,0 @@
-import{r as n,j as s}from"./index-d54ebcf4.js";const r="_input_1qpca_1",o={input:r},p=({search:t,setSearch:a})=>s("input",{className:o.input,type:"text",value:t,onChange:e=>a(e.target.value)}),u=n.memo(p);export{u as default};
