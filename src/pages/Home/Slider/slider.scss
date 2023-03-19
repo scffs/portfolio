@@ -1,6 +1,7 @@
 @import '../../../styles/vars';
 @import '../../../styles/keyframes';
 .swiper {
+  animation: pageShowReverse .4s ease-in;
   width: 600px;
   height: 370px;
   margin-right: 1rem;
