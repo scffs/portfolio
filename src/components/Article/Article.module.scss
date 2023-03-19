@@ -5,10 +5,8 @@
   font-weight: unset;
   font-size: unset;
   animation: pageShow .4s linear;
-  -webkit-animation: pageShow .4s linear;
   &:nth-child(2n){
     animation: pageShowReverse .4s linear;
-    -webkit-animation: pageShowReverse .4s linear;
   }
 }
 .article{

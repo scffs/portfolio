@@ -5,17 +5,15 @@
   height: 500px;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  -webkit-animation: wheel 15s linear infinite;
   animation: wheel 15s linear infinite;
 }
 .info{
   @include flex(0, center, space-between, 0, 0);
   user-select: none;
-  animation: pageShow .4s linear;
-  -webkit-animation: pageShow .4s linear;
   position: relative;
 }
 .profileImage{
+  animation: pageShow .4s ease-in;
   position: relative;
 }
 @media (max-width: 1000px) {

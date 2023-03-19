@@ -3,20 +3,11 @@
   from {transform: rotate(0)}
   to {transform: rotate(1turn)}
 }
-@-webkit-keyframes planets{
-  from {transform: rotateZ(0deg)}
-  to {transform: rotateZ(-360deg)}
-}
-
 @keyframes planets{
   from {transform: rotateZ(0deg)}
   to {transform: rotateZ(-360deg)}
 }
 @keyframes burgerShow {
-  from {transform: translateY(-100%)}
-  to {transform: translateY(0)}
-}
-@-webkit-keyframes burgerShow{
   from {transform: translateY(-100%)}
   to {transform: translateY(0)}
 }
@@ -30,27 +21,7 @@
     transform: translateX(0);
   }
 }
-@-webkit-keyframes pageShow{
-  from{
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes pageShowReverse {
-  from{
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes pageShowReverse{
   from{
     transform: translateX(100%);
     opacity: 0;
@@ -70,23 +41,13 @@
     transform: translateY(0);
   }
 }
-@-webkit-keyframes profileShow{
-  from{
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes pageGradient {
   0% {background: $bgWhite}
   50% {background: scale-color($bgWhite, $lightness: +20%)}
   100% {background: darken($bgWhite, 10%)}
 }
-@-webkit-keyframes pageGradient{
-  0% {background: $bgWhite}
-  50% {background: scale-color($bgWhite, $lightness: +20%)}
-  100% {background: darken($bgWhite, 10%)}
+@keyframes opacity {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
+
