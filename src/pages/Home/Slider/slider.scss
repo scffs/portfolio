@@ -6,6 +6,7 @@
   height: 370px;
   margin-right: 1rem;
   &-slide {
+    overflow: unset !important;
     padding: 40px;
     border-radius: 18px;
     font-size: 1.3rem;
@@ -58,11 +59,10 @@ a.link:hover{
 }
 @media (max-width: 560px) {
   .swiper {
-    width: 320px;
-    height: 250px;
+    width: 330px;
+    height: 260px;
     &-slide{
       &:first-child, a{font-size: 0.7rem;}
-      padding: 20px;
       font-size: .8rem;
     }
     pre{
