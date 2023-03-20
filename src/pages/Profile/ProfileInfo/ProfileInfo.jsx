@@ -69,7 +69,7 @@ const ProfileInfo = () => {
                     <span className={s.name}>Contributor</span>
                 </div>
                 <div className={s.profileGroupItem}>
-                    <span>MDN</span>
+                    <span>MDN:</span>
                     <span className={s.name}>Contributor</span>
                 </div>
                 <div className={s.profileGroupItem}>
@@ -77,7 +77,7 @@ const ProfileInfo = () => {
                     <span className={s.name}>Tester</span>
                 </div>
                 <div className={s.profileGroupItem}>
-                    <span>Eva</span>
+                    <span>Eva:</span>
                     <span className={s.name}>Co-author</span>
                 </div>
                 <div className={s.profileGroupItem}>
