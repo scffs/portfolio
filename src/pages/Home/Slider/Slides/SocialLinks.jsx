@@ -5,7 +5,7 @@ const SocialLinks = () => {
               <span className='const'>const</span> <span className='title'>socialLinks</span> <span className='blue'>=</span> <span>{"{"}</span>
           </pre>
             <pre>&nbsp;&nbsp;
-                <span className='text'>stackoverflow</span><span>:</span><a className='link' href="https://discord.com/" target="_blank" rel="noreferrer"> '.../users/20292269/scoffs'</a><span>,</span>
+                <span className='text'>stackoverflow</span><span>:</span><a className='link' href="https://stackoverflow.com/users/20292269/scoffs" target="_blank" rel="noreferrer"> '/users/20292269/scoffs'</a><span>,</span>
             </pre>
             <pre>&nbsp;&nbsp;
                 <span className='text'>leetcode</span><span>:</span><a className='link' href="https://leetcode.com/scffs/" target="_blank" rel="noreferrer"> 'leetcode.com/scffs'</a><span>,</span>
