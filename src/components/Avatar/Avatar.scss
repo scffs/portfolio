@@ -4,12 +4,6 @@
   z-index: 5;
   background-image: $bgGreen;
   transition: transform .3s linear;
-  &:hover {
-    transform: rotate(30deg);
-  }
-  &:hover img.image{
-    transform: rotate(0);
-  }
   &:before,
   &:after {
     content: '';
