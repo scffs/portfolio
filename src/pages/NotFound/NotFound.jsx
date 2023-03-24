@@ -7,15 +7,15 @@ const ButtonToHome = lazy(() => import('../../components/UI/ButtonToHome/ButtonT
 
 const NotFound = () => {
     return (
-        <div className={s.block}>
-            <div>
-                <h1 className={s.title}>404</h1>
-                <p className={s.text}>Страница не найдена!</p>
-            </div>
-            <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading />}>
+            <div className={s.block}>
+                <div>
+                    <h1 className={s.title}>404</h1>
+                    <p className={s.text}>Страница не найдена!</p>
+                </div>
                 <ButtonToHome text='На главную'/>
-            </Suspense>
-        </div>
+            </div>
+        </Suspense>
     );
 };
 

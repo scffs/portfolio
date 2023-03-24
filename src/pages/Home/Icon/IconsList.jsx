@@ -6,7 +6,8 @@ import {
     faNodeJs,
     faPython,
     faReact,
-    faSquareJs, faUbuntu,
+    faSquareJs,
+    faUbuntu,
 } from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
