@@ -4,7 +4,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 import './styles/index.scss';
 
-import Layout from './components/Layout.jsx';
+const Layout = lazy(() => import('./components/Layout.jsx'));
 const Profile = lazy(() => import('./pages/Profile/Profile.jsx'));
 const Articles = lazy(() => import('./pages/Articles/Articles.jsx'));
 const Home = lazy(() => import('./pages/Home/Home.jsx'));
