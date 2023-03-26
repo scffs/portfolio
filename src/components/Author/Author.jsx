@@ -1,7 +1,7 @@
 import React from 'react';
 
 import s from './Author.module.scss';
-import {UserCircleIcon} from "@heroicons/react/24/outline/index.js";
+import {UserCircleIcon} from '@heroicons/react/20/solid/index.js';
 
 /**
  * @param {string} authorLogo
