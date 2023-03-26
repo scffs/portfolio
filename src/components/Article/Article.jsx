@@ -1,14 +1,13 @@
 import React, {lazy, Suspense} from 'react';
-
-import s from './Article.module.scss';
+import {Link} from 'react-router-dom';
 
 import Loading from '../Loading/Loading.jsx';
 const Author = lazy(() => import('../Author/Author'));
 const Category = lazy(() => import('./Category/Category'));
 
-import {Link} from 'react-router-dom';
-
 import logo from '../../assets/img/ava.webp';
+
+import s from './Article.module.scss';
 
 /**
  * @param {array} tags
