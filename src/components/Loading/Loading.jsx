@@ -1,9 +1,9 @@
 const Loading = () => {
-    return (
-        <h3 style={{color: '#aaa', textAlign: 'center'}}>
-            Loading...
-        </h3>
-    );
+  return (
+    <h3 style={{color: '#aaa', textAlign: 'center'}}>
+      Loading...
+    </h3>
+  );
 };
 
 export default Loading;

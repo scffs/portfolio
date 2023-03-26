@@ -8,16 +8,16 @@ const Roadmap = lazy(() => import('./Roadmap/Roadmap'));
 const ProfileInfo = lazy(() => import('./ProfileInfo/ProfileInfo'));
 
 const Profile = () => {
-    return (
-        <div className={s.content}>
-            <Suspense fallback={<Loading />}>
-                <Roadmap />
-            </Suspense>
-            <Suspense fallback={<Loading />}>
-                <ProfileInfo />
-            </Suspense>
-        </div>
-    );
+  return (
+    <div className={s.content}>
+      <Suspense fallback={<Loading/>}>
+        <Roadmap/>
+      </Suspense>
+      <Suspense fallback={<Loading/>}>
+        <ProfileInfo/>
+      </Suspense>
+    </div>
+  );
 };
 
 export default memo(Profile);

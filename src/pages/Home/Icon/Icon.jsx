@@ -1,9 +1,5 @@
 import React from 'react';
 
-const Icon = ({component}) => {
-    return (
-        component
-    );
-};
+const Icon = ({component}) => component;
 
 export default Icon;

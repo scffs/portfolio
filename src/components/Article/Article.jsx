@@ -2,12 +2,12 @@ import React, {lazy, Suspense} from 'react';
 import {Link} from 'react-router-dom';
 
 import Loading from '../Loading/Loading.jsx';
-const Author = lazy(() => import('../Author/Author'));
-const Category = lazy(() => import('./Category/Category'));
-
 import logo from '../../assets/img/ava.webp';
 
 import s from './Article.module.scss';
+
+const Author = lazy(() => import('../Author/Author'));
+const Category = lazy(() => import('./Category/Category'));
 
 /**
  * @param {array} tags
@@ -16,30 +16,30 @@ import s from './Article.module.scss';
  * @param {string} description
  * @param {string} author
  * @param {string} title
-*/
+ */
 
 const Article = ({link, preview, title, description, tags, author}) => {
-    return (
-        <Link to={link} className={s.link} target='_blank' rel="noreferrer">
-            <article className={s.article}>
-                <img className={s.img} src={preview} alt="img"/>
-                <div className={s.info}>
-                    <div className={s.top}>
-                       <Suspense fallback={<Loading />}>
-                           <div className={s.tags}>
-                               {tags.map((tag, id) => {
-                                   return <Category key={id} id={id} tag={tag}/>
-                               })}
-                           </div>
-                           <Author author={author} authorLogo={logo}/>
-                       </Suspense>
-                    </div>
-                    <h3 className={s.title}>{title}</h3>
-                    <p className={s.description}>{description}</p>
-                </div>
-            </article>
-        </Link>
-    );
+  return (
+    <Link to={link} className={s.link} target="_blank" rel="noreferrer">
+      <article className={s.article}>
+        <img className={s.img} src={preview} alt="img"/>
+        <div className={s.info}>
+          <div className={s.top}>
+            <Suspense fallback={<Loading/>}>
+              <div className={s.tags}>
+                {tags.map((tag, id) => {
+                  return <Category key={id} id={id} tag={tag}/>
+                })}
+              </div>
+              <Author author={author} authorLogo={logo}/>
+            </Suspense>
+          </div>
+          <h3 className={s.title}>{title}</h3>
+          <p className={s.description}>{description}</p>
+        </div>
+      </article>
+    </Link>
+  );
 };
 
 export default Article;

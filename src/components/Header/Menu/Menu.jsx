@@ -7,43 +7,43 @@ import {menuList} from '../menuList.jsx';
 import s from './Menu.module.scss';
 
 const Menu = ({value, onClickCategory}) => {
-    const [isBurger, setIsBurger] = useState(false);
+  const [isBurger, setIsBurger] = useState(false);
 
-    const body = document.body;
+  const body = document.body;
 
-    const handleClick = () => isBurger && setIsBurger(!isBurger)
+  const handleClick = () => isBurger && setIsBurger(!isBurger)
 
-    useEffect(() => {
-        if(body.classList.contains('lock') || isBurger) body.classList.toggle('lock')
-    }, [isBurger, body.classList]);
+  useEffect(() => {
+    if (body.classList.contains('lock') || isBurger) body.classList.toggle('lock')
+  }, [isBurger, body.classList]);
 
-    return (
-        <>
-            <button aria-label='Menu' onClick={() => setIsBurger(!isBurger)} className={s.burger}>
-                {isBurger ?
-                    <XMarkIcon width="2.5rem" height="2.5rem" /> : <Bars3Icon width="2.5rem" height="2.5rem" />
-                }
-            </button>
-            <ul className={isBurger ? s.menu : s.hidden}>
-                {menuList.map(({title, id, src, component}) => (
-                        <li key={id}
-                            className={`${value === id && s.active}`}
-                            onClick = {() => handleClick()}>
-                            <Link
+  return (
+    <>
+      <button aria-label="Menu" onClick={() => setIsBurger(!isBurger)} className={s.burger}>
+        {isBurger ?
+          <XMarkIcon width="2.5rem" height="2.5rem"/> : <Bars3Icon width="2.5rem" height="2.5rem"/>
+        }
+      </button>
+      <ul className={isBurger ? s.menu : s.hidden}>
+        {menuList.map(({title, id, src, component}) => (
+          <li key={id}
+              className={`${value === id && s.active}`}
+              onClick={() => handleClick()}>
+            <Link
 
-                                aria-label={title}
-                                className={s.headerLink}
-                                to={src}
-                                onClick={() => onClickCategory(id)}
-                            >
-                                {component}
-                            </Link>
-                        </li>
-                    ))
-                }
-            </ul>
-        </>
-    );
+              aria-label={title}
+              className={s.headerLink}
+              to={src}
+              onClick={() => onClickCategory(id)}
+            >
+              {component}
+            </Link>
+          </li>
+        ))
+        }
+      </ul>
+    </>
+  );
 };
 
 export default Menu;
