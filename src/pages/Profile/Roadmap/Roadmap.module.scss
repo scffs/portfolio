@@ -46,7 +46,6 @@
   .skillsList {
     @include flex(20px, 0, 0, 0, 0);
     padding: 20px;
-    overflow-y: hidden;
     overflow-x: auto;
   }
   .content{

@@ -9,6 +9,8 @@
 #root{
   min-width: 320px;
   animation: opacity 1s ease-in;
+  overflow-x: hidden;
+  overflow-y: inherit;
 }
 body {
   font-family: 'Rubik', 'Segoe UI', sans-serif;
