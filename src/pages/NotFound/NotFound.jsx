@@ -14,7 +14,7 @@ const NotFound = () => {
           <h1 className={s.title}>404</h1>
           <p className={s.text}>Страница не найдена!</p>
         </div>
-        <ButtonToHome text="На главную"/>
+        <ButtonToHome text='На главную'/>
       </div>
     </Suspense>
   );

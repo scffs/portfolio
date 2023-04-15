@@ -13,7 +13,7 @@ const ButtonToHome = ({text}) => {
     return (
         <button
             className='home-btn'
-            onClick={() => navigate('/portfolio')}
+            onClick={() => navigate('/portfolio/')}
         >
             {text}
         </button>
