@@ -1,5 +1,6 @@
 import React, {lazy, Suspense} from 'react';
 import {Outlet} from 'react-router-dom';
+import Loading from "./Loading/Loading.jsx";
 
 const Header = lazy(() => import('./Header/Header'));
 const Footer = lazy(() => import('./Footer/Footer'));
@@ -17,7 +18,7 @@ const Layout = () => (
     }>
       <Header/>
       <main style={{flex: '1 0 auto'}}>
-        <Suspense>
+        <Suspense fallback={<Loading />}>
           <Outlet/>
         </Suspense>
       </main>
