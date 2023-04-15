@@ -12,19 +12,19 @@ const Search = lazy(() => import('../../components/UI/Search/Search'));
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [categoryId, setCategoryId] = useState(0);
+  const [categoryId, setCategoryId] = useState('All');
   const [search, setSearch] = useState('');
 
   const articlesList = useMemo(() => articles.filter(post => {
     return post.title?.toLowerCase().includes(search.toLowerCase());
-  }).map(post => (<Suspense key={post.id}><Article {...post} /></Suspense>)), [articles, search])
+  }).map(post => (<Article key={post.id} {...post} />)), [articles, search])
 
   const width = window.innerWidth > 600 ? 600 : 330;
   const isArticlesExist = articlesList.length;
 
   useEffect(() => {
     setIsLoading(true)
-    fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tags=${categoryId && categoryId !== 'All' ? categoryId : ''}`)
+    fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tags=${categoryId === 'All' ? '' : categoryId}`)
       .then((res) => res.json())
       .then((arr) => {
         setArticles(arr)

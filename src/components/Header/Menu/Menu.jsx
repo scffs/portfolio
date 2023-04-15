@@ -19,18 +19,17 @@ const Menu = ({value, onClickCategory}) => {
 
   return (
     <>
-      <button aria-label="Menu" onClick={() => setIsBurger(!isBurger)} className={s.burger}>
+      <button aria-label='Menu' onClick={() => setIsBurger(!isBurger)} className={s.burger}>
         {isBurger ?
-          <XMarkIcon width="2.5rem" height="2.5rem"/> : <Bars3Icon width="2.5rem" height="2.5rem"/>
+          <XMarkIcon width='2.5em' height='2.5em'/> : <Bars3Icon width='2.5em' height='2.5em'/>
         }
       </button>
       <ul className={isBurger ? s.menu : s.hidden}>
         {menuList.map(({title, id, src, component}) => (
           <li key={id}
-              className={`${value === id && s.active}`}
+              className={`${value === id ? s.active : ''}`}
               onClick={() => handleClick()}>
             <Link
-
               aria-label={title}
               className={s.headerLink}
               to={src}
