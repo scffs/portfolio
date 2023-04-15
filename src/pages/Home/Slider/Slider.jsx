@@ -6,8 +6,8 @@ import { EffectCards } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import './slider.scss';
-import Loading from "../../../components/Loading/Loading.jsx";
 
+import Loading from '../../../components/Loading/Loading.jsx';
 const Preview = lazy(() => import('./Slides/Preview'));
 const SocialLinks = lazy(() => import('./Slides/SocialLinks'));
 const Skills = lazy(() => import('./Slides/Skills'));
@@ -22,24 +22,26 @@ const Slider = () =>{
                 modules={[EffectCards]}
                 className='mySwiper'
             >
-                <Suspense fallback={<Loading />}>
-                    <SwiperSlide>
-                        <Preview />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SocialLinks />
-                    </SwiperSlide>
-                    <SwiperSlide>
-
+                <SwiperSlide>
+                   <Suspense fallback={<Loading />}>
+                       <Preview />
+                   </Suspense>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
                         <Skills />
-
-                    </SwiperSlide>
-                    <SwiperSlide>
-
+                    </Suspense>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
+                        <SocialLinks />
+                    </Suspense>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
                         <Person />
-
-                    </SwiperSlide>
-                </Suspense>
+                    </Suspense>
+                </SwiperSlide>
             </Swiper>
         </>
     )
