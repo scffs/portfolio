@@ -23,9 +23,9 @@ const Slider = () =>{
                 className='mySwiper'
             >
                 <SwiperSlide>
-                   <Suspense fallback={<Loading />}>
-                       <Preview />
-                   </Suspense>
+                    <Suspense fallback={<Loading />}>
+                        <Preview />
+                    </Suspense>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Suspense fallback={<Loading />}>
