@@ -1,10 +1,5 @@
 const skills = [
     {
-        time: 'Sep 2020 - Jan 2021',
-        skill: 'Python',
-        knowledge: ['PyAutoGUI', 'Basic syntax', 'Arrays', 'pip'],
-    },
-    {
         time: 'Sep 2021 - Present',
         skill: 'Frontend',
         knowledge: ['Semantic HTML', 'BEM', 'Sass', 'Less', 'Bootstrap', 'CSS Modules', 'Adaptive Web Design', 'Bootstrap', 'Tailwind', 'daisyUI', 'MaterialUI'],
@@ -32,13 +27,13 @@ const skills = [
     {
         time: 'Dec 2023 - Present',
         skill: 'JS',
-        knowledge: ['npm / yarn', 'Arrays', 'Objects', 'Equality Comparisons', 'Massives',
+        knowledge: ['Arrays', 'Objects', 'Equality Comparisons', 'Massives',
                     'Datatypes', 'Loops and Iterations', 'Functions', 'Promises', 'fetch'],
     },
     {
         time: 'Dec 2023 - Present',
         skill: 'React',
-        knowledge: ['JSX', 'useEffect', 'useState', 'Router DOM', 'lazy'],
+        knowledge: ['JSX', 'useEffect', 'useState', 'useRef', 'Redux', 'lazy', 'memo / useMemo', 'Router DOM'],
     },
 
 ]
