@@ -6,6 +6,7 @@
     @include flex(30px, center, center, 0, 0);
   }
   p{
+    text-align: center;
     font-size: 1rem;
     color: scale-color($bgCard, $lightness: +60%);
   }
