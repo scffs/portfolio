@@ -9,12 +9,12 @@
 #root{
   min-width: 320px;
   animation: opacity 1s ease-in;
-  overflow-x: hidden;
 }
 body {
   font-family: 'Rubik', 'Segoe UI', sans-serif;
   color: $primaryColor;
   background: $bgWhitePage;
+  overflow-x: hidden;
 }
 ul {list-style-type: none}
 a{
