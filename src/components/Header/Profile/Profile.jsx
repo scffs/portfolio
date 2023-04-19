@@ -19,17 +19,17 @@ const Profile = ({name, role}) => {
               <div className={s.top}>
                   <div className={s.userInfo}>
                       <Link
-                        to="/portfolio/profile"
+                        to='/portfolio/profile'
                         className={s.name}
                       >
                           <Avatar
-                            width="45"
-                            height="45"
-                            borderRadius="50px"
+                            width='45px'
+                            height='45px'
+                            borderRadius='50px'
                             src={logo}
-                            isHexagon="yes"
-                            hexagonHeight="45"
-                            imageLeft="-8"
+                            isHexagon
+                            hexagonHeight='45'
+                            imageLeft='-8'
                           />
                           <span>{name}</span>
                       </Link>

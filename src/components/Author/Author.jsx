@@ -15,7 +15,7 @@ const Author = ({authorLogo, author}) => (
     {authorLogo
         ? <img className={s.authorLogo}
            src={authorLogo}
-           alt="author-logo"
+           alt='author logo'
         />
         : <UserCircleIcon size="2em"/>
     }

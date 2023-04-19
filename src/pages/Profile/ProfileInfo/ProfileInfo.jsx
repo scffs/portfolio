@@ -12,8 +12,8 @@ const ProfileInfo = () => {
       <div className={s.profileWrapper}>
           <div className={s.profileInfoTop}>
               <Avatar
-                width="100" height="100"
-                borderRadius="80px"
+                width='100px' height='100px'
+                borderRadius='80px'
                 src={logo}
               />
               <span className={s.name}>Semyon Okulov</span>

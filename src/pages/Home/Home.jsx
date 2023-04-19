@@ -16,10 +16,10 @@ const Home = () => (
         <div className={s.profileImage}>
             <Suspense fallback={<Loading />}>
                 <Avatar
-                    width="280" height="280"
-                    borderRadius="30px"
-                    isHexagon="1"
-                    hexagonHeight="280"
+                    width='280px' height='280px'
+                    borderRadius='30px'
+                    isHexagon='1'
+                    hexagonHeight='280'
                     src={logo}
                 />
                 <div className={s.circleInner}>
