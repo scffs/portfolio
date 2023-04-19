@@ -20,4 +20,5 @@ export default defineConfig({
         assetsInlineLimit: 0, // don't inline assets, load them as separate files
         minify: 'terser', // use the terser plugin to minify code
     },
+    base: '/portfolio/',
 });
