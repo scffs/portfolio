@@ -1,7 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline/index.js';
+
 import { menuList } from '../menuList.jsx';
+
 import s from './Menu.module.scss';
 
 const Menu = ({ value, onClickCategory }) => {

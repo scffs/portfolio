@@ -1,9 +1,8 @@
-import React, {lazy, Suspense} from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import s from './NotFound.module.scss';
 
 import Loading from '../../components/Loading/Loading.jsx';
-
 const ButtonToHome = lazy(() => import('../../components/UI/ButtonToHome/ButtonToHome'));
 
 const NotFound = () => {

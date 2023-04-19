@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Avatar.scss';
 
 const Avatar = ({ width, height, borderRadius, src, isHexagon, hexagonHeight, imageLeft }) => {

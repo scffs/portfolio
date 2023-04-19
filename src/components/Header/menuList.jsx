@@ -1,4 +1,4 @@
-import {HomeIcon, NewspaperIcon} from '@heroicons/react/24/outline/index.js';
+import { HomeIcon, NewspaperIcon } from '@heroicons/react/24/outline/index.js';
 
 export const menuList = [
     {

@@ -1,4 +1,4 @@
-import React, {lazy, memo, Suspense} from 'react';
+import React, { lazy, memo, Suspense } from 'react';
 
 import Loading from '../../components/Loading/Loading';
 const Slider = lazy(() => import('./Slider/Slider'));
@@ -7,7 +7,7 @@ const Icon = lazy(() => import('./Icon/Icon'));
 
 import logo from '../../assets/img/ava.webp';
 
-import {iconsList} from './Icon/IconsList.jsx';
+import { iconsList } from './Icon/IconsList.jsx';
 
 import s from './Home.module.scss';
 

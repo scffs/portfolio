@@ -1,4 +1,4 @@
-import React, {lazy, memo, Suspense, useEffect, useMemo, useState} from 'react';
+import React, { lazy, memo, Suspense, useEffect, useMemo, useState } from 'react';
 
 import s from './Articles.module.scss';
 

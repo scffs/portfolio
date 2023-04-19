@@ -1,4 +1,4 @@
-import React, {lazy, memo, useState} from 'react';
+import React, { lazy, memo, useState } from 'react';
 
 const Menu = lazy(() => import('./Menu/Menu'));
 const Profile = lazy(() => import('./Profile/Profile'));
