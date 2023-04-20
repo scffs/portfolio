@@ -1,55 +1,55 @@
 @import '../../../styles/keyframes';
 .profileWrapper{
-    background-color: $bgWhite;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: $shadow;
+  background-color: $bgWhite;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: $shadow;
 }
 .profileGroup{
-    position: relative;
-    margin-bottom: 10px;
-    .title{
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-    .title::after{
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 2px;
-        top: 25px;
-        left: 0;
-        background: $userNameColor;
-    }
+  position: relative;
+  margin-bottom: 10px;
+  .title{
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .title::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 25px;
+    left: 0;
+    background: $userNameColor;
+  }
 }
 .profileGroupItem{
-    margin-top: 3px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    svg{
-        width: 1.3em;
-    }
-    span:first-child{
-        color: $whiteThemeText;
-    }
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  svg{
+    width: 1.3em;
+  }
+  span:first-child{
+    color: $whiteThemeText;
+  }
 }
 .profileInfoTop{
-    position: relative;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
 }
 .name{
-    color: $PINK;
-    margin-right: 10px;
-    font-weight: 400;
-    font-size: 1em;
-    &:hover{
-        color: scale-color($PINK, $lightness:+40%);
-    }
+  color: $PINK;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 1em;
+  &:hover{
+    color: scale-color($PINK, $lightness:+40%);
+  }
 }
 .comment{
-    color: $GRAY;
+  color: $GRAY;
 }
