@@ -17,7 +17,7 @@ const Author = ({authorLogo, author}) => (
            src={authorLogo}
            alt='author logo'
         />
-        : <UserCircleIcon size="2em"/>
+        : <UserCircleIcon size='2em'/>
     }
   </div>
 );

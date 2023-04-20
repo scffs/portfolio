@@ -1,6 +1,6 @@
-import React, {lazy} from 'react';
+import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import {BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes} from 'react-router-dom';
 
 import './styles/index.scss';
 
@@ -10,32 +10,23 @@ const Articles = lazy(() => import('./pages/Articles/Articles.jsx'));
 const Home = lazy(() => import('./pages/Home/Home.jsx'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound.jsx'));
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Layout />,
-        errorElement: <NotFound />,
-        children: [
-            {
-                path: '/portfolio/',
-                element: <Home />,
-            },
-            {
-                path: '/portfolio/news',
-                element: <Articles />,
-            },
-            {
-                path: '/portfolio/profile',
-                element: <Profile />,
-            },
-            {
-                path: '/portfolio/*',
-                element: <NotFound />,
-            },
-        ],
-    },
-]);
+const App = () => (
+    <BrowserRouter>
+        <Suspense fallback={<div>Loading...</div>}>
+            <Layout>
+                <Routes>
+                    <Route path="/portfolio/" element={<Home />} />
+                    <Route path="/portfolio/news" element={<Articles />} />
+                    <Route path="/portfolio/profile" element={<Profile />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </Layout>
+        </Suspense>
+    </BrowserRouter>
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}/>,
+    <Suspense fallback={<div>Loading...</div>}>
+        <App />
+    </Suspense>,
 );

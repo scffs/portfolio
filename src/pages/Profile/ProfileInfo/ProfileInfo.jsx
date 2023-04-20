@@ -2,9 +2,9 @@ import React, { lazy, Suspense } from 'react';
 
 import logo from '../../../assets/img/ava.webp';
 
-import {activity, basics, projects} from './projects.jsx';
-import Loading from "../../../components/Loading/Loading.jsx";
+import { activity, basics, projects } from './projects.jsx';
 
+import Loading from '../../../components/Loading/Loading.jsx';
 const Avatar = lazy(() => import('../../../components/Avatar/Avatar.jsx'));
 const ProfileGroup = lazy(() => import('../ProfileGroup/ProfileGroup.jsx'));
 

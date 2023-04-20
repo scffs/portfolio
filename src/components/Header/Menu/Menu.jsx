@@ -32,29 +32,19 @@ const Menu = ({ value, onClickCategory }) => {
                 onClick={() => setIsBurger(!isBurger)}
                 className={s.burger}
             >
-                {isBurger ? (
-                    <XMarkIcon width='2.5em' height='2.5em' />
-                ) : (
-                    <Bars3Icon width='2.5em' height='2.5em' />
-                )}
+                {isBurger ? <XMarkIcon width='2.5em' height='2.5em' /> : <Bars3Icon width='2.5em' height='2.5em' />}
             </button>
             <ul className={isBurger ? s.menu : s.hidden} ref={menuRef}>
-                {menuList.map(({ title, id, src, component }) => (
-                    <li
-                        key={id}
-                        className={`${value === id ? s.active : ''}`}
-                        onClick={() => handleClick()}
-                    >
-                        <Link
-                            aria-label={title}
-                            className={s.headerLink}
-                            to={src}
-                            onClick={() => onClickCategory(id)}
-                        >
-                            {component}
-                        </Link>
-                    </li>
-                ))}
+                {menuList.map(({ title, id, src, component }) => {
+                    const isActive = value === id;
+                    return (
+                        <li key={id} className={`${isActive ? s.active : ''}`} onClick={handleClick}>
+                            <Link aria-label={title} className={s.headerLink} to={src} onClick={() => onClickCategory(id)}>
+                                {component}
+                            </Link>
+                        </li>
+                    );
+                })}
             </ul>
         </>
     );

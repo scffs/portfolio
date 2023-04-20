@@ -1,5 +1,5 @@
-// import {BriefcaseIcon, CodeBracketIcon} from "@heroicons/react/24/outline/index.js";
 import React from "react";
+
 import {BriefcaseIcon, CodeBracketIcon} from "@heroicons/react/24/outline/index.js";
 
 export const projects = [
