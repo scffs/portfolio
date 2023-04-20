@@ -17,7 +17,7 @@ const skills = [
     {
         time: 'Feb 2022 - Present',
         skill: 'Web',
-        knowledge: ['DNS', 'HTTP', 'Browsers'],
+        knowledge: ['DNS', 'HTTP/HTTPS', 'Browsers', 'TCP/IP'],
     },
     {
         time: 'Nov 2022 - Present',
@@ -33,7 +33,7 @@ const skills = [
     {
         time: 'Dec 2023 - Present',
         skill: 'React',
-        knowledge: ['JSX', 'useEffect', 'useState', 'useRef', 'Redux', 'lazy', 'memo / useMemo', 'Router DOM'],
+        knowledge: ['JSX', 'useEffect', 'useState', 'useRef', 'Redux', 'lazy', 'useMemo', 'useCallback', 'Router DOM', 'memo'],
     },
 
 ]
