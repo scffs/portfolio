@@ -1,1 +1,0 @@
-import{r as e,a as l}from"./index-48bf457e.js";const a=["All","Frontend","OpenSource","DevOps","Other"],i=e.memo((({value:e,onClickCategory:i})=>l("div",{children:l("ul",{className:"categories",children:a.map(((a,r)=>l("li",{className:"item "+(e===a?"active":""),onClick:()=>i(a),children:a},r)))})})));export{i as default};
