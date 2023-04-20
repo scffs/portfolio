@@ -1,12 +1,13 @@
 @import '../../../styles/vars';
 @import '../../../styles/keyframes';
+.menu{}
 .burger{
-  position: relative;
-  z-index: 4;
-  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 3000;
 }
 .active  .headerLink > svg path{
-  stroke: $GREEN !important;
+  stroke: $GREEN;
 }
 .headerLink{
   svg path{
@@ -49,21 +50,20 @@
 }
 .hidden{
   @include flex(40px, center, flex-start, 0, 0);
-  position: relative;
-}
-.menu, .hidden{
-  animation: burgerShow .3s linear;
 }
 @media (max-width: 450px) {
+  .burger{
+    opacity: 1;
+    position: relative;
+  }
   .menu, .hidden{
-    display: block;
+    transition: transform .1s linear;
     padding: 13px 30px 5px;
-    margin-top: 10px;
     position: fixed;
     left: 50px;
     background: $bgMenuMobile;
-    z-index: 3;
-    top: 20px;
+    z-index: 300;
+    top: 30px;
     text-align: center;
     border-radius: 30px;
     a{
@@ -73,10 +73,8 @@
   }
   .hidden{
     transform: translateY(-200%);
-    transition: transform .3s linear;
   }
   .burger{
-    display: block;
     color: $primaryColor;
   }
 }

@@ -22,8 +22,8 @@
     right: -74%;
   }
   &:nth-child(4){
-    top: 90%;
-    right: 7%;
+    top: 85%;
+    right: 15%;
   }
   &:nth-child(5){
     right: 17%;
@@ -33,10 +33,18 @@
     right: 54%;
   }
   &:nth-child(7){
-    top: 90%;
-    right: -5%;
+    top: 95%;
+    right: 10%;
   }
   &:nth-child(8){
-    right: 5%;
+    right: 19%;
+    top: -20px;
+  }
+  &:nth-child(9){
+    top: 80%;
+  }
+  &:nth-child(10){
+    right: -75%;
+    top: -25px;
   }
 }

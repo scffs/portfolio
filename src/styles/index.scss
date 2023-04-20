@@ -24,7 +24,7 @@ a{
   color: $primaryColor;
   font-weight: 400;
   font-size: 1.2em;
-  &:focus{
+  &:focus, &:active{
     outline: none;
     color: scale-color($primaryColor, $lightness: +50%);
   }

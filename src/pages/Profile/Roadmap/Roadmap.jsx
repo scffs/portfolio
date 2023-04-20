@@ -13,7 +13,7 @@ const Roadmap = () => {
     useEffect(() => {
         if (refComponent.current) {
             const height = refComponent.current.getBoundingClientRect().height;
-            refComponent.current.style.setProperty('--height-ref', `${height * 11.3}px`);
+            refComponent.current.style.setProperty('--height-ref', `${height}px`);
         }
     }, []);
 
@@ -33,7 +33,6 @@ const Roadmap = () => {
                     ))}
                 </Suspense>
             </ul>
-            <div className={s.after} />
         </div>
     );
 };

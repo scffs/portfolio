@@ -7,7 +7,7 @@
   from {transform: rotateZ(0deg)}
   to {transform: rotateZ(-360deg)}
 }
-@keyframes burgerShow {
+@keyframes burgerHide {
   from {transform: translateY(-100%)}
   to {transform: translateY(0)}
 }
