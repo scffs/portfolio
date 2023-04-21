@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import './styles/index.scss';
+import Loading from "./components/Loading/Loading.jsx";
 
 const Layout = lazy(() => import('./components/Layout.jsx'));
 const Profile = lazy(() => import('./pages/Profile/Profile.jsx'));
@@ -26,7 +27,7 @@ const App = () => (
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
         <App />
     </Suspense>,
 );

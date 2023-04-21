@@ -1,0 +1,42 @@
+@import '../../../styles/vars';
+.title{
+  margin-bottom: 15px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 25px;
+    left: 0;
+    background: $userNameColor;
+  }
+}
+.profileGroup{
+  position: relative;
+  margin-bottom: 10px;
+}
+.profileGroupItem{
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  svg{
+    width: 1.3em;
+  }
+  span:first-child{
+    color: $whiteThemeText;
+  }
+}
+.name{
+  color: $PINK;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 1em;
+  &:hover{
+    color: scale-color($PINK, $lightness:+40%);
+  }
+}
+.comment{
+  color: $GRAY;
+}

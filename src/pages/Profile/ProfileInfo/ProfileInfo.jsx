@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 
 import logo from '../../../assets/img/ava.webp';
 
-import { activity, basics, projects } from './projects.jsx';
+import { activity, basics, projects } from './info.jsx';
 
 import Loading from '../../../components/Loading/Loading.jsx';
 const Avatar = lazy(() => import('../../../components/Avatar/Avatar.jsx'));
