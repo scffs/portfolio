@@ -1,9 +1,7 @@
 import React, {lazy, Suspense} from 'react';
-import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import './styles/index.scss';
-import Loading from "./components/Loading/Loading.jsx";
 
 const Layout = lazy(() => import('./components/Layout.jsx'));
 const Profile = lazy(() => import('./pages/Profile/Profile.jsx'));
@@ -26,8 +24,4 @@ const App = () => (
     </BrowserRouter>
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <Suspense fallback={<Loading />}>
-        <App />
-    </Suspense>,
-);
+export default App;
