@@ -14,10 +14,10 @@ const App = () => (
         <Suspense fallback={<div>Loading...</div>}>
             <Layout>
                 <Routes>
-                    <Route path="/portfolio/" element={<Home />} />
-                    <Route path="/portfolio/news" element={<Articles />} />
-                    <Route path="/portfolio/profile" element={<Profile />} />
-                    <Route path="*" element={<NotFound />} />
+                    <Route path='/portfolio/' element={<Home />} />
+                    <Route path='/portfolio/news' element={<Articles />} />
+                    <Route path='/portfolio/profile' element={<Profile />} />
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
             </Layout>
         </Suspense>
