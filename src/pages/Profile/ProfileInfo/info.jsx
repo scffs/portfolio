@@ -11,8 +11,8 @@ export const projects = [
 export const basics = [
     { title: 'Age', text: '18' },
     { title: 'City', text: 'Tomsk' },
-    { title: <CodeBracketIcon title="Specialty" />, text: 'Frontend' },
-    { title: <BriefcaseIcon title="Job" />, text: 'undefined', comment: 'studying' },
+    { title: <CodeBracketIcon title='Specialty' />, text: 'Frontend' },
+    { title: <BriefcaseIcon title='Job' />, text: 'undefined', comment: 'studying' },
 ];
 
 export const activity = [
