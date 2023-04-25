@@ -15,11 +15,11 @@ export default defineConfig({
             apply: 'build', // only apply this plugin during build
         },
         visualizer({
-            template: "treemap", // or sunburst
+            template: 'treemap', // or sunburst
             open: true,
             gzipSize: true,
             brotliSize: true,
-            filename: "analyze.html",
+            filename: 'analyze.html',
         }),
     ],
     build: {
@@ -27,6 +27,7 @@ export default defineConfig({
         polyfillDynamicImport: false, // don't include dynamic import polyfill
         assetsInlineLimit: 0, // don't inline assets, load them as separate files
         minify: 'terser', // use the terser plugin to minify code
+        brotliSize: true,
     },
     base: '/portfolio/',
 });
