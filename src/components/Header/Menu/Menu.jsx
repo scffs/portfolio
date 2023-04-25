@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, {useEffect, useState, useRef, useCallback} from 'react';
 import { Link } from 'react-router-dom';
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline/index.js';
@@ -9,9 +9,20 @@ import s from './Menu.module.scss';
 
 const Menu = ({ value, onClickCategory }) => {
     const [isBurger, setIsBurger] = useState(false);
+
     const menuRef = useRef(null);
 
-    const handleClick = () => isBurger && setIsBurger(false);
+    const handleClick = useCallback(() => {
+        setIsBurger(false);
+    }, []);
+
+    useEffect(() => {
+        if (isBurger) {
+            document.body.classList.add('lock');
+        } else {
+            document.body.classList.remove('lock');
+        }
+    }, [isBurger]);
 
     useEffect(() => {
         const handleClickOutside = (event) => {

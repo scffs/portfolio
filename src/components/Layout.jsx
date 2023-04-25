@@ -1,5 +1,4 @@
 import React, {lazy, Suspense} from 'react';
-import {Outlet} from 'react-router-dom';
 
 import Loading from './Loading/Loading.jsx';
 const Header = lazy(() => import('./Header/Header'));
@@ -17,11 +16,11 @@ const Layout = ({children}) => (
                 padding: '0 10px',
             }
         }>
-            <Header/>
+            <Header />
             <main style={{flex: '1 0 auto'}}>
                 {children}
             </main>
-            <Footer/>
+            <Footer />
         </div>
     </Suspense>
 );

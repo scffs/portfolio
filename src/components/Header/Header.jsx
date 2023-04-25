@@ -6,7 +6,7 @@ const Profile = lazy(() => import('./Profile/Profile'));
 import s from './Header.module.scss';
 
 const Header = () =>{
-  const [categoryId, setCategoryId] = useState(0);
+  const [categoryId, setCategoryId] = useState(1);
 
   return (
     <header className={s.header}>
