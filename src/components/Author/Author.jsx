@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { UserCircleIcon } from '@heroicons/react/20/solid/index.js';
+
 import s from './Author.module.scss';
-import {UserCircleIcon} from '@heroicons/react/20/solid/index.js';
 
 /**
  * @param {string} authorLogo
@@ -11,12 +12,12 @@ import {UserCircleIcon} from '@heroicons/react/20/solid/index.js';
 const Author = ({authorLogo, author}) => (
   <div className={s.author}>
     <span className={s.authorName}>{author || 'Аноним'}</span>
-    {authorLogo ?
-      <img className={s.authorLogo}
+    {authorLogo
+        ? <img className={s.authorLogo}
            src={authorLogo}
-           alt="author-logo"
-      />
-      : <UserCircleIcon size="2em"/>
+           alt='author logo'
+        />
+        : <UserCircleIcon size='2em'/>
     }
   </div>
 );

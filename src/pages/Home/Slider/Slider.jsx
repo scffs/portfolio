@@ -7,10 +7,11 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import './slider.scss';
 
-const Preview = lazy(() => import('./Slides/Preview'));
-const SocialLinks = lazy(() => import('./Slides/SocialLinks'));
-const Skills = lazy(() => import('./Slides/Skills'));
-const Person = lazy(() => import('./Slides/Person'));
+import Loading from '../../../components/Loading/Loading.jsx';
+const Preview = lazy(() => import('./Slides/Preview/Preview.jsx'));
+const SocialLinks = lazy(() => import('./Slides/SocialLinks/SocialLinks.jsx'));
+const Skills = lazy(() => import('./Slides/Skills/Skills.jsx'));
+const Person = lazy(() => import('./Slides/Person/Person.jsx'));
 
 const Slider = () =>{
     return(
@@ -19,26 +20,28 @@ const Slider = () =>{
                 effect={"cards"}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="mySwiper"
+                className='mySwiper'
             >
-                <Suspense>
-                    <SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
                         <Preview />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SocialLinks />
-                    </SwiperSlide>
-                    <SwiperSlide>
-
+                    </Suspense>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
                         <Skills />
-
-                    </SwiperSlide>
-                    <SwiperSlide>
-
+                    </Suspense>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
+                        <SocialLinks />
+                    </Suspense>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Suspense fallback={<Loading />}>
                         <Person />
-
-                    </SwiperSlide>
-                </Suspense>
+                    </Suspense>
+                </SwiperSlide>
             </Swiper>
         </>
     )

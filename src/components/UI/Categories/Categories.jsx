@@ -1,29 +1,26 @@
+import React, { memo } from 'react';
+
+import { categoriesList } from './categoriesList';
+
 import './Categories.scss';
 
-import categoriesList from './categoriesList';
-import {memo} from 'react';
-
 /**
- * @param {number} value
+ * @param {string} value
  * @param {function} onClickCategory
  */
 
-const Categories = ({value, onClickCategory}) => {
-  return (
-    <div>
-      <ul className="categories">
-        {categoriesList.map((category, id) =>
-          <li
-            className={`item ${value === category && 'active'}`}
-            key={id}
-            onClick={() => (onClickCategory(category))}
-          >
-            {category}
-          </li>,
-        )}
-      </ul>
-    </div>
-  );
-};
+const Categories = ({ value, onClickCategory }) => (
+    <ul className="categories">
+        {categoriesList.map((category) => (
+            <li
+                className={`item ${value === category ? 'active' : ''}`}
+                key={category}
+                onClick={() => onClickCategory(category)}
+            >
+                {category}
+            </li>
+        ))}
+    </ul>
+);
 
 export default memo(Categories);

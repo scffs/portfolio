@@ -2,7 +2,7 @@ import React from 'react';
 
 import s from './Footer.module.scss';
 
-import {logos} from './socialLogos';
+import { logos } from './socialLogos';
 
 const Footer = () => (
   <footer className={s.footer}>
@@ -10,7 +10,7 @@ const Footer = () => (
     <ul className={s.socials}>
       {logos.map(({url, path, alt}, id) => (
         <li key={id}>
-          <a href={url} target="_blank" rel="noreferrer">
+          <a href={url} target='_blank' rel='noreferrer'>
             <img className={s.logo} src={path} alt={alt}/>
           </a>
         </li>

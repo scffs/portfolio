@@ -15,7 +15,7 @@
   &::before{
     content: '';
     width: 2px;
-    height: 1415px;
+    height: 1283px;
     top: 125px;
     z-index: -1;
     position: absolute;
@@ -46,7 +46,6 @@
   .skillsList {
     @include flex(20px, 0, 0, 0, 0);
     padding: 20px;
-    overflow-y: hidden;
     overflow-x: auto;
   }
   .content{

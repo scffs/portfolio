@@ -1,5 +1,6 @@
-@import 'vars';
 @import 'keyframes';
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 *, *::after, *::before{
   margin: 0;
@@ -7,14 +8,16 @@
   box-sizing: border-box;
 }
 #root{
-  min-width: 340px;
+  min-width: 320px;
   animation: opacity 1s ease-in;
   overflow-x: hidden;
+  overflow-y: inherit;
 }
 body {
   font-family: 'Rubik', 'Segoe UI', sans-serif;
   color: $primaryColor;
   background: $bgWhitePage;
+  overflow-x: hidden;
 }
 ul {list-style-type: none}
 a{
@@ -22,7 +25,7 @@ a{
   color: $primaryColor;
   font-weight: 400;
   font-size: 1.2em;
-  &:focus{
+  &:focus, &:active{
     outline: none;
     color: scale-color($primaryColor, $lightness: +50%);
   }

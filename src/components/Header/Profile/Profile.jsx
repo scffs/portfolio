@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../../assets/img/ava.webp';
 
@@ -14,33 +14,28 @@ import s from './Profile.module.scss';
 
 const Profile = ({name, role}) => {
     return (
-      <>
-          <div className={s.profileCard}>
-              <div className={s.top}>
-                  <div className={s.userInfo}>
-                      <Link
-                        to="/portfolio/profile"
-                        className={s.name}
-                      >
-                          <Avatar
-                            width="45"
-                            height="45"
-                            borderRadius="50px"
+        <div className={s.profileCard}>
+            <div className={s.top}>
+                <div className={s.userInfo}>
+                    <Link to='/portfolio/profile' className={s.name}>
+                        <Avatar
+                            width='45px'
+                            height='45px'
+                            borderRadius='50px'
                             src={logo}
-                            isHexagon="yes"
-                            hexagonHeight="45"
-                            imageLeft="-8"
-                          />
-                          <span>{name}</span>
-                      </Link>
-                  </div>
-              </div>
-              <div className={s.bottom}>
-                  <p>Status:<span className={s.role}> {role}</span></p>
-              </div>
-          </div>
-      </>
+                            isHexagon
+                            hexagonHeight='45'
+                            imageLeft='-8'
+                        />
+                        <span>{name}</span>
+                    </Link>
+                </div>
+            </div>
+            <div className={s.bottom}>
+                <p>Status:<span className={s.role}> {role}</span></p>
+            </div>
+        </div>
     );
 };
 
-export default Profile;
+export default memo(Profile);

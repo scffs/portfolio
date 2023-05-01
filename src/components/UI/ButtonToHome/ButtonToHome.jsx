@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {useNavigate} from 'react-router-dom';
+
 import './Button.scss';
 
 /**
@@ -12,7 +13,7 @@ const ButtonToHome = ({text}) => {
     return (
         <button
             className='home-btn'
-            onClick={() => navigate('/portfolio')}
+            onClick={() => navigate('/portfolio/')}
         >
             {text}
         </button>

@@ -1,11 +1,10 @@
-import React, {lazy, memo, Suspense} from 'react';
-
-import s from './Profile.module.scss';
+import React, { lazy, memo, Suspense } from 'react';
 
 import Loading from '../../components/Loading/Loading.jsx';
-
 const Roadmap = lazy(() => import('./Roadmap/Roadmap'));
 const ProfileInfo = lazy(() => import('./ProfileInfo/ProfileInfo'));
+
+import s from './Profile.module.scss';
 
 const Profile = () => {
   return (
