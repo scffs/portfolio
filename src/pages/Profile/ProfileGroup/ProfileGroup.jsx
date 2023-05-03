@@ -11,7 +11,7 @@ const ProfileGroup = ({ title, items }) => {
                     <li className={s.profileGroupItem} key={id}>
                         <span>{item.title} - </span>
                         {item.href ? (
-                            <a className={s.name} href={item.href}>
+                            <a className={s.name} href={item.href} target='_blank'>
                                 {item.text}
                             </a>
                         ) : (

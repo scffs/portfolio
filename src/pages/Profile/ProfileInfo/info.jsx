@@ -4,8 +4,7 @@ import { BriefcaseIcon, CodeBracketIcon } from '@heroicons/react/24/outline/inde
 
 export const projects = [
     { name: 'React Clock', link: 'https://github.com/scffs/react-clock' },
-    { name: 'Portfolio [Vite]', link: 'https://github.com/scffsz/portfoliovite' },
-    { name: 'Portfolio [Webpack]', link: 'https://github.com/scffsz/portfolio' },
+    { name: 'Portfolio', link: 'https://github.com/scffsz/portfolio' },
     { name: 'MDN Translate', link: 'https://github.com/scffs?org=mdn&year_list=1' },
 ];
 export const basics = [
