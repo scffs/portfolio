@@ -33,6 +33,6 @@ export const skillsList = [
     },
     {
         technology: 'C#/WPF',
-        knowledge: 'Junior',
+        knowledge: 'junior',
     },
 ]

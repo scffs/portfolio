@@ -11,8 +11,8 @@ const skills = [
     },
     {
         time: 'Sep 2022 - Present',
-        skill: 'SQL',
-        knowledge: ['SQL basics', 'Requests', 'Database design basics'],
+        skill: 'Databases',
+        knowledge: ['SQL basics', 'MySQL', 'Database design basics', 'MongoDB', 'PostgreSQL'],
     },
     {
         time: 'Feb 2022 - Present',
@@ -27,13 +27,13 @@ const skills = [
     {
         time: 'Dec 2023 - Present',
         skill: 'JS',
-        knowledge: ['Arrays', 'Objects', 'Equality Comparisons', 'Massives',
-                    'Datatypes', 'Loops and Iterations', 'Functions', 'Promises', 'fetch'],
+        knowledge: ['Arrays', 'Objects', 'fetch', 'Equality Comparisons', 'Massives',
+                    'Datatypes', 'Loops and Iterations', 'Functions', 'Promises'],
     },
     {
         time: 'Dec 2023 - Present',
         skill: 'React',
-        knowledge: ['JSX', 'useEffect', 'useState', 'useRef', 'Redux', 'lazy', 'useMemo', 'useCallback', 'Router DOM', 'memo'],
+        knowledge: ['JSX', 'useEffect', 'useState', 'useRef', 'Redux', 'lazy', 'memo', 'useMemo', 'useCallback', 'Router DOM'],
     },
 
 ]
