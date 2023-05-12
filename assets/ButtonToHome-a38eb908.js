@@ -1,0 +1,1 @@
+import{j as o}from"./index-6dfa6de6.js";import{u as t}from"./App-14be5e8d.js";const s=({text:s})=>{const r=t();return o.jsx("button",{className:"home-btn",onClick:()=>r("/portfolio/"),children:s})};export{s as default};
