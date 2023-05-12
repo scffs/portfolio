@@ -28,15 +28,11 @@ export const skillsList = [
         knowledge: 'intermediate',
     },
     {
-        technology: 'HTML/CSS',
-        knowledge: 'intermediate',
-    },
-    {
-        technology: 'C#',
-        knowledge: 'Junior',
-    },
-    {
-        technology: 'Python',
+        technology: 'Docker/k8s',
         knowledge: 'beginner',
+    },
+    {
+        technology: 'C#/WPF',
+        knowledge: 'Junior',
     },
 ]

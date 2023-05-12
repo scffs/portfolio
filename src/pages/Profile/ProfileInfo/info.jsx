@@ -3,15 +3,16 @@ import React from 'react';
 import { BriefcaseIcon, CodeBracketIcon } from '@heroicons/react/24/outline/index.js';
 
 export const projects = [
-    { name: 'React Clock', link: 'https://github.com/scffs/react-clock' },
+    { name: 'Social-network', link: 'https://github.com/scffs/social-network' },
     { name: 'Portfolio', link: 'https://github.com/scffsz/portfolio' },
+    { name: 'React Clock', link: 'https://github.com/scffs/react-clock' },
     { name: 'MDN Translate', link: 'https://github.com/scffs?org=mdn&year_list=1' },
 ];
 export const basics = [
     { title: 'Age', text: '18' },
     { title: 'City', text: 'Tomsk' },
     { title: <CodeBracketIcon title='Specialty' />, text: 'Frontend' },
-    { title: <BriefcaseIcon title='Job' />, text: 'undefined', comment: 'studying' },
+    { title: <BriefcaseIcon title='Job' />, text: 'null', comment: 'studying' },
 ];
 
 export const activity = [
@@ -19,6 +20,5 @@ export const activity = [
     { title: 'Mozilla', text: 'Contributor' },
     { title: 'MDN', text: 'Contributor' },
     { title: 'VKTesters', text: 'Tester' },
-    { title: 'Eva', text: 'Co-author' },
     { title: 'Habr', text: 'Author' },
 ];
