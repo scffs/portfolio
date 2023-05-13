@@ -5,17 +5,9 @@ Made by React / SCSS / Vite
 
 # Installation
 
-#### SSH
-```
-git@github.com:scffs/portfolio.git
-```
 #### HTTPS
 ```
-https://github.com/scffsz/portfolio.git
-```
-#### GitHub CLI
-```
-gh repo clone scffs/portfolio
+git clone https://github.com/scffsz/portfolio
 ```
 For installing all dependencies type `yarn`
 > If you get some error delete `.node_modules` and try again **or** create an issue about that
