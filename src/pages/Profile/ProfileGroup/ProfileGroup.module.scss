@@ -26,6 +26,9 @@
   }
   span:first-child{
     color: $whiteThemeText;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
 .name{
