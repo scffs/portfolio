@@ -5,7 +5,7 @@ const Slider = lazy(() => import('./Slider/Slider'));
 const Avatar = lazy(() => import('../../components/Avatar/Avatar'));
 const Icon = lazy(() => import('./Icon/Icon'));
 
-import logo from '../../assets/img/ava.webp';
+import logo from '../../assets/img/awarding.jpg';
 
 import { iconsList } from './Icon/IconsList.jsx';
 

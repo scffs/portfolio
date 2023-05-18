@@ -17,7 +17,7 @@ const Avatar = ({ width, height, borderRadius, src, isHexagon, hexagonHeight, im
             height,
             zIndex: '1',
             clipPath:
-                'polygon(51.35% -2.07%, 95.22% 24.72%, 95.16% 76.05%, 50.4% 102.17%, 6.34% 75.5%, 4.25% 24.35%)',
+                'polygon(50.28% 5.07%, 74.87% 5.44%, 101.23% 50.34%, 74.68% 95.03%, 26.21% 95.56%, -1.16% 51.21%, 25.67% 4.71%)',
             borderRadius: '100%',
             left: `${imageLeft}px`,
         }

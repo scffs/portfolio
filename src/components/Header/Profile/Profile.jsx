@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../../assets/img/ava.webp';
+import logo from '../../../assets/img/avaSmall.jpg';
 
 import Avatar from '../../Avatar/Avatar';
 
@@ -32,7 +32,7 @@ const Profile = ({name, role}) => {
                 </div>
             </div>
             <div className={s.bottom}>
-                <p>Status:<span className={s.role}> {role}</span></p>
+                <p>Status: <span className={s.role}>{role}</span></p>
             </div>
         </div>
     );

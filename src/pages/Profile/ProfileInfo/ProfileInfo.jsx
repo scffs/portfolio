@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 
-import logo from '../../../assets/img/ava.webp';
+import logo from '../../../assets/img/avaSmall.jpg';
 
 import { activity, basics, projects } from './info.jsx';
 
