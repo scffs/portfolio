@@ -8,9 +8,9 @@
   animation: wheel 15s linear infinite;
 }
 .info{
-  @include flex(0, center, space-between, 0, 0);
+  @include flex(0, center, 0, 0, 0);
   user-select: none;
-  position: relative;
+  margin-left: 4rem;
 }
 .profileImage{
   animation: pageShow .4s ease-in;
@@ -19,6 +19,7 @@
 @media (max-width: 1000px) {
   .info{
     @include flex(50px, 0, center, 0, column);
+    margin-left: unset;
   }
   .profileImage{
     margin-top: 40px;
