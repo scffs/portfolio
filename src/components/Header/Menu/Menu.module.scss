@@ -4,7 +4,7 @@
 .burger{
   position: absolute;
   opacity: 0;
-  z-index: 3000;
+  z-index: -1;
 }
 .active  .headerLink > svg path{
   stroke: $GREEN;
@@ -53,6 +53,7 @@
 }
 @media (max-width: 450px) {
   .burger{
+    z-index: 3000;
     opacity: 1;
     position: relative;
   }
