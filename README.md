@@ -1,4 +1,4 @@
-# Portfolio v2
+# Portfolio
 Made by React / SCSS / Vite
 
 ##### I decided to rewrite it because I don't like the speed of Webpack and npm
@@ -15,6 +15,7 @@ For installing all dependencies type `yarn`
 
 Main libraries / tools:
 + React
++ Vite
 + React Router Dom v6
 + SCSS
 + Skeleton
