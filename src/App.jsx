@@ -3,11 +3,11 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import './styles/index.scss';
 
-const Layout = lazy(() => import('./components/Layout.jsx'));
-const Profile = lazy(() => import('./pages/Profile/Profile.jsx'));
-const Articles = lazy(() => import('./pages/Articles/Articles.jsx'));
-const Home = lazy(() => import('./pages/Home/Home.jsx'));
-const NotFound = lazy(() => import('./pages/NotFound/NotFound.jsx'));
+const Layout = lazy(() => import('./components/Layout'));
+const Profile = lazy(() => import('./pages/Profile/Profile'));
+const Articles = lazy(() => import('./pages/Articles/Articles'));
+const Home = lazy(() => import('./pages/Home/Home'));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 const App = () => (
     <BrowserRouter>
