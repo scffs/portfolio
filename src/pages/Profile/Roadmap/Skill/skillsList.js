@@ -2,12 +2,12 @@ const skills = [
     {
         time: 'Sep 2021 - Present',
         skill: 'Frontend',
-        knowledge: ['Semantic HTML', 'BEM', 'Sass', 'Less', 'Bootstrap', 'CSS Modules', 'Adaptive Web Design', 'Bootstrap', 'Tailwind', 'daisyUI', 'MaterialUI'],
+        knowledge: ['Semantic HTML', 'BEM', 'Sass', 'Less', 'CSS Modules', 'Bootstrap', 'Adaptive Web Design', 'Tailwind', 'MaterialUI'],
     },
     {
         time: 'Sep 2021 - Present',
         skill: 'C#',
-        knowledge: ['C# basics', 'OOP', 'Arrays', 'Massives', 'Methods'],
+        knowledge: ['C# basics', 'OOP', 'Arrays', 'Massives', 'Methods', 'MVC', 'LINQ'],
     },
     {
         time: 'Sep 2022 - Present',
