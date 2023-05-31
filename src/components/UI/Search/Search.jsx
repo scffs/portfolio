@@ -14,6 +14,7 @@ const Search = ({search, setSearch}) => {
             type='text'
             value={search}
             onChange={(event) => setSearch(event.target.value)}
+            placeholder='Search...'
         />
     );
 };

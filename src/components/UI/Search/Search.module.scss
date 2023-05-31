@@ -1,15 +1,19 @@
 @import '../../../styles/vars';
 .input {
   width: 70%;
-  max-width: 200px;
+  max-width: 100px;
   padding: 10px 20px;
+  margin-right: 30px;
   border-radius: 10px;
-  border: 2px solid transparent;
-  &:focus{
+  border: 3px solid transparent;
+  &:hover{
+    border: 3px solid $GREEN;
+    transition: transform .2s linear;
     transform: scale(1.05);
-    margin-right: 10px;
+  }
+  &:focus{
+    border: 3px solid $GREEN;
     max-width: 240px;
-    transition: all .1s linear;
-    border: 2px solid  scale-color($secondaryColor, $lightness: +25%);
+    transition: max-width .15s linear;
   }
 }

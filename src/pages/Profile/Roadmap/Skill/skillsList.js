@@ -2,17 +2,17 @@ const skills = [
     {
         time: 'Sep 2021 - Present',
         skill: 'Frontend',
-        knowledge: ['Semantic HTML', 'BEM', 'Sass', 'Less', 'CSS Modules', 'Bootstrap', 'Adaptive Web Design', 'Tailwind', 'MaterialUI'],
+        knowledge: ['Semantic HTML', 'BEM', 'SСSS', 'Less', 'CSS Modules', 'Bootstrap', 'Adaptive Web Design', 'MaterialUI', 'React Boostrap'],
     },
     {
         time: 'Sep 2021 - Present',
         skill: 'C#',
-        knowledge: ['C# basics', 'OOP', 'Arrays', 'Massives', 'Methods', 'MVC', 'LINQ'],
+        knowledge: ['C# basics', 'OOP', 'MVC', 'LINQ', 'Abstract Factory'],
     },
     {
         time: 'Sep 2022 - Present',
         skill: 'Databases',
-        knowledge: ['SQL basics', 'MySQL', 'Database design basics', 'MongoDB', 'PostgreSQL'],
+        knowledge: ['SQL basics', 'Database design basics', 'MySQL', 'MongoDB', 'PostgreSQL'],
     },
     {
         time: 'Feb 2022 - Present',
@@ -20,20 +20,15 @@ const skills = [
         knowledge: ['DNS', 'HTTP/HTTPS', 'Browsers', 'TCP/IP'],
     },
     {
-        time: 'Nov 2022 - Present',
-        skill: 'QA',
-        knowledge: ['Rest API', 'SQL injection', 'XXS', 'CSRF', 'Test cases', 'Test design'],
-    },
-    {
         time: 'Dec 2023 - Present',
         skill: 'JS',
-        knowledge: ['Arrays', 'Objects', 'fetch', 'Equality Comparisons', 'Massives',
-                    'Datatypes', 'Loops and Iterations', 'Functions', 'Promises'],
+        knowledge: ['JS basic', 'Objects', 'fetch', 'Equality Comparisons', 'Datatypes', 'Loops and Iterations',
+            'Promises'],
     },
     {
         time: 'Dec 2023 - Present',
         skill: 'React',
-        knowledge: ['JSX', 'useEffect', 'useState', 'useRef', 'Redux', 'lazy', 'memo', 'useMemo', 'useCallback', 'Router DOM'],
+        knowledge: ['React basics', 'React Hooks', 'React Router DOM', 'Redux', 'lazy', 'memo'],
     },
 
 ]
