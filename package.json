@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "homepage": "https://scffsz.github.io/portfolio/",
-  "version": "3.5.6",
+  "version": "3.5.7",
   "type": "module",
   "scripts": {
     "dev": "vite",
