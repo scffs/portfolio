@@ -12,27 +12,27 @@ import { iconsList } from './Icon/IconsList.jsx';
 import s from './Home.module.scss';
 
 const Home = () => (
-    <div className={s.info}>
-        <div className={s.profileImage}>
-            <Suspense fallback={<Loading />}>
-                <Avatar
-                    width='280px' height='280px'
-                    borderRadius='30px'
-                    isHexagon='1'
-                    hexagonHeight='280'
-                    src={logo}
-                />
-                <div className={s.circleInner}>
-                    {iconsList.map(({component}, id) => (
-                        <Icon key={id} component={component}/>
-                    ))}
-                </div>
-            </Suspense>
+  <div className={s.info}>
+    <div className={s.profileImage}>
+      <Suspense fallback={<Loading />}>
+        <Avatar
+          width='280px' height='280px'
+          borderRadius='30px'
+          isHexagon='1'
+          hexagonHeight='280'
+          src={logo}
+        />
+        <div className={s.circleInner}>
+          {iconsList.map(({component}, id) => (
+            <Icon key={id} component={component}/>
+          ))}
         </div>
-        <Suspense fallback={<Loading />}>
-            <Slider/>
-        </Suspense>
+      </Suspense>
     </div>
+    <Suspense fallback={<Loading />}>
+      <Slider/>
+    </Suspense>
+  </div>
 );
 
 export default memo(Home);

@@ -9,15 +9,6 @@ import logo from '../../assets/img/ava.webp';
 
 import s from './Article.module.scss';
 
-/**
- * @param {array} tags
- * @param {string} link
- * @param {string} preview
- * @param {string} description
- * @param {string} author
- * @param {string} title
- */
-
 const Article = ({link, preview, title, description, tags, author}) => {
   return (
     <Link to={link} className={s.link} target="_blank" rel="noreferrer">
