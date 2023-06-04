@@ -1,6 +1,6 @@
 import React, {lazy, Suspense} from 'react';
 
-import Loading from './Loading/Loading.jsx';
+import Loading from './Loading/Loading';
 const Header = lazy(() => import('./Header/Header'));
 const Footer = lazy(() => import('./Footer/Footer'));
 
