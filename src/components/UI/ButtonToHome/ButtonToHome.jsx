@@ -4,11 +4,7 @@ import {useNavigate} from 'react-router-dom';
 
 import './Button.scss';
 
-/**
- * @param {string} text
-*/
-
-const ButtonToHome = ({text}) => {
+const Button = ({text}) => {
     const navigate = useNavigate()
     return (
         <button
@@ -20,4 +16,4 @@ const ButtonToHome = ({text}) => {
     );
 };
 
-export default ButtonToHome;
+export default Button;

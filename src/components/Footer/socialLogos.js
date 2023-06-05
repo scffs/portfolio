@@ -3,8 +3,6 @@ import stack from './logos/stack.webp';
 import vk from './logos/vk.webp';
 import tg from './logos/tg.webp';
 
-// TODO: Try to replace this icons by library
-
 export const logos = [
     {
         path: `${habr}`,
