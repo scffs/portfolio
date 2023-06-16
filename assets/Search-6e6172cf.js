@@ -1,1 +1,0 @@
-import{r as e,j as a}from"./index-c2365d2f.js";const t="_input_98jql_1",s=e.memo((({search:e,setSearch:s})=>a.jsx("input",{className:t,type:"text",value:e,onChange:e=>s(e.target.value),placeholder:"Search..."})));export{s as default};
