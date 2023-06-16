@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "https://scffsz.github.io/portfolio/",
+  "homepage": "https://scffs.github.io/portfolio/",
   "version": "3.5.7",
   "type": "module",
   "scripts": {
