@@ -6,15 +6,15 @@ import './Categories.scss';
 
 const Categories = ({ value, onClickCategory }) => (
   <ul className="categories">
-      {categoriesList.map((category) => (
-        <li
-          className={`item ${value === category ? 'active' : ''}`}
-          key={category}
-          onClick={() => onClickCategory(category)}
-        >
-            {category}
-        </li>
-      ))}
+    {categoriesList.map((category) => (
+      <li
+        className={`item ${value === category ? 'active' : ''}`}
+        key={category}
+        onClick={() => onClickCategory(category)}
+      >
+        {category}
+      </li>
+    ))}
   </ul>
 );
 

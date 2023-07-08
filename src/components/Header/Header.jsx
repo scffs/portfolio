@@ -15,7 +15,7 @@ const Header = () =>{
         <Profile name='Scoffs' role='Developer'/>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

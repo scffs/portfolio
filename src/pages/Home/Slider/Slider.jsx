@@ -1,4 +1,4 @@
-import React, {lazy, memo, Suspense} from 'react';
+import React, { lazy, memo, Suspense } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
@@ -14,37 +14,37 @@ const Skills = lazy(() => import('./Slides/Skills/Skills.jsx'));
 const Person = lazy(() => import('./Slides/Person/Person.jsx'));
 
 const Slider = () =>{
-    return(
-      <>
-          <Swiper
-            effect={"cards"}
-            grabCursor={true}
-            modules={[EffectCards]}
-            className='mySwiper'
-          >
-              <SwiperSlide>
-                  <Suspense fallback={<Loading />}>
-                      <Preview />
-                  </Suspense>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <Suspense fallback={<Loading />}>
-                      <Skills />
-                  </Suspense>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <Suspense fallback={<Loading />}>
-                      <SocialLinks />
-                  </Suspense>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <Suspense fallback={<Loading />}>
-                      <Person />
-                  </Suspense>
-              </SwiperSlide>
-          </Swiper>
-      </>
-    );
+  return (
+    <>
+      <Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className='mySwiper'
+      >
+        <SwiperSlide>
+          <Suspense fallback={<Loading />}>
+            <Preview />
+          </Suspense>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Suspense fallback={<Loading />}>
+            <Skills />
+          </Suspense>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Suspense fallback={<Loading />}>
+            <SocialLinks />
+          </Suspense>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Suspense fallback={<Loading />}>
+            <Person />
+          </Suspense>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
 };
 
 export default memo(Slider);

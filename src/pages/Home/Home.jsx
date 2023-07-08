@@ -23,7 +23,7 @@ const Home = () => (
           src={logo}
         />
         <div className={s.circleInner}>
-          {iconsList.map(({component}, id) => (
+          {iconsList.map(({ component }, id) => (
             <Icon key={id} component={component}/>
           ))}
         </div>

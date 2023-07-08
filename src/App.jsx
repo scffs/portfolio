@@ -1,5 +1,5 @@
-import React, {lazy, Suspense} from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './styles/index.scss';
 
@@ -11,16 +11,16 @@ const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 const App = () => (
   <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
-          <Layout>
-              <Routes>
-                  <Route path='/portfolio/' element={<Home />} />
-                  <Route path='/portfolio/news' element={<Articles />} />
-                  <Route path='/portfolio/profile' element={<Profile />} />
-                  <Route path='*' element={<NotFound />} />
-              </Routes>
-          </Layout>
-      </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Layout>
+        <Routes>
+          <Route path='/portfolio/' element={<Home />} />
+          <Route path='/portfolio/news' element={<Articles />} />
+          <Route path='/portfolio/profile' element={<Profile />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </Suspense>
   </BrowserRouter>
 );
 

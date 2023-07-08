@@ -2,7 +2,7 @@ import React from 'react';
 
 import s from './Skill.module.scss';
 
-const Skill = ({time, skill, knowledge}) => {
+const Skill = ({ time, skill, knowledge }) => {
   return (
     <li className={s.block}>
       <div className={s.info}>

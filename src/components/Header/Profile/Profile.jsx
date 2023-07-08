@@ -7,7 +7,7 @@ import Avatar from '../../Avatar/Avatar';
 
 import s from './Profile.module.scss';
 
-const Profile = ({name, role}) => {
+const Profile = ({ name, role }) => {
   return (
     <div className={s.profileCard}>
       <div className={s.top}>

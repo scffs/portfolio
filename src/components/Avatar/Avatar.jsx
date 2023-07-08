@@ -10,8 +10,8 @@ const Avatar = ({ width, height, borderRadius, src, isHexagon, hexagonHeight, im
     backgroundColor: '#ccc',
   };
 
-  const imageStyle = isHexagon
-    ? {
+  const imageStyle = isHexagon ?
+    {
       position: 'absolute',
       width,
       height,
@@ -20,8 +20,8 @@ const Avatar = ({ width, height, borderRadius, src, isHexagon, hexagonHeight, im
         'polygon(50.28% 5.07%, 74.87% 5.44%, 101.23% 50.34%, 74.68% 95.03%, 26.21% 95.56%, -1.16% 51.21%, 25.67% 4.71%)',
       borderRadius: '100%',
       left: `${imageLeft}px`,
-    }
-    : {
+    } :
+    {
       width,
       height,
       borderRadius,

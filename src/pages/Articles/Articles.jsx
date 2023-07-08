@@ -15,21 +15,21 @@ const Articles = () => {
   const [categoryId, setCategoryId] = useState('All');
   const [search, setSearch] = useState('');
 
-  const articlesList = useMemo(() => articles.filter(post => {
+  const articlesList = useMemo(() => articles.filter((post) => {
     return post.title?.toLowerCase().includes(search.toLowerCase());
-  }).map(post => (<Article key={post.id} {...post} />)), [articles, search])
+  }).map((post) => (<Article key={post.id} {...post} />)), [articles, search]);
 
   const width = window.innerWidth > 600 ? 600 : 330;
   const isArticlesExist = articlesList.length;
 
   useEffect(() => {
-    setIsLoading(true)
+    setIsLoading(true);
     fetch(`https://63a7f65f7989ad3286f7dd81.mockapi.io/articles?tags=${categoryId === 'All' ? '' : categoryId}`)
-      .then((res) => res.json())
-      .then((arr) => {
-        setArticles(arr)
-        setIsLoading(false)
-      })
+        .then((res) => res.json())
+        .then((arr) => {
+          setArticles(arr);
+          setIsLoading(false);
+        });
   }, [categoryId]);
 
   return (
@@ -41,9 +41,9 @@ const Articles = () => {
         </Suspense>
       </div>
       <div className={s.articleList}>
-        {isLoading ? <ArticlesSkeleton width={width}/>
-          : isArticlesExist ? articlesList
-            : <p className={s.notFound}>
+        {isLoading ? <ArticlesSkeleton width={width}/> :
+          isArticlesExist ? articlesList :
+            <p className={s.notFound}>
               No suitable articles were found
             </p>}
       </div>

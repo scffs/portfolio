@@ -9,7 +9,7 @@ import logo from '../../assets/img/ava.webp';
 
 import s from './Article.module.scss';
 
-const Article = ({link, preview, title, description, tags, author}) => {
+const Article = ({ link, preview, title, description, tags, author }) => {
   return (
     <Link to={link} className={s.link} target="_blank" rel="noreferrer">
       <article className={s.article}>
@@ -19,7 +19,7 @@ const Article = ({link, preview, title, description, tags, author}) => {
             <Suspense fallback={<Loading/>}>
               <div className={s.tags}>
                 {tags.map((tag, id) => {
-                  return <Category key={id} id={id} tag={tag}/>
+                  return <Category key={id} id={id} tag={tag}/>;
                 })}
               </div>
               <Author author={author} authorLogo={logo}/>

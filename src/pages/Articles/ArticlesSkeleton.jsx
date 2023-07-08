@@ -17,6 +17,6 @@ const ArticlesSkeleton = (props) => (
     <rect x="0" y="547" rx="10" ry="10" width="132" height="22"/>
     <rect x="600" y="433" rx="14" ry="14" width="149" height="25"/>
   </ContentLoader>
-)
+);
 
 export default ArticlesSkeleton;
