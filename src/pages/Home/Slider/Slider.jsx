@@ -1,12 +1,13 @@
 import React, { lazy, memo, Suspense } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper';
+
+import { EffectCards } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import './slider.scss';
 
+import './slider.scss';
 import Loading from '../../../components/Loading/Loading.jsx';
 const Preview = lazy(() => import('./Slides/Preview/Preview.jsx'));
 const SocialLinks = lazy(() => import('./Slides/SocialLinks/SocialLinks.jsx'));
