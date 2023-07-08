@@ -35,7 +35,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0",
-    "rollup-plugin-visualizer": "^5.9.0",
+    "rollup-plugin-visualizer": "^5.9.2",
     "vite": "^4.3.9"
   }
 }
