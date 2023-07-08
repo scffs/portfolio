@@ -4,9 +4,8 @@ import { BriefcaseIcon, CodeBracketIcon } from '@heroicons/react/24/outline/inde
 
 export const projects = [
     { name: 'Social-network', link: 'https://github.com/scffs/social-network' },
-    { name: 'Portfolio', link: 'https://github.com/scffsz/portfolio' },
     { name: 'Tree view', link: 'https://github.com/scffs/tree-view' },
-    { name: 'Simple SPA', link: 'https://github.com/scffs/simple-spa' },
+    { name: 'Exercises MiniApp', link: 'https://github.com/ExercisesMiniApp/Frontend' },
 ];
 export const basics = [
     { title: 'Age', text: '18' },
