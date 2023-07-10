@@ -24,7 +24,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "sass": "^1.62.0",
-    "swiper": "^10.0.3"
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.3",
