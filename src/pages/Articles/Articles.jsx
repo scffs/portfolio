@@ -17,7 +17,7 @@ const Articles = () => {
 
   const articlesList = useMemo(() => articles.filter((post) => {
     return post.title?.toLowerCase().includes(search.toLowerCase());
-  }).map((post) => (<Article key={post.id} {...post} />)), [articles, search]);
+  }).map((post) => (<li key={post.id}><Article {...post} /></li>)), [articles, search]);
 
   const width = window.innerWidth > 600 ? 600 : 330;
   const isArticlesExist = articlesList.length;
@@ -40,9 +40,9 @@ const Articles = () => {
           <Search search={search} setSearch={setSearch}/>
         </Suspense>
       </div>
-      <div className={s.articleList}>
+      <div >
         {isLoading ? <ArticlesSkeleton width={width}/> :
-          isArticlesExist ? articlesList :
+          isArticlesExist ? <ul className={s.articleList}>{articlesList}</ul> :
             <p className={s.notFound}>
               No suitable articles were found
             </p>}
