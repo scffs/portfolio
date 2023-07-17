@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.3",
-    "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.7",
+    "@types/react": "^18.2.15",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": ">=5.16.0",
     "eslint-config-google": "^0.14.0",
