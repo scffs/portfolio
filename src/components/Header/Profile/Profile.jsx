@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../../assets/img/avaSmall.jpg';
@@ -33,4 +33,4 @@ const Profile = ({ name, role }) => {
   );
 };
 
-export default memo(Profile);
+export default Profile;

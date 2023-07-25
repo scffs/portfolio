@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline/index.js';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
-import { menuList } from '../menuList.jsx';
+import { menuList } from '../menuList';
 
 import s from './Menu.module.scss';
 

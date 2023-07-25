@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
+import React, { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 
 import s from './Articles.module.scss';
 
@@ -36,7 +36,7 @@ const Articles = () => {
     <>
       <div className={s.articleTop}>
         <Suspense fallback={<Loading/>}>
-          <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)}/>
+          <Categories value={categoryId} onClickCategory={useCallback((id) => setCategoryId(id), [])}/>
           <Search search={search} setSearch={setSearch}/>
         </Suspense>
       </div>
