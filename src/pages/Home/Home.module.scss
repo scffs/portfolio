@@ -1,6 +1,8 @@
 @import '../../styles/keyframes';
-body {
-  overflow: hidden; /* Hide scrollbars */
+@media screen and (min-width: 560px) {
+  body {
+    overflow: hidden; /* Hide scrollbars */
+  }
 }
 .circleInner{
   @include position(absolute, -155px, -100px);
