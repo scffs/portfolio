@@ -1,4 +1,7 @@
 @import '../../styles/keyframes';
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
 .circleInner{
   @include position(absolute, -155px, -100px);
   width: 500px;
