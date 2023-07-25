@@ -1,4 +1,4 @@
-import React, { lazy, memo, Suspense, useEffect, useMemo, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 
 import s from './Articles.module.scss';
 
@@ -51,4 +51,4 @@ const Articles = () => {
   );
 };
 
-export default memo(Articles);
+export default Articles;

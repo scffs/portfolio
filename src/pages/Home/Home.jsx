@@ -1,4 +1,4 @@
-import React, { lazy, memo, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import Loading from '../../components/Loading/Loading';
 const Slider = lazy(() => import('./Slider/Slider'));
@@ -35,4 +35,4 @@ const Home = () => (
   </div>
 );
 
-export default memo(Home);
+export default Home;

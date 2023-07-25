@@ -3,7 +3,7 @@ import React, { lazy, Suspense } from 'react';
 import Loading from '../../../components/Loading/Loading.jsx';
 const Skill = lazy(() => import('./Skill/Skill'));
 
-import skills from './Skill/skillsList.js';
+import skills from './Skill/skillsList';
 
 import s from './Roadmap.module.scss';
 

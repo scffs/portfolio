@@ -1,4 +1,4 @@
-import React, { lazy, memo, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import Loading from '../../components/Loading/Loading.jsx';
 const Roadmap = lazy(() => import('./Roadmap/Roadmap'));
@@ -19,4 +19,4 @@ const Profile = () => {
   );
 };
 
-export default memo(Profile);
+export default Profile;
