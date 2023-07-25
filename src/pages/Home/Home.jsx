@@ -20,7 +20,6 @@ const Home = () => {
 
   return (
     <ScrollLock isLocked={!isMobile}>
-      {/* Wrap the content of Home component with ScrollLock */}
       <div className={s.info}>
         <div className={s.profileImage}>
           <Suspense fallback={<Loading />}>
