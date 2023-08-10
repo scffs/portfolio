@@ -5,7 +5,6 @@ import Loading from '../../components/Loading/Loading';
 import ScrollLock from '../../components/ScrollLock';
 const Slider = lazy(() => import('./Slider/Slider'));
 const Avatar = lazy(() => import('../../components/Avatar/Avatar'));
-
 const Icon = lazy(() => import('./Icon/Icon'));
 
 import logo from '../../assets/img/awarding.jpg';

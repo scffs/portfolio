@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { UserCircleIcon } from '@heroicons/react/20/solid/index.js';
+import { UserCircleIcon } from '@heroicons/react/20/solid';
 
 import s from './Author.module.scss';
 

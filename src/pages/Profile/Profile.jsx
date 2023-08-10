@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 
-import Loading from '../../components/Loading/Loading.jsx';
+import Loading from '../../components/Loading/Loading';
 const Roadmap = lazy(() => import('./Roadmap/Roadmap'));
 const ProfileInfo = lazy(() => import('./ProfileInfo/ProfileInfo'));
 

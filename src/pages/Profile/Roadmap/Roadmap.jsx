@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 
-import Loading from '../../../components/Loading/Loading.jsx';
+import Loading from '../../../components/Loading/Loading';
 const Skill = lazy(() => import('./Skill/Skill'));
 
 import skills from './Skill/skillsList';

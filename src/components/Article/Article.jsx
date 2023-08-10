@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 
-import Loading from '../Loading/Loading.jsx';
+import Loading from '../Loading/Loading';
 const Author = lazy(() => import('../Author/Author'));
 const Category = lazy(() => import('./Category/Category'));
 

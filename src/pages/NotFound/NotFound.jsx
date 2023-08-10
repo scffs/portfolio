@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 
 import s from './NotFound.module.scss';
 
-import Loading from '../../components/Loading/Loading.jsx';
+import Loading from '../../components/Loading/Loading';
 const ButtonToHome = lazy(() => import('../../components/UI/ButtonToHome/ButtonToHome'));
 
 const NotFound = () => {
