@@ -1,59 +1,72 @@
 @import '../../../styles/vars';
-.subTitle{
+
+.subTitle {
   color: $PINK;
   font-weight: 400;
 }
-.title{
+
+.title {
   margin-bottom: 10px;
 }
-.content{
+
+.content {
   text-align: center;
   color: $BLUE;
   max-width: 800px;
   flex: 1 0 auto;
   position: relative;
-  &::before{
+
+  &::before {
     content: '';
     width: 2px;
-    height: 650px;
+    height: 550px;
     top: 125px;
     z-index: -1;
     position: absolute;
     background-color: $whiteThemeText;
     right: 50%;
   }
-  li:nth-child(2n){
+
+  li:nth-child(2n) {
     justify-self: flex-end;
-    &::after{
+
+    &::after {
       right: unset;
       left: -78px;
     }
   }
-  a{
+
+  a {
     color: $BLUE;
     font-weight: unset;
     font-size: unset;
-    &:hover{
-      color: scale-color($BLUE, $lightness: +55%);;
+
+    &:hover {
+      color: scale-color($BLUE, $lightness: +55%);
+      ;
     }
   }
 }
+
 .skillsList {
   margin-top: 20px;
   display: grid;
 }
+
 @media (max-width: 1250px) {
   .skillsList {
     @include flex(20px, 0, 0, 0, 0);
     padding: 20px;
     overflow-x: auto;
   }
-  .content{
+
+  .content {
     flex: unset;
     margin: unset;
     min-width: 200px;
     max-width: 620px;
-    &::before{
+
+    &::before {
       content: unset;
     }
   }

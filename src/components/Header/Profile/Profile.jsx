@@ -27,7 +27,7 @@ const Profile = ({ name, role }) => {
         </div>
       </div>
       <div className={s.bottom}>
-        <p>Status: <span className={s.role}>{role}</span></p>
+        <p>Role: <span className={s.role}>{role}</span></p>
       </div>
     </div>
   );

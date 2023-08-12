@@ -2,22 +2,18 @@ const skills = [
   {
     time: 'Sep 2021 - Present',
     skill: 'Frontend',
-    knowledge: ['SСSS', 'Less', 'CSS Modules', 'Bootstrap', 'MaterialUI', 'React Boostrap'],
-  },
-  {
-    time: 'Dec 2023 - Present',
-    skill: 'React',
-    knowledge: ['React Router DOM', 'RTK / Query', 'Redux', 'React Hook Form'],
-  },
-  {
-    time: 'Dec 2023 - Present',
-    skill: 'JS / TS',
-    knowledge: ['fetch', 'Equality Comparisons', 'Datatypes', 'Loops and Iterations', 'Algorithms', 'Promises'],
+    knowledge: ['JavaScript', 'TypeScipt', 'React', 'React Native', 'RTK / Query', 'CSS Modules', 'Bootstrap', 'MaterialUI', 'VKUI', 'React Boostrap', 'vite'],
   },
   {
     time: 'Sep 2022 - Present',
-    skill: 'Databases',
-    knowledge: ['SQL basics', 'Database design basics', 'MySQL', 'MongoDB', 'PostgreSQL'],
+    skill: 'Backend',
+    knowledge: ['T-SQL', 'MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'NestJS', 'NodeJS', 'API', 'PHP'],
+  },
+  {
+    time: 'Sep 2022 - Present',
+    skill: 'Other',
+    knowledge: ['Python', 'C#', 'Docker', 'Git', 'CI/CD'],
   },
 ];
+
 export default skills;
