@@ -18,6 +18,6 @@ export const activity = [
   { title: 'ReactJS', text: 'Contributor' },
   { title: 'Mozilla', text: 'Contributor' },
   { title: 'MDN', text: 'Contributor' },
-  { title: 'VKTesters', text: 'Tester' },
+  { title: 'VKTesters', text: 'Member' },
   { title: 'Habr', text: 'Author' },
 ];
