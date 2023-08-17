@@ -1,8 +1,6 @@
 # Portfolio
 Made by React / SCSS / Vite
 
-##### I decided to rewrite it because I don't like the speed of Webpack and npm
-
 # Installation
 
 #### HTTPS

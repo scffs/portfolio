@@ -8,6 +8,7 @@ import 'swiper/css/effect-cards';
 
 import './slider.scss';
 import Loading from '../../../components/Loading/Loading';
+
 const Preview = lazy(() => import('./Slides/Preview/Preview'));
 const SocialLinks = lazy(() => import('./Slides/SocialLinks/SocialLinks'));
 const Skills = lazy(() => import('./Slides/Skills/Skills'));
@@ -20,26 +21,26 @@ const Slider = () => {
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className='mySwiper'
+        className="mySwiper"
       >
         <SwiperSlide>
-          <Suspense fallback={<Loading />}>
-            <Preview />
+          <Suspense fallback={<Loading/>}>
+            <Preview/>
           </Suspense>
         </SwiperSlide>
         <SwiperSlide>
-          <Suspense fallback={<Loading />}>
-            <Skills />
+          <Suspense fallback={<Loading/>}>
+            <Skills/>
           </Suspense>
         </SwiperSlide>
         <SwiperSlide>
-          <Suspense fallback={<Loading />}>
-            <SocialLinks />
+          <Suspense fallback={<Loading/>}>
+            <SocialLinks/>
           </Suspense>
         </SwiperSlide>
         <SwiperSlide>
-          <Suspense fallback={<Loading />}>
-            <Person />
+          <Suspense fallback={<Loading/>}>
+            <Person/>
           </Suspense>
         </SwiperSlide>
       </Swiper>
