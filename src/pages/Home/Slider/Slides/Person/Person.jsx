@@ -1,34 +1,25 @@
 import React from 'react';
 
+import { personInfo } from './personalInfo';
+
 const Person = () => {
   return (
-    <>
-      <pre>
-        <span className='const'>const</span> <span className='title'>person</span> <span className='blue'>=</span> <span>{'{'}</span>
-      </pre>
-      <pre> <span> </span>
-        <span className='text'>name</span><span>:</span><span className='link'> 'Semyon'</span><span>,</span>
-      </pre>
-      <pre> <span> </span>
-        <span className='text'>lastName</span><span>:</span><span className='link'> 'Okulov'</span><span>,</span>
-      </pre>
-      <pre> <span> </span>
-        <span className='text'>age</span><span>:</span><span className='link'> 'between 0 and 48'</span><span>,</span>
-      </pre>
-      <pre> <span> </span>
-        <span className='text'>gender</span><span>:</span><span className='link'> 'the only one'</span><span>,</span>
-      </pre>
-      <pre> <span> </span>
-        <span className='text'>hobbies</span><span>:</span> [
-        <span className='link'>'Programming'</span>,{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className='link'>'Learning English'</span>{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className='link'>'Math'</span>,<span className='link'>'Gym'</span>,{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className='link'>'VK Testers & Crowd'</span>,{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className='link'>'Blog on Habr'</span>,{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className='link'>'Learning pentest'</span>]<span></span>
-      </pre>
-      <span>{'}'}</span>
-    </>
+    <pre>
+      <span className="const">const</span> <span className="title">person</span> <span className="blue">=</span> {'{'}
+      {personInfo.map((item, index) => (
+        <pre key={item.key}>
+          {'  '}
+          <span className="text">{item.key}</span>: {item.key === 'hobbies' ? '[' : ''}
+          {item.key === 'hobbies' ?
+            <span className="link">{item.value}</span> :
+            <span className="link">{`'${item.value}'`}</span>}
+          {item.key === 'hobbies' && index !== personInfo.length - 1 ? ',' : ''}
+          {item.key === 'hobbies' ? '' : <span style={{ color: 'fff' }}>,</span>}
+        </pre>
+      ))}
+      {'  ]'}
+      {'\n}'}
+    </pre>
   );
 };
 

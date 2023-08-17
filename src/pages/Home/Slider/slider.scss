@@ -2,11 +2,11 @@
 @import '../../../styles/keyframes';
 .swiper {
   animation: pageShowReverse .4s ease-in;
-  width: 600px;
-  height: 370px;
+  width: 580px;
+  height: 380px;
   margin-right: 1rem;
   &-slide {
-    padding: 40px;
+    padding: 30px;
     border-radius: 18px;
     font-size: 1.3rem;
     color: #fff;
