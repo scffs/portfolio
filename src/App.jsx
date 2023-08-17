@@ -5,7 +5,6 @@ import './styles/index.scss';
 
 const Layout = lazy(() => import('./components/Layout'));
 const Profile = lazy(() => import('./pages/Profile/Profile'));
-const Articles = lazy(() => import('./pages/Articles/Articles'));
 const Home = lazy(() => import('./pages/Home/Home'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
@@ -15,7 +14,6 @@ const App = () => (
       <Layout>
         <Routes>
           <Route path='/portfolio/' element={<Home />} />
-          <Route path='/portfolio/news' element={<Articles />} />
           <Route path='/portfolio/profile' element={<Profile />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

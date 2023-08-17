@@ -12,7 +12,7 @@ const Header = () => {
     <header className={s.header}>
       <nav className={s.nav}>
         <Menu value={categoryId} onClickCategory={(id) => setCategoryId(id)} />
-        <Profile name='Scoffs' role='Developer' />
+        <Profile name='Scoffs' role='Fullstack Developer' />
       </nav>
     </header>
   );

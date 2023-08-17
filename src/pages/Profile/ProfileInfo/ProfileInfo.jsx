@@ -5,8 +5,8 @@ import logo from '../../../assets/img/avaSmall.jpg';
 import { activity, basics, projects } from './info';
 
 import Loading from '../../../components/Loading/Loading';
-const Avatar = lazy(() => import('../../../components/Avatar/Avatar.jsx'));
-const ProfileGroup = lazy(() => import('../ProfileGroup/ProfileGroup.jsx'));
+const Avatar = lazy(() => import('../../../components/Avatar/Avatar'));
+const ProfileGroup = lazy(() => import('../ProfileGroup/ProfileGroup'));
 
 import s from './ProfileInfo.module.scss';
 

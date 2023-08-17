@@ -1,20 +1,19 @@
 import React, { lazy, Suspense } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { EffectCards } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 import './slider.scss';
-import Loading from '../../../components/Loading/Loading.jsx';
-const Preview = lazy(() => import('./Slides/Preview/Preview.jsx'));
-const SocialLinks = lazy(() => import('./Slides/SocialLinks/SocialLinks.jsx'));
-const Skills = lazy(() => import('./Slides/Skills/Skills.jsx'));
-const Person = lazy(() => import('./Slides/Person/Person.jsx'));
+import Loading from '../../../components/Loading/Loading';
+const Preview = lazy(() => import('./Slides/Preview/Preview'));
+const SocialLinks = lazy(() => import('./Slides/SocialLinks/SocialLinks'));
+const Skills = lazy(() => import('./Slides/Skills/Skills'));
+const Person = lazy(() => import('./Slides/Person/Person'));
 
-const Slider = () =>{
+const Slider = () => {
   return (
     <>
       <Swiper

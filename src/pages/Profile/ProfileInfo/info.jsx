@@ -10,14 +10,14 @@ export const projects = [
 export const basics = [
   { title: 'Age', text: '18' },
   { title: 'City', text: 'Tomsk' },
-  { title: <CodeBracketIcon title='Specialty' />, text: 'Frontend' },
+  { title: <CodeBracketIcon title='Specialty' />, text: 'Fullstack' },
   { title: <BriefcaseIcon title='Job' />, text: 'kotbread' },
 ];
 
 export const activity = [
   { title: 'ReactJS', text: 'Contributor' },
-  { title: 'Mozilla', text: 'Contributor' },
+  { title: 'Mozilla', text: 'Contributor, Moderator' },
   { title: 'MDN', text: 'Contributor' },
-  { title: 'VKTesters', text: 'Member' },
+  { title: 'VKTesters', text: 'Member, Author' },
   { title: 'Habr', text: 'Author' },
 ];

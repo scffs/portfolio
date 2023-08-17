@@ -31,13 +31,13 @@ const Home = () => {
             />
             <div className={s.circleInner}>
               {iconsList.map(({ component }, id) => (
-                <Icon key={id} component={component}/>
+                <Icon key={id} component={component} />
               ))}
             </div>
           </Suspense>
         </div>
         <Suspense fallback={<Loading />}>
-          <Slider/>
+          <Slider />
         </Suspense>
       </div>
     </ScrollLock>

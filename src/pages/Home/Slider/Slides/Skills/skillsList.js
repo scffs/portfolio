@@ -4,19 +4,19 @@ export const skillsList = [
     knowledge: 'junior',
   },
   {
-    technology: 'JavaScript',
+    technology: 'TypeScript & JavaScript',
     knowledge: 'junior',
   },
   {
-    technology: 'TypeScript',
-    knowledge: 'junior',
+    technology: 'NestJS',
+    knowledge: 'beginner',
   },
   {
     technology: 'Pentest',
     knowledge: 'beginner',
   },
   {
-    technology: 'QA engineer',
+    technology: 'QA',
     knowledge: 'junior',
   },
   {
