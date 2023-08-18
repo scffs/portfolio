@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { personInfo } from './personalInfo';
+import { personInfo } from './personalInfo.js';
 
 const Person = () => {
   return (

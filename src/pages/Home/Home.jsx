@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 
 import Loading from '../../components/Loading/Loading';
 import ScrollLock from '../../components/ScrollLock';
-const Slider = lazy(() => import('./Slider/Slider'));
+const Slider = lazy(() => import('../../components/Slider/Slider'));
 const Avatar = lazy(() => import('../../components/Avatar/Avatar'));
 const Icon = lazy(() => import('./Icon/Icon'));
 

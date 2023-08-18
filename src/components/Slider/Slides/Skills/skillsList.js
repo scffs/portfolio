@@ -1,18 +1,18 @@
 export const skillsList = [
   {
     technology: 'React',
-    knowledge: 'junior',
+    knowledge: 'intermediate',
   },
   {
     technology: 'TypeScript & JavaScript',
-    knowledge: 'junior',
+    knowledge: 'intermediate',
   },
   {
     technology: 'NestJS',
     knowledge: 'beginner',
   },
   {
-    technology: 'Pentest',
+    technology: 'Docker/k8s',
     knowledge: 'beginner',
   },
   {
@@ -21,18 +21,18 @@ export const skillsList = [
   },
   {
     technology: 'MySQL',
-    knowledge: 'junior',
+    knowledge: 'intermediate',
   },
   {
     technology: 'Git',
     knowledge: 'intermediate',
   },
   {
-    technology: 'Docker/k8s',
-    knowledge: 'beginner',
-  },
-  {
     technology: 'C#/WPF',
     knowledge: 'junior',
+  },
+  {
+    technology: 'Pentest',
+    knowledge: 'beginner',
   },
 ];
