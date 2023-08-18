@@ -3,7 +3,7 @@ const skills = [
     time: 'Sep 2021 - Present',
     skill: 'Frontend',
     knowledge: ['JavaScript', 'TypeScript', 'React', 'React Native', 'RTK / Query', 'CSS Modules', 'Bootstrap',
-      'MaterialUI', 'React Boostrap', 'Styled Components', 'vite', 'VKUI'],
+      'MaterialUI', 'React Boostrap', 'Styled Components', 'vite', 'VKUI', 'Vue'],
   },
   {
     time: 'Sep 2022 - Present',
@@ -18,7 +18,7 @@ const skills = [
   {
     time: '∞',
     skill: 'Wanna learn',
-    knowledge: ['k8s', 'WPF', 'Docker', 'Git', 'CI/CD', 'New design patterns', 'Some different architectures'],
+    knowledge: ['New design patterns', 'Some different architectures', 'NextJS', 'Qwirk'],
   },
 ];
 
