@@ -18,7 +18,7 @@ const skills = [
   {
     time: '∞',
     skill: 'Wanna learn',
-    knowledge: ['New design patterns', 'Some different architectures', 'NextJS', 'Qwirk'],
+    knowledge: ['New design patterns', 'NextJS', 'Some different architectures', 'Qwirk'],
   },
 ];
 
