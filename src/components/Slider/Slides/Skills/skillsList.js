@@ -4,7 +4,7 @@ export const skillsList = [
     knowledge: 'intermediate',
   },
   {
-    technology: 'TypeScript & JavaScript',
+    technology: 'TS / JS',
     knowledge: 'intermediate',
   },
   {
