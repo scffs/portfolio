@@ -16,7 +16,9 @@ interface IEpic {
 }
 
 const Index: FC<IEpic> = ({ onStoryChange }) => {
-  const { view: activeView = 'profile' as Pages } = useActiveVkuiLocation();
+  const {
+    view: activeView = 'profile' as Pages,
+  } = useActiveVkuiLocation();
   const { viewWidth } = useAdaptivityConditionalRender();
 
   return (
