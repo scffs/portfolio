@@ -4,7 +4,7 @@ import { useAdaptivityConditionalRender } from '@vkontakte/vkui';
 import { Epic as VKUIEpic } from '@vkontakte/vkui/dist/components/Epic/Epic';
 import {
   VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_STACK,
-} from '../routes';
+} from '../../routes';
 import { Pages } from '../../types';
 import Tabbar from '../Tabbar';
 import {

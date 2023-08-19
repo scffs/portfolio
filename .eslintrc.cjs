@@ -39,6 +39,7 @@ module.exports = {
                 '@typescript-eslint/no-misused-promises': 'off',
                 '@typescript-eslint/no-floating-promises': 'off',
                 'react/require-default-props': 'off',
+                'react/jsx-fragments': 'off',
                 'jsx-quotes': [2, 'prefer-single'],
                 'react/function-component-definition': [2, {
                     namedComponents: 'arrow-function',

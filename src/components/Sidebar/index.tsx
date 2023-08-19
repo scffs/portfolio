@@ -12,7 +12,7 @@ import {
 } from '@vkontakte/icons';
 import {
   VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_STACK,
-} from '../routes';
+} from '../../routes';
 import { Pages } from '../../types';
 
 interface ISidebarProps {

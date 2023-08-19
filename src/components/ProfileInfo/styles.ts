@@ -8,7 +8,7 @@ export const styles: CSSProperties = {
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-  padding: 5,
+  padding: 20,
 };
 
 export const gradientBorder: CSSProperties = {

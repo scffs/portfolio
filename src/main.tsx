@@ -3,7 +3,7 @@ import { AdaptivityProvider, ConfigProvider } from '@vkontakte/vkui';
 import { RouterProvider } from '@vkontakte/vk-mini-apps-router';
 
 import App from './App';
-import { router } from './components/routes';
+import { router } from './routes';
 import '@vkontakte/vkui/dist/vkui.css';
 import './normalize.css';
 
@@ -11,7 +11,7 @@ const domNode = document.getElementById('root')!;
 const root = createRoot(domNode);
 
 root.render(
-  <ConfigProvider appearance='light'>
+  <ConfigProvider appearance='dark'>
     <AdaptivityProvider>
       <RouterProvider router={router}>
         <App />

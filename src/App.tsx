@@ -10,7 +10,7 @@ import {
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 import Sidebar from './components/Sidebar';
 import Index from './components/Epic';
-import { VIEW_PROFILE } from './components/routes';
+import { VIEW_PROFILE } from './routes';
 import { Pages } from './types';
 import ModalRoot from './components/ModalRoot';
 
