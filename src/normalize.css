@@ -1,4 +1,26 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
 /* Отступ кнопки от subheader в ModalCard */
 .vkuiModalCardBase__subheader+.vkuiModalCardBase__actions {
     margin-top: 20px;
+}
+
+/* Отступ в InfoRow */
+.vkuiInfoRow__header {
+    margin-bottom: 5px;
+}
+
+/* Для корректной работы HorizontalScroll в UserStory */
+.vkuiHorizontalScroll__in {
+    width: 100%
+}
+
+.vkuiHorizontalCell--size-s {
+    max-width: unset;
+}
+
+.vkuiHorizontalScroll__in-wrapper {
+    display: flex;
 }
