@@ -1,17 +1,14 @@
 import { FC } from 'react';
 import {
-  Div,
-  Group,
-  Panel,
-  PanelHeader,
-  PanelHeaderBack,
-  Separator,
+  Div, Group, Panel, Separator,
 } from '@vkontakte/vkui';
 import { UserInfo, UserStory } from '../components/ProfileInfo';
 
+import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
+
 const Profile: FC<{ id: string }> = ({ id }) => (
   <Panel nav={id}>
-    <PanelHeader before={<PanelHeaderBack />}>Обо мне</PanelHeader>
+    <PanelHeaderWithBack title='Обо мне' />
     <Group>
       <Div>
         <UserInfo />

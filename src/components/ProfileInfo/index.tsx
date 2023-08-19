@@ -61,7 +61,7 @@ export const UserStory = () => (
       getScrollToLeft={(i) => i - 120}
       getScrollToRight={(i) => i + 120}
     >
-      <div style={{ display: 'flex', width: '500px' }}>
+      <div style={{ display: 'flex', gap: 5, width: '500px' }}>
         {userInfoItems.map((item) => (
           <HorizontalCell key={item.label}>
             <InfoRow header={item.label}>{item.value}</InfoRow>

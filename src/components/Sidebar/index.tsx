@@ -1,11 +1,9 @@
 import { FC } from 'react';
 import {
-  Cell,
-  Group,
-  Panel,
+  Cell, Group, Panel,
 } from '@vkontakte/vkui';
 import {
-  Icon28EducationOutline,
+  Icon24BracketsSlashOutline,
   Icon28MailOutline,
   Icon28ServicesOutline,
   Icon28UserCircleOutline,
@@ -41,9 +39,9 @@ const Sidebar: FC<ISidebarProps> = ({ activeView, onStoryChange }) => (
         data-story={VIEW_STACK}
         onClick={() => onStoryChange(VIEW_STACK)}
         style={activeView === VIEW_STACK ? activeStoryStyles : undefined}
-        before={<Icon28EducationOutline />}
+        before={<Icon24BracketsSlashOutline width={28} height={28} />}
       >
-        Стэк технологий
+        Стэк
       </Cell>
       <Cell
         disabled={activeView === VIEW_PROJECTS}

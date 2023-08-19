@@ -1,4 +1,4 @@
-import { Icon24EducationOutline } from '@vkontakte/icons';
+import { Icon24BracketsSlashOutline, Icon24EducationOutline, Icon28ServicesOutline } from '@vkontakte/icons';
 import {
   Avatar, Div, Link, Spacing,
 } from '@vkontakte/vkui';
@@ -23,6 +23,8 @@ import github from '../../assets/img/github.svg';
 import avaVKT from '../../assets/img/logovkt.jpg';
 import habr from '../../assets/img/habr.svg';
 import mdn from '../../assets/img/mdn.svg';
+
+import { VIEW_PROJECTS, VIEW_STACK } from '../../routes';
 
 export const userInfoItems = [
   {
@@ -99,17 +101,27 @@ export const userStoryContent = [
     title: 'Что делал после начала',
     content: (
       <>
-        После окончания школы поступил в колледж, в котором нас обучают Fullstack разработке (подробнее о стэке на
-        странице Мой стэк). Мне больше нравится Frontend, но на работе я пишу и Backend часть (что поделать). В
-        свободное от работы время я могу решать алгоритмические задачки на
+        После окончания школы поступил в колледж, в котором нас обучают Fullstack разработке (подробнее на
+        странице&nbsp;
+        <LinkWithImage
+          target='_self'
+          href={`#${VIEW_STACK}`}
+          icon={<Icon24BracketsSlashOutline />}
+          linkText='Стэк'
+        />
+        ). Мне больше нравится Frontend, но на работе я пишу и Backend часть (что поделать).
+        <Spacing size={16} />
+        В свободное от работы время я могу решать алгоритмические задачки на
         {' '}
         <LinkWithImage linkText='Leetcode' href={LEETCODE_URL} icon={leetcode} />
         {' '}
         или просто отдыхать.
-        <br />
-        За время учебы я написал множество проектов, как в рамках программы, так и для себя. Ознакомиться с
-        некоторым списком можно на странице Проекты или на моём
+        <Spacing size={16} />
+        За время учёбы я поучавствовал в большом количестве олимпиад и написал множество проектов, как в рамках
+        программы, так и для себя. Ознакомиться с некоторым списком можно на странице
+        <LinkWithImage target='_self' href={`#${VIEW_PROJECTS}`} icon={<Icon28ServicesOutline />} linkText='Проекты' />
         {' '}
+        или на
         <LinkWithImage linkText='GitHub' href={GITHUB_URL} icon={github} />
       </>
     ),
