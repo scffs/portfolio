@@ -5,6 +5,7 @@ import { RouterProvider } from '@vkontakte/vk-mini-apps-router';
 import App from './App';
 import { router } from './components/routes';
 import '@vkontakte/vkui/dist/vkui.css';
+import './normalize.css';
 
 const domNode = document.getElementById('root')!;
 const root = createRoot(domNode);

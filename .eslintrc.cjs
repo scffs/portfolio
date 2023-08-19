@@ -37,6 +37,7 @@ module.exports = {
                 '@typescript-eslint/no-non-null-assertion': 'off',
                 'react/react-in-jsx-scope': 'off',
                 '@typescript-eslint/no-misused-promises': 'off',
+                '@typescript-eslint/no-floating-promises': 'off',
                 'jsx-quotes': [2, 'prefer-single'],
                 'react/function-component-definition': [2, {
                     namedComponents: 'arrow-function',

@@ -12,6 +12,7 @@ import Sidebar from './components/Sidebar';
 import Index from './components/Epic';
 import { VIEW_PROFILE } from './components/routes';
 import { Pages } from './types';
+import ModalRoot from './components/ModalRoot';
 
 const App = () => {
   const platform = usePlatform();
@@ -25,17 +26,20 @@ const App = () => {
     await routeNavigator.push(`/${currentView}`);
   };
 
+  const modals = <ModalRoot />;
+
   return (
     <AppRoot>
       <SplitLayout
+        modal={modals}
         header={isVKCOM && <PanelHeader separator={false} />}
         style={{ justifyContent: 'center' }}
       >
         {viewWidth.tabletPlus && (
-        <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
-          {isVKCOM && <PanelHeader />}
-          <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
-        </SplitCol>
+          <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
+            {isVKCOM && <PanelHeader />}
+            <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
+          </SplitCol>
         )}
         <SplitCol width='100%' maxWidth='700px' stretchedOnMobile autoSpaced>
           <Index onStoryChange={onStoryChange} />

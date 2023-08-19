@@ -1,0 +1,4 @@
+/* Отступ кнопки от subheader в ModalCard */
+.vkuiModalCardBase__subheader+.vkuiModalCardBase__actions {
+    margin-top: 20px;
+}

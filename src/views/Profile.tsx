@@ -1,16 +1,25 @@
 import { FC } from 'react';
 import {
-  Group, Panel, PanelHeader, PanelHeaderBack, Placeholder,
+  Div,
+  Group,
+  Panel,
+  PanelHeader,
+  PanelHeaderBack,
+  Separator,
 } from '@vkontakte/vkui';
-import { Icon28UserCircleOutline } from '@vkontakte/icons';
+import { UserInfo, UserStory } from '../components/ProfileInfo';
 
 const Profile: FC<{ id: string }> = ({ id }) => (
   <Panel nav={id}>
     <PanelHeader before={<PanelHeaderBack />}>Обо мне</PanelHeader>
     <Group>
-      <Placeholder
-        icon={<Icon28UserCircleOutline width={56} height={56} />}
-      />
+      <Div>
+        <UserInfo />
+      </Div>
+      <Separator />
+      <Div>
+        <UserStory />
+      </Div>
     </Group>
   </Panel>
 );
