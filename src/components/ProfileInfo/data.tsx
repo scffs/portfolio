@@ -1,4 +1,6 @@
-import { Icon24BracketsSlashOutline, Icon24EducationOutline, Icon28ServicesOutline } from '@vkontakte/icons';
+import {
+  Icon24BracketsSlashOutline, Icon24EducationOutline, Icon28ServicesOutline,
+} from '@vkontakte/icons';
 import {
   Avatar, Div, Link, Spacing,
 } from '@vkontakte/vkui';

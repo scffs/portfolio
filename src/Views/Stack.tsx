@@ -2,11 +2,7 @@ import {
   FC, lazy, useState,
 } from 'react';
 import {
-  Group,
-  Header,
-  Panel,
-  View,
-  Div,
+  Group, Header, Panel, View, Div,
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 

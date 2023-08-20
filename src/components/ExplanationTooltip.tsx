@@ -1,5 +1,7 @@
 import React from 'react';
-import { Text, unstable_RichTooltip as RichTooltip, Subhead } from '@vkontakte/vkui';
+import {
+  Text, unstable_RichTooltip as RichTooltip, Subhead,
+} from '@vkontakte/vkui';
 import { Icon16HelpOutline } from '@vkontakte/icons';
 
 interface TooltipTextProps {

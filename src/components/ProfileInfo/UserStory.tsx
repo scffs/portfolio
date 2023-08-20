@@ -1,11 +1,5 @@
 import {
-  Accordion,
-  Div,
-  Gradient,
-  Header, HorizontalCell, HorizontalScroll,
-  InfoRow,
-  Paragraph,
-  Spacing,
+  Accordion, Div, Gradient, Header, HorizontalCell, HorizontalScroll, InfoRow, Paragraph, Spacing,
 } from '@vkontakte/vkui';
 
 import { gradientBorder, infoStyle } from './styles';
