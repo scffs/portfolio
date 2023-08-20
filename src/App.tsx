@@ -1,6 +1,9 @@
-import { lazy } from 'react';
+import {
+  lazy, useCallback, useEffect, useState,
+} from 'react';
 import {
   AppRoot,
+  ConfigProvider,
   PanelHeader,
   Platform,
   SplitCol,
@@ -31,24 +34,41 @@ const App = () => {
 
   const modals = <ModalRoot />;
 
+  const [appearance, setAppearance] = useState<'light' | 'dark'>('light');
+
+  const toggleAppearance = useCallback(() => {
+    const newAppearance = appearance === 'light' ? 'dark' : 'light';
+    setAppearance(newAppearance);
+    localStorage.setItem('theme', newAppearance);
+  }, [appearance]);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setAppearance(savedTheme as 'light' | 'dark');
+    }
+  }, []);
+
   return (
-    <AppRoot>
-      <SplitLayout
-        modal={modals}
-        header={isVKCOM && <PanelHeader separator={false} />}
-        style={{ justifyContent: 'center' }}
-      >
-        {viewWidth.tabletPlus && (
-          <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
-            {isVKCOM && <PanelHeader /> }
-            <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
+    <ConfigProvider appearance={appearance}>
+      <AppRoot>
+        <SplitLayout
+          modal={modals}
+          header={isVKCOM && <PanelHeader separator={false} />}
+          style={{ justifyContent: 'center' }}
+        >
+          {viewWidth.tabletPlus && (
+            <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
+              {isVKCOM && <PanelHeader /> }
+              <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
+            </SplitCol>
+          )}
+          <SplitCol width='100%' maxWidth='700px' stretchedOnMobile autoSpaced>
+            <Epic onStoryChange={onStoryChange} toggleAppearance={toggleAppearance} />
           </SplitCol>
-        )}
-        <SplitCol width='100%' maxWidth='700px' stretchedOnMobile autoSpaced>
-          <Epic onStoryChange={onStoryChange} />
-        </SplitCol>
-      </SplitLayout>
-    </AppRoot>
+        </SplitLayout>
+      </AppRoot>
+    </ConfigProvider>
   );
 };
 

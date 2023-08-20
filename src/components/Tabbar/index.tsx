@@ -60,7 +60,7 @@ const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
           onClick={() => onStoryChange(VIEW_SETTINGS)}
           selected={activeView === VIEW_SETTINGS}
           data-story={VIEW_SETTINGS}
-          text='Контакты'
+          text='Настройки'
         >
           <Icon28SettingsOutline />
         </TabbarItem>
