@@ -13,6 +13,7 @@ const style: CSSProperties = {
   right: 50,
   zIndex: 500,
   padding: 10,
+  color: 'var(--vkui--color_icon_accent)',
 };
 
 const ToggleTheme: FC<IToggleTheme> = ({ toggleAppearance, appearance }) => (

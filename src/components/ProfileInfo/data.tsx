@@ -16,13 +16,13 @@ import {
 
 import LinkWithImage from '../LinkWithImage';
 
-import avaKot from '../../assets/img/kot.png';
-import python from '../../assets/img/python.png';
-import leetcode from '../../assets/img/leetcode.svg';
-import github from '../../assets/img/github.svg';
-import avaVKT from '../../assets/img/logovkt.webp';
-import habr from '../../assets/img/habr.svg';
-import mdn from '../../assets/img/mdn.svg';
+import avaKot from '../../assets/kot.png';
+import python from '../../assets/python.png';
+import leetcode from '../../assets/leetcode.svg';
+import github from '../../assets/github.svg';
+import avaVKT from '../../assets/logovkt.webp';
+import habr from '../../assets/habr.svg';
+import mdn from '../../assets/mdn.svg';
 
 import { VIEW_PROJECTS, VIEW_STACK } from '../../routes';
 
