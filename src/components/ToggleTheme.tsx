@@ -1,24 +1,20 @@
-import { CSSProperties, FC } from 'react';
+import { FC } from 'react';
 import { Icon28MoonOutline, Icon28SunOutline } from '@vkontakte/icons';
-import { IconButton } from '@vkontakte/vkui';
+import { CellButton, useAppearance } from '@vkontakte/vkui';
 
 interface IToggleTheme {
   toggleAppearance: () => void
-  appearance: 'light' | 'dark'
 }
 
-const style: CSSProperties = {
-  position: 'fixed',
-  top: 5,
-  right: 50,
-  zIndex: 500,
-  color: 'var(--vkui--color_icon_accent)',
-};
+const ToggleTheme: FC<IToggleTheme> = ({ toggleAppearance }) => {
+  const appearance = useAppearance();
+  const BeforeIcon = appearance === 'light' ? <Icon28MoonOutline /> : <Icon28SunOutline />;
 
-const ToggleTheme: FC<IToggleTheme> = ({ toggleAppearance, appearance }) => (
-  <IconButton style={style} onClick={toggleAppearance} aria-label='Сменить тему'>
-    {appearance === 'light' ? <Icon28MoonOutline /> : <Icon28SunOutline />}
-  </IconButton>
-);
+  return (
+    <CellButton onClick={toggleAppearance} aria-label='Сменить тему' before={BeforeIcon}>
+      Сменить тему
+    </CellButton>
+  );
+};
 
 export default ToggleTheme;

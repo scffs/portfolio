@@ -1,12 +1,11 @@
 import { FC } from 'react';
 import {
-  CellButton,
   Group, Header, Panel, View,
 } from '@vkontakte/vkui';
-import { Icon28ReplayOutline } from '@vkontakte/icons';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
+import ToggleTheme from '../components/ToggleTheme';
 
 const Settings: FC<{ id: string, toggleAppearance: () => void }> = ({ id, toggleAppearance }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
@@ -22,7 +21,7 @@ const Settings: FC<{ id: string, toggleAppearance: () => void }> = ({ id, toggle
       <Panel nav={id}>
         <PanelHeaderWithBack title='Настройки' />
         <Group header={<Header mode='secondary'>Внешний вид</Header>}>
-          <CellButton before={<Icon28ReplayOutline />} onClick={toggleAppearance}>Сменить тему</CellButton>
+          <ToggleTheme toggleAppearance={toggleAppearance} />
         </Group>
       </Panel>
     </View>
