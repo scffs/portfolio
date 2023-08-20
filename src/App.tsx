@@ -40,7 +40,7 @@ const App = () => {
       >
         {viewWidth.tabletPlus && (
           <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
-            {isVKCOM && <PanelHeader />}
+            {isVKCOM && <PanelHeader /> }
             <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
           </SplitCol>
         )}
