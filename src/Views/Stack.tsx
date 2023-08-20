@@ -14,7 +14,9 @@ import Suspense from '../components/Suspense';
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
 import ExplanationTooltip from '../components/ExplanationTooltip';
 
-import { technologiesBackend, technologiesFront, Technology } from '../components/StackInfo/data';
+import {
+  technologiesBackend, technologiesFront, technologiesOther, Technology,
+} from '../components/StackInfo/data';
 
 const CustomList = lazy(() => import('../components/CustomList'));
 
@@ -24,6 +26,7 @@ const Stack: FC<{ id: string }> = ({ id }) => {
   const routeNavigator = useRouteNavigator();
   const [draggingList, updateDraggingList] = useState<Technology[]>(technologiesFront);
   const [draggingListBackend, updateDraggingListBackend] = useState<Technology[]>(technologiesBackend);
+  const [draggingListOther, updateDraggingListOther] = useState<Technology[]>(technologiesOther);
 
   return (
     <View
@@ -56,6 +59,15 @@ const Stack: FC<{ id: string }> = ({ id }) => {
               items={draggingListBackend}
               draggingList={draggingListBackend}
               updateDraggingList={updateDraggingListBackend}
+            />
+          </Suspense>
+        </Group>
+        <Group header={<Header>Other</Header>}>
+          <Suspense id='other'>
+            <CustomList
+              items={draggingListOther}
+              draggingList={draggingListOther}
+              updateDraggingList={updateDraggingListOther}
             />
           </Suspense>
         </Group>

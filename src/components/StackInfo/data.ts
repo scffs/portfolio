@@ -13,6 +13,10 @@ import mysql from '../../assets/mysql.svg';
 import php from '../../assets/php.svg';
 import redis from '../../assets/redis.png';
 import nodejs from '../../assets/nodejs.svg';
+import docker from '../../assets/docker.png';
+import kuber from '../../assets/kuber.png';
+import postgres from '../../assets/postgresql.svg';
+import python from '../../assets/python.svg';
 
 export interface Technology {
   name: string;
@@ -33,10 +37,17 @@ export const technologiesFront: Technology[] = [
 
 export const technologiesBackend: Technology[] = [
   { name: 'NestJS', logo: nest, level: 'Beginner' },
-  { name: 'C#', logo: charp, level: 'Advanced' },
   { name: 'MongoDB', logo: mongodb, level: 'Intermediate' },
   { name: 'MySQL', logo: mysql, level: 'Intermediate' },
+  { name: 'PostgreSQL', logo: postgres, level: 'Beginner' },
   { name: 'PHP', logo: php, level: 'Beginner' },
   { name: 'Redis', logo: redis, level: 'Beginner' },
   { name: 'NodeJS / Express', logo: nodejs, level: 'Intermediate' },
+];
+
+export const technologiesOther: Technology[] = [
+  { name: 'C#', logo: charp, level: 'Advanced' },
+  { name: 'Docker', logo: docker, level: 'Beginner' },
+  { name: 'Kubernetes', logo: kuber, level: 'Beginner' },
+  { name: 'Python', logo: python, level: 'Intermediate' },
 ];
