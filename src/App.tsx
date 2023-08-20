@@ -2,14 +2,7 @@ import {
   lazy, useCallback, useEffect, useState,
 } from 'react';
 import {
-  AppRoot,
-  ConfigProvider,
-  PanelHeader,
-  Platform,
-  SplitCol,
-  SplitLayout,
-  useAdaptivityConditionalRender,
-  usePlatform,
+  AppRoot, ConfigProvider, PanelHeader, Platform, SplitCol, SplitLayout, useAdaptivityConditionalRender, usePlatform,
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 

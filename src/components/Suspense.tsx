@@ -24,7 +24,7 @@ const SpinnerWrapper: FC<ISpinner> = ({ size, mode }) => {
 };
 
 const Suspense: FC<ISuspense> = ({
-  children, size = 'regular', id, mode,
+  children, size = 'regular', id, mode = 'panel',
 }) => (
   <ReactSuspense key={id} fallback={<SpinnerWrapper size={size} mode={mode} />}>
     {children}
