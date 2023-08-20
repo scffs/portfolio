@@ -1,4 +1,3 @@
-import { CSSProperties } from 'react';
 import {
   Accordion,
   Div,
@@ -9,17 +8,13 @@ import {
   Spacing,
 } from '@vkontakte/vkui';
 
-import { gradientBorder } from './styles';
+import { gradientBorder, infoStyle } from './styles';
 
 import { userInfoItems, userStoryContent } from './data';
 
-const infoStyle: CSSProperties = {
-  display: 'flex',
-};
-
 const UserStory = () => (
   <Gradient style={gradientBorder}>
-    <Header mode='secondary'>Информация о пользователе</Header>
+    <Header mode='secondary'>Основная информация</Header>
     <HorizontalScroll
       showArrows
       style={infoStyle}

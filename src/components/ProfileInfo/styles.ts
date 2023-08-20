@@ -14,3 +14,7 @@ export const styles: CSSProperties = {
 export const gradientBorder: CSSProperties = {
   borderRadius: 10,
 };
+
+export const infoStyle: CSSProperties = {
+  display: 'flex',
+};

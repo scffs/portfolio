@@ -56,7 +56,7 @@ const App = () => {
               <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
             </SplitCol>
           )}
-          <SplitCol width='100%' maxWidth='700px' stretchedOnMobile autoSpaced>
+          <SplitCol width='100%' maxWidth='600px' stretchedOnMobile autoSpaced>
             <Epic onStoryChange={onStoryChange} toggleAppearance={toggleAppearance} />
           </SplitCol>
         </SplitLayout>
