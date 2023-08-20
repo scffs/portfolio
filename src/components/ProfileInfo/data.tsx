@@ -20,7 +20,7 @@ import avaKot from '../../assets/img/kot.png';
 import python from '../../assets/img/python.png';
 import leetcode from '../../assets/img/leetcode.svg';
 import github from '../../assets/img/github.svg';
-import avaVKT from '../../assets/img/logovkt.jpg';
+import avaVKT from '../../assets/img/logovkt.webp';
 import habr from '../../assets/img/habr.svg';
 import mdn from '../../assets/img/mdn.svg';
 

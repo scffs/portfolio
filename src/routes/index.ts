@@ -1,5 +1,7 @@
 import { createHashRouter, RouteWithoutRoot } from '@vkontakte/vk-mini-apps-router';
 
+import { ABOUT_FULLSTACK } from '../components/ModalRoot/constants';
+
 export const PAGE_MAIN = '/';
 export const PAGE_PROFILE = '/profile';
 export const PAGE_CONTACTS = '/contacts';
@@ -16,6 +18,18 @@ const routes: RouteWithoutRoot[] = [
     path: PAGE_MAIN,
     panel: VIEW_PROFILE,
     view: VIEW_PROFILE,
+  },
+  {
+    path: ABOUT_FULLSTACK,
+    panel: VIEW_PROFILE,
+    view: VIEW_PROFILE,
+    modal: ABOUT_FULLSTACK,
+  },
+  {
+    path: `profile/${ABOUT_FULLSTACK}`,
+    panel: VIEW_PROFILE,
+    view: VIEW_PROFILE,
+    modal: ABOUT_FULLSTACK,
   },
   {
     path: PAGE_PROFILE,

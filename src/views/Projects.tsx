@@ -8,11 +8,7 @@ import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-app
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
 
 const Projects: FC<{ id: string }> = ({ id }) => {
-  const {
-    panel: activePanel,
-    panelsHistory,
-  } = useActiveVkuiLocation();
-
+  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
   const routeNavigator = useRouteNavigator();
 
   return (
