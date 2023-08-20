@@ -5,11 +5,11 @@ import {
 import {
   Icon24BracketsSlashOutline,
   Icon28MailOutline,
-  Icon28ServicesOutline,
+  Icon28ServicesOutline, Icon28SettingsOutline,
   Icon28UserCircleOutline,
 } from '@vkontakte/icons';
 import {
-  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_STACK,
+  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_SETTINGS, VIEW_STACK,
 } from '../../routes';
 import { Pages } from '../../types';
 
@@ -60,6 +60,15 @@ const Sidebar: FC<ISidebarProps> = ({ activeView, onStoryChange }) => (
         before={<Icon28MailOutline />}
       >
         Контакты
+      </Cell>
+      <Cell
+        disabled={activeView === VIEW_SETTINGS}
+        data-story={VIEW_SETTINGS}
+        onClick={() => onStoryChange(VIEW_SETTINGS)}
+        style={activeView === VIEW_SETTINGS ? activeStoryStyles : undefined}
+        before={<Icon28SettingsOutline />}
+      >
+        Настройки сайта
       </Cell>
     </Group>
   </Panel>

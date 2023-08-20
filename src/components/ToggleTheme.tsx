@@ -8,7 +8,7 @@ interface IToggleTheme {
 }
 
 const style: CSSProperties = {
-  position: 'absolute',
+  position: 'fixed',
   top: 5,
   right: 50,
   zIndex: 500,
