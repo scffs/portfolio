@@ -28,7 +28,7 @@ const UserStory = () => (
     >
       <div style={{ display: 'flex', gap: 5, width: '500px' }}>
         {userInfoItems.map((item) => (
-          <HorizontalCell key={item.label}>
+          <HorizontalCell key={item.label} style={{ maxWidth: 'unset' }}>
             <InfoRow header={item.label}>{item.value}</InfoRow>
           </HorizontalCell>
         ))}

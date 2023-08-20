@@ -1,6 +1,6 @@
 import { CSSProperties, FC } from 'react';
 import { Icon28MoonOutline, Icon28SunOutline } from '@vkontakte/icons';
-import {IconButton} from '@vkontakte/vkui';
+import { IconButton } from '@vkontakte/vkui';
 
 interface IToggleTheme {
   toggleAppearance: () => void

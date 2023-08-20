@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { TabbarItem, useAdaptivityConditionalRender } from '@vkontakte/vkui';
-import { Tabbar as VKUITabbar } from '@vkontakte/vkui/dist/components/Tabbar/Tabbar';
+import { Tabbar as VKUITabbar, TabbarItem, useAdaptivityConditionalRender } from '@vkontakte/vkui';
+
 import {
   Icon28MailOutline,
   Icon28NewsfeedOutline,

@@ -1,8 +1,7 @@
 import { lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import '@vkontakte/vkui/dist/vkui.css';
-import './normalize.css';
+import '@vkontakte/vkui/dist/cssm/styles/themes.css';
 
 const AppWrapper = lazy(() => import('./AppWrapper'));
 

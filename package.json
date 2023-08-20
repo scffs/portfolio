@@ -18,7 +18,8 @@
     "@vkontakte/vk-mini-apps-router": "^1.1.1",
     "@vkontakte/vkui": "^5.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@vkontakte/vk-bridge": "^2.10.0"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.3",
@@ -28,7 +29,6 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "@vkontakte/vk-bridge": "^2.10.0",
     "eslint": "^8.45.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
