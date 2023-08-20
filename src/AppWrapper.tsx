@@ -4,13 +4,13 @@ import {
 import { AdaptivityProvider, ConfigProvider } from '@vkontakte/vkui';
 import { RouterProvider } from '@vkontakte/vk-mini-apps-router';
 
-import NotFound from './NotFound';
-import Suspense from './Suspense';
-import ToggleTheme from './ToggleTheme';
+import NotFound from './components/NotFound.tsx';
+import Suspense from './components/Suspense.tsx';
+import ToggleTheme from './components/ToggleTheme.tsx';
 
-import { router } from '../routes';
+import { router } from './routes';
 
-const App = lazy(() => import('../App'));
+const App = lazy(() => import('./App.tsx'));
 
 const AppWrapper = () => {
   const [appearance, setAppearance] = useState<'light' | 'dark'>('light');

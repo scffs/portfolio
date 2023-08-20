@@ -6,7 +6,7 @@ import {
 import { ABOUT_FULLSTACK } from '../ModalRoot/constants';
 import { gradientBorder, styles } from './styles';
 
-import ava from '../../assets/img/avaSmall.jpg';
+import ava from '../../assets/avaSmall.jpg';
 
 const UserInfo = () => {
   const routeNavigator = useRouteNavigator();
