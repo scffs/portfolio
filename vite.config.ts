@@ -7,6 +7,7 @@ export default defineConfig({
     react(),
   ],
   build: {
+    sourcemap: false,
     target: 'es2015',
     assetsInlineLimit: 0,
     minify: 'terser',

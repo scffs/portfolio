@@ -16,13 +16,17 @@ const domNode = document.getElementById('root')!;
 const root = createRoot(domNode);
 
 root.render(
-  
-    <ConfigProvider appearance='light'>
-      <AdaptivityProvider>
-        <RouterProvider router={router} notFound={<NotFound />}>
-          <Suspense id='app'><App /> </Suspense>,
-        </RouterProvider>
-      </AdaptivityProvider>
-    </ConfigProvider>
- 
+
+  <ConfigProvider appearance='light'>
+    <AdaptivityProvider>
+      <RouterProvider router={router} notFound={<NotFound />}>
+        <Suspense id='app'>
+          <App />
+          {' '}
+        </Suspense>
+        ,
+      </RouterProvider>
+    </AdaptivityProvider>
+  </ConfigProvider>,
+
 );
