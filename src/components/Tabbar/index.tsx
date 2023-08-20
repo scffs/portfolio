@@ -1,15 +1,15 @@
 import { FC } from 'react';
-import { TabbarItem, useAdaptivityConditionalRender } from '@vkontakte/vkui';
-import { Tabbar as VKUITabbar } from '@vkontakte/vkui/dist/components/Tabbar/Tabbar';
+import { Tabbar as VKUITabbar, TabbarItem, useAdaptivityConditionalRender } from '@vkontakte/vkui';
+
 import {
   Icon28MailOutline,
   Icon28NewsfeedOutline,
-  Icon28ServicesOutline,
+  Icon28ServicesOutline, Icon28SettingsOutline,
   Icon28UserCircleOutline,
 } from '@vkontakte/icons';
 
 import {
-  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_STACK,
+  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_SETTINGS, VIEW_STACK,
 } from '../../routes';
 import { Pages } from '../../types';
 
@@ -36,7 +36,7 @@ const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
           onClick={() => onStoryChange(VIEW_STACK)}
           selected={activeView === VIEW_STACK}
           data-story={VIEW_STACK}
-          text='Стэк технологий'
+          text='Стэк'
         >
           <Icon28NewsfeedOutline />
         </TabbarItem>
@@ -52,9 +52,17 @@ const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
           onClick={() => onStoryChange(VIEW_CONTACTS)}
           selected={activeView === VIEW_CONTACTS}
           data-story={VIEW_CONTACTS}
-          text='Связаться со мной'
+          text='Контакты'
         >
           <Icon28MailOutline />
+        </TabbarItem>
+        <TabbarItem
+          onClick={() => onStoryChange(VIEW_SETTINGS)}
+          selected={activeView === VIEW_SETTINGS}
+          data-story={VIEW_SETTINGS}
+          text='Контакты'
+        >
+          <Icon28SettingsOutline />
         </TabbarItem>
       </VKUITabbar>
     )
