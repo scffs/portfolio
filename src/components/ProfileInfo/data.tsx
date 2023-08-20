@@ -55,7 +55,7 @@ export const userInfoItems = [
     value: (
       <Link href={KOTBREAD_URL} target='_blank'>
         <Flex gap={5} align='center'>
-          <Avatar size={24} src={avaKot} />
+          <Avatar size={24} src={avaKot} alt='kotbread' />
           @kotbread
         </Flex>
       </Link>
