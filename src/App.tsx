@@ -22,9 +22,9 @@ const App = () => {
   const isVKCOM = platform !== Platform.VKCOM;
 
   const { viewWidth } = useAdaptivityConditionalRender();
-
   const { view: activeView = VIEW_PROFILE } = useActiveVkuiLocation();
   const routeNavigator = useRouteNavigator();
+
   const onStoryChange = async (currentView: Pages) => {
     await routeNavigator.push(`/${currentView}`);
   };
