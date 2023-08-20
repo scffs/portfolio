@@ -36,7 +36,7 @@ const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
           onClick={() => onStoryChange(VIEW_STACK)}
           selected={activeView === VIEW_STACK}
           data-story={VIEW_STACK}
-          text='Стэк технологий'
+          text='Стэк'
         >
           <Icon28NewsfeedOutline />
         </TabbarItem>
@@ -52,7 +52,7 @@ const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
           onClick={() => onStoryChange(VIEW_CONTACTS)}
           selected={activeView === VIEW_CONTACTS}
           data-story={VIEW_CONTACTS}
-          text='Связаться со мной'
+          text='Контакты'
         >
           <Icon28MailOutline />
         </TabbarItem>
