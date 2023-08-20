@@ -1,3 +1,4 @@
+import { lazy } from 'react';
 import {
   AppRoot,
   PanelHeader,
@@ -8,11 +9,13 @@ import {
   usePlatform,
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
-import Sidebar from './components/Sidebar';
-import Index from './components/Epic';
+
 import { VIEW_PROFILE } from './routes';
 import { Pages } from './types';
-import ModalRoot from './components/ModalRoot';
+
+const Sidebar = lazy(() => import('./components/Sidebar'));
+const Epic = lazy(() => import('./components/Epic'));
+const ModalRoot = lazy(() => import('./components/ModalRoot'));
 
 const App = () => {
   const platform = usePlatform();
@@ -42,7 +45,7 @@ const App = () => {
           </SplitCol>
         )}
         <SplitCol width='100%' maxWidth='700px' stretchedOnMobile autoSpaced>
-          <Index onStoryChange={onStoryChange} />
+          <Epic onStoryChange={onStoryChange} />
         </SplitCol>
       </SplitLayout>
     </AppRoot>

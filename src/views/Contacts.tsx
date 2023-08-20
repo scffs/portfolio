@@ -8,11 +8,7 @@ import { Icon28UserCircleOutline } from '@vkontakte/icons';
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
 
 const Contacts: FC<{ id: string }> = ({ id }) => {
-  const {
-    panel: activePanel,
-    panelsHistory,
-  } = useActiveVkuiLocation();
-
+  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
   const routeNavigator = useRouteNavigator();
 
   return (

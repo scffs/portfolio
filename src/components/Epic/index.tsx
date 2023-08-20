@@ -7,6 +7,7 @@ import {
 } from '../../routes';
 import { Pages } from '../../types';
 import Tabbar from '../Tabbar';
+import Suspense from '../Suspense';
 import {
   Contacts, Profile, Projects, Stack,
 } from '../../views';
@@ -15,7 +16,7 @@ interface IEpic {
   onStoryChange: (current: Pages) => void;
 }
 
-const Index: FC<IEpic> = ({ onStoryChange }) => {
+const Epic: FC<IEpic> = ({ onStoryChange }) => {
   const {
     view: activeView = 'profile' as Pages,
   } = useActiveVkuiLocation();
@@ -29,12 +30,20 @@ const Index: FC<IEpic> = ({ onStoryChange }) => {
           && <Tabbar onStoryChange={onStoryChange} activeView={activeView as Pages} />
       }
     >
-      <Stack id={VIEW_STACK} />
-      <Profile id={VIEW_PROFILE} />
-      <Projects id={VIEW_PROJECTS} />
-      <Contacts id={VIEW_CONTACTS} />
+      <Suspense id={VIEW_STACK}>
+        <Stack id={VIEW_STACK} />
+      </Suspense>
+      <Suspense id={VIEW_PROFILE}>
+        <Profile id={VIEW_PROFILE} />
+      </Suspense>
+      <Suspense id={VIEW_PROJECTS}>
+        <Projects id={VIEW_PROJECTS} />
+      </Suspense>
+      <Suspense id={VIEW_CONTACTS}>
+        <Contacts id={VIEW_CONTACTS} />
+      </Suspense>
     </VKUIEpic>
   );
 };
 
-export default Index;
+export default Epic;

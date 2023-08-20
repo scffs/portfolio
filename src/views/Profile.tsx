@@ -4,16 +4,12 @@ import {
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 
-import { UserInfo, UserStory } from '../components/ProfileInfo';
-
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
+import { UserInfo, UserStory } from '../components/ProfileInfo';
+import Suspense from '../components/Suspense';
 
 const Profile: FC<{ id: string }> = ({ id }) => {
-  const {
-    panel: activePanel,
-    panelsHistory,
-  } = useActiveVkuiLocation();
-
+  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
   const routeNavigator = useRouteNavigator();
 
   return (
@@ -27,11 +23,15 @@ const Profile: FC<{ id: string }> = ({ id }) => {
         <PanelHeaderWithBack title='Обо мне' />
         <Group>
           <Div>
-            <UserInfo />
+            <Suspense id='UserInfo'>
+              <UserInfo />
+            </Suspense>
           </Div>
           <Separator />
           <Div>
-            <UserStory />
+            <Suspense id='UserStory'>
+              <UserStory />
+            </Suspense>
           </Div>
         </Group>
       </Panel>
