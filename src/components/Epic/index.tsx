@@ -31,19 +31,19 @@ const Epic: FC<IEpic> = ({ onStoryChange, toggleAppearance }) => {
           && <Tabbar onStoryChange={onStoryChange} activeView={activeView as Pages} />
       }
     >
-      <Suspense id={VIEW_STACK}>
+      <Suspense id={VIEW_STACK} mode='screen'>
         <Stack id={VIEW_STACK} />
       </Suspense>
-      <Suspense id={VIEW_PROFILE}>
+      <Suspense id={VIEW_PROFILE} mode='screen'>
         <Profile id={VIEW_PROFILE} />
       </Suspense>
-      <Suspense id={VIEW_PROJECTS}>
+      <Suspense id={VIEW_PROJECTS} mode='screen'>
         <Projects id={VIEW_PROJECTS} />
       </Suspense>
-      <Suspense id={VIEW_CONTACTS}>
+      <Suspense id={VIEW_CONTACTS} mode='screen'>
         <Contacts id={VIEW_CONTACTS} />
       </Suspense>
-      <Suspense id={VIEW_SETTINGS}>
+      <Suspense id={VIEW_SETTINGS} mode='screen'>
         <Settings id={VIEW_SETTINGS} toggleAppearance={toggleAppearance} />
       </Suspense>
     </VKUIEpic>

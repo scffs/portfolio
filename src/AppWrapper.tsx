@@ -12,7 +12,7 @@ const App = lazy(() => import('./App'));
 const AppWrapper = () => (
   <AdaptivityProvider>
     <RouterProvider router={router} notFound={<NotFound />}>
-      <Suspense id='app'>
+      <Suspense id='app' mode='screen'>
         <App />
       </Suspense>
     </RouterProvider>

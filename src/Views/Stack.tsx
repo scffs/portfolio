@@ -1,20 +1,18 @@
 import {
-  FC, lazy, useState,
+  FC, useState,
 } from 'react';
 import {
-  Group, Header, Panel, View, Div,
+  Panel, View,
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 
-import Suspense from '../components/Suspense';
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
-import ExplanationTooltip from '../components/ExplanationTooltip';
+import ExplanationGroup from '../components/StackInfo/ExplanationGroup';
 
 import {
   technologiesBackend, technologiesFront, technologiesOther, Technology,
 } from '../components/StackInfo/data';
-
-const CustomList = lazy(() => import('../components/CustomList'));
+import TechnologyGroup from '../components/StackInfo/TechnologyGroup';
 
 const Stack: FC<{ id: string }> = ({ id }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
@@ -33,40 +31,25 @@ const Stack: FC<{ id: string }> = ({ id }) => {
     >
       <Panel nav={id}>
         <PanelHeaderWithBack title='Стэк' />
-        <Group header={<Header>Пояснение</Header>}>
-          <Div style={{ display: 'flex' }}>
-            <ExplanationTooltip text='Beginner' tooltipContent='Базовые знания' />
-            <ExplanationTooltip text='Intermediate' tooltipContent='Хорошие знания и небольшой опыт использования' />
-            <ExplanationTooltip text='Advanced' tooltipContent='Продвинутые знания' />
-          </Div>
-        </Group>
-        <Group header={<Header>Frontend</Header>}>
-          <Suspense id='frontend'>
-            <CustomList
-              items={draggingList}
-              draggingList={draggingList}
-              updateDraggingList={updateDraggingList}
-            />
-          </Suspense>
-        </Group>
-        <Group header={<Header>Backend</Header>}>
-          <Suspense id='backend'>
-            <CustomList
-              items={draggingListBackend}
-              draggingList={draggingListBackend}
-              updateDraggingList={updateDraggingListBackend}
-            />
-          </Suspense>
-        </Group>
-        <Group header={<Header>Other</Header>}>
-          <Suspense id='other'>
-            <CustomList
-              items={draggingListOther}
-              draggingList={draggingListOther}
-              updateDraggingList={updateDraggingListOther}
-            />
-          </Suspense>
-        </Group>
+        <ExplanationGroup />
+        <TechnologyGroup
+          id='frontend'
+          title='Frontend'
+          draggingList={draggingList}
+          updateDraggingList={updateDraggingList}
+        />
+        <TechnologyGroup
+          id='backend'
+          title='Backend'
+          draggingList={draggingListBackend}
+          updateDraggingList={updateDraggingListBackend}
+        />
+        <TechnologyGroup
+          id='other'
+          title='Other'
+          draggingList={draggingListOther}
+          updateDraggingList={updateDraggingListOther}
+        />
       </Panel>
     </View>
   );

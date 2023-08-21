@@ -9,6 +9,8 @@ import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-app
 import { VIEW_PROFILE } from './routes';
 import { Pages } from './types';
 
+import Suspense from './components/Suspense';
+
 const Sidebar = lazy(() => import('./components/Sidebar'));
 const Epic = lazy(() => import('./components/Epic'));
 const ModalRoot = lazy(() => import('./components/ModalRoot'));
@@ -53,7 +55,9 @@ const App = () => {
           {viewWidth.tabletPlus && (
             <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
               {isVKCOM && <PanelHeader /> }
-              <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
+              <Suspense id='sidebar'>
+                <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
+              </Suspense>
             </SplitCol>
           )}
           <SplitCol width='100%' maxWidth='600px' stretchedOnMobile autoSpaced>

@@ -1,14 +1,17 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, memo, SetStateAction } from 'react';
 import {
-  Cell, List, Image, Tappable,
+  Cell, List, Image, HorizontalCell, HorizontalScroll,
 } from '@vkontakte/vkui';
 
 import { Technology } from './StackInfo/data';
 
+export type UpdateDraggingList = Dispatch<SetStateAction<Technology[]>>;
+
 interface CustomListProps {
   items: Technology[];
   draggingList: Technology[];
-  updateDraggingList: Dispatch<SetStateAction<Technology[]>>;
+  updateDraggingList: UpdateDraggingList;
+  isHorizontal: boolean;
 }
 
 const reorderList = (
@@ -21,20 +24,51 @@ const reorderList = (
   updateListFn(newList);
 };
 
-const CustomList: React.FC<CustomListProps> = ({ items, draggingList, updateDraggingList }) => (
-  <List>
-    {items.map((item, index) => (
-      <Cell
-        key={item.name}
-        before={<Image style={{ boxSizing: 'border-box', padding: 5 }} src={item.logo} />}
-        after={<Tappable style={{ padding: 10 }}>{item.level}</Tappable>}
-        draggable
-        onDragFinish={({ to }) => reorderList({ from: index, to }, draggingList, updateDraggingList)}
-      >
-        {item.name}
-      </Cell>
-    ))}
-  </List>
-);
+const CustomList: React.FC<CustomListProps> = ({
+  items, draggingList, updateDraggingList, isHorizontal,
+}) => {
+  const listContent = isHorizontal ? (
+    <HorizontalScroll>
+      <div style={{ display: 'flex' }}>
+        {/* TODO: review this */}
+        {items.map(({ level, logo, name }) => (
+          <HorizontalCell
+            key={name}
+            size='s'
+            header={name}
+            style={{ maxWidth: 'unset' }}
+          >
+            <Image size={88} borderRadius='l' src={logo} />
+          </HorizontalCell>
+        ))}
+      </div>
+    </HorizontalScroll>
+  ) : (
+    <List>
+      {items.map((item, index) => (
+        <Cell
+          key={item.name}
+          before={(
+            <Image
+              style={{ boxSizing: 'border-box', padding: 5 }}
+              src={item.logo}
+            />
+          )}
+          after={item.level}
+          draggable
+          onDragFinish={({ to }) => reorderList({ from: index, to }, draggingList, updateDraggingList)}
+        >
+          {item.name}
+        </Cell>
+      ))}
+    </List>
+  );
 
-export default CustomList;
+  return (
+    <div>
+      {listContent}
+    </div>
+  );
+};
+
+export default memo(CustomList);
