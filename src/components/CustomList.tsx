@@ -30,10 +30,10 @@ const CustomList: React.FC<CustomListProps> = ({
   const listContent = isHorizontal ? (
     <HorizontalScroll>
       <div style={{ display: 'flex' }}>
-        {/* TODO: review this */}
         {items.map(({ level, logo, name }) => (
           <HorizontalCell
             key={name}
+            subtitle={level}
             size='s'
             header={name}
             style={{ maxWidth: 'unset' }}

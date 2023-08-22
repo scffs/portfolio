@@ -10,8 +10,13 @@ const ToggleTheme: FC<IToggleTheme> = ({ toggleAppearance }) => {
   const appearance = useAppearance();
   const BeforeIcon = appearance === 'light' ? <Icon28MoonOutline /> : <Icon28SunOutline />;
 
+  const handleToggle = () => {
+    toggleAppearance();
+    window.dispatchEvent(new Event('themeChanged'));
+  };
+
   return (
-    <CellButton onClick={toggleAppearance} aria-label='Сменить тему' before={BeforeIcon}>
+    <CellButton onClick={handleToggle} aria-label='Сменить тему' before={BeforeIcon}>
       Сменить тему
     </CellButton>
   );

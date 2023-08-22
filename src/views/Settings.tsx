@@ -18,7 +18,12 @@ const formatKeyText = (key: string) => {
   return key;
 };
 
-const Settings: FC<{ id: string, toggleAppearance: () => void }> = ({ id, toggleAppearance }) => {
+interface ISettings {
+  id: string,
+  toggleAppearance: () => void
+}
+
+const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
   const routeNavigator = useRouteNavigator();
 
@@ -41,10 +46,21 @@ const Settings: FC<{ id: string, toggleAppearance: () => void }> = ({ id, toggle
       }
     };
 
+    const handleThemeChange = () => {
+      const allKeys = Object.keys(localStorage);
+      const getCache = allKeys.map((key) => ({
+        key,
+        value: localStorage.getItem(key) || 'false',
+      }));
+      setCacheData(getCache);
+    };
+
     window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('themeChanged', handleThemeChange);
 
     return () => {
       window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('themeChanged', handleThemeChange);
     };
   }, []);
 

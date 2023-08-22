@@ -10,7 +10,7 @@ import Tabbar from '../Tabbar';
 import Suspense from '../Suspense';
 import {
   Contacts, Profile, Projects, Stack, Settings,
-} from '../../Views';
+} from '../../views';
 
 interface IEpic {
   onStoryChange: (current: Pages) => void

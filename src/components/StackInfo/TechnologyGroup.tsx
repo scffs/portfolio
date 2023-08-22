@@ -32,6 +32,7 @@ const TechnologyGroup: FC<TechnologyGroupProps> = ({
 
   const header = (
     <Header
+      style={{ marginBottom: 10 }}
       mode='secondary'
       aside={(
         <Button size='s' appearance='neutral' onClick={() => setIsHorizontal((prevState) => !prevState)}>

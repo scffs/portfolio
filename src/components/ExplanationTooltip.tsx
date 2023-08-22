@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Text, unstable_RichTooltip as RichTooltip, Subhead,
+  Text, unstable_Popover as Popover, Subhead,
 } from '@vkontakte/vkui';
 import { Icon16HelpOutline } from '@vkontakte/icons';
 
@@ -19,8 +19,9 @@ const ExplanationTooltip: React.FC<TooltipTextProps> = ({ text, tooltipContent }
   return (
     <Text style={{ paddingRight: 10 }}>
       {text}
-      <RichTooltip
+      <Popover
         style={{ maxWidth: 220 }}
+        action='hover'
         content={textTooltip}
       >
         <Icon16HelpOutline
@@ -33,7 +34,7 @@ const ExplanationTooltip: React.FC<TooltipTextProps> = ({ text, tooltipContent }
             marginLeft: 5,
           }}
         />
-      </RichTooltip>
+      </Popover>
     </Text>
   );
 };
