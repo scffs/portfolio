@@ -22,7 +22,7 @@ const UserInfo = () => {
       <Title style={{ marginTop: 20 }} level='2' weight='2'>
         Семён Окулов
       </Title>
-      <Link href='vk.com/scffs'>@scffs</Link>
+      <Link href='https://vk.com/scffs'>@scffs</Link>
       <Title level='3' weight='3'>
         Fullstack-разработчик
       </Title>
