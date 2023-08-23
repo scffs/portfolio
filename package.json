@@ -14,18 +14,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vkontakte/icons": "^2.58.0",
+    "@vkontakte/icons": "^2.59.0",
     "@vkontakte/vk-mini-apps-router": "^1.1.1",
     "@vkontakte/vkui": "^5.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@vkontakte/vk-bridge": "^2.10.0"
+    "@vkontakte/vk-bridge": "^2.11.0"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.3",
-    "@types/react": "^18.2.15",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -35,7 +35,7 @@
     "eslint-config-standard-with-typescript": "^38.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-n": "^16.0.2",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
