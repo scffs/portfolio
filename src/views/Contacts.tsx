@@ -1,11 +1,13 @@
 import { FC } from 'react';
 import {
-  Group, Panel, Placeholder, View,
+  Group, Link, Panel, Placeholder, View,
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
-import { Icon28UserCircleOutline } from '@vkontakte/icons';
+import { Icon28MailOutline } from '@vkontakte/icons';
 
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
+
+import { VK_URL } from '../constants';
 
 const Contacts: FC<{ id: string }> = ({ id }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
@@ -22,8 +24,15 @@ const Contacts: FC<{ id: string }> = ({ id }) => {
         <PanelHeaderWithBack title='Контакты' />
         <Group>
           <Placeholder
-            icon={<Icon28UserCircleOutline width={56} height={56} />}
-          />
+            icon={<Icon28MailOutline width={56} height={56} />}
+          >
+
+            Страница ещё не готова, но личка в
+            {' '}
+            <Link href={VK_URL} target='_blank'>ВК</Link>
+            {' '}
+            всегда окрыта
+          </Placeholder>
         </Group>
       </Panel>
     </View>

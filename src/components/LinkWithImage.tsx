@@ -6,11 +6,13 @@ interface ILinkWithImage {
   href: string;
   icon: string | ReactNode;
   size?: number;
+  width?: number;
+  height?: number;
   target?: '_blank' | '_self' | '_parent' | '_top';
 }
 
 const LinkWithImage: FC<ILinkWithImage> = ({
-  linkText, icon, href, size = 24, target = '_blank',
+  linkText, icon, href, size = 24, target = '_blank', height, width,
 }) => {
   const linkStyles: CSSProperties = {
     position: 'relative',
@@ -24,8 +26,8 @@ const LinkWithImage: FC<ILinkWithImage> = ({
     left: '0',
     top: '50%',
     transform: 'translateY(-50%)',
-    width: `${size}px`,
-    height: `${size}px`,
+    width: `${width || size}px`,
+    height: `${height || size}px`,
   };
 
   return (

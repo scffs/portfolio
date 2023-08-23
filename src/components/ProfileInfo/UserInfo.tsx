@@ -8,6 +8,8 @@ import { gradientBorder, styles } from './styles';
 
 import ava from '../../assets/avaSmall.jpg';
 
+import { VK_URL } from '../../constants';
+
 const UserInfo = () => {
   const routeNavigator = useRouteNavigator();
   const { modal: activeModal } = useActiveVkuiLocation();
@@ -22,7 +24,7 @@ const UserInfo = () => {
       <Title style={{ marginTop: 20 }} level='2' weight='2'>
         Семён Окулов
       </Title>
-      <Link href='https://vk.com/scffs'>@scffs</Link>
+      <Link href={VK_URL} target='_blank'>@scffs</Link>
       <Title level='3' weight='3'>
         Fullstack-разработчик
       </Title>

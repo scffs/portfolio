@@ -32,7 +32,7 @@ const UserStory = () => (
         <Accordion key={item.title}>
           <Accordion.Summary iconPosition='before'>{item.title}</Accordion.Summary>
           <Div>
-            <Paragraph>{item.content}</Paragraph>
+            <Paragraph style={{ lineHeight: 1.7 }}>{item.content}</Paragraph>
           </Div>
         </Accordion>
       ))}

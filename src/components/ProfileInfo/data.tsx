@@ -12,8 +12,10 @@ import {
   LEETCODE_URL,
   MDN_URL,
   PYTHON_URL,
+  REACT_URL,
   TEPT_URL,
   VKT_URL,
+  VKUI_URL,
 } from '../../constants';
 
 import LinkWithImage from '../LinkWithImage';
@@ -25,6 +27,8 @@ import github from '../../assets/github.svg';
 import avaVKT from '../../assets/logovkt.webp';
 import habr from '../../assets/habr.svg';
 import mdn from '../../assets/mdn.svg';
+import react from '../../assets/react.svg';
+import vkui from '../../assets/vk.svg';
 
 import { VIEW_PROJECTS, VIEW_STACK } from '../../routes';
 
@@ -140,6 +144,13 @@ export const userStoryContent = [
         В прошлом был модератором и участником крупнейшей веб-документации
         {' '}
         <LinkWithImage linkText='MDN' href={MDN_URL} icon={mdn} />
+        {' '}
+        и других крупных OpenSource проектов, например,
+        <LinkWithImage linkText='VKUI' href={VKUI_URL} icon={vkui} />
+        {' '}
+        и
+        {/* Логотип реакта не квадратный, поэтому для полного отображения изменяю ширину */}
+        <LinkWithImage linkText='React' href={REACT_URL} icon={react} width={27} />
         , но сейчас на это совсем нет времени.
       </>
     ),

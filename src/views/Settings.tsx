@@ -1,8 +1,9 @@
 import { FC, useEffect, useState } from 'react';
 import {
-  Cell, Group, Header, Panel, Subhead, View,
+  Cell, CellButton, Group, Header, Panel, Subhead, View,
 } from '@vkontakte/vkui';
 import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
+import { Icon28ClearDataOutline } from '@vkontakte/icons';
 
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
 import ToggleTheme from '../components/ToggleTheme';
@@ -64,6 +65,11 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
     };
   }, []);
 
+  const clearCache = () => {
+    localStorage.clear();
+    setCacheData([]);
+  };
+
   return (
     <View
       id={id}
@@ -75,8 +81,17 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
         <PanelHeaderWithBack title='Настройки' />
         <Group header={<Header mode='secondary'>Внешний вид</Header>}>
           <ToggleTheme toggleAppearance={toggleAppearance} />
+          <CellButton
+            before={<Icon28ClearDataOutline />}
+            onClick={clearCache}
+          >
+            Очистить кеш
+          </CellButton>
         </Group>
-        <Group header={<Header mode='secondary' aside={<Subhead>Хранится в LocalStorage</Subhead>}>Кеш</Header>}>
+        <Group
+          header={(
+            <Header mode='secondary' aside={<Subhead>Хранится в LocalStorage</Subhead>}>Кеш</Header>)}
+        >
           {cacheData.map((item) => (
             <Cell key={item.key} indicator={item.value}>
               {formatKeyText(item.key)}
