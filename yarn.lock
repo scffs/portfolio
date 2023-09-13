@@ -756,10 +756,10 @@
   dependencies:
     "@vkontakte/icons-sprite" "2.0.0"
 
-"@vkontakte/vk-bridge@^2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.11.0.tgz#7eeaafac05a58c4ac006bf72d92ddc530a864605"
-  integrity sha512-chtrQblQZogucEynRtD/4N4tn2nLkyWZHHLerhHX4I6i4EgbgHBlEItrCrPY8s4k+JGsAp2qWKHODmgG4XSrYw==
+"@vkontakte/vk-bridge@^2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.12.0.tgz#86529eda2c71ff22c73804fbc831fc8c68550baa"
+  integrity sha512-pEZxvK+960TzT5svw3znmoM9Zvegv/Mkh3c+Sr5rneGHAWnv9N7WHxFFvhEJYKeSrY7IA4dJ7xWSf+M0EsaEbA==
 
 "@vkontakte/vk-mini-apps-router@^1.1.1":
   version "1.1.1"
