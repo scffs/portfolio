@@ -749,10 +749,10 @@
   dependencies:
     "@swc/helpers" "^0.5.1"
 
-"@vkontakte/icons@^2.59.0":
-  version "2.59.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.59.0.tgz#668bdf2b3261d40845cedcaab2f99c2d0b85f6cc"
-  integrity sha512-FTb81J6kiWQ+XMunPYAu+shStsUF7ZTuGLA4qECsk5ObkAF40eTZblZ6Irvpbk1flPx3AslsCnBLzx3rqITOEQ==
+"@vkontakte/icons@^2.61.0":
+  version "2.65.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.65.0.tgz#9daec95f4f0b45b815f7279337914d3100259b98"
+  integrity sha512-3ABFopXCu6vC7jknB3Bam0LtpLBoUpGorjvvY3DNjrrEuRdJvAbbqtWCSIRXuH0Oejvf5Jvyppb23sJw9hl7zg==
   dependencies:
     "@vkontakte/icons-sprite" "2.0.0"
 
