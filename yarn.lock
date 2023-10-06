@@ -760,7 +760,7 @@
   dependencies:
     "@vkontakte/icons-sprite" "2.0.0"
 
-"@vkontakte/vk-bridge@^2.11.0":
+"@vkontakte/vk-bridge@^2.11.2":
   version "2.11.2"
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.11.2.tgz#826eb2ad990327340d77bd5462f6444560b18533"
   integrity sha512-wFtgPsD7kdb+a6d67y6BLGEc5iI4jIlc+jV6YvyxxfEmF7WhoDNaGAQNj7B5Sx4ep1MqDyyh8wUOiHJ5HamXiA==
