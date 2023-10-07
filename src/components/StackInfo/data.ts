@@ -17,6 +17,9 @@ import docker from '../../assets/docker.png';
 import kuber from '../../assets/kuber.png';
 import postgres from '../../assets/postgresql.svg';
 import python from '../../assets/python.svg';
+import bun from '../../assets/bun.png';
+import fastify from '../../assets/fastify.png';
+import go from '../../assets/go.png';
 
 export interface Technology {
   name: string;
@@ -33,6 +36,7 @@ export const technologiesFront: Technology[] = [
   { name: 'Styled Components', logo: styled, level: 'Beginner' },
   { name: 'Vite', logo: vite, level: 'Intermediate' },
   { name: 'VKUI', logo: vk, level: 'Intermediate' },
+  { name: 'VK Bridge', logo: vk, level: 'Intermediate' },
 ];
 
 export const technologiesBackend: Technology[] = [
@@ -43,11 +47,14 @@ export const technologiesBackend: Technology[] = [
   { name: 'PHP', logo: php, level: 'Beginner' },
   { name: 'Redis', logo: redis, level: 'Beginner' },
   { name: 'NodeJS / Express', logo: nodejs, level: 'Intermediate' },
+  { name: 'Fastify', logo: fastify, level: 'Beginner' },
+  { name: 'Bun', logo: bun, level: 'Beginner' },
 ];
 
 export const technologiesOther: Technology[] = [
-  { name: 'C#', logo: charp, level: 'Advanced' },
+  { name: 'C# / WPF', logo: charp, level: 'Advanced' },
   { name: 'Docker', logo: docker, level: 'Beginner' },
   { name: 'Kubernetes', logo: kuber, level: 'Beginner' },
   { name: 'Python', logo: python, level: 'Intermediate' },
+  { name: 'Go', logo: go, level: 'Beginner' },
 ];

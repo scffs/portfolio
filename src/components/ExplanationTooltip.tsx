@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import {
   Text, unstable_Popover as Popover, Subhead,
 } from '@vkontakte/vkui';
@@ -9,7 +9,7 @@ interface TooltipTextProps {
   tooltipContent: string;
 }
 
-const ExplanationTooltip: React.FC<TooltipTextProps> = ({ text, tooltipContent }) => {
+const ExplanationTooltip: FC<TooltipTextProps> = ({ text, tooltipContent }) => {
   const textTooltip = (
     <Subhead style={{ padding: '8px 12px', color: 'var(--vkui--color_text_primary)' }}>
       {tooltipContent}
