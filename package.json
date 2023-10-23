@@ -17,7 +17,7 @@
     "@vkontakte/icons": "^2.59.0",
     "@vkontakte/vk-bridge": "^2.11.2",
     "@vkontakte/vk-mini-apps-router": "^1.1.1",
-    "@vkontakte/vkui": "^5.7.1",
+    "@vkontakte/vkui": "^5.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
