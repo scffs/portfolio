@@ -1,6 +1,4 @@
-import {
-  FC, useState,
-} from 'react';
+import { FC } from 'react';
 import {
   Panel, View,
 } from '@vkontakte/vkui';
@@ -10,7 +8,7 @@ import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
 import ExplanationGroup from '../components/StackInfo/ExplanationGroup';
 
 import {
-  technologiesBackend, technologiesFront, technologiesOther, Technology,
+  technologiesBackend, technologiesFront, technologiesOther,
 } from '../components/StackInfo/data';
 import TechnologyGroup from '../components/StackInfo/TechnologyGroup';
 
@@ -18,15 +16,11 @@ const Stack: FC<{ id: string }> = ({ id }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
 
   const routeNavigator = useRouteNavigator();
-  const [draggingList, updateDraggingList] = useState<Technology[]>(technologiesFront);
-  const [draggingListBackend, updateDraggingListBackend] = useState<Technology[]>(technologiesBackend);
-  const [draggingListOther, updateDraggingListOther] = useState<Technology[]>(technologiesOther);
-
   return (
     <View
       id={id}
       history={panelsHistory}
-      activePanel={activePanel as string}
+      activePanel={activePanel}
       onSwipeBack={() => routeNavigator.back()}
     >
       <Panel nav={id}>
@@ -35,20 +29,17 @@ const Stack: FC<{ id: string }> = ({ id }) => {
         <TechnologyGroup
           id='frontend'
           title='Frontend'
-          draggingList={draggingList}
-          updateDraggingList={updateDraggingList}
+          draggingList={technologiesFront}
         />
         <TechnologyGroup
           id='backend'
           title='Backend'
-          draggingList={draggingListBackend}
-          updateDraggingList={updateDraggingListBackend}
+          draggingList={technologiesBackend}
         />
         <TechnologyGroup
           id='other'
           title='Other'
-          draggingList={draggingListOther}
-          updateDraggingList={updateDraggingListOther}
+          draggingList={technologiesOther}
         />
       </Panel>
     </View>

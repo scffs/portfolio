@@ -9,28 +9,21 @@ export type UpdateDraggingList = Dispatch<SetStateAction<Technology[]>>;
 
 interface CustomListProps {
   items: Technology[];
-  draggingList: Technology[];
-  updateDraggingList: UpdateDraggingList;
   isHorizontal: boolean;
 }
 
-const reorderList = (
-  { from, to }: { from: number; to: number },
-  list: Technology[],
-  updateListFn: Dispatch<SetStateAction<Technology[]>>,
-) => {
-  const newList = [...list];
-  newList.splice(to, 0, newList.splice(from, 1)[0]);
-  updateListFn(newList);
-};
-
 const CustomList: React.FC<CustomListProps> = ({
-  items, draggingList, updateDraggingList, isHorizontal,
+  items,
+  isHorizontal,
 }) => {
   const listContent = isHorizontal ? (
     <HorizontalScroll>
       <div style={{ display: 'flex' }}>
-        {items.map(({ level, logo, name }) => (
+        {items.map(({
+          level,
+          logo,
+          name,
+        }) => (
           <HorizontalCell
             key={name}
             subtitle={level}
@@ -45,18 +38,19 @@ const CustomList: React.FC<CustomListProps> = ({
     </HorizontalScroll>
   ) : (
     <List>
-      {items.map((item, index) => (
+      {items.map((item) => (
         <Cell
           key={item.name}
           before={(
             <Image
-              style={{ boxSizing: 'border-box', padding: 5 }}
+              style={{
+                boxSizing: 'border-box',
+                padding: 5,
+              }}
               src={item.logo}
             />
           )}
           after={item.level}
-          draggable
-          onDragFinish={({ to }) => reorderList({ from: index, to }, draggingList, updateDraggingList)}
         >
           {item.name}
         </Cell>

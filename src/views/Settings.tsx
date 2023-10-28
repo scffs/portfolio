@@ -74,7 +74,7 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
     <View
       id={id}
       history={panelsHistory}
-      activePanel={activePanel as string}
+      activePanel={activePanel}
       onSwipeBack={() => routeNavigator.back()}
     >
       <Panel nav={id}>

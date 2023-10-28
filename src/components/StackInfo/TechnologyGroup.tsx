@@ -4,7 +4,6 @@ import {
 import { Button, Group, Header } from '@vkontakte/vkui';
 
 import Suspense from '../Suspense';
-import { UpdateDraggingList } from '../CustomList';
 
 import { Technology } from './data';
 
@@ -14,14 +13,12 @@ interface TechnologyGroupProps {
   id: string;
   title: string;
   draggingList: Technology[];
-  updateDraggingList: UpdateDraggingList;
 }
 
 const TechnologyGroup: FC<TechnologyGroupProps> = ({
   id,
   title,
   draggingList,
-  updateDraggingList,
 }) => {
   const storedOrientation = localStorage.getItem(`orientation${id}`);
   const [isHorizontal, setIsHorizontal] = useState<boolean>(storedOrientation === 'horizontal');
@@ -49,8 +46,6 @@ const TechnologyGroup: FC<TechnologyGroupProps> = ({
       <Suspense id={id}>
         <CustomList
           items={draggingList}
-          draggingList={draggingList}
-          updateDraggingList={updateDraggingList}
           isHorizontal={isHorizontal}
         />
       </Suspense>

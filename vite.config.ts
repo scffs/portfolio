@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
+import preact from '@preact/preset-vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    preact(),
   ],
   build: {
     sourcemap: false,
@@ -20,13 +20,6 @@ export default defineConfig({
       keep_classnames: false,
       keep_fnames: false,
       safari10: false,
-    },
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-        },
-      },
     },
   },
   resolve: {

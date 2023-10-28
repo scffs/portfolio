@@ -33,7 +33,7 @@ export const technologiesFront: Technology[] = [
   { name: 'TypeScript', logo: ts, level: 'Intermediate' },
   { name: 'Redux Toolkit', logo: redux, level: 'Intermediate' },
   { name: 'Vue', logo: vue, level: 'Beginner' },
-  { name: 'Styled Components', logo: styled, level: 'Beginner' },
+  { name: 'Styled Components', logo: styled, level: 'Advanced' },
   { name: 'Vite', logo: vite, level: 'Intermediate' },
   { name: 'VKUI', logo: vk, level: 'Intermediate' },
   { name: 'VK Bridge', logo: vk, level: 'Intermediate' },
@@ -43,12 +43,12 @@ export const technologiesBackend: Technology[] = [
   { name: 'NestJS', logo: nest, level: 'Beginner' },
   { name: 'MongoDB', logo: mongodb, level: 'Intermediate' },
   { name: 'MySQL', logo: mysql, level: 'Intermediate' },
-  { name: 'PostgreSQL', logo: postgres, level: 'Beginner' },
+  { name: 'PostgreSQL', logo: postgres, level: 'Intermediate' },
   { name: 'PHP', logo: php, level: 'Beginner' },
   { name: 'Redis', logo: redis, level: 'Beginner' },
-  { name: 'NodeJS / Express', logo: nodejs, level: 'Intermediate' },
+  { name: 'NodeJS', logo: nodejs, level: 'Intermediate' },
   { name: 'Fastify', logo: fastify, level: 'Beginner' },
-  { name: 'Bun', logo: bun, level: 'Beginner' },
+  { name: 'Bun', logo: bun, level: 'Intermediate' },
 ];
 
 export const technologiesOther: Technology[] = [

@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist",
     "predeploy": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -18,10 +18,12 @@
     "@vkontakte/vk-bridge": "^2.11.2",
     "@vkontakte/vk-mini-apps-router": "^1.1.1",
     "@vkontakte/vkui": "^5.7.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "preact": "^10.18.1",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
   },
   "devDependencies": {
+    "@preact/preset-vite": "^2.6.0",
     "@rollup/plugin-terser": "^0.4.3",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.11",
