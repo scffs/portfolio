@@ -838,10 +838,10 @@
   dependencies:
     "@swc/helpers" "^0.5.1"
 
-"@vkontakte/icons@^2.59.0", "@vkontakte/icons@^2.62.0":
-  version "2.72.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.72.0.tgz#2af0c747ba68dbe9f0a983f7467d022ae78decf5"
-  integrity sha512-jN4nVjZmpoLgq8OPvuTEtT5SBAzMDZcavVleSme72NeQnzm6tA/do3+I02ddTaKv4J4Y90AWr2epa+tstihHkg==
+"@vkontakte/icons@^2.62.0", "@vkontakte/icons@^2.82.0":
+  version "2.82.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.82.0.tgz#48ef7c1b64509c7d9bcfb2801a889b6eb8c5ebd5"
+  integrity sha512-TFSPPoyAKee78tvoOwJN9VprNkzFQm5zrOyuAyq29uIjaaHG3WWYYU4dNo1wmMZo8URRgK7gkcZgaQd+6nmXug==
   dependencies:
     "@vkontakte/icons-sprite" "2.0.0"
 
