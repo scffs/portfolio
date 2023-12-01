@@ -10,10 +10,10 @@ import { VIEW_PROFILE } from './routes';
 import { Pages } from './types';
 
 import Suspense from './components/Suspense';
+import ModalRoot from './components/ModalRoot';
 
 const Sidebar = lazy(() => import('./components/Sidebar'));
 const Epic = lazy(() => import('./components/Epic'));
-const ModalRoot = lazy(() => import('./components/ModalRoot'));
 
 const App = () => {
   const platform = usePlatform();
@@ -23,9 +23,9 @@ const App = () => {
   const { view: activeView = VIEW_PROFILE } = useActiveVkuiLocation();
   const routeNavigator = useRouteNavigator();
 
-  const onStoryChange = async (currentView: Pages) => {
+  const onStoryChange = useCallback(async (currentView: Pages) => {
     await routeNavigator.push(`/${currentView}`);
-  };
+  }, []);
 
   const modals = <ModalRoot />;
 
@@ -38,11 +38,21 @@ const App = () => {
   }, [appearance]);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+
     if (savedTheme) {
-      setAppearance(savedTheme as 'light' | 'dark');
+      setAppearance(savedTheme);
     }
   }, []);
+
+  const sidebar = viewWidth.tabletPlus && (
+    <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
+      {isVKCOM && <PanelHeader />}
+      <Suspense id='sidebar'>
+        <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
+      </Suspense>
+    </SplitCol>
+  );
 
   return (
     <ConfigProvider appearance={appearance}>
@@ -52,14 +62,7 @@ const App = () => {
           header={isVKCOM && <PanelHeader separator={false} />}
           style={{ justifyContent: 'center' }}
         >
-          {viewWidth.tabletPlus && (
-            <SplitCol className={viewWidth.tabletPlus.className} fixed width={280} maxWidth={280}>
-              {isVKCOM && <PanelHeader /> }
-              <Suspense id='sidebar'>
-                <Sidebar activeView={activeView as Pages} onStoryChange={onStoryChange} />
-              </Suspense>
-            </SplitCol>
-          )}
+          {sidebar}
           <SplitCol width='100%' maxWidth='600px' stretchedOnMobile autoSpaced>
             <Epic onStoryChange={onStoryChange} toggleAppearance={toggleAppearance} />
           </SplitCol>
