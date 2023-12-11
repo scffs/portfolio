@@ -35,7 +35,7 @@ export const technologiesFront: Technology[] = [
   { name: 'Vue', logo: vue, level: 'Beginner' },
   { name: 'Styled Components', logo: styled, level: 'Advanced' },
   { name: 'Vite', logo: vite, level: 'Intermediate' },
-  { name: 'VKUI', logo: vk, level: 'Intermediate' },
+  { name: 'VKUI', logo: vk, level: 'Intermediate' }
 ]
 
 export const technologiesBackend: Technology[] = [

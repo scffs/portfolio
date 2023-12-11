@@ -17,7 +17,6 @@ const SpinnerWrapper: FC<ISpinner> = ({ size, mode }) => {
       return <PanelSpinner size={size} />
     case 'screen':
       return <ScreenSpinner size={size} />
-    case 'default':
     default:
       return <Spinner size={size} />
   }

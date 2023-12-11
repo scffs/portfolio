@@ -11,7 +11,7 @@
     "predeploy": "tsc && vite build",
     "lint": "biome lint . --apply",
     "format": "biome format . --write",
-    "checkAll": "biome check . --apply",
+    "checkAll": "biome check . --apply-unsafe",
     "preview": "vite preview"
   },
   "dependencies": {
