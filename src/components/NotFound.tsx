@@ -28,7 +28,7 @@ const NotFound = () => {
   const routeNavigator = useRouteNavigator();
 
   return (
-    <AppearanceProvider appearance='dark'>
+    <AppearanceProvider value='dark'>
       <AppRoot>
         <Div style={notFoundStyle}>
           <h1 style={text}>404</h1>

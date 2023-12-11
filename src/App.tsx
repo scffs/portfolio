@@ -10,7 +10,6 @@ import { VIEW_PROFILE } from './routes';
 import { Pages } from './types';
 
 import Suspense from './components/Suspense';
-import ModalRoot from './components/ModalRoot';
 
 const Sidebar = lazy(() => import('./components/Sidebar'));
 const Epic = lazy(() => import('./components/Epic'));
@@ -26,8 +25,6 @@ const App = () => {
   const onStoryChange = useCallback(async (currentView: Pages) => {
     await routeNavigator.push(`/${currentView}`);
   }, []);
-
-  const modals = <ModalRoot />;
 
   const [appearance, setAppearance] = useState<'light' | 'dark'>('light');
 
@@ -58,7 +55,6 @@ const App = () => {
     <ConfigProvider appearance={appearance}>
       <AppRoot>
         <SplitLayout
-          modal={modals}
           header={isVKCOM && <PanelHeader separator={false} />}
           style={{ justifyContent: 'center' }}
         >

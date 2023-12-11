@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import {
-  Text, unstable_Popover as Popover, Subhead,
+  Text, Popover, Subhead,
 } from '@vkontakte/vkui';
 import { Icon16HelpOutline } from '@vkontakte/icons';
 
@@ -21,7 +21,7 @@ const ExplanationTooltip: FC<TooltipTextProps> = ({ text, tooltipContent }) => {
       {text}
       <Popover
         style={{ maxWidth: 220 }}
-        action='hover'
+        trigger='hover'
         content={textTooltip}
       >
         <Icon16HelpOutline

@@ -1,5 +1,5 @@
 # Portfolio
-Made by React / Vite / VKUI
+Made by Preact / Vite / VKUI
 
 # Installation
 
