@@ -1,27 +1,30 @@
-import { FC } from 'react';
-import {
-  Cell, Group, Panel,
-} from '@vkontakte/vkui';
 import {
   Icon24BracketsSlashOutline,
   Icon28MailOutline,
-  Icon28ServicesOutline, Icon28SettingsOutline,
-  Icon28UserCircleOutline,
-} from '@vkontakte/icons';
+  Icon28ServicesOutline,
+  Icon28SettingsOutline,
+  Icon28UserCircleOutline
+} from '@vkontakte/icons'
+import { Cell, Group, Panel } from '@vkontakte/vkui'
+import { FC } from 'react'
 import {
-  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_SETTINGS, VIEW_STACK,
-} from '../../routes';
-import { Pages } from '../../types';
+  VIEW_CONTACTS,
+  VIEW_PROFILE,
+  VIEW_PROJECTS,
+  VIEW_SETTINGS,
+  VIEW_STACK
+} from '../../routes'
+import { Pages } from '../../types'
 
 interface ISidebarProps {
-  activeView: Pages;
-  onStoryChange: (current: Pages) => void;
+  activeView: Pages
+  onStoryChange: (current: Pages) => void
 }
 
 const activeStoryStyles = {
   backgroundColor: 'var(--vkui--color_background_secondary)',
-  borderRadius: 8,
-};
+  borderRadius: 8
+}
 
 const Sidebar: FC<ISidebarProps> = ({ activeView, onStoryChange }) => (
   <Panel>
@@ -72,6 +75,6 @@ const Sidebar: FC<ISidebarProps> = ({ activeView, onStoryChange }) => (
       </Cell>
     </Group>
   </Panel>
-);
+)
 
-export default Sidebar;
+export default Sidebar

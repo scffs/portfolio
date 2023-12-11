@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react';
+import { CSSProperties } from 'react'
 
 export const styles: CSSProperties = {
   margin: 0,
@@ -8,13 +8,13 @@ export const styles: CSSProperties = {
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-  padding: 20,
-};
+  padding: 20
+}
 
 export const gradientBorder: CSSProperties = {
-  borderRadius: 10,
-};
+  borderRadius: 10
+}
 
 export const infoStyle: CSSProperties = {
-  display: 'flex',
-};
+  display: 'flex'
+}

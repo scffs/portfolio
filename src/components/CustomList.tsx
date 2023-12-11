@@ -1,29 +1,26 @@
-import React, { Dispatch, memo, SetStateAction } from 'react';
 import {
-  Cell, List, Image, HorizontalCell, HorizontalScroll,
-} from '@vkontakte/vkui';
+  Cell,
+  HorizontalCell,
+  HorizontalScroll,
+  Image,
+  List
+} from '@vkontakte/vkui'
+import React, { Dispatch, SetStateAction, memo } from 'react'
 
-import { Technology } from './StackInfo/data';
+import { Technology } from './StackInfo/data'
 
-export type UpdateDraggingList = Dispatch<SetStateAction<Technology[]>>;
+export type UpdateDraggingList = Dispatch<SetStateAction<Technology[]>>
 
 interface CustomListProps {
-  items: Technology[];
-  isHorizontal: boolean;
+  items: Technology[]
+  isHorizontal: boolean
 }
 
-const CustomList: React.FC<CustomListProps> = ({
-  items,
-  isHorizontal,
-}) => {
+const CustomList: React.FC<CustomListProps> = ({ items, isHorizontal }) => {
   const listContent = isHorizontal ? (
     <HorizontalScroll>
       <div style={{ display: 'flex' }}>
-        {items.map(({
-          level,
-          logo,
-          name,
-        }) => (
+        {items.map(({ level, logo, name }) => (
           <HorizontalCell
             key={name}
             subtitle={level}
@@ -41,28 +38,24 @@ const CustomList: React.FC<CustomListProps> = ({
       {items.map((item) => (
         <Cell
           key={item.name}
-          before={(
+          before={
             <Image
               style={{
                 boxSizing: 'border-box',
-                padding: 5,
+                padding: 5
               }}
               src={item.logo}
             />
-          )}
+          }
           after={item.level}
         >
           {item.name}
         </Cell>
       ))}
     </List>
-  );
+  )
 
-  return (
-    <div>
-      {listContent}
-    </div>
-  );
-};
+  return <div>{listContent}</div>
+}
 
-export default memo(CustomList);
+export default memo(CustomList)

@@ -1,16 +1,18 @@
-import { FC } from 'react';
-import { useActiveVkuiLocation } from '@vkontakte/vk-mini-apps-router';
-import { useAdaptivityConditionalRender } from '@vkontakte/vkui';
-import { Epic as VKUIEpic } from '@vkontakte/vkui/dist/components/Epic/Epic';
+import { useActiveVkuiLocation } from '@vkontakte/vk-mini-apps-router'
+import { useAdaptivityConditionalRender } from '@vkontakte/vkui'
+import { Epic as VKUIEpic } from '@vkontakte/vkui/dist/components/Epic/Epic'
+import { FC } from 'react'
 import {
-  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_SETTINGS, VIEW_STACK,
-} from '../../routes';
-import { Pages } from '../../types';
-import Tabbar from '../Tabbar';
-import Suspense from '../Suspense';
-import {
-  Contacts, Profile, Projects, Stack, Settings,
-} from '../../views';
+  VIEW_CONTACTS,
+  VIEW_PROFILE,
+  VIEW_PROJECTS,
+  VIEW_SETTINGS,
+  VIEW_STACK
+} from '../../routes'
+import { Pages } from '../../types'
+import { Contacts, Profile, Projects, Settings, Stack } from '../../views'
+import Suspense from '../Suspense'
+import Tabbar from '../Tabbar'
 
 interface IEpic {
   onStoryChange: (current: Pages) => void
@@ -18,17 +20,19 @@ interface IEpic {
 }
 
 const Epic: FC<IEpic> = ({ onStoryChange, toggleAppearance }) => {
-  const {
-    view: activeView = 'profile' as Pages,
-  } = useActiveVkuiLocation();
-  const { viewWidth } = useAdaptivityConditionalRender();
+  const { view: activeView = 'profile' as Pages } = useActiveVkuiLocation()
+  const { viewWidth } = useAdaptivityConditionalRender()
 
   return (
     <VKUIEpic
       activeStory={activeView}
       tabbar={
-        viewWidth.tabletMinus
-          && <Tabbar onStoryChange={onStoryChange} activeView={activeView as Pages} />
+        viewWidth.tabletMinus && (
+          <Tabbar
+            onStoryChange={onStoryChange}
+            activeView={activeView as Pages}
+          />
+        )
       }
     >
       <Suspense id={VIEW_STACK} mode='screen'>
@@ -47,7 +51,7 @@ const Epic: FC<IEpic> = ({ onStoryChange, toggleAppearance }) => {
         <Settings id={VIEW_SETTINGS} toggleAppearance={toggleAppearance} />
       </Suspense>
     </VKUIEpic>
-  );
-};
+  )
+}
 
-export default Epic;
+export default Epic

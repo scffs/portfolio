@@ -1,13 +1,13 @@
-import { lazy } from 'react';
-import { AdaptivityProvider } from '@vkontakte/vkui';
-import { RouterProvider } from '@vkontakte/vk-mini-apps-router';
+import { RouterProvider } from '@vkontakte/vk-mini-apps-router'
+import { AdaptivityProvider } from '@vkontakte/vkui'
+import { lazy } from 'react'
 
-import Suspense from './components/Suspense';
+import Suspense from './components/Suspense'
 
-import { router } from './routes';
+import { router } from './routes'
 
-const App = lazy(() => import('./App'));
-const NotFound = lazy(() => import('./components/NotFound'));
+const App = lazy(() => import('./App'))
+const NotFound = lazy(() => import('./components/NotFound'))
 
 const AppWrapper = () => (
   <AdaptivityProvider>
@@ -17,6 +17,6 @@ const AppWrapper = () => (
       </Suspense>
     </RouterProvider>
   </AdaptivityProvider>
-);
+)
 
-export default AppWrapper;
+export default AppWrapper

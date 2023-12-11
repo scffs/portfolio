@@ -1,56 +1,60 @@
-import {
-  FC, lazy, memo, useState, useEffect,
-} from 'react';
-import { Button, Group, Header } from '@vkontakte/vkui';
+import { Button, Group, Header } from '@vkontakte/vkui'
+import { FC, lazy, memo, useEffect, useState } from 'react'
 
-import Suspense from '../Suspense';
+import Suspense from '../Suspense'
 
-import { Technology } from './data';
+import { Technology } from './data'
 
-const CustomList = lazy(() => import('../CustomList'));
+const CustomList = lazy(() => import('../CustomList'))
 
 interface TechnologyGroupProps {
-  id: string;
-  title: string;
-  draggingList: Technology[];
+  id: string
+  title: string
+  draggingList: Technology[]
 }
 
 const TechnologyGroup: FC<TechnologyGroupProps> = ({
   id,
   title,
-  draggingList,
+  draggingList
 }) => {
-  const storedOrientation = localStorage.getItem(`orientation${id}`);
-  const [isHorizontal, setIsHorizontal] = useState<boolean>(storedOrientation === 'horizontal');
+  const storedOrientation = localStorage.getItem(`orientation${id}`)
+  const [isHorizontal, setIsHorizontal] = useState<boolean>(
+    storedOrientation === 'horizontal'
+  )
 
   useEffect(() => {
-    localStorage.setItem(`orientation${id}`, isHorizontal ? 'horizontal' : 'vertical');
-  }, [isHorizontal]);
+    localStorage.setItem(
+      `orientation${id}`,
+      isHorizontal ? 'horizontal' : 'vertical'
+    )
+  }, [isHorizontal])
 
   const header = (
     <Header
       style={{ marginBottom: 10 }}
       mode='secondary'
-      aside={(
-        <Button size='s' appearance='neutral' onClick={() => setIsHorizontal((prevState) => !prevState)}>
+      aside={
+        <Button
+          size='s'
+          appearance='neutral'
+          onClick={() => setIsHorizontal((prevState) => !prevState)}
+        >
           Изменить ориентацию
         </Button>
-      )}
+      }
     >
       {title}
     </Header>
-  );
+  )
 
   return (
     <Group header={header}>
       <Suspense id={id}>
-        <CustomList
-          items={draggingList}
-          isHorizontal={isHorizontal}
-        />
+        <CustomList items={draggingList} isHorizontal={isHorizontal} />
       </Suspense>
     </Group>
-  );
-};
+  )
+}
 
-export default memo(TechnologyGroup);
+export default memo(TechnologyGroup)

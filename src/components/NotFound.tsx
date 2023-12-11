@@ -1,8 +1,6 @@
-import { CSSProperties } from 'react';
-import {
-  AppearanceProvider, AppRoot, Button, Div,
-} from '@vkontakte/vkui';
-import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
+import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router'
+import { AppRoot, AppearanceProvider, Button, Div } from '@vkontakte/vkui'
+import { CSSProperties } from 'react'
 
 const notFoundStyle: CSSProperties = {
   display: 'flex',
@@ -11,8 +9,8 @@ const notFoundStyle: CSSProperties = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  textAlign: 'center',
-};
+  textAlign: 'center'
+}
 
 const text: CSSProperties = {
   padding: '0px 8px',
@@ -21,11 +19,11 @@ const text: CSSProperties = {
   color: 'rgb(63, 138, 224)',
   background: 'rgba(63, 138, 224, 0.08)',
   borderRadius: 8,
-  marginBottom: 40,
-};
+  marginBottom: 40
+}
 
 const NotFound = () => {
-  const routeNavigator = useRouteNavigator();
+  const routeNavigator = useRouteNavigator()
 
   return (
     <AppearanceProvider value='dark'>
@@ -44,7 +42,7 @@ const NotFound = () => {
         </Div>
       </AppRoot>
     </AppearanceProvider>
-  );
-};
+  )
+}
 
-export default NotFound;
+export default NotFound

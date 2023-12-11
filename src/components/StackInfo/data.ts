@@ -1,30 +1,30 @@
-import react from '../../assets/react.svg';
-import js from '../../assets/js.png';
-import ts from '../../assets/ts.svg';
-import redux from '../../assets/redux.svg';
-import vue from '../../assets/vue.svg';
-import styled from '../../assets/styled-components.svg';
-import vite from '../../assets/vite.png';
-import vk from '../../assets/vk.svg';
-import nest from '../../assets/nest.png';
-import charp from '../../assets/charp.png';
-import mongodb from '../../assets/mongodb.svg';
-import mysql from '../../assets/mysql.svg';
-import php from '../../assets/php.svg';
-import redis from '../../assets/redis.png';
-import nodejs from '../../assets/nodejs.svg';
-import docker from '../../assets/docker.png';
-import kuber from '../../assets/kuber.png';
-import postgres from '../../assets/postgresql.svg';
-import python from '../../assets/python.svg';
-import bun from '../../assets/bun.png';
-import fastify from '../../assets/fastify.png';
-import go from '../../assets/go.png';
+import bun from '../../assets/bun.png'
+import charp from '../../assets/charp.png'
+import docker from '../../assets/docker.png'
+import fastify from '../../assets/fastify.png'
+import go from '../../assets/go.png'
+import js from '../../assets/js.png'
+import kuber from '../../assets/kuber.png'
+import mongodb from '../../assets/mongodb.svg'
+import mysql from '../../assets/mysql.svg'
+import nest from '../../assets/nest.png'
+import nodejs from '../../assets/nodejs.svg'
+import php from '../../assets/php.svg'
+import postgres from '../../assets/postgresql.svg'
+import python from '../../assets/python.svg'
+import react from '../../assets/react.svg'
+import redis from '../../assets/redis.png'
+import redux from '../../assets/redux.svg'
+import styled from '../../assets/styled-components.svg'
+import ts from '../../assets/ts.svg'
+import vite from '../../assets/vite.png'
+import vk from '../../assets/vk.svg'
+import vue from '../../assets/vue.svg'
 
 export interface Technology {
-  name: string;
-  logo: string;
-  level: string;
+  name: string
+  logo: string
+  level: string
 }
 
 export const technologiesFront: Technology[] = [
@@ -36,8 +36,7 @@ export const technologiesFront: Technology[] = [
   { name: 'Styled Components', logo: styled, level: 'Advanced' },
   { name: 'Vite', logo: vite, level: 'Intermediate' },
   { name: 'VKUI', logo: vk, level: 'Intermediate' },
-  { name: 'VK Bridge', logo: vk, level: 'Intermediate' },
-];
+]
 
 export const technologiesBackend: Technology[] = [
   { name: 'NestJS', logo: nest, level: 'Beginner' },
@@ -48,13 +47,13 @@ export const technologiesBackend: Technology[] = [
   { name: 'Redis', logo: redis, level: 'Beginner' },
   { name: 'NodeJS', logo: nodejs, level: 'Intermediate' },
   { name: 'Fastify', logo: fastify, level: 'Beginner' },
-  { name: 'Bun', logo: bun, level: 'Intermediate' },
-];
+  { name: 'Bun', logo: bun, level: 'Intermediate' }
+]
 
 export const technologiesOther: Technology[] = [
   { name: 'C# / WPF', logo: charp, level: 'Advanced' },
   { name: 'Docker', logo: docker, level: 'Beginner' },
   { name: 'Kubernetes', logo: kuber, level: 'Beginner' },
   { name: 'Python', logo: python, level: 'Intermediate' },
-  { name: 'Go', logo: go, level: 'Beginner' },
-];
+  { name: 'Go', logo: go, level: 'Beginner' }
+]

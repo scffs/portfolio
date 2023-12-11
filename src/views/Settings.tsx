@@ -1,74 +1,91 @@
-import { FC, useEffect, useState } from 'react';
+import { Icon28ClearDataOutline } from '@vkontakte/icons'
 import {
-  Cell, CellButton, Group, Header, Panel, Subhead, View,
-} from '@vkontakte/vkui';
-import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
-import { Icon28ClearDataOutline } from '@vkontakte/icons';
+  useActiveVkuiLocation,
+  useRouteNavigator
+} from '@vkontakte/vk-mini-apps-router'
+import {
+  Cell,
+  CellButton,
+  Group,
+  Header,
+  Panel,
+  Subhead,
+  View
+} from '@vkontakte/vkui'
+import { FC, useEffect, useState } from 'react'
 
-import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
-import ToggleTheme from '../components/ToggleTheme';
+import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
+import ToggleTheme from '../components/ToggleTheme'
 
 const formatKeyText = (key: string) => {
   if (key.startsWith('orientation')) {
-    const orientationType = key.replace('orientation', '').toLowerCase();
-    return `Ориентация ${orientationType}`;
+    const orientationType = key.replace('orientation', '').toLowerCase()
+    return `Ориентация ${orientationType}`
   }
   if (key === 'theme') {
-    return 'Тема';
+    return 'Тема'
   }
-  return key;
-};
+  return key
+}
 
 interface ISettings {
-  id: string,
+  id: string
   toggleAppearance: () => void
 }
 
 const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
-  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
-  const routeNavigator = useRouteNavigator();
+  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation()
+  const routeNavigator = useRouteNavigator()
 
-  const [cacheData, setCacheData] = useState<{ key: string; value: string }[]>([]);
+  const [cacheData, setCacheData] = useState<{ key: string; value: string }[]>(
+    []
+  )
 
   useEffect(() => {
-    const allKeys = Object.keys(localStorage);
+    const allKeys = Object.keys(localStorage)
 
-    const getCache = allKeys.map((key) => ({ key, value: localStorage.getItem(key) || 'false' }));
-    setCacheData(getCache);
-  }, []);
+    const getCache = allKeys.map((key) => ({
+      key,
+      value: localStorage.getItem(key) || 'false'
+    }))
+    setCacheData(getCache)
+  }, [])
 
   useEffect(() => {
     const handleStorageChange = (event: StorageEvent) => {
       if (event.key) {
-        setCacheData((prevCacheData) => prevCacheData.map((item) => ({
-          key: item.key,
-          value: item.key === event.key ? event.newValue || 'false' : item.value,
-        })));
+        setCacheData((prevCacheData) =>
+          prevCacheData.map((item) => ({
+            key: item.key,
+            value:
+              item.key === event.key ? event.newValue || 'false' : item.value
+          }))
+        )
       }
-    };
+    }
 
     const handleThemeChange = () => {
-      const allKeys = Object.keys(localStorage);
+      const allKeys = Object.keys(localStorage)
       const getCache = allKeys.map((key) => ({
         key,
-        value: localStorage.getItem(key) || 'false',
-      }));
-      setCacheData(getCache);
-    };
+        value: localStorage.getItem(key) || 'false'
+      }))
+      setCacheData(getCache)
+    }
 
-    window.addEventListener('storage', handleStorageChange);
-    window.addEventListener('themeChanged', handleThemeChange);
+    window.addEventListener('storage', handleStorageChange)
+    window.addEventListener('themeChanged', handleThemeChange)
 
     return () => {
-      window.removeEventListener('storage', handleStorageChange);
-      window.removeEventListener('themeChanged', handleThemeChange);
-    };
-  }, []);
+      window.removeEventListener('storage', handleStorageChange)
+      window.removeEventListener('themeChanged', handleThemeChange)
+    }
+  }, [])
 
   const clearCache = () => {
-    localStorage.clear();
-    setCacheData([]);
-  };
+    localStorage.clear()
+    setCacheData([])
+  }
 
   return (
     <View
@@ -81,16 +98,19 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
         <PanelHeaderWithBack title='Настройки' />
         <Group header={<Header mode='secondary'>Внешний вид</Header>}>
           <ToggleTheme toggleAppearance={toggleAppearance} />
-          <CellButton
-            before={<Icon28ClearDataOutline />}
-            onClick={clearCache}
-          >
+          <CellButton before={<Icon28ClearDataOutline />} onClick={clearCache}>
             Очистить кеш
           </CellButton>
         </Group>
         <Group
-          header={(
-            <Header mode='secondary' aside={<Subhead>Хранится в LocalStorage</Subhead>}>Кеш</Header>)}
+          header={
+            <Header
+              mode='secondary'
+              aside={<Subhead>Хранится в LocalStorage</Subhead>}
+            >
+              Кеш
+            </Header>
+          }
         >
           {cacheData.map((item) => (
             <Cell key={item.key} indicator={item.value}>
@@ -100,7 +120,7 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
         </Group>
       </Panel>
     </View>
-  );
-};
+  )
+}
 
-export default Settings;
+export default Settings
