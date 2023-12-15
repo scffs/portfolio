@@ -1,1 +1,1 @@
-export type Pages = 'profile' | 'stack' | 'contacts' | 'projects' | 'settings';
+export type Pages = 'profile' | 'stack' | 'contacts' | 'projects' | 'settings'

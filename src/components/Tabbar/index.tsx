@@ -1,25 +1,34 @@
-import { FC } from 'react';
-import { Tabbar as VKUITabbar, TabbarItem, useAdaptivityConditionalRender } from '@vkontakte/vkui';
+import {
+  Tabbar as VKUITabbar,
+  TabbarItem,
+  useAdaptivityConditionalRender
+} from '@vkontakte/vkui'
+import { FC } from 'react'
 
 import {
   Icon28MailOutline,
   Icon28NewsfeedOutline,
-  Icon28ServicesOutline, Icon28SettingsOutline,
-  Icon28UserCircleOutline,
-} from '@vkontakte/icons';
+  Icon28ServicesOutline,
+  Icon28SettingsOutline,
+  Icon28UserCircleOutline
+} from '@vkontakte/icons'
 
 import {
-  VIEW_CONTACTS, VIEW_PROFILE, VIEW_PROJECTS, VIEW_SETTINGS, VIEW_STACK,
-} from '../../routes';
-import { Pages } from '../../types';
+  VIEW_CONTACTS,
+  VIEW_PROFILE,
+  VIEW_PROJECTS,
+  VIEW_SETTINGS,
+  VIEW_STACK
+} from '../../routes'
+import { Pages } from '../../types'
 
 interface ITabbar {
-  onStoryChange: (current: Pages) => void;
-  activeView: Pages;
+  onStoryChange: (current: Pages) => void
+  activeView: Pages
 }
 
 const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
-  const { viewWidth } = useAdaptivityConditionalRender();
+  const { viewWidth } = useAdaptivityConditionalRender()
 
   return (
     viewWidth.tabletMinus && (
@@ -66,7 +75,7 @@ const Tabbar: FC<ITabbar> = ({ onStoryChange, activeView }) => {
         </TabbarItem>
       </VKUITabbar>
     )
-  );
-};
+  )
+}
 
-export default Tabbar;
+export default Tabbar

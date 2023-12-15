@@ -1,8 +1,6 @@
-import { lazy } from 'react';
+import { lazy } from 'react'
 
-const UserInfo = lazy(() => import('./UserInfo'));
-const UserStory = lazy(() => import('./UserStory'));
+const UserInfo = lazy(() => import('./UserInfo'))
+const UserStory = lazy(() => import('./UserStory'))
 
-export {
-  UserInfo, UserStory,
-};
+export { UserInfo, UserStory }

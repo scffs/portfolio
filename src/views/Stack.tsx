@@ -1,21 +1,24 @@
-import { FC } from 'react';
 import {
-  Panel, View,
-} from '@vkontakte/vkui';
-import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
+  useActiveVkuiLocation,
+  useRouteNavigator
+} from '@vkontakte/vk-mini-apps-router'
+import { Panel, View } from '@vkontakte/vkui'
+import { FC } from 'react'
 
-import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
-import ExplanationGroup from '../components/StackInfo/ExplanationGroup';
+import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
+import ExplanationGroup from '../components/StackInfo/ExplanationGroup'
 
+import TechnologyGroup from '../components/StackInfo/TechnologyGroup'
 import {
-  technologiesBackend, technologiesFront, technologiesOther,
-} from '../components/StackInfo/data';
-import TechnologyGroup from '../components/StackInfo/TechnologyGroup';
+  technologiesBackend,
+  technologiesFront,
+  technologiesOther
+} from '../components/StackInfo/data'
 
 const Stack: FC<{ id: string }> = ({ id }) => {
-  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
+  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation()
 
-  const routeNavigator = useRouteNavigator();
+  const routeNavigator = useRouteNavigator()
   return (
     <View
       id={id}
@@ -43,7 +46,7 @@ const Stack: FC<{ id: string }> = ({ id }) => {
         />
       </Panel>
     </View>
-  );
-};
+  )
+}
 
-export default Stack;
+export default Stack

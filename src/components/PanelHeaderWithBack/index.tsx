@@ -1,12 +1,16 @@
-import { FC } from 'react';
-import { PanelHeader, PanelHeaderBack } from '@vkontakte/vkui';
-import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
+import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router'
+import { PanelHeader, PanelHeaderBack } from '@vkontakte/vkui'
+import { FC } from 'react'
 
 const PanelHeaderWithBack: FC<{ title: string }> = ({ title }) => {
-  const routeNavigator = useRouteNavigator();
+  const routeNavigator = useRouteNavigator()
   return (
-    <PanelHeader before={<PanelHeaderBack onClick={() => routeNavigator.back()} />}>{title}</PanelHeader>
-  );
-};
+    <PanelHeader
+      before={<PanelHeaderBack onClick={() => routeNavigator.back()} />}
+    >
+      {title}
+    </PanelHeader>
+  )
+}
 
-export default PanelHeaderWithBack;
+export default PanelHeaderWithBack

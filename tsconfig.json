@@ -20,6 +20,10 @@
     "allowSyntheticDefaultImports": true,
     "noEmitOnError": false,
     "ignoreDeprecations": "5.0",
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

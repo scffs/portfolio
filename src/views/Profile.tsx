@@ -1,16 +1,17 @@
-import { FC } from 'react';
 import {
-  Div, Group, Panel, Separator, View,
-} from '@vkontakte/vkui';
-import { useActiveVkuiLocation, useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
+  useActiveVkuiLocation,
+  useRouteNavigator
+} from '@vkontakte/vk-mini-apps-router'
+import { Div, Group, Panel, Separator, View } from '@vkontakte/vkui'
+import { FC } from 'react'
 
-import PanelHeaderWithBack from '../components/PanelHeaderWithBack';
-import { UserInfo, UserStory } from '../components/ProfileInfo';
-import Suspense from '../components/Suspense';
+import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
+import { UserInfo, UserStory } from '../components/ProfileInfo'
+import Suspense from '../components/Suspense'
 
 const Profile: FC<{ id: string }> = ({ id }) => {
-  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation();
-  const routeNavigator = useRouteNavigator();
+  const { panel: activePanel, panelsHistory } = useActiveVkuiLocation()
+  const routeNavigator = useRouteNavigator()
 
   return (
     <View
@@ -36,7 +37,7 @@ const Profile: FC<{ id: string }> = ({ id }) => {
         </Group>
       </Panel>
     </View>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile
