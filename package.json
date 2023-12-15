@@ -24,7 +24,7 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.7.0",
     "@rollup/plugin-terser": "^0.4.3",
-    "@vitejs/plugin-react": "^4.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "gh-pages": "^6.1.0",
     "@biomejs/biome": "1.4.1",
