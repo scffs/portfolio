@@ -42,9 +42,11 @@ const UserStory = () => (
           <Accordion.Summary iconPosition='before'>
             {item.title}
           </Accordion.Summary>
-          <Div>
-            <Paragraph style={{ lineHeight: 1.7 }}>{item.content}</Paragraph>
-          </Div>
+          <Accordion.Content>
+            <Div>
+              <Paragraph style={{ lineHeight: 1.7 }}>{item.content}</Paragraph>
+            </Div>
+          </Accordion.Content>
         </Accordion>
       ))}
     </Div>
