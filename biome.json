@@ -23,10 +23,7 @@
     },
     "ignore": [
       "dist",
-      "node_modules",
-      "./apps/api/dist",
-      "./apps/web/dist",
-      "bun.lockb"
+      "node_modules"
     ]
   }
 }
