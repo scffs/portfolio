@@ -1,28 +1,30 @@
-import bun from '../../assets/bun.png'
-import charp from '../../assets/charp.png'
-import docker from '../../assets/docker.png'
-import fastify from '../../assets/fastify.png'
-import rust from '../../assets/rust.png'
-import go from '../../assets/go.png'
-import js from '../../assets/js.png'
-import kuber from '../../assets/kuber.png'
-import mongodb from '../../assets/mongodb.svg'
-import mysql from '../../assets/mysql.svg'
-import nest from '../../assets/nest.png'
-import nodejs from '../../assets/nodejs.svg'
-import php from '../../assets/php.svg'
-import postgres from '../../assets/postgresql.svg'
-import python from '../../assets/python.svg'
-import react from '../../assets/react.svg'
-import redis from '../../assets/redis.png'
-import redux from '../../assets/redux.svg'
-import styled from '../../assets/styled-components.svg'
-import ts from '../../assets/ts.svg'
-import vite from '../../assets/vite.png'
-import vk from '../../assets/vk.svg'
-import vue from '../../assets/vue.svg'
-import elysia from '../../assets/elysia.svg'
-import zustand from '../../assets/zustand.png'
+import {
+  bun,
+  charp,
+  docker,
+  elysia,
+  fastify,
+  go,
+  js,
+  kuber,
+  mongodb,
+  mysql,
+  nest,
+  nodejs,
+  php,
+  postgres,
+  python,
+  react,
+  redis,
+  redux,
+  rust,
+  styled,
+  ts,
+  vite,
+  vk,
+  vue,
+  zustand
+} from '../../assets/technologies.ts'
 
 export interface Technology {
   name: string
@@ -61,5 +63,5 @@ export const technologiesOther: Technology[] = [
   { name: 'Docker', logo: docker, level: 'Beginner' },
   { name: 'Python', logo: python, level: 'Intermediate' },
   { name: 'Go', logo: go, level: 'Too small' },
-  { name: 'Kubernetes', logo: kuber, level: 'Beginner' },
+  { name: 'Kubernetes', logo: kuber, level: 'Beginner' }
 ]
