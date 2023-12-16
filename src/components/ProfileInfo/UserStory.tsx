@@ -1,36 +1,11 @@
-import {
-  Accordion,
-  Div,
-  Gradient,
-  Header,
-  HorizontalCell,
-  HorizontalScroll,
-  InfoRow,
-  Paragraph,
-  Spacing
-} from '@vkontakte/vkui'
+import { Accordion, Div, Gradient, Paragraph, Spacing } from '@vkontakte/vkui'
 
-import { gradientBorder, infoStyle } from './styles'
+import { gradientBorder } from './styles'
 
-import { userInfoItems, userStoryContent } from './data'
+import { userStoryContent } from './data'
 
 const UserStory = () => (
   <Gradient style={gradientBorder}>
-    <Header mode='secondary'>Основная информация</Header>
-    <HorizontalScroll
-      showArrows
-      style={infoStyle}
-      getScrollToLeft={(i) => i - 120}
-      getScrollToRight={(i) => i + 120}
-    >
-      <div style={{ display: 'flex', gap: 10 }}>
-        {userInfoItems.map((item) => (
-          <HorizontalCell key={item.label} style={{ maxWidth: 'unset' }}>
-            <InfoRow header={item.label}>{item.value}</InfoRow>
-          </HorizontalCell>
-        ))}
-      </div>
-    </HorizontalScroll>
     <Div>
       <Paragraph>
         Привет! Моё имя выше, а тут будет мелкая история о том, как и когда я
