@@ -22,7 +22,7 @@
     "preact": "^10.19.3"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.7.0",
+    "@preact/preset-vite": "^2.8.1",
     "@rollup/plugin-terser": "^0.4.3",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
