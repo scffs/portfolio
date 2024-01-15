@@ -15,7 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vkontakte/icons": "^2.90.0",
+    "@vkontakte/icons": "^2.92.0",
     "@vkontakte/vk-bridge": "^2.12.2",
     "@vkontakte/vk-mini-apps-router": "^1.3.2",
     "@vkontakte/vkui": "^6.0.0-beta.3",
