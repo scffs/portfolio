@@ -29,7 +29,7 @@ import {
   VKUI_URL
 } from '../../../constants'
 import { VIEW_PROJECTS, VIEW_STACK } from '../../../routes'
-import LinkWithImage from "./LinkWithImage.tsx";
+import LinkWithImage from './LinkWithImage.tsx'
 
 export const userInfoItems = [
   {
