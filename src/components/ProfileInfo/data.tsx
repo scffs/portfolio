@@ -117,8 +117,8 @@ export const userStoryContent = [
         />
         ). Мне больше нравится Frontend, но на работе я пишу и Backend часть
         (что поделать).
-        <Spacing size={16} />
-        В свободное от работы время я могу решать алгоритмические задачки на{' '}
+        <Spacing size={16} />В свободное от работы время я могу решать
+        алгоритмические задачки на{' '}
         <LinkWithImage
           linkText='Leetcode'
           href={LEETCODE_URL}
