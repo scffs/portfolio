@@ -1,3 +1,4 @@
+import { ScreenSpinner } from '@vkontakte/vkui'
 import { render } from 'preact'
 import { Suspense, lazy } from 'react'
 
@@ -8,7 +9,7 @@ const AppWrapper = lazy(() => import('./AppWrapper'))
 
 const domNode = document.getElementById('root')
 const App = (
-  <Suspense>
+  <Suspense fallback={<ScreenSpinner />}>
     <AppWrapper />
   </Suspense>
 )

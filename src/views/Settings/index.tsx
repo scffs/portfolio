@@ -13,9 +13,8 @@ import {
   View
 } from '@vkontakte/vkui'
 import { FC, useEffect, useState } from 'react'
-
-import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
-import ToggleTheme from '../components/ToggleTheme'
+import PanelHeaderWithBack from '../../components/PanelHeaderWithBack'
+import ToggleTheme from './ToggleTheme.tsx'
 
 const formatKeyText = (key: string) => {
   if (key.startsWith('orientation')) {
@@ -106,7 +105,7 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
           header={
             <Header
               mode='secondary'
-              aside={<Subhead>Хранится в LocalStorage</Subhead>}
+              aside={<Subhead Component='h5'>Хранится в LocalStorage</Subhead>}
             >
               Кеш
             </Header>

@@ -5,6 +5,18 @@ import {
 } from '@vkontakte/icons'
 import { Avatar, Div, Link, Spacing } from '@vkontakte/vkui'
 import {
+  avaKot,
+  avaVKT,
+  github,
+  habr,
+  leetcode,
+  mdn,
+  python,
+  react,
+  vk
+} from '../../../assets/technologies.ts'
+import Flex from '../../../components/Flex.tsx'
+import {
   GITHUB_URL,
   HABR_URL,
   KOTBREAD_URL,
@@ -15,22 +27,9 @@ import {
   TEPT_URL,
   VKT_URL,
   VKUI_URL
-} from '../../constants'
-import Flex from '../Flex'
-
-import LinkWithImage from '../LinkWithImage'
-
-import github from '../../assets/github.svg'
-import habr from '../../assets/habr.svg'
-import avaKot from '../../assets/kot.png'
-import leetcode from '../../assets/leetcode.svg'
-import avaVKT from '../../assets/logovkt.webp'
-import mdn from '../../assets/mdn.svg'
-import python from '../../assets/python.png'
-import react from '../../assets/react.svg'
-import vkui from '../../assets/vk.svg'
-
-import { VIEW_PROJECTS, VIEW_STACK } from '../../routes'
+} from '../../../constants'
+import { VIEW_PROJECTS, VIEW_STACK } from '../../../routes'
+import LinkWithImage from './LinkWithImage.tsx'
 
 export const userInfoItems = [
   {
@@ -117,8 +116,8 @@ export const userStoryContent = [
         />
         ). Мне больше нравится Frontend, но на работе я пишу и Backend часть
         (что поделать).
-        <Spacing size={16} />
-        В свободное от работы время я могу решать алгоритмические задачки на{' '}
+        <Spacing size={16} />В свободное от работы время я могу решать
+        алгоритмические задачки на{' '}
         <LinkWithImage
           linkText='Leetcode'
           href={LEETCODE_URL}
@@ -152,7 +151,7 @@ export const userStoryContent = [
         прошлом был модератором и участником крупнейшей веб-документации{' '}
         <LinkWithImage linkText='MDN' href={MDN_URL} icon={mdn} /> и других
         крупных OpenSource проектов, например,
-        <LinkWithImage linkText='VKUI' href={VKUI_URL} icon={vkui} /> и
+        <LinkWithImage linkText='VKUI' href={VKUI_URL} icon={vk} /> и
         {/* Логотип реакта не квадратный, поэтому для полного отображения изменяю ширину */}
         <LinkWithImage
           linkText='React'

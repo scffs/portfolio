@@ -12,15 +12,12 @@ import {
   useAdaptivityConditionalRender,
   usePlatform
 } from '@vkontakte/vkui'
-import { lazy, useCallback, useEffect, useState } from 'react'
-
-import { VIEW_PROFILE } from './routes'
-import { Pages } from './types'
-
-import Suspense from './components/Suspense'
-
-const Sidebar = lazy(() => import('./components/Sidebar'))
-const Epic = lazy(() => import('./components/Epic'))
+import { useCallback, useEffect, useState } from 'react'
+import Suspense from '../../components/Suspense.tsx'
+import { VIEW_PROFILE } from '../../routes'
+import { Pages } from '../../types'
+import Epic from './Epic.tsx'
+import Sidebar from './Sidebar.tsx'
 
 const App = () => {
   const platform = usePlatform()
@@ -71,7 +68,7 @@ const App = () => {
     <ConfigProvider appearance={appearance}>
       <AppRoot>
         <SplitLayout
-          header={isVKCOM && <PanelHeader separator={false} />}
+          header={isVKCOM && <PanelHeader delimiter='none' />}
           style={{ justifyContent: 'center' }}
         >
           {sidebar}

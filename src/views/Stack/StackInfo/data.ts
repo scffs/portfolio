@@ -24,7 +24,7 @@ import {
   vk,
   vue,
   zustand
-} from '../../assets/technologies.ts'
+} from '../../../assets/technologies.ts'
 
 export interface Technology {
   name: string

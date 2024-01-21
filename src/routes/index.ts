@@ -3,18 +3,18 @@ import {
   createHashRouter
 } from '@vkontakte/vk-mini-apps-router'
 
-export const PAGE_MAIN = '/'
-export const PAGE_PROFILE = '/profile'
-export const PAGE_CONTACTS = '/contacts'
-export const PAGE_PROJECTS = '/projects'
-export const PAGE_STACK = '/stack'
-export const PAGE_SETTINGS = '/settings'
-
 export const VIEW_PROFILE = 'profile'
 export const VIEW_CONTACTS = 'contacts'
 export const VIEW_PROJECTS = 'projects'
 export const VIEW_STACK = 'stack'
 export const VIEW_SETTINGS = 'settings'
+
+export const PAGE_MAIN = '/'
+export const PAGE_PROFILE = `/${VIEW_PROFILE}`
+export const PAGE_CONTACTS = `/${VIEW_CONTACTS}`
+export const PAGE_PROJECTS = `/${VIEW_PROJECTS}`
+export const PAGE_STACK = `/${VIEW_STACK}`
+export const PAGE_SETTINGS = `/${VIEW_SETTINGS}`
 
 const routes: RouteWithoutRoot[] = [
   {

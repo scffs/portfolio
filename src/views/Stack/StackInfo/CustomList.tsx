@@ -5,12 +5,8 @@ import {
   Image,
   List
 } from '@vkontakte/vkui'
-import React, { Dispatch, SetStateAction, memo } from 'react'
-
-import { Technology } from './StackInfo/data'
-
-export type UpdateDraggingList = Dispatch<SetStateAction<Technology[]>>
-
+import React, { memo } from 'react'
+import { Technology } from './data.ts'
 interface CustomListProps {
   items: Technology[]
   isHorizontal: boolean

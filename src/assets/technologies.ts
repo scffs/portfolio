@@ -1,11 +1,18 @@
+import ava from './avaSmall.jpg'
 import bun from './bun.png'
 import charp from './charp.png'
 import docker from './docker.png'
 import elysia from './elysia.svg'
 import fastify from './fastify.png'
+import github from './github.svg'
 import go from './go.png'
+import habr from './habr.svg'
 import js from './js.png'
+import avaKot from './kot.png'
 import kuber from './kuber.png'
+import leetcode from './leetcode.svg'
+import avaVKT from './logovkt.webp'
+import mdn from './mdn.svg'
 import mongodb from './mongodb.svg'
 import mysql from './mysql.svg'
 import nest from './nest.png'
@@ -25,6 +32,11 @@ import vue from './vue.svg'
 import zustand from './zustand.png'
 
 export {
+  mdn,
+  habr,
+  avaVKT,
+  avaKot,
+  ava,
   bun,
   charp,
   docker,
@@ -46,7 +58,9 @@ export {
   styled,
   ts,
   vite,
+  leetcode,
   vk,
+  github,
   vue,
   elysia,
   zustand
