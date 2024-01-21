@@ -1,6 +1,5 @@
 import { Div, Group, Header } from '@vkontakte/vkui'
-
-import ExplanationTooltip from '../ExplanationTooltip'
+import ExplanationTooltip from '../../../components/ExplanationTooltip.tsx'
 
 const ExplanationGroup = () => (
   <Group header={<Header>Пояснение</Header>}>

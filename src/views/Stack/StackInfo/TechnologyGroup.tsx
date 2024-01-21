@@ -1,11 +1,10 @@
 import { Button, Group, Header } from '@vkontakte/vkui'
 import { FC, lazy, memo, useEffect, useState } from 'react'
 
-import Suspense from '../Suspense'
-
+import Suspense from '../../../components/Suspense.tsx'
 import { Technology } from './data'
 
-const CustomList = lazy(() => import('../CustomList'))
+const CustomList = lazy(() => import('./CustomList'))
 
 interface TechnologyGroupProps {
   id: string

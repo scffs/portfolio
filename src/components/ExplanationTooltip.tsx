@@ -11,6 +11,7 @@ const ExplanationTooltip: FC<TooltipTextProps> = ({ text, tooltipContent }) => {
   const textTooltip = (
     <Subhead
       style={{ padding: '8px 12px', color: 'var(--vkui--color_text_primary)' }}
+      Component='h5'
     >
       {tooltipContent}
     </Subhead>

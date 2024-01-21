@@ -45,6 +45,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
               subtitle='React, TypeScript etc...'
               header='Gatto'
               caption="Gatto - это большая, яркая и увлекательная игра. По типу напоминает 'тамагочи' - есть прокачка персонажей, различные локации и элементы скрещивания."
+              headerComponent='h4'
             />
             <ContentCard
               onClick={() => window.open('https://vk.com/diary_spo', '_blank')}
@@ -53,6 +54,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
               subtitle='Preact, TypeScript, VKUI etc...'
               header='Дневник СПО'
               caption='Обёртка над дневником Сетевого города для СПО (API совпадает с Томской областью). В сервисе студенты могут полностью следить за своей успеваемостью и расписанием.'
+              headerComponent='h4'
             />
             <ContentCard
               onClick={() =>
@@ -66,6 +68,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
               subtitle='Preact, TypeScript, VKUI, Docker, ElysiaJS etc...'
               header='Дневник Admin'
               caption='Попытка сделать собственный дневник, а именно часть администратора: создание групп, расписаний, выставление оценок и тд.'
+              headerComponent='h4'
             />
             <ContentCard
               onClick={() =>
@@ -76,6 +79,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
               subtitle='C#'
               header='Fake DB'
               caption='Консольное приложение для управления пользователями с использованием фейковой базы данных.'
+              headerComponent='h4'
             />
             <ContentCard
               onClick={() =>
@@ -86,6 +90,7 @@ const Projects: FC<{ id: string }> = ({ id }) => {
               subtitle='C#, WPF'
               header='WPF Quiz'
               caption='Игроку предлагается лист, на котором написан текст. В тексте некоторые слова заменены пиктограммами. Пиктограммы в тексте заменены в случайном порядке.'
+              headerComponent='h4'
             />
           </CardGrid>
         </Group>

@@ -106,7 +106,7 @@ const Settings: FC<ISettings> = ({ id, toggleAppearance }) => {
           header={
             <Header
               mode='secondary'
-              aside={<Subhead>Хранится в LocalStorage</Subhead>}
+              aside={<Subhead Component='h5'>Хранится в LocalStorage</Subhead>}
             >
               Кеш
             </Header>

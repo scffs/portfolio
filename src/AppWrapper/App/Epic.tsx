@@ -2,6 +2,8 @@ import { useActiveVkuiLocation } from '@vkontakte/vk-mini-apps-router'
 import { useAdaptivityConditionalRender } from '@vkontakte/vkui'
 import { Epic as VKUIEpic } from '@vkontakte/vkui/dist/components/Epic/Epic'
 import { FC } from 'react'
+import Suspense from '../../components/Suspense.tsx'
+import Tabbar from '../../components/Tabbar'
 import {
   VIEW_CONTACTS,
   VIEW_PROFILE,
@@ -11,8 +13,6 @@ import {
 } from '../../routes'
 import { Pages } from '../../types'
 import { Contacts, Profile, Projects, Settings, Stack } from '../../views'
-import Suspense from '../Suspense'
-import Tabbar from '../Tabbar'
 
 interface IEpic {
   onStoryChange: (current: Pages) => void

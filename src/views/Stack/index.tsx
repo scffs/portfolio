@@ -4,16 +4,14 @@ import {
 } from '@vkontakte/vk-mini-apps-router'
 import { Panel, View } from '@vkontakte/vkui'
 import { FC } from 'react'
-
-import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
-import ExplanationGroup from '../components/StackInfo/ExplanationGroup'
-
-import TechnologyGroup from '../components/StackInfo/TechnologyGroup'
+import PanelHeaderWithBack from '../../components/PanelHeaderWithBack'
+import ExplanationGroup from './StackInfo/ExplanationGroup.tsx'
+import TechnologyGroup from './StackInfo/TechnologyGroup.tsx'
 import {
   technologiesBackend,
   technologiesFront,
   technologiesOther
-} from '../components/StackInfo/data'
+} from './StackInfo/data.ts'
 
 const Stack: FC<{ id: string }> = ({ id }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation()
