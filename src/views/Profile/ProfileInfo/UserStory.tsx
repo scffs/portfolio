@@ -1,8 +1,6 @@
 import { Accordion, Div, Gradient, Paragraph, Spacing } from '@vkontakte/vkui'
-
-import { gradientBorder } from './styles'
-
-import { userStoryContent } from './data'
+import { userStoryContent } from './data.tsx'
+import { gradientBorder } from './styles.ts'
 
 const UserStory = () => (
   <Gradient style={gradientBorder}>

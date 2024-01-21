@@ -14,11 +14,10 @@ import {
   View
 } from '@vkontakte/vkui'
 import { FC } from 'react'
-
-import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
-import { UserInfo, UserStory } from '../components/ProfileInfo'
-import Suspense from '../components/Suspense'
-import { VKT_URL } from '../constants'
+import PanelHeaderWithBack from '../../components/PanelHeaderWithBack'
+import Suspense from '../../components/Suspense.tsx'
+import { VKT_URL } from '../../constants'
+import { UserInfo, UserStory } from './ProfileInfo'
 
 const Profile: FC<{ id: string }> = ({ id }) => {
   const { panel: activePanel, panelsHistory } = useActiveVkuiLocation()

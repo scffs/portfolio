@@ -12,9 +12,8 @@ import {
 
 import { gradientBorder, infoStyle, styles } from './styles'
 
-import ava from '../../assets/avaSmall.jpg'
-
-import { VK_URL } from '../../constants'
+import { ava } from '../../../assets/technologies.ts'
+import { VK_URL } from '../../../constants'
 import { userInfoItems } from './data.tsx'
 
 const UserInfo = () => (

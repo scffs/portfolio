@@ -12,11 +12,12 @@ import {
   useAdaptivityConditionalRender,
   usePlatform
 } from '@vkontakte/vkui'
-import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
-import Sidebar from '../../components/Sidebar'
+import { useCallback, useEffect, useState } from 'react'
+import Suspense from '../../components/Suspense.tsx'
 import { VIEW_PROFILE } from '../../routes'
 import { Pages } from '../../types'
 import Epic from './Epic.tsx'
+import Sidebar from './Sidebar.tsx'
 
 const App = () => {
   const platform = usePlatform()
