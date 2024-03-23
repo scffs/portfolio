@@ -1,5 +1,5 @@
 import { Link } from '@vkontakte/vkui'
-import { CSSProperties, FC, ReactNode } from 'react'
+import type { CSSProperties, FC, ReactNode } from 'react'
 
 interface ILinkWithImage {
   linkText: string

@@ -13,7 +13,7 @@ import {
   SimpleCell,
   View
 } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 import PanelHeaderWithBack from '../../components/PanelHeaderWithBack'
 import Suspense from '../../components/Suspense.tsx'
 import { VKT_URL } from '../../constants'

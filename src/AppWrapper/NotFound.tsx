@@ -1,6 +1,6 @@
 import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router'
 import { AppRoot, AppearanceProvider, Button, Div } from '@vkontakte/vkui'
-import { CSSProperties } from 'react'
+import type { CSSProperties } from 'react'
 
 const notFoundStyle: CSSProperties = {
   display: 'flex',

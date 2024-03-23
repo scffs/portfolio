@@ -3,7 +3,7 @@ import {
   useRouteNavigator
 } from '@vkontakte/vk-mini-apps-router'
 import { Panel, View } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 import PanelHeaderWithBack from '../../components/PanelHeaderWithBack'
 import ExplanationGroup from './StackInfo/ExplanationGroup.tsx'
 import TechnologyGroup from './StackInfo/TechnologyGroup.tsx'

@@ -13,7 +13,7 @@ import {
   Placeholder,
   View
 } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 
 import admin from '../assets/admin.jpg'
 import db from '../assets/db.png'

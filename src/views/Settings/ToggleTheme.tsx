@@ -1,6 +1,6 @@
 import { Icon28MoonOutline, Icon28SunOutline } from '@vkontakte/icons'
 import { CellButton, useAppearance } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 
 interface IToggleTheme {
   toggleAppearance: () => void

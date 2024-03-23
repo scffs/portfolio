@@ -1,5 +1,5 @@
 import {
-  RouteWithoutRoot,
+  type RouteWithoutRoot,
   createHashRouter
 } from '@vkontakte/vk-mini-apps-router'
 

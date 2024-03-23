@@ -11,7 +11,7 @@ import {
   SimpleCell,
   View
 } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 
 import PanelHeaderWithBack from '../components/PanelHeaderWithBack'
 import { GITHUB_URL, HABR_URL, VK_URL } from '../constants'

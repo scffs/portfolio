@@ -1,6 +1,6 @@
 import { Icon16HelpOutline } from '@vkontakte/icons'
 import { Popover, Subhead, Text } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 
 interface TooltipTextProps {
   text: string

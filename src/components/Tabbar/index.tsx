@@ -1,9 +1,9 @@
 import {
-  Tabbar as VKUITabbar,
   TabbarItem,
+  Tabbar as VKUITabbar,
   useAdaptivityConditionalRender
 } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 
 import {
   Icon28MailOutline,
@@ -20,7 +20,7 @@ import {
   VIEW_SETTINGS,
   VIEW_STACK
 } from '../../routes'
-import { Pages } from '../../types'
+import type { Pages } from '../../types'
 
 interface ITabbar {
   onStoryChange: (current: Pages) => void

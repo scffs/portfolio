@@ -6,7 +6,7 @@ import {
   Icon28UserCircleOutline
 } from '@vkontakte/icons'
 import { Cell, Group, Panel } from '@vkontakte/vkui'
-import { FC } from 'react'
+import type { FC } from 'react'
 import {
   VIEW_CONTACTS,
   VIEW_PROFILE,
@@ -14,7 +14,7 @@ import {
   VIEW_SETTINGS,
   VIEW_STACK
 } from '../../routes'
-import { Pages } from '../../types'
+import type { Pages } from '../../types'
 
 interface ISidebarProps {
   activeView: Pages

@@ -1,8 +1,8 @@
 import { Button, Group, Header } from '@vkontakte/vkui'
-import { FC, lazy, memo, useEffect, useState } from 'react'
+import { type FC, lazy, memo, useEffect, useState } from 'react'
 
 import Suspense from '../../../components/Suspense.tsx'
-import { Technology } from './data'
+import type { Technology } from './data'
 
 const CustomList = lazy(() => import('./CustomList'))
 

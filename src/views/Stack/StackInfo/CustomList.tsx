@@ -5,8 +5,9 @@ import {
   Image,
   List
 } from '@vkontakte/vkui'
-import React, { memo } from 'react'
-import { Technology } from './data.ts'
+import type React from 'react'
+import { memo } from 'react'
+import type { Technology } from './data.ts'
 interface CustomListProps {
   items: Technology[]
   isHorizontal: boolean

@@ -15,7 +15,7 @@ import {
 import { useCallback, useEffect, useState } from 'react'
 import Suspense from '../../components/Suspense.tsx'
 import { VIEW_PROFILE } from '../../routes'
-import { Pages } from '../../types'
+import type { Pages } from '../../types'
 import Epic from './Epic.tsx'
 import Sidebar from './Sidebar.tsx'
 
