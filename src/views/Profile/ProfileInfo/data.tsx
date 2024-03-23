@@ -34,7 +34,7 @@ import LinkWithImage from './LinkWithImage.tsx'
 export const userInfoItems = [
   {
     label: 'Возраст',
-    value: '18'
+    value: new Date().getFullYear() - 2005
   },
   {
     label: 'Город',
